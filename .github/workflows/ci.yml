@@ -17,7 +17,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # pnpm 세팅 (corepack)
       - name: Enable corepack
         run: corepack enable
 
@@ -25,7 +24,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "pnpm" # pnpm 캐시 활성화
+          cache: "pnpm"
 
       - name: Use pnpm 9
         run: corepack prepare pnpm@9 --activate
@@ -33,23 +32,23 @@ jobs:
       - name: Install deps
         run: pnpm install --frozen-lockfile
 
-      # EditorConfig 검사 (devDep 없으면 dlx 사용)
+      # EditorConfig 검사
       - name: EditorConfig check
-        run: pnpm run editorconfig:check
+        run: pnpm exec editorconfig-checker
 
-      # 1) Prettier 포맷 체크
+      # Prettier 포맷 체크
       - name: Prettier check
         run: pnpm run format:check
 
-      # 2) ESLint (경고도 실패 처리)
-      - name: ESLint
-        run: pnpm run lint
+      # ESLint (경고도 실패 처리)
+      - name: ESLint (strict)
+        run: pnpm run lint:strict
 
-      # 3) TypeScript 타입체크
+      # TypeScript 타입체크
       - name: TypeScript typecheck
         run: pnpm run typecheck
 
-      # 4) Next 빌드 (Telemetry 끔)
+      # Next 빌드 (Turbopack)
       - name: Build
         env:
           NEXT_TELEMETRY_DISABLED: "1"

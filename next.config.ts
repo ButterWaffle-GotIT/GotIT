@@ -1,19 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-	webpack: (config) => {
-		// SVG를 컴포넌트로 import(기본)
-		// `?url` 쿼리로 가져오면 파일 URL로 처리(이미지처럼 사용)
-		config.module.rules.push({
-			test: /\.svg$/i,
-			issuer: /\.[jt]sx?$/,
-			oneOf: [
-				{ resourceQuery: /url/, type: "asset/resource" }, // ex) import iconUrl from './icon.svg?url'
-				{ use: ["@svgr/webpack"] }, // ex) import Icon from './icon.svg'
-			],
-		});
-		return config;
+	// Turbopack 설정 (빈 객체여도 선언해두면 명시적으로 Turbopack 사용)
+	turbopack: {
+		// SVGR: .svg를 React 컴포넌트로 import 할 수 있게
+		rules: {
+			"*.svg": {
+				loaders: ["@svgr/webpack"],
+				as: "*.js", // SVGR 출력물을 JS로 취급
+			},
+		},
 	},
+	// 필요 시 다른 Next 옵션들...
 };
 
 export default nextConfig;
