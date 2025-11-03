@@ -30,11 +30,6 @@ jobs:
       - name: Use pnpm 9
         run: corepack prepare pnpm@9 --activate
 
-      - name: Prepare pnpm store
-        run: |
-          mkdir -p ~/.pnpm-store
-          pnpm config set store-dir ~/.pnpm-store
-
       - name: Install deps
         run: pnpm install --frozen-lockfile
 
