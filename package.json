@@ -10,7 +10,7 @@
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
 		"typecheck": "tsc -p tsconfig.json --noEmit",
-		"editorconfig:check": "editorconfig-checker"
+		"editorconfig:check": "pnpm exec editorconfig-checker"
 	},
 	"dependencies": {
 		"next": "16.0.1",
@@ -24,6 +24,7 @@
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
 		"autoprefixer": "^10.4.21",
+		"editorconfig-checker": "^6.1.1",
 		"eslint": "^9",
 		"eslint-config-next": "16.0.1",
 		"postcss": "^8.5.6",
