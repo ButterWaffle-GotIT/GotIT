@@ -25,30 +25,31 @@ jobs:
         with:
           node-version: "20"
           cache: "pnpm"
+          cache-dependency-path: pnpm-lock.yaml
 
       - name: Use pnpm 9
         run: corepack prepare pnpm@9 --activate
 
+      - name: Prepare pnpm store
+        run: |
+          mkdir -p ~/.pnpm-store
+          pnpm config set store-dir ~/.pnpm-store   # 🔹 캐시 경로를 명시해두면 경고가 사라짐
+
       - name: Install deps
         run: pnpm install --frozen-lockfile
 
-      # EditorConfig 검사
       - name: EditorConfig check
         run: pnpm exec editorconfig-checker
 
-      # Prettier 포맷 체크
       - name: Prettier check
         run: pnpm run format:check
 
-      # ESLint (경고도 실패 처리)
       - name: ESLint (strict)
         run: pnpm run lint:strict
 
-      # TypeScript 타입체크
       - name: TypeScript typecheck
         run: pnpm run typecheck
 
-      # Next 빌드 (Turbopack)
       - name: Build
         env:
           NEXT_TELEMETRY_DISABLED: "1"
