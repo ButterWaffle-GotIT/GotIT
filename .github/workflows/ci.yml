@@ -20,17 +20,11 @@ jobs:
       - name: Enable corepack
         run: corepack enable
 
-      # 🔹 pnpm store 경로 고정(캐시 경로 일관화)
-      - name: Pin pnpm store path
-        run: |
-          mkdir -p ~/.pnpm-store
-          pnpm config set store-dir ~/.pnpm-store
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "pnpm" # 이제 이 캐시가 ~/.pnpm-store 를 저장함
+          cache: "pnpm"
           cache-dependency-path: |
             pnpm-lock.yaml
 
@@ -41,9 +35,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: EditorConfig check
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # (레이트리밋 회피용)
-        run: pnpm exec editorconfig-checker
+        run: pnpm run lint:config
 
       - name: Prettier check
         run: pnpm run format:check
