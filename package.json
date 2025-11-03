@@ -11,7 +11,7 @@
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
 		"typecheck": "tsc -p tsconfig.json --noEmit",
-		"editorconfig:check": "pnpm exec editorconfig-checker"
+		"lint:config": "editorconfig-checker"
 	},
 	"dependencies": {
 		"next": "16.0.1",

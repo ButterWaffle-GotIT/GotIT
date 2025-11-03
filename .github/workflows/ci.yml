@@ -33,13 +33,13 @@ jobs:
       - name: Prepare pnpm store
         run: |
           mkdir -p ~/.pnpm-store
-          pnpm config set store-dir ~/.pnpm-store   # 🔹 캐시 경로를 명시해두면 경고가 사라짐
+          pnpm config set store-dir ~/.pnpm-store
 
       - name: Install deps
         run: pnpm install --frozen-lockfile
 
       - name: EditorConfig check
-        run: pnpm exec editorconfig-checker
+        run: pnpm run lint:config
 
       - name: Prettier check
         run: pnpm run format:check
