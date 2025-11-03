@@ -35,12 +35,7 @@ jobs:
 
       # EditorConfig 검사 (devDep 없으면 dlx 사용)
       - name: EditorConfig check
-        run: |
-          if pnpm ls editorconfig-checker --depth -1 >/dev/null 2>&1; then
-            pnpm run editorconfig:check
-          else
-            pnpm dlx editorconfig-checker
-          fi
+        run: pnpm run editorconfig:check
 
       # 1) Prettier 포맷 체크
       - name: Prettier check
