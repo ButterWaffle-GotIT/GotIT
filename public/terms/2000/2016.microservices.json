@@ -1,0 +1,37 @@
+{
+  "id": 2016,
+  "slug": "microservices",
+  "term": {
+    "ko": "마이크로서비스",
+    "en": "Microservices"
+  },
+  "aliases": [
+    "MSA",
+    "Microservice Architecture"
+  ],
+  "summary": "하나의 큰 애플리케이션을 여러 개의 작은 서비스로 분리하여, 각 서비스가 독립적으로 배포되고 실행되도록 설계하는 아키텍처 스타일입니다.",
+  "onelinerForNonTech": "거대한 '백화점' 앱 하나 대신, '회원 관리', '상품 관리' 등 작은 '전문 매장' 앱 여러 개로 쪼개 만드는 방식.",
+  "description": "마이크로서비스 아키텍처(MSA)는 각 서비스가 자체 데이터베이스를 가질 수 있으며, API를 통해 서로 통신합니다. 서비스별로 독립적인 개발, 배포, 확장이 가능하여 유연성과 확장성이 높지만, 전체 시스템의 복잡도와 통신 오버헤드가 증가할 수 있습니다.",
+  "tags": [
+    "백엔드",
+    "아키텍처",
+    "DevOps"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2017,
+    2006,
+    1001
+  ],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "msa",
+    "microservices",
+    "마이크로서비스",
+    "아키텍처",
+    "architecture"
+  ],
+  "level": "advanced",
+  "updatedAt": "2025-11-04"
+}

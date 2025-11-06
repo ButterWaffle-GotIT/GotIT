@@ -1,0 +1,40 @@
+{
+  "id": 2047,
+  "slug": "sql-injection",
+  "term": {
+    "ko": "SQL 인젝션",
+    "en": "SQL Injection"
+  },
+  "aliases": [
+    "SQL Injection",
+    "SQL 주입"
+  ],
+  "summary": "클라이언트가 입력값에 악의적인 SQL 쿼리문을 삽입(Injection)하여, 데이터베이스를 비정상적으로 조작하는 공격 기법입니다.",
+  "onelinerForNonTech": "로그인 창 비밀번호란에 '진짜 비밀번호' 대신 '데이터베이스 삭제 명령어'를 입력해 시스템을 망가뜨리는 해킹.",
+  "description": "SQL 인젝션은 가장 고전적이고 치명적인 웹 보안 취약점 중 하나입니다. 공격자는 이 방식을 통해 인증을 우회하거나(로그인 성공), 데이터베이스의 정보를 탈취, 수정, 삭제할 수 있습니다. 입력값을 검증하지 않고 쿼리문에 그대로 결합할 때 발생하며, Prepared Statement(매개변수화 쿼리) 사용으로 방어할 수 있습니다.",
+  "tags": [
+    "백엔드",
+    "보안-네트워크",
+    "DB",
+    "SQL"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2011,
+    2041,
+    2013
+  ],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "sql",
+    "injection",
+    "인젝션",
+    "해킹",
+    "보안",
+    "sql삽입",
+    "prepared statement"
+  ],
+  "level": "intermediate",
+  "updatedAt": "2025-11-04"
+}

@@ -1,0 +1,36 @@
+{
+  "id": 2033,
+  "slug": "unit-test",
+  "term": {
+    "ko": "단위 테스트",
+    "en": "Unit Test"
+  },
+  "aliases": [
+    "Unit Test",
+    "유닛 테스트"
+  ],
+  "summary": "코드의 가장 작은 단위(함수, 메서드, 클래스 등)가 의도대로 정확히 작동하는지 검증하는 테스트입니다.",
+  "onelinerForNonTech": "만든 프로그램의 '작은 부품(함수)' 하나하나가 제대로 작동하는지 개별적으로 확인하는 작업.",
+  "description": "단위 테스트는 개발자가 작성한 코드가 독립적으로 올바르게 동작하는지 확인하는 자동화된 테스트입니다. 코드 변경 시 기존 기능이 망가졌는지(회귀 테스트) 빠르게 파악할 수 있게 도와주며, 코드의 안정성과 품질을 높이는 데 핵심적인 역할을 합니다.",
+  "tags": [
+    "백엔드",
+    "테스트",
+    "DevOps"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2023
+  ],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "test",
+    "unit test",
+    "단위테스트",
+    "테스트",
+    "TDD",
+    "xUnit"
+  ],
+  "level": "intermediate",
+  "updatedAt": "2025-11-04"
+}

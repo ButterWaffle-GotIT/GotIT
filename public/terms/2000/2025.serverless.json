@@ -1,0 +1,39 @@
+{
+  "id": 2025,
+  "slug": "serverless",
+  "term": {
+    "ko": "서버리스",
+    "en": "Serverless"
+  },
+  "aliases": [
+    "Serverless Computing",
+    "FaaS",
+    "Function as a Service"
+  ],
+  "summary": "개발자가 서버를 직접 관리할 필요 없이, 클라우드 제공자가 서버 인프라를 동적으로 할당하고 관리하는 컴퓨팅 모델입니다.",
+  "onelinerForNonTech": "서버(컴퓨터)를 항상 켜두는 게 아니라, 손님(요청)이 올 때만 잠깐 켰다가 일이 끝나면 바로 끄는 '자동 관리' 방식.",
+  "description": "서버리스는 서버가 없다는 뜻이 아니라, 서버 관리에 대한 걱정이 없다는 의미입니다. 이벤트 기반으로 코드가 실행되며(FaaS, Function as a Service), 사용한 만큼만 비용을 지불합니다. (예: AWS Lambda, Google Cloud Functions). 자동 확장/축소가 용이하나, Cold Start 등의 단점이 있습니다.",
+  "tags": [
+    "백엔드",
+    "클라우드",
+    "아키텍처",
+    "인프라"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2016,
+    2017
+  ],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "serverless",
+    "faas",
+    "lambda",
+    "서버리스",
+    "클라우드",
+    "aws"
+  ],
+  "level": "intermediate",
+  "updatedAt": "2025-11-04"
+}

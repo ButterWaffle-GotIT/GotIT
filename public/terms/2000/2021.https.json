@@ -1,0 +1,39 @@
+{
+  "id": 2021,
+  "slug": "https",
+  "term": {
+    "ko": "HTTPS",
+    "en": "HTTPS"
+  },
+  "aliases": [
+    "HTTP Secure",
+    "SSL",
+    "TLS"
+  ],
+  "summary": "HTTP 통신을 SSL/TLS 프로토콜로 암호화하여 보안을 강화한 버전입니다.",
+  "onelinerForNonTech": "HTTP(대화 규칙)에 '자물쇠(SSL)'를 채워, 중간에 아무도 대화 내용을 엿듣지 못하게 하는 보안 규칙.",
+  "description": "HTTPS는 클라이언트와 서버 간의 모든 통신 내용을 암호화합니다. 이를 통해 데이터 탈취(스니핑)나 위변조를 방지하며, 로그인, 결제 정보 등 민감한 데이터를 다루는 웹사이트에 필수적입니다. SSL/TLS 인증서 발급이 필요합니다.",
+  "tags": [
+    "백엔드",
+    "보안-네트워크",
+    "통신",
+    "인증"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2020,
+    2013
+  ],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "https",
+    "ssl",
+    "tls",
+    "암호화",
+    "보안",
+    "인증서"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-04"
+}

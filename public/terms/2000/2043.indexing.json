@@ -1,0 +1,41 @@
+{
+  "id": 2043,
+  "slug": "indexing",
+  "term": {
+    "ko": "인덱싱",
+    "en": "Indexing"
+  },
+  "aliases": [
+    "Index",
+    "인덱스",
+    "DB Index"
+  ],
+  "summary": "데이터베이스 테이블의 검색(SELECT) 속도를 높이기 위해, 특정 컬럼(열)의 데이터를 미리 정렬하여 별도 저장하는 기술입니다.",
+  "onelinerForNonTech": "책 맨 뒤의 '찾아보기(인덱스)'처럼, 데이터베이스(책)에서 특정 내용을 빠르게 찾을 수 있게 미리 만들어둔 '목차'.",
+  "description": "인덱스는 데이터베이스의 읽기 성능을 획기적으로 향상시킵니다. 하지만 데이터를 저장할 추가 공간이 필요하고, CUD(INSERT, UPDATE, DELETE) 작업 시 인덱스도 함께 갱신해야 하므로 쓰기 성능이 저하될 수 있습니다. 따라서 적절한 컬럼에만 인덱스를 적용하는 것이 중요합니다.",
+  "tags": [
+    "백엔드",
+    "데이터베이스",
+    "DB",
+    "성능"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2010,
+    2041,
+    2011
+  ],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "index",
+    "indexing",
+    "인덱스",
+    "인덱싱",
+    "db",
+    "성능",
+    "query"
+  ],
+  "level": "intermediate",
+  "updatedAt": "2025-11-04"
+}

@@ -1,0 +1,39 @@
+{
+  "id": 2026,
+  "slug": "kubernetes",
+  "term": {
+    "ko": "쿠버네티스",
+    "en": "Kubernetes"
+  },
+  "aliases": [
+    "K8s",
+    "쿠베"
+  ],
+  "summary": "도커(Docker)와 같은 컨테이너화된 애플리케이션을 자동으로 배포, 확장, 관리(오케스트레이션)하는 오픈소스 플랫폼입니다.",
+  "onelinerForNonTech": "수백 개의 '이삿짐 상자(컨테이너)'를 알아서 배치하고, 망가지면 자동으로 교체해주는 '물류센터 관제탑'.",
+  "description": "쿠버네티스(K8s)는 여러 서버(노드)를 하나의 클러스터로 묶어 컨테이너를 관리합니다. 서비스 디스커버리, 로드 밸런싱, 자동 확장(Auto-scaling), 자가 치유(Self-healing) 등 MSA 운영에 필요한 복잡한 작업들을 자동화해줍니다.",
+  "tags": [
+    "백엔드",
+    "DevOps",
+    "인프라",
+    "클라우드"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2017,
+    2016,
+    2024
+  ],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "kubernetes",
+    "k8s",
+    "쿠버네티스",
+    "컨테이너",
+    "docker",
+    "오케스트레이션"
+  ],
+  "level": "advanced",
+  "updatedAt": "2025-11-04"
+}

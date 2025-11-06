@@ -1,0 +1,40 @@
+{
+  "id": 2028,
+  "slug": "go",
+  "term": {
+    "ko": "Go",
+    "en": "Go"
+  },
+  "aliases": [
+    "Golang",
+    "고",
+    "고랭"
+  ],
+  "summary": "구글(Google)에서 개발한 정적 타입의 컴파일 언어로, 단순성, 효율성, 강력한 동시성 처리가 특징입니다.",
+  "onelinerForNonTech": "구글이 만든 '빠르고 단순하며' 동시에 '여러 작업을 잘 처리하는(동시성)' 프로그래밍 언어.",
+  "description": "Go 언어는 C++의 복잡성과 Java의 VM 의존성을 극복하기 위해 설계되었습니다. '고루틴(Goroutine)'이라는 경량 스레드를 통해 동시성 프로그래밍을 쉽게 구현할 수 있으며, 컴파일 속도가 빠르고 단일 바이너리로 배포가 간편하여 백엔드, DevOps 도구(쿠버네티스, 도커 등) 개발에 널리 사용됩니다.",
+  "tags": [
+    "백엔드",
+    "언어",
+    "DevOps"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2000,
+    2002,
+    2017,
+    2026
+  ],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "go",
+    "golang",
+    "고",
+    "고랭",
+    "동시성",
+    "goroutine"
+  ],
+  "level": "intermediate",
+  "updatedAt": "2025-11-04"
+}

@@ -1,0 +1,40 @@
+{
+  "id": 2014,
+  "slug": "authorization",
+  "term": {
+    "ko": "인가",
+    "en": "Authorization"
+  },
+  "aliases": [
+    "AuthZ",
+    "권한 부여"
+  ],
+  "summary": "신원이 확인된(인증된) 사용자가 특정 자원이나 기능에 접근할 수 있는지 권한을 확인하고 부여하는 절차입니다.",
+  "onelinerForNonTech": "'누구인지' 확인된(인증) 사용자에게 '무엇을 할 수 있는지' 권한을 허락해주는 것 (예: 관리자/일반사용자).",
+  "description": "인가(Authorization)는 '인증(Authentication)' 절차를 통과한 사용자가 시스템 내부의 특정 기능(예: 글쓰기, 삭제, 관리자 페이지 접근)을 수행할 수 있는지를 결정하는 과정입니다. 사용자의 역할(Role)에 따라 접근 권한을 차등적으로 부여하는 것이 일반적입니다.",
+  "tags": [
+    "백엔드",
+    "보안-네트워크",
+    "API"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2013,
+    2015,
+    1001
+  ],
+  "confusableIds": [
+    2013
+  ],
+  "useCases": [],
+  "keywords": [
+    "authorization",
+    "authz",
+    "인가",
+    "권한",
+    "permission",
+    "role"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-04"
+}

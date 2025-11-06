@@ -1,0 +1,38 @@
+{
+  "id": 2022,
+  "slug": "cors",
+  "term": {
+    "ko": "CORS",
+    "en": "CORS"
+  },
+  "aliases": [
+    "Cross-Origin Resource Sharing",
+    "교차 출처 리소스 공유"
+  ],
+  "summary": "웹 브라우저가 보안상의 이유로 다른 출처(도메인, 포트)의 리소스를 요청하는 것을 제어하는 정책입니다.",
+  "onelinerForNonTech": "'A' 사이트가 'B' 서버의 데이터를 함부로 가져가지 못하게 막는 브라우저 보안 규칙. (B서버가 허락해야 함)",
+  "description": "기본적으로 브라우저는 동일 출처 정책(SOP)에 따라 다른 도메인의 API를 호출할 수 없습니다. CORS는 서버가 응답 헤더(e.g., `Access-Control-Allow-Origin`)에 특정 출처를 허용한다고 명시해야만 브라우저가 데이터를 받아들일 수 있게 하는 메커니즘입니다. 프론트엔드-백엔드 분리 시 반드시 설정해야 합니다.",
+  "tags": [
+    "백엔드",
+    "보안-네트워크",
+    "프론트엔드",
+    "통신"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2020,
+    1001
+  ],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "cors",
+    "cross-origin",
+    "sop",
+    "교차출처",
+    "보안",
+    "header"
+  ],
+  "level": "intermediate",
+  "updatedAt": "2025-11-04"
+}

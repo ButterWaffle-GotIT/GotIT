@@ -1,0 +1,41 @@
+{
+  "id": 2023,
+  "slug": "ci-cd",
+  "term": {
+    "ko": "CI/CD",
+    "en": "CI/CD"
+  },
+  "aliases": [
+    "Continuous Integration",
+    "Continuous Deployment",
+    "지속적 통합",
+    "지속적 배포"
+  ],
+  "summary": "애플리케이션 개발부터 배포까지의 과정을 자동화하여, 코드 변경 사항을 빠르고 안정적으로 사용자에게 전달하는 방식입니다.",
+  "onelinerForNonTech": "개발자가 코드를 수정할 때마다 '자동으로 테스트하고 포장해서(CI)', '자동으로 손님에게 배달하는(CD)' 시스템.",
+  "description": "CI(지속적 통합)는 여러 개발자의 코드 변경 사항을 정기적으로 빌드하고 테스트하여 통합하는 과정입니다. CD(지속적 배포/전달)는 CI를 통과한 코드를 자동으로 운영 환경(배포)까지 릴리스하는 것을 의미합니다. (예: Jenkins, GitHub Actions, GitLab CI)",
+  "tags": [
+    "백엔드",
+    "DevOps",
+    "배포"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2017,
+    2026
+  ],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "ci",
+    "cd",
+    "cicd",
+    "배포",
+    "자동화",
+    "integration",
+    "deployment",
+    "jenkins"
+  ],
+  "level": "intermediate",
+  "updatedAt": "2025-11-04"
+}

@@ -1,0 +1,39 @@
+{
+  "id": 2030,
+  "slug": "postgresql",
+  "term": {
+    "ko": "포스트그레스큐엘",
+    "en": "PostgreSQL"
+  },
+  "aliases": [
+    "PostgreSQL",
+    "Postgres",
+    "포스트그레스"
+  ],
+  "summary": "SQL 표준을 준수하는 객체-관계형 데이터베이스 시스템(ORDBMS)입니다.",
+  "onelinerForNonTech": "데이터를 표(테이블) 형태로 저장하는 '똑똑한 오픈소스 창고(DB)'인데, 확장 기능이 뛰어납니다.",
+  "description": "오픈소스 RDBMS로, 높은 확장성과 데이터 무결성을 제공합니다. 복잡한 쿼리, 트랜잭션 처리에 강점을 보이며, JSONB와 같은 NoSQL 기능도 지원하여 유연성이 뛰어납니다. 안정성이 높아 많은 현대 백엔드 시스템에서 선호됩니다.",
+  "tags": [
+    "백엔드",
+    "데이터베이스",
+    "DB",
+    "SQL"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2010,
+    2011
+  ],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "postgresql",
+    "postgres",
+    "psql",
+    "sql",
+    "rdbms",
+    "데이터베이스"
+  ],
+  "level": "intermediate",
+  "updatedAt": "2025-11-04"
+}

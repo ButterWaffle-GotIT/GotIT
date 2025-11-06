@@ -1,0 +1,40 @@
+{
+  "id": 2011,
+  "slug": "sql",
+  "term": {
+    "ko": "SQL",
+    "en": "SQL"
+  },
+  "aliases": [
+    "Structured Query Language",
+    "시퀄",
+    "에스큐엘"
+  ],
+  "summary": "관계형 데이터베이스(RDBMS)에서 데이터를 정의, 조작, 제어하기 위해 사용하는 표준 질의 언어입니다.",
+  "onelinerForNonTech": "데이터베이스(창고)에 데이터를 '저장해줘', '찾아줘', '바꿔줘'라고 말하는 '명령어'.",
+  "description": "SQL(Structured Query Language)은 데이터베이스에 데이터를 삽입(INSERT), 조회(SELECT), 수정(UPDATE), 삭제(DELETE)하는 등 원하는 작업을 요청하기 위해 사용하는 언어입니다. MySQL, PostgreSQL, Oracle 등 대부분의 RDBMS가 이 표준을 따릅니다.",
+  "tags": [
+    "백엔드",
+    "데이터베이스",
+    "DB",
+    "쿼리"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2010,
+    2012,
+    2008
+  ],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "sql",
+    "query",
+    "쿼리",
+    "시퀄",
+    "rdbms",
+    "select"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-04"
+}

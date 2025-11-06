@@ -1,0 +1,39 @@
+{
+  "id": 2042,
+  "slug": "transaction",
+  "term": {
+    "ko": "트랜잭션",
+    "en": "Transaction"
+  },
+  "aliases": [
+    "Transaction",
+    "DB Transaction"
+  ],
+  "summary": "데이터베이스 작업을 수행하는 '모두 성공하거나 모두 실패해야 하는' 논리적인 작업 단위입니다.",
+  "onelinerForNonTech": "은행 이체처럼 'A계좌 출금'과 'B계좌 입금'이 '한 세트'가 되어, 둘 다 성공하거나 둘 다 실패해야 하는 묶음 작업.",
+  "description": "트랜잭션은 ACID(원자성, 일관성, 고립성, 지속성) 원칙을 통해 데이터의 무결성과 일관성을 보장합니다. 여러 개의 SQL 쿼리가 하나의 작업 단위로 묶여, 중간에 하나라도 실패하면 모든 변경 사항이 원상 복구(Rollback)됩니다.",
+  "tags": [
+    "백엔드",
+    "데이터베이스",
+    "DB",
+    "SQL"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2041,
+    2011,
+    2010
+  ],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "transaction",
+    "트랜잭션",
+    "acid",
+    "db",
+    "commit",
+    "rollback"
+  ],
+  "level": "intermediate",
+  "updatedAt": "2025-11-04"
+}

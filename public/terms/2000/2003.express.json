@@ -1,0 +1,38 @@
+{
+  "id": 2003,
+  "slug": "express",
+  "term": {
+    "ko": "익스프레스",
+    "en": "Express.js"
+  },
+  "aliases": [
+    "Express",
+    "Express.js",
+    "익스프레스.js"
+  ],
+  "summary": "Node.js를 위한 최소한의 기능을 갖춘 유연한 웹 애플리케이션 프레임워크입니다.",
+  "onelinerForNonTech": "Node.js(서버 실행 도구)로 서버를 쉽게 만들도록 도와주는 '기본 뼈대'입니다.",
+  "description": "익스프레스는 Node.js의 사실상 표준(de facto standard) 서버 프레임워크로, 라우팅, 미들웨어, 템플릿 엔진 등을 간편하게 구성할 수 있도록 도와줍니다. 복잡한 설정 없이 빠르고 간단하게 API 서버나 웹 애플리케이션을 구축하는 데 사용됩니다.",
+  "tags": [
+    "백엔드",
+    "프레임워크",
+    "Node.js",
+    "JavaScript"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2002
+  ],
+  "confusableIds": [
+    2001
+  ],
+  "useCases": [],
+  "keywords": [
+    "express",
+    "익스프레스",
+    "node.js",
+    "프레임워크"
+  ],
+  "level": "intermediate",
+  "updatedAt": "2025-11-04"
+}

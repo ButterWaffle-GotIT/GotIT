@@ -1,0 +1,39 @@
+{
+  "id": 2002,
+  "slug": "node-js",
+  "term": {
+    "ko": "Node.js",
+    "en": "Node.js"
+  },
+  "aliases": [
+    "node",
+    "노드",
+    "노드.js"
+  ],
+  "summary": "Chrome V8 JavaScript 엔진을 기반으로 구축된, 서버 사이드에서 JavaScript를 실행할 수 있는 런타임 환경입니다.",
+  "onelinerForNonTech": "원래 웹브라우저에서만 쓰던 자바스크립트(JS)를 서버(컴퓨터)에서도 쓸 수 있게 해주는 실행 도구.",
+  "description": "Node.js는 이벤트 기반, 논블로킹 I/O 모델을 사용하여 확장성 높은 네트워크 애플리케이션 개발에 적합합니다. JavaScript 언어 하나로 프론트엔드와 백엔드를 모두 개발할 수 있다는 장점이 있으며, 실시간 채팅, API 서버 등 빠른 응답이 필요한 서비스에 많이 쓰입니다.",
+  "tags": [
+    "백엔드",
+    "런타임",
+    "JavaScript"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2003
+  ],
+  "confusableIds": [
+    2000
+  ],
+  "useCases": [],
+  "keywords": [
+    "node.js",
+    "node",
+    "노드",
+    "javascript",
+    "js",
+    "v8"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-04"
+}
