@@ -1,0 +1,17 @@
+{
+  "id": 1007,
+  "slug": "angular",
+  "term": { "ko": "Angular", "en": "Angular" },
+  "aliases": ["앵귤러", "Angular 프레임워크"],
+  "summary": "Google이 개발한 대규모 애플리케이션 구축을 위한 TypeScript 기반 프레임워크.",
+  "onelinerForNonTech": "대기업의 복잡한 시스템을 만드는 데 최적화된, 규칙과 도구가 완벽하게 갖춰진 '종합 건설 패키지'.",
+  "description": "MVC 패턴에 기반한 아키텍처를 가지며, 초기부터 TypeScript를 사용하여 개발되어 안정성을 높인다. React나 Vue와 달리, 라우터, HTTP 클라이언트, 폼 처리 등 웹 개발에 필요한 거의 모든 기능이 프레임워크 내에 내장되어 있다.주로 엔터프라이즈급의 크고 복잡하며 장기간 유지보수가 필요한 프로젝트에서 사용된다.",
+  "tags": ["프론트엔드"],
+  "primaryTag": "프론트엔드",
+  "relatedIds": [1002, 1003, 1004],
+  "confusableIds": [1004, 1005],
+  "useCases": [],
+  "keywords": ["프레임워크", "TypeScript", "CLI", "라우팅", "MVC"],
+  "level": "intermediate",
+  "updatedAt": "2025-11-05"
+}

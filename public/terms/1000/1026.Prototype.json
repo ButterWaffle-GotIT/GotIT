@@ -1,0 +1,17 @@
+{
+  "id": 1026,
+  "slug": "prototype",
+  "term": { "ko": "프로토타입", "en": "Prototype" },
+  "aliases": ["시제품", "가상 상호작용 모델"],
+  "summary": "최종 제품 출시 이전에 사용자 경험(UX)과 기능을 사전에 검증하고 테스트하기 위해, 실제 제품처럼 작동하도록 만들어진 동적(Dynamic) 시뮬레이션 모델.",
+  "onelinerForNonTech": "버튼을 누르면 화면이 바뀌는 등 실제 앱처럼 움직여서, 최종 개발 전에 사용자들이 써보고 문제점을 찾을 수 있게 만든 '움직이는 가짜 제품'.",
+  "description": "상호작용(Interaction)과 시각 디자인을 포함하는 고수준(High-fidelity)의 결과물이다. 실제 코딩 없이 Figma나 Sketch 같은 툴을 사용하여 제작되며, 사용자가 버튼 클릭, 화면 전환 등의 주요 기능 흐름을 미리 경험하고 평가할 수 있게 한다.",
+  "tags": ["UI/UX디자인"],
+  "primaryTag": "UI/UX디자인",
+  "relatedIds": [1025, 1024, 1022],
+  "confusableIds": [1025],
+  "useCases": [],
+  "keywords": ["고수준 디자인", "인터랙션", "시뮬레이션", "피델리티", "Figma", "사용성 테스트"],
+  "level": "intermediate",
+  "updatedAt": "2025-11-05"
+}

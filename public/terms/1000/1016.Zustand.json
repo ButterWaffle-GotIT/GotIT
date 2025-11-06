@@ -1,0 +1,17 @@
+{
+  "id": 1016,
+  "slug": "zustand",
+  "term": { "ko": "Zustand", "en": "Zustand" },
+  "aliases": ["주스탄트", "간결한 상태 관리", "Hooks 기반 상태 관리"],
+  "summary": "복잡한 보일러플레이트 없이 Hooks 기반으로 전역 상태를 쉽고 간결하게 관리할 수 있도록 설계된 작고 빠른 상태 관리 라이브러리.",
+  "onelinerForNonTech": "코드 몇 줄만으로 바로 사용할 수 있고, 필요할 때마다 원하는 데이터만 '낚아채는' 낚시꾼 같은 가벼운 상태 관리 도구.",
+  "description": "복잡한 설정이나 Provider 래핑 없이 Hooks 문법을 사용하여 상태를 관리한다. 상태(Store)를 정의하는 방식이 매우 간결하여, 적은 양의 코드로도 전역 상태 관리가 가능하여 러닝 커브가 낮다. 상태 변경 시 객체의 불변성(Immutability)을 유지하며, 상태 변화를 감지하고 해당 컴포넌트만 리렌더링하여 성능 효율성이 뛰어나다.",
+  "tags": ["프론트엔드"],
+  "primaryTag": "프론트엔드",
+  "relatedIds": [1013, 1004, 1014, 1015],
+  "confusableIds": [1014, 1015],
+  "useCases": [],
+  "keywords": ["Hooks", "Store", "보일러플레이트", "간결성", "미들웨어", "Shallow Comparison"],
+  "level": "beginner",
+  "updatedAt": "2025-11-05"
+}

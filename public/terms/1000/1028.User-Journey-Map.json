@@ -1,0 +1,17 @@
+{
+  "id": 1028,
+  "slug": "user-journey-map",
+  "term": { "ko": "사용자 여정 지도", "en": "User Journey Map" },
+  "aliases": ["고객 여정 지도", "Customer Journey Map"],
+  "summary": "특정 페르소나가 제품이나 서비스를 이용하는 과정(시작부터 끝까지)을 시간의 흐름에 따라 시각화한 지도.",
+  "onelinerForNonTech": "고객이 우리 서비스를 처음 접하고 목표를 달성하기까지 겪는 '모든 과정'을 한눈에 볼 수 있게 그린 지도.",
+  "description": "제품과의 상호작용뿐만 아니라, 사용자가 제품 외부에서 느끼는 감정과 맥락까지 기록하여 포괄적인 사용자 경험을 이해하는 데 도움을 준다. 여정은 단계(Phases), 행동(Actions), 생각(Thoughts), 감정(Feelings), 문제점(Pain Points), 기회 요소(Opportunities) 등의 항목으로 구성되어 있다.",
+  "tags": ["UI/UX디자인"],
+  "primaryTag": "UI/UX디자인",
+  "relatedIds": [1027, 1026, 1022],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": ["페르소나", "여정", "Pain Point", "터치 포인트", "시각화", "UX 연구"],
+  "level": "intermediate",
+  "updatedAt": "2025-11-05"
+}

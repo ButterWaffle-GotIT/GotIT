@@ -1,0 +1,17 @@
+{
+  "id": 1002,
+  "slug": "javascript",
+  "term": { "ko": "자바스크립트", "en": "JavaScript" },
+  "aliases": ["JS", "ECMAScript"],
+  "summary": "웹 페이지에서 동적인 기능을 구현하는 스크립트 언어.",
+  "onelinerForNonTech": "웹 페이지를 살아 움직이게 만드는 '마법의 지팡이'같은 프로그래밍 언어.",
+  "description": "HTML과 CSS 위에 동적인 행동과 로직을 추가하여 사용자와의 상호작용을 담당한다. 초기에는 웹 브라우저에서만 작동했으나, Node.js 등장 이후 서버 환경에서도 실행할 수 있게 되어 풀스택 개발에 사용된다.",
+  "tags": ["프론트엔드", "백엔드"],
+  "primaryTag": "프론트엔드",
+  "relatedIds": [1000, 1001, 1003],
+  "confusableIds": [2000],
+  "useCases": [],
+  "keywords": ["스크립트", "ECMA", "DOM", "노드", "비동기"],
+  "level": "beginner",
+  "updatedAt": "2025-11-05"
+}

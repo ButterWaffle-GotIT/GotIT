@@ -1,0 +1,17 @@
+{
+  "id": 1017,
+  "slug": "dom",
+  "term": { "ko": "돔", "en": "DOM" },
+  "aliases": ["Document Object Model", "문서 객체 모델"],
+  "summary": "HTML, XML 문서의 구조를 객체 트리 형태로 표현하고, JavaScript가 이 구조에 접근하여 문서의 내용, 구조, 스타일을 동적으로 변경할 수 있게 해주는 프로그래밍 인터페이스.",
+  "onelinerForNonTech": "웹페이지의 모든 요소를 JavaScript가 쉽게 조작할 수 있도록 만든 '나무 모양의 지도'.",
+  "description": "브라우저가 HTML 코드를 해석하여 트리 형태의 계층적 구조로 메모리에 로드한 것을 DOM 트리라고 하며 이 트리의 각 노드(Node)는 문서의 개별 요소를 나타낸다. JavaScript는 DOM API를 사용하여 특정 요소를 선택하고, 새로운 요소를 추가하거나 기존 요소를 삭제/수정하는 등 웹 페이지의 내용을 동적으로 변경한다.",
+  "tags": ["프론트엔드"],
+  "primaryTag": "프론트엔드",
+  "relatedIds": [1000, 1001, 1002, 1004],
+  "confusableIds": [1018],
+  "useCases": [],
+  "keywords": ["노드", "DOM 트리", "API", "조작", "Virtual DOM", "렌더링"],
+  "level": "intermediate",
+  "updatedAt": "2025-11-05"
+}

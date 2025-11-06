@@ -1,0 +1,17 @@
+{
+  "id": 1013,
+  "slug": "state-management",
+  "term": { "ko": "상태 관리", "en": "State Management" },
+  "aliases": ["State", "전역 상태", "클라이언트 상태", "데이터 흐름 관리"],
+  "summary": "애플리케이션의 데이터를 체계적으로 저장, 접근, 변경하는 프로세스.",
+  "onelinerForNonTech": "웹사이트 내 모든 데이터를 한 곳에 모아두고 규칙적으로 관리하는 '중앙 통제 시스템'.",
+  "description": "프론트엔드에서 상태는 사용자 상호작용이나 서버 응답에 의해 동적으로 변하는 데이터를 의미하며, 로컬 상태와 여러 컴포넌트가 공유하는 전역 상태로 구분된다. 상태 관리 라이브러리(Redux, Recoil, Zustand 등)는 주로 단일 출처의 진리(Single Source of Truth) 원칙에 따라 데이터의 일관성을 유지하고, 예측 가능한 방식으로 상태를 업데이트하도록 돕는다.",
+  "tags": ["프론트엔드"],
+  "primaryTag": "프론트엔드",
+  "relatedIds": [1004],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": ["상태", "로컬 상태", "전역 상태", "Flux", "불변성"],
+  "level": "intermediate",
+  "updatedAt": "2025-11-05"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 1019,
+  "slug": "webpack",
+  "term": { "ko": "Webpack", "en": "Webpack" },
+  "aliases": ["웹팩", "모듈 번들러", "Module Bundler"],
+  "summary": "복수의 JavaScript, CSS, 이미지 등 웹 애플리케이션의 모든 자원(Asset)을 하나 또는 여러 개의 최적화된 파일(번들)로 묶어주는 모듈 번들러 도구.",
+  "onelinerForNonTech": "개발자가 만든 수백 개의 코드 조각(모듈)을 웹 브라우저가 이해할 수 있도록 깔끔하게 정리하고 포장해주는 '출판 편집기'.",
+  "description": "Webpack은 애플리케이션의 의존성 그래프(Dependency Graph)를 분석하여, 모든 모듈을 시작점(Entry)부터 따라가며 필요한 자원들을 하나로 합친다. Loader를 사용하여 TypeScript, Sass, 이미지 파일 등을 JavaScript 모듈로 변환하여 처리할 수 있으며, Plugin을 사용하여 번들 최적화, 환경 변수 설정 등 다양한 작업을 수행한다.",
+  "tags": ["프론트엔드"],
+  "primaryTag": "프론트엔드",
+  "relatedIds": [1006],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": ["모듈", "번들", "로더", "플러그인", "의존성 그래프", "빌드"],
+  "level": "intermediate",
+  "updatedAt": "2025-11-05"
+}

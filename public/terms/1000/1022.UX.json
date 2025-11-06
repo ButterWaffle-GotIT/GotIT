@@ -1,0 +1,17 @@
+{
+  "id": 1022,
+  "slug": "user-experience",
+  "term": { "ko": "UX", "en": "UX" },
+  "aliases": ["User Experience", "사용자 경험", "사용성", "유저 경험"],
+  "summary": "사용자가 특정 제품, 시스템, 또는 서비스를 이용하면서 느끼고 생각하는 모든 총체적인 경험.",
+  "onelinerForNonTech": "제품이나 서비스를 쓸 때 느끼는 '총체적인 만족도와 느낌'을 설계하는 일.",
+  "description": "제품을 사용하기 전, 중, 후에 발생하는 모든 상호작용과 감정을 포함하는 광범위한 개념이다. UI를 포괄하는 상위 개념으로 UX를 개선하는 것은 단순히 디자인을 예쁘게 만드는 것을 넘어, 사용자의 문제(Pain Point)를 해결하고 목표 달성을 돕는 과정 전체를 설계하는 것을 의미한다.",
+  "tags": ["UI/UX디자인"],
+  "primaryTag": "UI/UX디자인",
+  "relatedIds": [1017, 1015, 1014],
+  "confusableIds": [],
+  "useCases": [1017],
+  "keywords": ["사용자 중심", "페르소나", "유저 여정", "Pain Point", "감성"],
+  "level": "intermediate",
+  "updatedAt": "2025-11-05"
+}
