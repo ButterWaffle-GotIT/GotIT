@@ -1,32 +1,32 @@
 {
-  "id": 4027,
-  "slug": "notion",
-  "term": {
-    "ko": "Notion",
-    "en": "Notion"
-  },
-  "aliases": [
-    "Notion",
-    "Notion"
-  ],
-  "summary": "문서 작성, 데이터베이스, 일정 관리가 통합된 협업 플랫폼입니다.",
-  "onelinerForNonTech": "모든 업무를 한 공간에서 정리하는 디지털 작업실.",
-  "description": "Notion은 위키, 노트, 일정, 프로젝트 관리 등 다양한 기능을 통합하여 개인 및 팀 생산성을 높입니다.",
-  "tags": [
-    "IT비즈니스-기획-프로젝트관리",
-    "협업",
-    "생산성"
-  ],
-  "primaryTag": "IT비즈니스-기획-프로젝트관리",
-  "relatedIds": [],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "notion",
-    "Notion",
-    "Notion"
-  ],
-  "level": "beginner",
-  "updatedAt": "2025-11-11",
-  "status": "published"
+	"id": 4027,
+	"slug": "notion",
+	"term": {
+		"ko": "Notion",
+		"en": "Notion"
+	},
+	"aliases": [
+		"노션",
+		"Notion"
+	],
+	"summary": "문서 작성, 데이터베이스, 일정 관리가 통합된 협업 플랫폼입니다.",
+	"onelinerForNonTech": "모든 업무를 한 공간에서 정리하는 디지털 작업실.",
+	"description": "Notion은 위키, 노트, 일정, 프로젝트 관리 등 다양한 기능을 통합하여 개인 및 팀 생산성을 높입니다.",
+	"tags": [
+		"IT비즈니스-기획-프로젝트관리",
+		"협업",
+		"생산성"
+	],
+	"primaryTag": "IT비즈니스-기획-프로젝트관리",
+	"relatedIds": [],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"notion",
+		"Notion",
+		"Notion"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-11",
+	"status": "published"
 }

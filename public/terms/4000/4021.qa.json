@@ -1,32 +1,32 @@
 {
-  "id": 4021,
-  "slug": "qa",
-  "term": {
-    "ko": "QA",
-    "en": "Quality Assurance"
-  },
-  "aliases": [
-    "QA",
-    "Quality Assurance"
-  ],
-  "summary": "제품의 품질을 보장하기 위한 테스트 및 검증 활동을 수행합니다.",
-  "onelinerForNonTech": "제품이 ‘망가지지 않게’ 지키는 수문장.",
-  "description": "QA는 기능, 성능, 보안 테스트를 통해 오류를 사전에 방지하며 품질 지표를 관리합니다.",
-  "tags": [
-    "IT비즈니스-기획-프로젝트관리",
-    "품질",
-    "테스트"
-  ],
-  "primaryTag": "IT비즈니스-기획-프로젝트관리",
-  "relatedIds": [],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "qa",
-    "QA",
-    "Quality Assurance"
-  ],
-  "level": "beginner",
-  "updatedAt": "2025-11-11",
-  "status": "published"
+	"id": 4021,
+	"slug": "qa",
+	"term": {
+		"ko": "QA",
+		"en": "Quality Assurance"
+	},
+	"aliases": [
+		"QA",
+		"Quality Assurance"
+	],
+	"summary": "제품의 품질을 보장하기 위한 테스트 및 검증 활동을 수행합니다.",
+	"onelinerForNonTech": "제품이 ‘망가지지 않게’ 지키는 수문장.",
+	"description": "QA는 기능, 성능, 보안 테스트를 통해 오류를 사전에 방지하며 품질 지표를 관리합니다.",
+	"tags": [
+		"IT비즈니스-기획-프로젝트관리",
+		"품질",
+		"테스트"
+	],
+	"primaryTag": "IT비즈니스-기획-프로젝트관리",
+	"relatedIds": [],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"qa",
+		"QA",
+		"Quality Assurance"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-11",
+	"status": "published"
 }

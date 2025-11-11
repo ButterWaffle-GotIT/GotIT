@@ -1,32 +1,32 @@
 {
-  "id": 4016,
-  "slug": "git",
-  "term": {
-    "ko": "깃",
-    "en": "Git"
-  },
-  "aliases": [
-    "깃",
-    "Git"
-  ],
-  "summary": "분산 버전 관리 시스템으로, 코드의 변경 이력을 추적하고 협업을 돕습니다.",
-  "onelinerForNonTech": "개발자들의 ‘시간여행 도구’.",
-  "description": "Git은 브랜치, 커밋, 머지 등을 통해 협업 시 코드 충돌을 방지하고 효율적인 버전 관리를 가능하게 합니다.",
-  "tags": [
-    "개발문화-프로세스",
-    "버전관리",
-    "협업"
-  ],
-  "primaryTag": "개발문화-프로세스",
-  "relatedIds": [],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "git",
-    "깃",
-    "Git"
-  ],
-  "level": "beginner",
-  "updatedAt": "2025-11-11",
-  "status": "published"
+	"id": 4016,
+	"slug": "git",
+	"term": {
+		"ko": "깃",
+		"en": "Git"
+	},
+	"aliases": [
+		"깃",
+		"Git"
+	],
+	"summary": "분산 버전 관리 시스템으로, 코드의 변경 이력을 추적하고 협업을 돕습니다.",
+	"onelinerForNonTech": "개발자들의 ‘시간여행 도구’.",
+	"description": "Git은 브랜치, 커밋, 머지 등을 통해 협업 시 코드 충돌을 방지하고 효율적인 버전 관리를 가능하게 합니다.",
+	"tags": [
+		"개발문화-프로세스",
+		"버전관리",
+		"협업"
+	],
+	"primaryTag": "개발문화-프로세스",
+	"relatedIds": [],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"git",
+		"깃",
+		"Git"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-11",
+	"status": "published"
 }
