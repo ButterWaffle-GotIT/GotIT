@@ -1,0 +1,32 @@
+{
+	"id": 4028,
+	"slug": "lowcode",
+	"term": {
+		"ko": "LowCode",
+		"en": "Low-Code"
+	},
+	"aliases": [
+		"LowCode",
+		"Low-Code"
+	],
+	"summary": "적은 코드로 빠르게 애플리케이션을 개발할 수 있는 플랫폼입니다.",
+	"onelinerForNonTech": "코드를 덜 쓰고 더 빠르게 만드는 개발 방식.",
+	"description": "LowCode 플랫폼은 시각적 UI를 통해 개발 생산성을 높이며, 비개발자도 간단한 앱을 제작할 수 있습니다.",
+	"tags": [
+		"IT비즈니스-기획-프로젝트관리",
+		"자동화",
+		"개발도구"
+	],
+	"primaryTag": "IT비즈니스-기획-프로젝트관리",
+	"relatedIds": [],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"lowcode",
+		"LowCode",
+		"Low-Code"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-11",
+	"status": "published"
+}

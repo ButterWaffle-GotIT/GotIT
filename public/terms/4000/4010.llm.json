@@ -1,0 +1,32 @@
+{
+	"id": 4010,
+	"slug": "llm",
+	"term": {
+		"ko": "대규모 언어모델",
+		"en": "Large Language Model"
+	},
+	"aliases": [
+		"대규모 언어모델",
+		"Large Language Model"
+	],
+	"summary": "수십억 개의 파라미터를 학습해 언어 이해와 생성 능력을 갖춘 AI 모델입니다.",
+	"onelinerForNonTech": "사람처럼 대화하고 글 쓰는 초거대 AI.",
+	"description": "LLM은 GPT, PaLM, LLaMA 등으로 대표되며, 대량의 텍스트를 학습해 요약, 번역, 코드 생성 등 복합적 작업을 수행합니다.",
+	"tags": [
+		"데이터-AI",
+		"AI",
+		"모델"
+	],
+	"primaryTag": "데이터-AI",
+	"relatedIds": [],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"llm",
+		"대규모 언어모델",
+		"Large Language Model"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-11",
+	"status": "published"
+}

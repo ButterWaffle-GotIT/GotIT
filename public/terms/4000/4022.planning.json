@@ -1,0 +1,32 @@
+{
+	"id": 4022,
+	"slug": "planning",
+	"term": {
+		"ko": "기획",
+		"en": "Planning"
+	},
+	"aliases": [
+		"기획",
+		"Planning"
+	],
+	"summary": "서비스나 제품의 방향성과 요구사항을 설계하는 과정입니다.",
+	"onelinerForNonTech": "아이디어를 현실로 옮기는 첫 단추.",
+	"description": "기획은 사용자 요구 분석부터 화면 설계, 일정 계획까지 포함하며, 서비스 가치와 사용자 경험을 고려합니다.",
+	"tags": [
+		"IT비즈니스-기획-프로젝트관리",
+		"설계",
+		"UX"
+	],
+	"primaryTag": "IT비즈니스-기획-프로젝트관리",
+	"relatedIds": [],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"planning",
+		"기획",
+		"Planning"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-11",
+	"status": "published"
+}

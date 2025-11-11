@@ -1,0 +1,30 @@
+{
+	"id": 4001,
+	"slug": "nosql",
+	"term": {
+		"ko": "NoSQL",
+		"en": "NoSQL"
+	},
+	"aliases": [
+		"NoSQL"
+	],
+	"summary": "비정형 데이터를 유연하게 저장하는 비관계형 데이터베이스입니다.",
+	"onelinerForNonTech": "엑셀 표 대신 자유로운 JSON 박스에 데이터를 담는 방식.",
+	"description": "NoSQL은 테이블 대신 문서(Document), 키-값(Key-Value), 그래프 등 다양한 형태로 데이터를 저장합니다. 확장성과 성능이 뛰어나 대규모 서비스나 실시간 처리 환경에서 자주 사용됩니다.",
+	"tags": [
+		"데이터-AI",
+		"데이터베이스",
+		"비정형"
+	],
+	"primaryTag": "데이터-AI",
+	"relatedIds": [],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"nosql",
+		"NoSQL"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-11",
+	"status": "published"
+}

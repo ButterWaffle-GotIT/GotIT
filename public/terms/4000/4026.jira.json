@@ -1,0 +1,30 @@
+{
+	"id": 4026,
+	"slug": "jira",
+	"term": {
+		"ko": "Jira",
+		"en": "Jira"
+	},
+	"aliases": [
+		"Jira"
+	],
+	"summary": "프로젝트 관리 및 이슈 추적을 위한 협업 도구입니다.",
+	"onelinerForNonTech": "일감을 체계적으로 관리하는 전자 칠판.",
+	"description": "Jira는 애자일 프로젝트 관리에 최적화되어 있으며, 스프린트 관리, 버그 트래킹, 보고서 작성 기능을 제공합니다.",
+	"tags": [
+		"IT비즈니스-기획-프로젝트관리",
+		"협업",
+		"관리도구"
+	],
+	"primaryTag": "IT비즈니스-기획-프로젝트관리",
+	"relatedIds": [],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"jira",
+		"Jira"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-11",
+	"status": "published"
+}

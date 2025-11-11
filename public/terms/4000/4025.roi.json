@@ -1,0 +1,32 @@
+{
+	"id": 4025,
+	"slug": "roi",
+	"term": {
+		"ko": "ROI",
+		"en": "Return on Investment"
+	},
+	"aliases": [
+		"ROI",
+		"Return on Investment"
+	],
+	"summary": "투자 대비 수익률을 나타내는 재무 성과 지표입니다.",
+	"onelinerForNonTech": "투자한 만큼 얼마나 벌었는지 보여주는 숫자.",
+	"description": "ROI는 수익/비용 비율로 계산되며, 마케팅·프로젝트 투자 효과 평가에 활용됩니다.",
+	"tags": [
+		"IT비즈니스-기획-프로젝트관리",
+		"지표",
+		"재무"
+	],
+	"primaryTag": "IT비즈니스-기획-프로젝트관리",
+	"relatedIds": [],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"roi",
+		"ROI",
+		"Return on Investment"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-11",
+	"status": "published"
+}

@@ -1,0 +1,32 @@
+{
+	"id": 4015,
+	"slug": "scrum",
+	"term": {
+		"ko": "스크럼",
+		"en": "Scrum"
+	},
+	"aliases": [
+		"스크럼",
+		"Scrum"
+	],
+	"summary": "애자일 프레임워크의 일종으로, 팀이 협력하여 목표를 달성하는 반복적 개발 방식입니다.",
+	"onelinerForNonTech": "팀이 한 몸처럼 움직이는 짧은 개발 주기.",
+	"description": "스크럼은 스프린트, 데일리 스탠드업, 회고 등으로 구성되며, 팀 자율성과 피드백을 중시합니다.",
+	"tags": [
+		"개발문화-프로세스",
+		"팀워크",
+		"애자일"
+	],
+	"primaryTag": "개발문화-프로세스",
+	"relatedIds": [],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"scrum",
+		"스크럼",
+		"Scrum"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-11",
+	"status": "published"
+}
