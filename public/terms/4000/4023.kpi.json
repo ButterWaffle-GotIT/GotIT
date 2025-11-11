@@ -1,0 +1,32 @@
+{
+  "id": 4023,
+  "slug": "kpi",
+  "term": {
+    "ko": "KPI",
+    "en": "Key Performance Indicator"
+  },
+  "aliases": [
+    "KPI",
+    "Key Performance Indicator"
+  ],
+  "summary": "핵심성과지표로, 조직이나 프로젝트의 성과를 측정하는 지표입니다.",
+  "onelinerForNonTech": "목표 달성률을 수치로 보는 눈금자.",
+  "description": "KPI는 조직의 목표 달성도를 측정하며, 주로 매출, 사용자 수, 전환율 등으로 정의됩니다.",
+  "tags": [
+    "IT비즈니스-기획-프로젝트관리",
+    "지표",
+    "성과"
+  ],
+  "primaryTag": "IT비즈니스-기획-프로젝트관리",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "kpi",
+    "KPI",
+    "Key Performance Indicator"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-11",
+  "status": "published"
+}

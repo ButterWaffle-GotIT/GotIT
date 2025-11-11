@@ -1,0 +1,32 @@
+{
+  "id": 4018,
+  "slug": "documentation",
+  "term": {
+    "ko": "문서화",
+    "en": "Documentation"
+  },
+  "aliases": [
+    "문서화",
+    "Documentation"
+  ],
+  "summary": "개발 과정과 결과를 체계적으로 기록해 공유하는 활동입니다.",
+  "onelinerForNonTech": "지식이 사라지지 않게 남기는 기술.",
+  "description": "문서화는 프로젝트 이해도와 유지보수성을 높이며, README, 위키, 기술 스펙 문서 등이 포함됩니다.",
+  "tags": [
+    "개발문화-프로세스",
+    "문서",
+    "협업"
+  ],
+  "primaryTag": "개발문화-프로세스",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "documentation",
+    "문서화",
+    "Documentation"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-11",
+  "status": "published"
+}

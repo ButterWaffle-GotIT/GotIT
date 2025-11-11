@@ -1,0 +1,32 @@
+{
+  "id": 4030,
+  "slug": "iot",
+  "term": {
+    "ko": "IoT",
+    "en": "Internet of Things"
+  },
+  "aliases": [
+    "IoT",
+    "Internet of Things"
+  ],
+  "summary": "Internet of Things의 약자로, 사물들이 인터넷으로 연결되어 데이터를 주고받는 기술입니다.",
+  "onelinerForNonTech": "사물들이 스스로 소통하는 세상.",
+  "description": "IoT는 센서, 네트워크, 클라우드 기술을 결합해 스마트홈, 헬스케어, 산업 자동화 등 다양한 분야에 활용됩니다.",
+  "tags": [
+    "IT비즈니스-기획-프로젝트관리",
+    "디바이스",
+    "네트워크"
+  ],
+  "primaryTag": "IT비즈니스-기획-프로젝트관리",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "iot",
+    "IoT",
+    "Internet of Things"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-11",
+  "status": "published"
+}

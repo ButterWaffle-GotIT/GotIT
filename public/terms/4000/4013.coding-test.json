@@ -1,0 +1,32 @@
+{
+  "id": 4013,
+  "slug": "coding-test",
+  "term": {
+    "ko": "코딩테스트",
+    "en": "Coding Test"
+  },
+  "aliases": [
+    "코딩테스트",
+    "Coding Test"
+  ],
+  "summary": "프로그래밍을 통해 문제 해결 능력을 평가하는 시험입니다.",
+  "onelinerForNonTech": "논리력과 구현력을 동시에 시험하는 실전 무대.",
+  "description": "코딩테스트는 기업 채용 과정에서 주로 활용되며, 알고리즘과 자료구조 이해를 기반으로 합니다. Python, Java 등으로 풀이합니다.",
+  "tags": [
+    "알고리즘-자료구조",
+    "테스트",
+    "면접"
+  ],
+  "primaryTag": "알고리즘-자료구조",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "coding-test",
+    "코딩테스트",
+    "Coding Test"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-11",
+  "status": "published"
+}
