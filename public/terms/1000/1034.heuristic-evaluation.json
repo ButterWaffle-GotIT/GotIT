@@ -1,0 +1,17 @@
+{
+	"id": 1034,
+	"slug": "heuristic-evaluation",
+	"term": { "ko": "휴리스틱 평가", "en": "Heuristic Evaluation" },
+	"aliases": ["휴리스틱", "Heuristic"],
+	"summary": "전문가가 UI/UX 디자인이 사전에 정의된 사용성 원칙(휴리스틱)을 잘 따랐는지 경험을 바탕으로 평가하는 방법.",
+	"onelinerForNonTech": "전문가(디자이너)가 앱/웹을 직접 써보면서 '이거 사용하기 불편하네' 같은 문제점들을 사용성 원칙에 따라 콕콕 짚어내는 과정.",
+	"description": "UI/UX 전문가가 닐슨의 10가지 사용성 원칙 등과 같은 검증된 기준(Heuristics)을 바탕으로 시스템의 문제점을 진단하고 개선 방향을 제안하는 정성적 평가 방법이다. 실제 사용자를 대상으로 하는 사용성 테스트(UT)보다 빠르고 저렴하게 문제를 발견할 수 있는 장점이 있다.",
+	"tags": ["UI/UX", "사용성"],
+	"primaryTag": "UI/UX",
+	"relatedIds": [1022, 1032],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["heuristic", "heuristic evaluation", "휴리스틱", "휴리스틱 평가", "사용성 평가", "닐슨", "nielsen"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-13"
+}

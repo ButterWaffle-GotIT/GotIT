@@ -1,0 +1,17 @@
+{
+	"id": 1040,
+	"slug": "ssg",
+	"term": { "ko": "SSG", "en": "SSG" },
+	"aliases": ["Static Site Generation", "정적 사이트 생성"],
+	"summary": "빌드 시점에 모든 페이지를 미리 정적 HTML 파일로 생성하여 CDN 등을 통해 제공하는 방식.",
+	"onelinerForNonTech": "블로그처럼 자주 바뀌지 않는  웹사이트를 '완성된 책'처럼 미리 다 만들어둬서, 누가 찾으면 그 '완성 페이지'를 바로 주는 방식.",
+	"description": "웹사이트를 배포하기 전, 즉 빌드(build) 타임에 필요한 모든 페이지를 HTML 파일로 미리 생성한다. 이 생성된 파일들은 CDN에 배포되어 사용자 요청 시 서버 로직 없이 즉시 파일을 전달받는다.",
+	"tags": ["프론트엔드", "DevOps"],
+	"primaryTag": "프론트엔드",
+	"relatedIds": [1006],
+	"confusableIds": [1039],
+	"useCases": [],
+	"keywords": ["SSG", "static site generation", "정적 사이트 생성", "JAMstack", "Next.js", "Gatsby", "CDN", "TTFB"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-13"
+}

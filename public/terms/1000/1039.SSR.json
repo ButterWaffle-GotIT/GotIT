@@ -1,0 +1,17 @@
+{
+	"id": 1039,
+	"slug": "ssr",
+	"term": { "ko": "SSR", "en": "SSR" },
+	"aliases": ["Server-Side Rendering", "서버사이드 렌더링"],
+	"summary": "서버에서 웹페이지를 미리 HTML로 렌더링(조립)하여 브라우저에 전송하는 방식.",
+	"onelinerForNonTech": "손님이 식당(브라우저)에 오기 전에, 서버(주방)에서 '완성된 요리(HTML)'를 미리 만들어두는 것.",
+	"description": "SPA(Single Page Application)의 초기 로딩 속도와 SEO(검색 엔진 최적화) 문제를 해결하기 위한 방식이다. 사용자가 페이지에 접속하면 서버가 요청된 페이지의 HTML을 완전히 렌더링하여 클라이언트에 전달한다. 이로 인해 사용자는 즉시 콘텐츠를 볼 수 있으나, 요청 시마다 서버가 렌더링해야 해서 서버 부하가 발생할 수 있다.",
+	"tags": ["프론트엔드", "백엔드"],
+	"primaryTag": "프론트엔드",
+	"relatedIds": [1011, 1006],
+	"confusableIds": [1040],
+	"useCases": [],
+	"keywords": ["SSR", "server-side rendering", "서버사이드 렌더링", "CSR", "SEO", "성능", "Next.js"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-13"
+}

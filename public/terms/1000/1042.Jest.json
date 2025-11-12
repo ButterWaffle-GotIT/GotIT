@@ -1,0 +1,17 @@
+{
+	"id": 1042,
+	"slug": "jest",
+	"term": { "ko": "Jest", "en": "Jest" },
+	"aliases": ["제스트", "자바스크립트 테스팅"],
+	"summary": "Facebook에서 만든 자바스크립트 테스트 프레임워크.",
+	"onelinerForNonTech": "개발자가 만든 코드(프로그램)가 고장 나지 않았는지, 예상대로 잘 돌아가는지 자동으로 검사해주는 '시험 감독관'.",
+	"description": "React 애플리케이션 테스트를 위해 시작되었으나, 현재는 모든 자바스크립트 프로젝트(프론트엔드, 백엔드)에서 널리 사용되는 테스트 프레임워크이다. 테스트 러너(Runner), Assertion 라이브러리, Mocking 기능 등을 모두 내장하고 있어 'All-in-One' 솔루션으로 불린다.",
+	"tags": ["프론트엔드", "DevOps"],
+	"primaryTag": "프론트엔드",
+	"relatedIds": [1002, 1004],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["jest", "제스트", "테스트", "testing", "unit test", "TDD", "mock", "javascript", "React"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-13"
+}

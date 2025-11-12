@@ -1,0 +1,17 @@
+{
+	"id": 1041,
+	"slug": "styled-components",
+	"term": { "ko": "Styled Components", "en": "Styled Components" },
+	"aliases": ["스타일드 컴포넌트", "CSS-in-JS"],
+	"summary": "자바스크립트 파일 안에서 템플릿 리터럴을 사용해 CSS 스타일을 컴포넌트에 직접 적용하는 CSS-in-JS 라이브러리.",
+	"onelinerForNonTech": "컴포넌트(UI 조각)를 만들 때, 그 조각의 스타일(디자인)도 자바스크립트 파일 한곳에 묶어서 관리하는 기술.",
+	"description": "React 환경에서 사용되는 대표적인 CSS-in-JS 라이브러리이다. ES6의 템플릿 리터럴 문법을 사용하여 스타일을 정의하며, 스타일이 적용된 컴포넌트를 생성한다.",
+	"tags": ["프론트엔드"],
+	"primaryTag": "프론트엔드",
+	"relatedIds": [1004, 1001],
+	"confusableIds": [1009, 1010],
+	"useCases": [],
+	"keywords": ["styled-components", "스타일드 컴포넌트", "CSS-in-JS", "React", "CSS", "템플릿 리터럴"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-13"
+}

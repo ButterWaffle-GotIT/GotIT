@@ -1,0 +1,17 @@
+{
+	"id": 1036,
+	"slug": "vite",
+	"term": { "ko": "Vite", "en": "Vite" },
+	"aliases": ["비트"],
+	"summary": "네이티브 ES 모듈(ESM)을 기반으로 하여 매우 빠른 개발 서버 속도를 제공하는 차세대 프론트엔드 빌드 도구.",
+	"onelinerForNonTech": "개발자가 코드를 고칠 때마다 1초 만에 화면에 싹 보여주는, 엄청나게 빠른 웹사이트 '조립기'이자 '개발 서버'.",
+	"description": "개발 환경에서 네이티브 ESM을 사용하여 번들링 과정 없이 소스 코드를 즉시 제공한다.  프로덕션 빌드 시에는 최적화된 번들링을 위해 Rollup을 사용한다.",
+	"tags": ["프론트엔드", "DevOps"],
+	"primaryTag": "프론트엔드",
+	"relatedIds": [1019, 1005],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["vite", "비트", "bundler", "build tool", "HMR", "ESM", "rollup", "webpack"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-13"
+}
