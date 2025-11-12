@@ -1,0 +1,29 @@
+{
+  "id": 4041,
+  "slug": "big-o",
+  "term": {
+    "ko": "Big-O",
+    "en": "Big-O"
+  },
+  "aliases": [
+    "Big-O"
+  ],
+  "summary": "알고리즘의 시간·공간 복잡도를 표현하는 수학적 표기법입니다.",
+  "onelinerForNonTech": "",
+  "description": "",
+  "tags": [
+    "알고리즘-자료구조",
+    "복잡도"
+  ],
+  "primaryTag": "알고리즘-자료구조",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "big-o",
+    "Big-O"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-12",
+  "status": "published"
+}

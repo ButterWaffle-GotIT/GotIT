@@ -1,0 +1,29 @@
+{
+  "id": 4032,
+  "slug": "elt",
+  "term": {
+    "ko": "ELT",
+    "en": "ELT"
+  },
+  "aliases": [
+    "ELT"
+  ],
+  "summary": "데이터를 추출 후 적재(Load)하고 변환(Transform)하는 현대적 처리 방식입니다.",
+  "onelinerForNonTech": "",
+  "description": "",
+  "tags": [
+    "데이터-AI",
+    "데이터파이프라인"
+  ],
+  "primaryTag": "데이터-AI",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "elt",
+    "ELT"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-12",
+  "status": "published"
+}

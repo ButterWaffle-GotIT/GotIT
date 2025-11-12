@@ -1,0 +1,30 @@
+{
+  "id": 4052,
+  "slug": "clean-code",
+  "term": {
+    "ko": "클린 코드",
+    "en": "Clean Code"
+  },
+  "aliases": [
+    "클린 코드",
+    "Clean Code"
+  ],
+  "summary": "가독성과 유지보수성을 높인 간결하고 명확한 코드 작성 원칙입니다.",
+  "onelinerForNonTech": "",
+  "description": "",
+  "tags": [
+    "개발문화-프로세스",
+    "원칙"
+  ],
+  "primaryTag": "개발문화-프로세스",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "clean-code",
+    "클린 코드"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-12",
+  "status": "published"
+}

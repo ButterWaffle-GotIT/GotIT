@@ -1,0 +1,30 @@
+{
+  "id": 4034,
+  "slug": "feature-engineering",
+  "term": {
+    "ko": "피처 엔지니어링",
+    "en": "Feature Engineering"
+  },
+  "aliases": [
+    "피처 엔지니어링",
+    "Feature Engineering"
+  ],
+  "summary": "머신러닝 모델 성능 향상을 위해 입력 변수를 가공·생성하는 과정입니다.",
+  "onelinerForNonTech": "",
+  "description": "",
+  "tags": [
+    "데이터-AI",
+    "ML"
+  ],
+  "primaryTag": "데이터-AI",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "feature-engineering",
+    "피처 엔지니어링"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-12",
+  "status": "published"
+}

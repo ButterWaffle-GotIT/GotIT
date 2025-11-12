@@ -1,0 +1,30 @@
+{
+  "id": 4038,
+  "slug": "data-lake",
+  "term": {
+    "ko": "데이터 레이크",
+    "en": "Data Lake"
+  },
+  "aliases": [
+    "데이터 레이크",
+    "Data Lake"
+  ],
+  "summary": "원시 데이터를 저장해 분석이나 학습에 활용하는 중앙 저장소입니다.",
+  "onelinerForNonTech": "",
+  "description": "",
+  "tags": [
+    "데이터-AI",
+    "저장소"
+  ],
+  "primaryTag": "데이터-AI",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "data-lake",
+    "데이터 레이크"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-12",
+  "status": "published"
+}

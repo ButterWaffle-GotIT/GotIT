@@ -1,0 +1,30 @@
+{
+  "id": 4054,
+  "slug": "design-thinking",
+  "term": {
+    "ko": "디자인 씽킹",
+    "en": "Design Thinking"
+  },
+  "aliases": [
+    "디자인 씽킹",
+    "Design Thinking"
+  ],
+  "summary": "사용자 중심으로 문제를 정의하고 해결책을 탐색하는 창의적 접근법입니다.",
+  "onelinerForNonTech": "",
+  "description": "",
+  "tags": [
+    "IT비즈니스-기획-프로젝트관리",
+    "기획"
+  ],
+  "primaryTag": "IT비즈니스-기획-프로젝트관리",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "design-thinking",
+    "디자인 씽킹"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-12",
+  "status": "published"
+}

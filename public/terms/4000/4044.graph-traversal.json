@@ -1,0 +1,30 @@
+{
+  "id": 4044,
+  "slug": "graph-traversal",
+  "term": {
+    "ko": "그래프 탐색",
+    "en": "Graph Traversal"
+  },
+  "aliases": [
+    "그래프 탐색",
+    "Graph Traversal"
+  ],
+  "summary": "그래프 구조에서 모든 노드를 탐색하는 알고리즘입니다.",
+  "onelinerForNonTech": "",
+  "description": "",
+  "tags": [
+    "알고리즘-자료구조",
+    "그래프"
+  ],
+  "primaryTag": "알고리즘-자료구조",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "graph-traversal",
+    "그래프 탐색"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-12",
+  "status": "published"
+}

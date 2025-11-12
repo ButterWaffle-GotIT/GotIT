@@ -1,0 +1,30 @@
+{
+  "id": 4040,
+  "slug": "bi",
+  "term": {
+    "ko": "BI",
+    "en": "Business Intelligence"
+  },
+  "aliases": [
+    "BI",
+    "Business Intelligence"
+  ],
+  "summary": "Business Intelligence의 약어로, 데이터를 시각화하여 의사결정을 지원하는 기술입니다.",
+  "onelinerForNonTech": "",
+  "description": "",
+  "tags": [
+    "데이터-AI",
+    "분석"
+  ],
+  "primaryTag": "데이터-AI",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "bi",
+    "BI"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-12",
+  "status": "published"
+}

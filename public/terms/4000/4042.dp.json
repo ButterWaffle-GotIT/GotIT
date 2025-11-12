@@ -1,0 +1,30 @@
+{
+  "id": 4042,
+  "slug": "dp",
+  "term": {
+    "ko": "동적 계획법",
+    "en": "Dynamic Programming"
+  },
+  "aliases": [
+    "동적 계획법",
+    "Dynamic Programming"
+  ],
+  "summary": "복잡한 문제를 작은 하위 문제로 나누어 푸는 알고리즘 기법입니다.",
+  "onelinerForNonTech": "",
+  "description": "",
+  "tags": [
+    "알고리즘-자료구조",
+    "알고리즘"
+  ],
+  "primaryTag": "알고리즘-자료구조",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "dp",
+    "동적 계획법"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-12",
+  "status": "published"
+}

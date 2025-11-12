@@ -1,0 +1,30 @@
+{
+  "id": 4050,
+  "slug": "pair-programming",
+  "term": {
+    "ko": "페어 프로그래밍",
+    "en": "Pair Programming"
+  },
+  "aliases": [
+    "페어 프로그래밍",
+    "Pair Programming"
+  ],
+  "summary": "두 명의 개발자가 함께 한 컴퓨터로 코드를 작성하는 개발 기법입니다.",
+  "onelinerForNonTech": "",
+  "description": "",
+  "tags": [
+    "개발문화-프로세스",
+    "협업"
+  ],
+  "primaryTag": "개발문화-프로세스",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "pair-programming",
+    "페어 프로그래밍"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-12",
+  "status": "published"
+}

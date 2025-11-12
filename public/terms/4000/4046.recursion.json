@@ -1,0 +1,30 @@
+{
+  "id": 4046,
+  "slug": "recursion",
+  "term": {
+    "ko": "재귀",
+    "en": "Recursion"
+  },
+  "aliases": [
+    "재귀",
+    "Recursion"
+  ],
+  "summary": "함수가 자기 자신을 호출하는 알고리즘 구조입니다.",
+  "onelinerForNonTech": "",
+  "description": "",
+  "tags": [
+    "알고리즘-자료구조",
+    "알고리즘"
+  ],
+  "primaryTag": "알고리즘-자료구조",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "recursion",
+    "재귀"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-12",
+  "status": "published"
+}

@@ -1,0 +1,29 @@
+{
+  "id": 4048,
+  "slug": "cicd",
+  "term": {
+    "ko": "CI/CD",
+    "en": "CI/CD"
+  },
+  "aliases": [
+    "CI/CD"
+  ],
+  "summary": "지속적 통합(Continuous Integration)과 지속적 배포(Continuous Deployment) 프로세스입니다.",
+  "onelinerForNonTech": "",
+  "description": "",
+  "tags": [
+    "개발문화-프로세스",
+    "자동화"
+  ],
+  "primaryTag": "개발문화-프로세스",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "cicd",
+    "CI/CD"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-12",
+  "status": "published"
+}

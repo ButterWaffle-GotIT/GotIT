@@ -1,0 +1,30 @@
+{
+  "id": 4043,
+  "slug": "greedy",
+  "term": {
+    "ko": "그리디 알고리즘",
+    "en": "Greedy Algorithm"
+  },
+  "aliases": [
+    "그리디 알고리즘",
+    "Greedy Algorithm"
+  ],
+  "summary": "매 단계에서 가장 좋은 선택을 반복해 전체 최적해를 찾는 알고리즘입니다.",
+  "onelinerForNonTech": "",
+  "description": "",
+  "tags": [
+    "알고리즘-자료구조",
+    "알고리즘"
+  ],
+  "primaryTag": "알고리즘-자료구조",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "greedy",
+    "그리디 알고리즘"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-12",
+  "status": "published"
+}

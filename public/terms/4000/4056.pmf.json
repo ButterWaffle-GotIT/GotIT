@@ -1,0 +1,30 @@
+{
+  "id": 4056,
+  "slug": "pmf",
+  "term": {
+    "ko": "PMF",
+    "en": "Product-Market Fit"
+  },
+  "aliases": [
+    "PMF",
+    "Product-Market Fit"
+  ],
+  "summary": "Product-Market Fit의 약어로, 제품이 시장의 요구를 충족하는 상태를 의미합니다.",
+  "onelinerForNonTech": "",
+  "description": "",
+  "tags": [
+    "IT비즈니스-기획-프로젝트관리",
+    "기획"
+  ],
+  "primaryTag": "IT비즈니스-기획-프로젝트관리",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "pmf",
+    "PMF"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-12",
+  "status": "published"
+}

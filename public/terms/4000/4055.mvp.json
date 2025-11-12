@@ -1,0 +1,29 @@
+{
+  "id": 4055,
+  "slug": "mvp",
+  "term": {
+    "ko": "MVP",
+    "en": "MVP"
+  },
+  "aliases": [
+    "MVP"
+  ],
+  "summary": "최소 기능 제품(Minimum Viable Product)으로 시장 반응을 빠르게 검증합니다.",
+  "onelinerForNonTech": "",
+  "description": "",
+  "tags": [
+    "IT비즈니스-기획-프로젝트관리",
+    "제품개발"
+  ],
+  "primaryTag": "IT비즈니스-기획-프로젝트관리",
+  "relatedIds": [],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "mvp",
+    "MVP"
+  ],
+  "level": "beginner",
+  "updatedAt": "2025-11-12",
+  "status": "published"
+}
