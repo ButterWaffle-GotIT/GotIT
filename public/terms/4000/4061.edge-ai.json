@@ -10,19 +10,22 @@
 		"Edge AI"
 	],
 	"summary": "클라우드가 아닌 디바이스 단에서 AI 연산을 수행하는 기술입니다.",
-	"onelinerForNonTech": "",
-	"description": "",
+	"onelinerForNonTech": "AI가 클라우드 없이 기기에서 바로 작동하는 기술.",
+	"description": "엣지 AI는 데이터가 생성되는 장치에서 직접 연산해 지연을 줄이고 개인정보 보호를 강화합니다.",
 	"tags": [
 		"IT비즈니스-기획-프로젝트관리",
 		"AI"
 	],
 	"primaryTag": "IT비즈니스-기획-프로젝트관리",
-	"relatedIds": [],
+	"relatedIds": [
+		4060
+	],
 	"confusableIds": [],
 	"useCases": [],
 	"keywords": [
 		"edge-ai",
-		"엣지 AI"
+		"엣지 AI",
+		"Edge AI"
 	],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",

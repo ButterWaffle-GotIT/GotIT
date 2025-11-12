@@ -10,19 +10,22 @@
 		"Clean Code"
 	],
 	"summary": "가독성과 유지보수성을 높인 간결하고 명확한 코드 작성 원칙입니다.",
-	"onelinerForNonTech": "",
-	"description": "",
+	"onelinerForNonTech": "누가 봐도 이해되는 깨끗한 코드 철학.",
+	"description": "클린 코드는 일관성, 단순성, 명확성을 중시해 장기적인 코드 품질을 유지하는 원칙입니다.",
 	"tags": [
 		"개발문화-프로세스",
 		"원칙"
 	],
 	"primaryTag": "개발문화-프로세스",
-	"relatedIds": [],
+	"relatedIds": [
+		4050
+	],
 	"confusableIds": [],
 	"useCases": [],
 	"keywords": [
 		"clean-code",
-		"클린 코드"
+		"클린 코드",
+		"Clean Code"
 	],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",

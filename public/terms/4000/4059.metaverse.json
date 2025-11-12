@@ -10,19 +10,22 @@
 		"Metaverse"
 	],
 	"summary": "가상 공간에서 현실과 유사한 상호작용을 구현하는 플랫폼입니다.",
-	"onelinerForNonTech": "",
-	"description": "",
+	"onelinerForNonTech": "현실을 닮은 3D 가상 세계.",
+	"description": "메타버스는 VR, AR, 블록체인 기반의 가상 공간으로, 사용자 간 상호작용과 경제활동이 가능합니다.",
 	"tags": [
 		"IT비즈니스-기획-프로젝트관리",
 		"신기술"
 	],
 	"primaryTag": "IT비즈니스-기획-프로젝트관리",
-	"relatedIds": [],
+	"relatedIds": [
+		4057
+	],
 	"confusableIds": [],
 	"useCases": [],
 	"keywords": [
 		"metaverse",
-		"메타버스"
+		"메타버스",
+		"Metaverse"
 	],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",

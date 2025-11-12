@@ -10,8 +10,8 @@
 		"A/B Testing"
 	],
 	"summary": "두 가지 버전을 비교하여 더 나은 성과를 찾는 실험 방법입니다.",
-	"onelinerForNonTech": "",
-	"description": "",
+	"onelinerForNonTech": "무엇이 더 잘 되는지 직접 실험으로 확인하는 방식.",
+	"description": "A/B 테스트는 두 버전의 콘텐츠를 사용자에게 나눠 보여주고 성과를 비교하는 데이터 기반 실험 기법입니다.",
 	"tags": [
 		"IT비즈니스-기획-프로젝트관리",
 		"분석"
@@ -22,7 +22,8 @@
 	"useCases": [],
 	"keywords": [
 		"ab-testing",
-		"A/B 테스트"
+		"A/B 테스트",
+		"A/B Testing"
 	],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",
