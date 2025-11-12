@@ -1,0 +1,17 @@
+{
+  "id": 3018,
+  "slug": "vm",
+  "term": { "ko": "가상 머신", "en": "VM" },
+  "aliases": ["Virtual Machine", "가상 서버", "하이퍼바이저"],
+  "summary": "단일 물리적 서버의 하드웨어 리소스(CPU, 메모리, 스토리지)를 가상화하여, 그 위에 독립된 운영체제와 애플리케이션을 구동할 수 있도록 만든 가상 컴퓨터.",
+  "onelinerForNonTech": "하나의 강력한 컴퓨터를 여러 개의 독립된 컴퓨터(서버)처럼 나누어 동시에 사용할 수 있게 해주는 기술.",
+  "description": "하이퍼바이저(Hypervisor)라는 소프트웨어를 통해 호스트 시스템 위에 게스트 운영체제(OS)를 완전히 격리된 환경으로 실행한다. Docker 컨테이너와 달리, VM은 전체 OS를 포함하기 때문에 용량이 크고 부팅 시간이 오래 걸리지만, 완벽한 격리성을 제공하여 보안성이 높다. 클라우드 환경(AWS EC2, GCP Compute Engine 등)에서 IaaS(Infrastructure as a Service)의 가장 기본적인 형태로 제공된다.",
+  "tags": ["클라우드"],
+  "primaryTag": "클라우드",
+  "relatedIds": [3000, 3011, 3015],
+  "confusableIds": [3000],
+  "useCases": [],
+  "keywords": ["하이퍼바이저", "가상화", "OS", "게스트", "호스트", "IaaS"],
+  "level": "beginner",
+  "updatedAt": "2025-11-06"
+}

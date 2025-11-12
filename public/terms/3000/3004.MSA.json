@@ -1,0 +1,17 @@
+{
+  "id": 3004,
+  "slug": "microservice-architecture",
+  "term": { "ko": "MSA", "en": "MSA" },
+  "aliases": ["Microservice Architecture", "마이크로서비스 아키텍처"],
+  "summary": "하나의 대규모 애플리케이션을 각각 독립적인 비즈니스 로직을 수행하는 작고 독립적인 서비스(Microservice)들의 집합으로 분리하여 구축하는 소프트웨어 아키텍처 방식.",
+  "onelinerForNonTech": "거대한 하나의 건물을 여러 개의 작은 건물로 나누어 짓고, 각 건물을 독립적으로 관리하여 필요할 때마다 부분적으로 수리하거나 증축하는 방식.",
+  "description": "각 마이크로서비스는 독립적인 기술 스택, 데이터베이스, 배포 환경을 가질 수 있어, 특정 서비스에 문제가 발생해도 전체 시스템에 영향을 주지 않는다. 개발, 테스트, 배포를 서비스 단위로 독립적으로 수행할 수 있어 배포의 민첩성과 확장성이 높다.",
+  "tags": ["DevOps", "백엔드"],
+  "primaryTag": "DevOps",
+  "relatedIds": [3000, 3001, 3019],
+  "confusableIds": [3005],
+  "useCases": [],
+  "keywords": ["마이크로서비스", "독립적 배포", "확장성", "결합도", "API 통신", "분산 시스템"],
+  "level": "intermediate",
+  "updatedAt": "2025-11-06"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 3007,
+  "slug": "helm",
+  "term": { "ko": "Helm", "en": "Helm" },
+  "aliases": ["헬름", "Kubernetes 패키지 매니저", "차트 매니저"],
+  "summary": "Kubernetes 환경에서 애플리케이션의 배포 및 구성을 단순화하고 재사용 가능한 형태로 묶어 관리하는 패키지 관리자 도구.",
+  "onelinerForNonTech": "복잡한 Kubernetes 설정 파일을 하나의 묶음(Chart)으로 만들어, 마치 앱스토어에서 앱을 설치하듯 쉽게 배포하게 해주는 도구.",
+  "description": "Kubernetes 리소스들의 정의 파일(YAML)을 차트(Chart)라는 표준화된 패키지 형태로 묶어서 관리한다. 사용자는 이 차트를 통해 데이터베이스, 웹 서버, 모니터링 툴 등 복잡한 애플리케이션을 단일 명령으로 쉽게 설치하고 업데이트할 수 있다. 차트는 템플릿 기능을 제공하여 환경(개발, 스테이징, 운영)에 따라 설정 값만 변경하여 동일한 애플리케이션을 유연하게 배포할 수 있도록 지원한다.",
+  "tags": ["DevOps", "클라우드"],
+  "primaryTag": "DevOps",
+  "relatedIds": [3001, 3006, 3015],
+  "confusableIds": [3015],
+  "useCases": [],
+  "keywords": ["차트", "패키지 관리", "템플릿", "설정", "Deployment", "K8s"],
+  "level": "intermediate",
+  "updatedAt": "2025-11-06"
+}

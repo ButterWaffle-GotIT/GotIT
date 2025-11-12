@@ -1,0 +1,17 @@
+{
+  "id": 3005,
+  "slug": "git",
+  "term": { "ko": "깃", "en": "Git" },
+  "aliases": ["분산 버전 관리 시스템", "GitHub"],
+  "summary": "소스 코드의 변경 이력을 효율적으로 관리할 수 있게 설계된 분산 버전 관리 시스템(DVCS).",
+  "onelinerForNonTech": "코드를 수정할 때마다 안전하게 기록을 남기고, 여러 사람이 동시에 작업한 내용을 합치거나 과거로 되돌릴 수 있는 '코드 역사 관리 장부'.",
+  "description": "모든 개발자가 코드의 전체 이력을 자신의 로컬 환경에 복제하여 관리하는 분산형 구조이다. 중앙 서버에 문제가 생겨도 작업 내용을 보호할 수 있다. 브랜치(Branch) 기능을 사용하여 메인 코드에 영향을 주지 않고 독립적인 공간에서 새로운 기능 개발이나 버그 수정을 진행할 수 있다. GitHub, GitLab, Bitbucket 등 원격 저장소(Remote Repository) 서비스를 통해 팀원들과 코드를 공유하고 협업한다.",
+  "tags": ["DevOps"],
+  "primaryTag": "DevOps",
+  "relatedIds": [3002, 3006, 3004],
+  "confusableIds": [3006],
+  "useCases": [],
+  "keywords": ["버전 관리", "DVCS", "커밋", "브랜치", "Merge", "Repository"],
+  "level": "beginner",
+  "updatedAt": "2025-11-06"
+}

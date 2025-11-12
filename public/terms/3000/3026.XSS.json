@@ -1,0 +1,17 @@
+{
+  "id": 3026,
+  "slug": "xss",
+  "term": { "ko": "XSS", "en": "XSS" },
+  "aliases": ["Cross-Site Scripting", "크로스 사이트 스크립팅"],
+  "summary": "웹 애플리케이션의 입력 값 검증이 미흡할 때, 공격자가 악성 스크립트를 삽입하여 사용자 브라우저에서 실행되게 함으로써 정보를 탈취하거나 세션을 가로채는 보안 공격 방식.",
+  "onelinerForNonTech": "웹사이트에 악성 코드를 몰래 심어서, 다른 사용자가 그 코드를 보게 되면 개인 정보나 접속 권한이 해킹당하는 공격.",
+  "description": "주로 사용자 입력 필드(게시판, 댓글)를 통해 발생하며, 공격 방식에 따라 저장형(Stored), 반사형(Reflected), DOM 기반(DOM-based) 세 가지 유형으로 나뉜다. 공격 스크립트가 실행되면 쿠키 정보 탈취, 세션 하이재킹(Session Hijacking), 사용자 화면 변조 등 심각한 피해를 유발할 수 있다.",
+  "tags": ["보안/네트워크"],
+  "primaryTag": "보안/네트워크",
+  "relatedIds": [3024, 3025],
+  "confusableIds": [3029],
+  "useCases": [],
+  "keywords": ["스크립트 삽입", "인젝션", "세션", "쿠키 탈취", "이스케이프", "OWASP"],
+  "level": "intermediate",
+  "updatedAt": "2025-11-06"
+}
