@@ -1,29 +1,29 @@
 {
-  "id": 4035,
-  "slug": "automl",
-  "term": {
-    "ko": "AutoML",
-    "en": "AutoML"
-  },
-  "aliases": [
-    "AutoML"
-  ],
-  "summary": "모델 학습 과정을 자동화하는 기술입니다.",
-  "onelinerForNonTech": "",
-  "description": "",
-  "tags": [
-    "데이터-AI",
-    "ML"
-  ],
-  "primaryTag": "데이터-AI",
-  "relatedIds": [],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "automl",
-    "AutoML"
-  ],
-  "level": "beginner",
-  "updatedAt": "2025-11-12",
-  "status": "published"
+	"id": 4035,
+	"slug": "automl",
+	"term": {
+		"ko": "AutoML",
+		"en": "AutoML"
+	},
+	"aliases": [
+		"AutoML"
+	],
+	"summary": "모델 학습 과정을 자동화하는 기술입니다.",
+	"onelinerForNonTech": "",
+	"description": "",
+	"tags": [
+		"데이터-AI",
+		"ML"
+	],
+	"primaryTag": "데이터-AI",
+	"relatedIds": [],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"automl",
+		"AutoML"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-12",
+	"status": "published"
 }

@@ -1,29 +1,29 @@
 {
-  "id": 4031,
-  "slug": "etl",
-  "term": {
-    "ko": "ETL",
-    "en": "ETL"
-  },
-  "aliases": [
-    "ETL"
-  ],
-  "summary": "데이터를 추출(Extract)·변환(Transform)·적재(Load)하는 과정입니다.",
-  "onelinerForNonTech": "",
-  "description": "",
-  "tags": [
-    "데이터-AI",
-    "데이터파이프라인"
-  ],
-  "primaryTag": "데이터-AI",
-  "relatedIds": [],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "etl",
-    "ETL"
-  ],
-  "level": "beginner",
-  "updatedAt": "2025-11-12",
-  "status": "published"
+	"id": 4031,
+	"slug": "etl",
+	"term": {
+		"ko": "ETL",
+		"en": "ETL"
+	},
+	"aliases": [
+		"ETL"
+	],
+	"summary": "데이터를 추출(Extract)·변환(Transform)·적재(Load)하는 과정입니다.",
+	"onelinerForNonTech": "",
+	"description": "",
+	"tags": [
+		"데이터-AI",
+		"데이터파이프라인"
+	],
+	"primaryTag": "데이터-AI",
+	"relatedIds": [],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"etl",
+		"ETL"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-12",
+	"status": "published"
 }

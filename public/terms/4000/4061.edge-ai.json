@@ -1,30 +1,30 @@
 {
-  "id": 4061,
-  "slug": "edge-ai",
-  "term": {
-    "ko": "엣지 AI",
-    "en": "Edge AI"
-  },
-  "aliases": [
-    "엣지 AI",
-    "Edge AI"
-  ],
-  "summary": "클라우드가 아닌 디바이스 단에서 AI 연산을 수행하는 기술입니다.",
-  "onelinerForNonTech": "",
-  "description": "",
-  "tags": [
-    "IT비즈니스-기획-프로젝트관리",
-    "AI"
-  ],
-  "primaryTag": "IT비즈니스-기획-프로젝트관리",
-  "relatedIds": [],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "edge-ai",
-    "엣지 AI"
-  ],
-  "level": "beginner",
-  "updatedAt": "2025-11-12",
-  "status": "published"
+	"id": 4061,
+	"slug": "edge-ai",
+	"term": {
+		"ko": "엣지 AI",
+		"en": "Edge AI"
+	},
+	"aliases": [
+		"엣지 AI",
+		"Edge AI"
+	],
+	"summary": "클라우드가 아닌 디바이스 단에서 AI 연산을 수행하는 기술입니다.",
+	"onelinerForNonTech": "",
+	"description": "",
+	"tags": [
+		"IT비즈니스-기획-프로젝트관리",
+		"AI"
+	],
+	"primaryTag": "IT비즈니스-기획-프로젝트관리",
+	"relatedIds": [],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"edge-ai",
+		"엣지 AI"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-12",
+	"status": "published"
 }
