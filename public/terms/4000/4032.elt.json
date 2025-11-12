@@ -1,0 +1,32 @@
+{
+	"id": 4032,
+	"slug": "elt",
+	"term": {
+		"ko": "ELT",
+		"en": "ELT"
+	},
+	"aliases": [
+		"ELT"
+	],
+	"summary": "데이터를 추출 후 적재(Load)하고 변환(Transform)하는 현대적 처리 방식입니다.",
+	"onelinerForNonTech": "데이터를 먼저 옮기고 나중에 가공하는 최신 데이터 정리법.",
+	"description": "ELT는 데이터를 먼저 저장소에 적재한 뒤 SQL 기반 변환을 수행합니다. 클라우드 환경에서 확장성과 효율이 뛰어납니다.",
+	"tags": [
+		"데이터-AI",
+		"데이터파이프라인"
+	],
+	"primaryTag": "데이터-AI",
+	"relatedIds": [
+		4031,
+		4033
+	],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"elt",
+		"ELT"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-12",
+	"status": "published"
+}

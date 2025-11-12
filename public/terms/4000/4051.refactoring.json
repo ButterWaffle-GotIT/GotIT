@@ -1,0 +1,33 @@
+{
+	"id": 4051,
+	"slug": "refactoring",
+	"term": {
+		"ko": "리팩터링",
+		"en": "Refactoring"
+	},
+	"aliases": [
+		"리팩터링",
+		"Refactoring"
+	],
+	"summary": "기존 코드의 기능은 유지하되 구조를 개선하는 과정입니다.",
+	"onelinerForNonTech": "기능은 그대로, 구조만 깔끔하게 다듬기.",
+	"description": "리팩터링은 중복 코드 제거, 함수 분리 등을 통해 유지보수성과 가독성을 높이는 개선 과정입니다.",
+	"tags": [
+		"개발문화-프로세스",
+		"개선"
+	],
+	"primaryTag": "개발문화-프로세스",
+	"relatedIds": [
+		4052
+	],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"refactoring",
+		"리팩터링",
+		"Refactoring"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-12",
+	"status": "published"
+}

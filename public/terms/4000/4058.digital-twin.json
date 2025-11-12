@@ -1,0 +1,33 @@
+{
+	"id": 4058,
+	"slug": "digital-twin",
+	"term": {
+		"ko": "디지털 트윈",
+		"en": "Digital Twin"
+	},
+	"aliases": [
+		"디지털 트윈",
+		"Digital Twin"
+	],
+	"summary": "현실 세계의 사물을 디지털로 복제해 시뮬레이션하는 기술입니다.",
+	"onelinerForNonTech": "현실을 가상 공간에 그대로 복제하는 기술.",
+	"description": "디지털 트윈은 IoT와 시뮬레이션 기술을 결합해 실제 시스템의 상태를 실시간으로 분석하고 예측합니다.",
+	"tags": [
+		"IT비즈니스-기획-프로젝트관리",
+		"신기술"
+	],
+	"primaryTag": "IT비즈니스-기획-프로젝트관리",
+	"relatedIds": [
+		4056
+	],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"digital-twin",
+		"디지털 트윈",
+		"Digital Twin"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-12",
+	"status": "published"
+}
