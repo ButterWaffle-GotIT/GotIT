@@ -1,0 +1,37 @@
+{
+  "id": 2057,
+  "slug": "circuit-breaker",
+  "term": {
+    "ko": "회로 차단기 패턴",
+    "en": "Circuit Breaker Pattern"
+  },
+  "aliases": [
+    "Circuit Breaker"
+  ],
+  "summary": "의존 서비스가 실패 상태일 때 호출을 빠르게 차단하여, 연쇄 장애와 리소스 고갈을 방지하는 내결함성 패턴입니다.",
+  "onelinerForNonTech": "옆 가게가 고장 나서 응답이 없을 때, 계속 전화하지 말고 '잠시 회로를 끊고' 대체 경로를 쓰는 안전장치.",
+  "description": "Closed → Open → Half-Open 상태 전이를 통해 실패율을 모니터링하고, 임계치를 넘으면 호출을 차단합니다. 폴백(fallback)·재시도·백오프와 함께 사용되며, 마이크로서비스의 안정성 패턴으로 널리 알려져 있습니다.",
+  "tags": [
+    "백엔드",
+    "아키텍처",
+    "MSA",
+    "신뢰성"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2016,
+    2040,
+    2019
+  ],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "circuit breaker",
+    "resilience",
+    "fallback",
+    "retry",
+    "half-open"
+  ],
+  "level": "advanced",
+  "updatedAt": "2025-11-12"
+}

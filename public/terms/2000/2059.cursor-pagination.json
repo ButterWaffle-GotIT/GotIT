@@ -1,0 +1,38 @@
+{
+  "id": 2059,
+  "slug": "cursor-pagination",
+  "term": {
+    "ko": "커서 기반 페이지네이션",
+    "en": "Cursor-based Pagination"
+  },
+  "aliases": [
+    "Cursor Pagination",
+    "Seek Pagination"
+  ],
+  "summary": "정렬 키를 커서로 사용해 다음 페이지의 시작 지점을 가리키는 방식으로, 대용량 데이터에서 안정적이고 빠른 페이지네이션을 제공합니다.",
+  "onelinerForNonTech": "책갈피(커서)를 꽂아두고 그 다음부터 넘겨보는 방식이라, 손님이 많아도 빠르고 정확하게 이어서 볼 수 있어요.",
+  "description": "OFFSET 방식은 페이지가 뒤로 갈수록 느려지고 중간 삽입/삭제로 결과가 흔들릴 수 있습니다. 커서 방식은 고유 정렬 키(예: 생성 시각+ID)를 사용해 '그 이후' 데이터를 안정적으로 읽습니다. 무한 스크롤 API, 타임라인 서비스에서 표준처럼 쓰입니다.",
+  "tags": [
+    "백엔드",
+    "데이터베이스",
+    "성능",
+    "API"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2010,
+    2011,
+    2018
+  ],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "pagination",
+    "cursor",
+    "offset",
+    "seek",
+    "infinite scroll"
+  ],
+  "level": "intermediate",
+  "updatedAt": "2025-11-12"
+}

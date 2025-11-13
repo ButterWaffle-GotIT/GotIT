@@ -1,0 +1,37 @@
+{
+  "id": 2078,
+  "slug": "connection-pooling",
+  "term": {
+    "ko": "커넥션 풀링",
+    "en": "Connection Pooling"
+  },
+  "aliases": [
+    "연결 풀",
+    "Connection Pool"
+  ],
+  "summary": "DB나 외부 서비스와의 연결을 재사용 가능한 풀로 관리하여, 연결 생성 비용과 지연을 크게 줄이는 성능 최적화 기법입니다.",
+  "onelinerForNonTech": "손님이 올 때마다 새 접시를 굽지 않고, 미리 쌓아둔 접시(연결)를 재사용해 서빙을 빠르게 하는 방법.",
+  "description": "최대/최소 풀 크기, 아이들 타임아웃, 대기 큐, 누수 감지(Leak Detection) 등의 파라미터가 중요합니다. 과도한 풀 크기는 DB 과부하를 일으킬 수 있으며, 백프레셔·레이트 리미팅과 함께 조정합니다.",
+  "tags": [
+    "백엔드",
+    "데이터베이스",
+    "성능"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2010,
+    2011,
+    2056
+  ],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "connection pool",
+    "풀 크기",
+    "타임아웃",
+    "대기 큐",
+    "leak"
+  ],
+  "level": "intermediate",
+  "updatedAt": "2025-11-13"
+}

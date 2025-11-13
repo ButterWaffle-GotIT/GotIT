@@ -1,0 +1,38 @@
+{
+  "id": 2058,
+  "slug": "idempotency",
+  "term": {
+    "ko": "멱등성",
+    "en": "Idempotency"
+  },
+  "aliases": [
+    "Idempotent"
+  ],
+  "summary": "같은 요청을 여러 번 반복해도 시스템의 최종 상태가 한 번 수행한 것과 동일하게 유지되는 성질입니다.",
+  "onelinerForNonTech": "같은 버튼을 여러 번 눌러도 결과가 한 번 누른 것과 똑같게 유지되는 '중복 방지' 속성.",
+  "description": "HTTP에서는 GET, DELETE가 멱등적이어야 하고, POST는 일반적으로 멱등적이지 않습니다. 결제·주문 API에서는 멱등성 키(Idempotency-Key)나 요청 식별자를 사용해 중복 처리를 방지합니다. 재시도·타임아웃 전략과 함께 핵심적인 신뢰성 기법입니다.",
+  "tags": [
+    "백엔드",
+    "API",
+    "HTTP",
+    "신뢰성"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2020,
+    2006,
+    2042,
+    2054
+  ],
+  "confusableIds": [],
+  "useCases": [],
+  "keywords": [
+    "idempotency",
+    "idempotent",
+    "idempotency-key",
+    "retry",
+    "http"
+  ],
+  "level": "intermediate",
+  "updatedAt": "2025-11-12"
+}

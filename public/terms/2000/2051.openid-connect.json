@@ -1,0 +1,40 @@
+{
+  "id": 2051,
+  "slug": "openid-connect",
+  "term": {
+    "ko": "OpenID Connect",
+    "en": "OpenID Connect"
+  },
+  "aliases": [
+    "OIDC"
+  ],
+  "summary": "OAuth 2.0 위에서 동작하는 ID 계층으로, 표준화된 방법으로 로그인(인증)과 사용자 프로필 정보를 제공하는 프로토콜입니다.",
+  "onelinerForNonTech": "구글/깃허브로 '로그인' 할 때 쓰는 표준 규격. 누가 로그인했는지 신원 정보를 안전하게 증명해줘요.",
+  "description": "OpenID Connect(OIDC)는 OAuth 2.0을 기반으로 사용자의 신원(인증)을 확인하고, ID 토큰(ID Token)을 통해 표준화된 클레임(이메일, 이름 등)을 제공합니다. OAuth가 '권한 위임'에 초점을 둔다면, OIDC는 '누가 로그인했는지 증명'에 초점을 둡니다.",
+  "tags": [
+    "백엔드",
+    "보안-네트워크",
+    "인증",
+    "API"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2013,
+    2015,
+    2050
+  ],
+  "confusableIds": [
+    2050,
+    2015
+  ],
+  "useCases": [],
+  "keywords": [
+    "oidc",
+    "openid",
+    "id token",
+    "claims",
+    "authorization code flow"
+  ],
+  "level": "intermediate",
+  "updatedAt": "2025-11-12"
+}

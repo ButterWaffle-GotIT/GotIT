@@ -1,0 +1,44 @@
+{
+  "id": 2050,
+  "slug": "oauth-2-0",
+  "term": {
+    "ko": "OAuth 2.0",
+    "en": "OAuth 2.0"
+  },
+  "aliases": [
+    "OAuth2",
+    "OAuth 2"
+  ],
+  "summary": "애플리케이션이 사용자 비밀번호를 공유하지 않고도, 다른 서비스의 자원에 접근 권한을 위임받을 수 있게 해주는 산업 표준 프로토콜입니다.",
+  "onelinerForNonTech": "내 비밀번호를 알려주지 않고도, '이 앱이 내 사진 앨범만 읽어도 돼'처럼 특정 권한만 안전하게 맡기는 방법.",
+  "description": "OAuth 2.0은 권한 위임(Authorization Delegation)을 위한 프레임워크로, 클라이언트가 리소스 소유자(사용자)를 대신해 리소스 서버의 보호된 자원에 접근할 수 있도록 액세스 토큰을 발급받는 절차를 정의합니다. 권한 부여 방식(Authorization Grant)에는 Authorization Code, Client Credentials, Refresh Token 등의 흐름이 있으며, API 보안의 사실상 표준으로 널리 사용됩니다.",
+  "tags": [
+    "백엔드",
+    "보안-네트워크",
+    "API",
+    "인증"
+  ],
+  "primaryTag": "백엔드",
+  "relatedIds": [
+    2013,
+    2014,
+    2015,
+    2040,
+    2006
+  ],
+  "confusableIds": [
+    2015,
+    2051
+  ],
+  "useCases": [],
+  "keywords": [
+    "oauth",
+    "oauth2",
+    "authorization",
+    "access token",
+    "refresh token",
+    "scope"
+  ],
+  "level": "intermediate",
+  "updatedAt": "2025-11-12"
+}
