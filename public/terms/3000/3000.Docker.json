@@ -1,0 +1,18 @@
+{
+	"id": 3000,
+	"slug": "docker",
+	"term": { "ko": "Docker", "en": "Docker" },
+	"aliases": ["도커", "컨테이너 기술", "도커 엔진"],
+	"summary": "애플리케이션과 그 실행 환경을 하나로 묶어 어디서든 일관되게 실행할 수 있도록 하는 컨테이너 기반의 가상화 기술 및 플랫폼.",
+	"onelinerForNonTech": "내 컴퓨터에서 잘 돌아가던 프로그램을, 다른 컴퓨터나 서버에서도 '똑같은 환경'으로 실행되게 포장해주는 표준 포장 박스.",
+	"description": "애플리케이션을 구동하는 데 필요한 모든 것을 담고 있는 격리된 실행 환경인 컨테이너(Container)를 생성하고 관리한다. 서버 환경에 상관없이 개발, 테스트, 배포 환경을 일관성 있게 유지하여 '내 컴퓨터에서는 되는데...' 문제를 해결한다.",
+	"tags": ["DevOps", "클라우드"],
+	"primaryTag": "DevOps",
+	"relatedIds": [3001, 3004, 3018],
+	"confusableIds": [3018],
+	"useCases": [],
+	"keywords": ["컨테이너", "Image", "Containerization", "가상화", "Dockerfile", "일관성"],
+	"level": "beginner",
+	"updatedAt": "2025-11-06"
+}
+

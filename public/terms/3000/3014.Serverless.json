@@ -1,0 +1,18 @@
+{
+	"id": 3014,
+	"slug": "serverless",
+	"term": { "ko": "Serverless", "en": "Serverless" },
+	"aliases": ["Serverless Computing", "FaaS", "Function as a Service", "서버리스 컴퓨팅"],
+	"summary": "개발자가 서버 인프라 관리에 신경 쓰지 않고 코드 작성 및 배포에만 집중할 수 있도록, 클라우드 제공자가 서버 운영을 전적으로 대행하는 컴퓨팅 모델.",
+	"onelinerForNonTech": "서버를 켜고 끄는 관리 없이, 코드를 올리기만 하면 클라우드가 알아서 실행하고 돈을 쓴 만큼만 내는 방식.",
+	"description": "실제로 서버가 없는 것은 아니지만, 클라우드 제공자가 서버 자원을 탄력적으로 할당하고 관리하여 개발자에게는 '서버가 없는' 것처럼 느껴진다. 대표적인 서버리스 서비스로는 AWS의 Lambda, GCP의 Cloud Functions 등이 있으며, 사용한 만큼만 비용을 지불하는 종량제(Pay-as-you-go) 모델을 따른다. 주로 FaaS(Function as a Service) 형태로 구현되어, 작은 함수 단위로 코드를 배포하고 이벤트가 발생했을 때만 실행된다.",
+	"tags": ["클라우드"],
+	"primaryTag": "클라우드",
+	"relatedIds": [3011, 3017, 3004],
+	"confusableIds": [3017],
+	"useCases": [],
+	"keywords": ["Lambda", "FaaS", "종량제", "이벤트 기반", "함수", "운영 부담"],
+	"level": "beginner",
+	"updatedAt": "2025-11-06"
+}
+

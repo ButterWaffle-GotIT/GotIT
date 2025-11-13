@@ -1,0 +1,33 @@
+{
+	"id": 4019,
+	"slug": "pm",
+	"term": {
+		"ko": "PM",
+		"en": "Project Manager"
+	},
+	"aliases": [
+		"PM",
+		"Project Manager"
+	],
+	"summary": "프로젝트 전반을 관리하고 목표 달성을 이끄는 역할입니다.",
+	"onelinerForNonTech": "프로젝트의 ‘항해사’.",
+	"description": "PM은 일정, 예산, 인력, 리스크를 조율하며 이해관계자 간 소통을 담당합니다.",
+	"tags": [
+		"IT비즈니스-기획-프로젝트관리",
+		"관리",
+		"조율"
+	],
+	"primaryTag": "IT비즈니스-기획-프로젝트관리",
+	"relatedIds": [],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"pm",
+		"PM",
+		"Project Manager"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-11",
+	"status": "published"
+}
+

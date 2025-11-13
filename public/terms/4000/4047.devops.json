@@ -1,0 +1,32 @@
+{
+	"id": 4047,
+	"slug": "devops",
+	"term": {
+		"ko": "DevOps",
+		"en": "DevOps"
+	},
+	"aliases": [
+		"DevOps"
+	],
+	"summary": "개발(Development)과 운영(Operations)을 통합한 문화와 도구 세트입니다.",
+	"onelinerForNonTech": "개발과 운영의 경계를 없앤 협업 문화.",
+	"description": "DevOps는 지속적 배포와 자동화를 통해 개발 속도와 품질을 함께 향상시키는 접근 방식입니다.",
+	"tags": [
+		"개발문화-프로세스",
+		"운영"
+	],
+	"primaryTag": "개발문화-프로세스",
+	"relatedIds": [
+		4048
+	],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"devops",
+		"Devops",
+		"DevOps"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-12",
+	"status": "published"
+}

@@ -1,0 +1,18 @@
+{
+	"id": 3023,
+	"slug": "data-privacy",
+	"term": { "ko": "개인정보보호", "en": "Data Privacy" },
+	"aliases": ["개인정보", "GDPR", "개인정보 처리", "Privacy Policy"],
+	"summary": "개인의 식별 정보(이름, 주소, 전화번호 등)를 안전하게 수집, 저장, 처리하고, 정보 주체(사용자)의 권리를 보장하기 위한 법적, 기술적, 관리적 조치 및 원칙의 총체.",
+	"onelinerForNonTech": "사용자들의 민감한 정보를 취급할 때, 법규를 지켜서 안전하게 다루고 사용자의 권리를 최우선으로 보호하는 의무.",
+	"description": "데이터를 안전하게 지키는 것(보안)을 넘어, 데이터 수집과 이용에 대한 사용자의 통제권과 법적 책임에 중점을 둔다. 대표적인 법규로는 유럽의 GDPR(General Data Protection Regulation), 한국의 개인정보보호법 등이 있으며, 이는 서비스 설계 단계부터 반영되어야 한다.(Privacy by Design).",
+	"tags": ["보안/네트워크", "IT비즈니스"],
+	"primaryTag": "보안/네트워크",
+	"relatedIds": [3021, 3027, 3024, 3025],
+	"confusableIds": [3027],
+	"useCases": [],
+	"keywords": ["GDPR", "민감 정보", "가명 처리", "암호화", "정보 주체", "법적 책임"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-06"
+}
+

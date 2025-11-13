@@ -1,0 +1,29 @@
+{
+	"id": 4060,
+	"slug": "rpa",
+	"term": {
+		"ko": "RPA",
+		"en": "RPA"
+	},
+	"aliases": [
+		"RPA"
+	],
+	"summary": "Robotic Process Automation으로, 반복 업무를 자동화하는 소프트웨어 기술입니다.",
+	"onelinerForNonTech": "사람 대신 반복 업무를 처리하는 디지털 로봇.",
+	"description": "RPA는 규칙 기반 프로세스를 자동화해 인적 오류를 줄이고 업무 효율을 높입니다.",
+	"tags": [
+		"IT비즈니스-기획-프로젝트관리",
+		"자동화"
+	],
+	"primaryTag": "IT비즈니스-기획-프로젝트관리",
+	"relatedIds": [],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"rpa",
+		"RPA"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-12",
+	"status": "published"
+}

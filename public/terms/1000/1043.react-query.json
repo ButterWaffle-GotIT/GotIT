@@ -1,0 +1,17 @@
+{
+	"id": 1043,
+	"slug": "react-query",
+	"term": { "ko": "React Query", "en": "React Query" },
+	"aliases": ["TanStack Query", "리액트 쿼리", "탠스택 쿼리"],
+	"summary": "React 애플리케이션에서 서버 상태(데이터)를 가져오고, 캐싱하며, 동기화하는 작업을 간편하게 관리해주는 라이브러리.",
+	"onelinerForNonTech": "앱이 인터넷에서 데이터를 가져올 때, 이미 가져온 건 '기억(캐시)'해뒀다가 다시 보여주고, 필요할 때 알아서 '새로고침'해주는 똑똑한 데이터 관리 도우미.",
+	"description": "서버 상태와 클라이언트 상태를 분리하여 관리한다. API 데이터를 '서버 상태'로 보고, 이를 자동으로 캐싱, 리페칭(refetching), 동기화하여 항상 최신 데이터를 유지하도록 돕는다. 복잡한 로딩/에러 처리를 간소화해주며, Redux와 같은 전역 클라이언트 상태 관리 도구의 부담을 줄여준다.",
+	"tags": ["프론트엔드"],
+	"primaryTag": "프론트엔드",
+	"relatedIds": [1004, 1001],
+	"confusableIds": [1014],
+	"useCases": [],
+	"keywords": ["React Query", "TanStack Query", "리액트 쿼리", "상태관리", "server state", "useQuery", "caching", "fetching", "data"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-13"
+}

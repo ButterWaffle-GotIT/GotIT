@@ -1,0 +1,17 @@
+{
+	"id": 1033,
+	"slug": "responsive-web-design",
+	"term": { "ko": "반응형 웹 디자인", "en": "RWD" },
+	"aliases": ["Responsive Web Design"],
+	"summary": "다양한 기기나 화면 크기에 맞춰 웹페이지의 레이아웃이 자동으로 최적화되도록 하는 웹 디자인 접근 방식.",
+	"onelinerForNonTech": "스마트폰, 태블릿, PC 등 어떤 화면에서 보든, 그 화면에 딱 맞게 예쁘게 변신하는 웹사이트를 만드는 기술.",
+	"description": "하나의 HTML 소스 코드를 기반으로, CSS 미디어 쿼리, 유동형 그리드, 유연한 이미지 등을 사용하여 사용자의 접속 환경(화면 크기, 해상도 등)에 자동으로 반응하여 레이아웃을 변경하는 기법이다. 사용자는 어떤 기기에서든 최소한의 확대/축소나 스크롤만으로 편리하게 콘텐츠를 이용할 수 있다.",
+	"tags": ["프론트엔드", "UI/UX", "CSS", "RWD"],
+	"primaryTag": "프론트엔드",
+	"relatedIds": [1001],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["RWD", "responsive", "반응형", "미디어쿼리", "media query", "CSS", "breakpoint"],
+	"level": "beginner",
+	"updatedAt": "2025-11-13"
+}

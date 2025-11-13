@@ -1,17 +1,19 @@
 {
-  "id": 1001,
-  "slug": "css",
-  "term": { "ko": "CSS", "en": "CSS" },
-  "aliases": ["Cascading Style Sheets", "캐스케이딩 스타일 시트"],
-  "summary": "웹 문서의 전반적인 스타일을 미리 저장해둔 파일.",
-  "onelinerForNonTech": "웹 페이지의 색상, 글꼴, 레이아웃 등을 꾸며주는 '스타일링' 도구.",
-  "description": "웹 페이지의 형태를 일관성있게 유지해주고, 웹 사이트의 스타일 관리를 용이하게 해준다. 여러 스타일 규칙이 충돌할 경우 우선순위에 따라 적용된다.",
-  "tags": ["프론트엔드", "UI/UX디자인"],
-  "primaryTag": "프론트엔드",
-  "relatedIds": [1000, 1002],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": ["스타일", "레이아웃", "선택자", "박스 모델", "CSS3"],
-  "level": "beginner",
-  "updatedAt": "2025-11-05"
+	"id": 1001,
+	"slug": "css",
+	"term": { "ko": "CSS", "en": "CSS" },
+	"aliases": ["Cascading Style Sheets", "캐스케이딩 스타일 시트"],
+	"summary": "웹 문서의 전반적인 스타일을 미리 저장해둔 파일.",
+	"onelinerForNonTech": "웹 페이지의 색상, 글꼴, 레이아웃 등을 꾸며주는 '스타일링' 도구.",
+	"description": "웹 페이지의 형태를 일관성있게 유지해주고, 웹 사이트의 스타일 관리를 용이하게 해준다. 여러 스타일 규칙이 충돌할 경우 우선순위에 따라 적용된다.",
+	"tags": ["프론트엔드", "UI/UX디자인"],
+	"primaryTag": "프론트엔드",
+	"relatedIds": [1000, 1002],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["스타일", "레이아웃", "선택자", "박스 모델", "CSS3"],
+	"level": "beginner",
+	"updatedAt": "2025-11-05"
 }
+
+

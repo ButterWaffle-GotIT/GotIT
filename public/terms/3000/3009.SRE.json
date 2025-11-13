@@ -1,0 +1,18 @@
+{
+	"id": 3009,
+	"slug": "sre",
+	"term": { "ko": "SRE", "en": "SRE" },
+	"aliases": ["Site Reliability Engineering", "사이트 신뢰성 엔지니어링"],
+	"summary": "Google에서 시작된 개념으로, 소프트웨어 엔지니어링의 원칙과 자동화 기술을 시스템 운영 및 인프라 문제 해결에 적용하여 서비스의 신뢰성, 안정성, 가용성을 높이는 접근 방식.",
+	"onelinerForNonTech": "사람의 실수 없이 시스템을 자동화하고, 서비스가 고장 나지 않도록 수학적으로 관리하는 '운영 담당 엔지니어링 팀'.",
+	"description": "SRE의 핵심 목표는 서비스의 신뢰성(Reliability)을 보장하는 것이며, 이를 위해 SLO (Service Level Objective)와 SLA (Service Level Agreement)와 같은 지표를 설정하고 관리한다. 자동화 도구를 사용하여 배포, 장애 대응, 모니터링 등의 수동 작업을 최소화하고(Toil 감소), 남은 시간을 시스템 개선에 투자한다. 장애 예산(Error Budget) 개념을 사용하여, 정해진 허용 범위 내에서만 장애를 허용하고, 이 예산을 초과하면 신규 기능 출시 대신 안정화 작업에 집중한다.",
+	"tags": ["DevOps"],
+	"primaryTag": "DevOps",
+	"relatedIds": [3002, 3003, 3010],
+	"confusableIds": [3003],
+	"useCases": [],
+	"keywords": ["신뢰성", "가용성", "SLO", "SLA", "장애 예산", "자동화", "Toil"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-06"
+}
+

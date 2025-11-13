@@ -1,0 +1,33 @@
+{
+	"id": 4062,
+	"slug": "genai",
+	"term": {
+		"ko": "생성형 AI",
+		"en": "Generative AI"
+	},
+	"aliases": [
+		"생성형 AI",
+		"Generative AI"
+	],
+	"summary": "새로운 콘텐츠(텍스트, 이미지, 코드 등)를 생성하는 인공지능 기술입니다.",
+	"onelinerForNonTech": "ChatGPT처럼 질문에 답하고 글을 써주는 인공지능.",
+	"description": "생성형 AI는 대규모 언어모델(LLM)을 기반으로 텍스트, 이미지, 코드 등 다양한 콘텐츠를 자동으로 생성하는 기술입니다.",
+	"tags": [
+		"IT비즈니스-기획-프로젝트관리",
+		"AI"
+	],
+	"primaryTag": "IT비즈니스-기획-프로젝트관리",
+	"relatedIds": [
+		4059
+	],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"genai",
+		"생성형 AI",
+		"Generative AI"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-12",
+	"status": "published"
+}

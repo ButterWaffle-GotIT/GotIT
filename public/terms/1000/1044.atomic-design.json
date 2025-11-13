@@ -1,0 +1,17 @@
+{
+	"id": 1044,
+	"slug": "atomic-design",
+	"term": { "ko": "아토믹 디자인", "en": "Atomic Design" },
+	"aliases": ["Atomic Design", "아토믹디자인"],
+	"summary": "UI 인터페이스를 원자(Atoms), 분자(Molecules), 유기체(Organisms) 등 더 큰 단위로 조합해 설계하는 디자인 시스템 방법론.",
+	"onelinerForNonTech": "디자인을 '레고 블록'처럼 가장 작은 부품(원자)부터 만들어, 이걸 조립해 더 큰 부품(분자)과 완성품(페이지)을 만드는 방식.",
+	"description": "브래드 프로스트(Brad Frost)가 제안한 디자인 시스템 구축 방법론이다. 가장 작은 단위인 '원자(Atoms: 버튼, 인풋, 레이블)'를 결합해 '분자(Molecules: 검색창)'를 만들고, 이를 다시 조합해 '유기체(Organisms: 헤더)'와 템플릿, 페이지를 완성하는 상향식(bottom-up) 접근 방식이다.",
+	"tags": ["UI/UX"],
+	"primaryTag": "UI/UX",
+	"relatedIds": [1021],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["atomic design", "아토믹 디자인", "디자인 시스템", "design system", "brad frost", "atoms", "molecules", "organisms"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-13"
+}

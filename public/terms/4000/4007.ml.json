@@ -1,0 +1,33 @@
+{
+	"id": 4007,
+	"slug": "ml",
+	"term": {
+		"ko": "머신러닝",
+		"en": "Machine Learning"
+	},
+	"aliases": [
+		"머신러닝",
+		"Machine Learning"
+	],
+	"summary": "데이터에서 패턴을 학습해 스스로 예측이나 판단을 수행하는 기술입니다.",
+	"onelinerForNonTech": "데이터로 배우는 ‘예측형 프로그램’.",
+	"description": "머신러닝은 지도학습, 비지도학습, 강화학습 등으로 나뉘며, 추천시스템, 스팸필터, 수요예측 등 다양한 분야에 활용됩니다.",
+	"tags": [
+		"데이터-AI",
+		"ML",
+		"학습"
+	],
+	"primaryTag": "데이터-AI",
+	"relatedIds": [],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"ml",
+		"머신러닝",
+		"Machine Learning"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-11",
+	"status": "published"
+}
+

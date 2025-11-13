@@ -1,0 +1,18 @@
+{
+	"id": 302,
+	"slug": "owasp",
+	"term": { "ko": "OWASP", "en": "OWASP" },
+	"aliases": ["Open Web Application Security Project", "오픈 웹 애플리케이션 보안 프로젝트", "OWASP Top 10"],
+	"summary": "안전한 소프트웨어 개발을 돕기 위해 다양한 도구, 문서, 표준을 제공하는 비영리 커뮤니티이자 재단.",
+	"onelinerForNonTech": "웹사이트가 해킹당하지 않도록, 전 세계 전문가들이 모여 '가장 위험한 보안 취약점 목록'과 방어 가이드를 만드는 비영리 기관.",
+	"description": "OWASP는 개발자들이 보안 코드를 작성하는 데 도움이 되는 다양한 보안 테스트 가이드와 개발 가이드를 무료로 제공한다. 많은 기업과 기관들이 OWASP Top 10을 기준으로 보안 정책을 수립하고 모의 해킹 및 취약점 진단을 수행한다. OWASP Top 10은 웹 애플리케이션의 보안 취약점 중 위험도가 가장 높고 자주 발생하는 10가지를 선정하여 발표하는 보고서이다.",
+	"tags": ["보안/네트워크"],
+	"primaryTag": "보안/네트워크",
+	"relatedIds": [3026, 3027, 3023],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["Top 10", "취약점", "보안 가이드", "진단", "커뮤니티"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-06"
+}
+

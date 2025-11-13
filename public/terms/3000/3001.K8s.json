@@ -1,0 +1,18 @@
+{
+	"id": 3001,
+	"slug": "kubernetes",
+	"term": { "ko": "Kubernetes", "en": "Kubernetes" },
+	"aliases": ["K8s", "쿠버네티스", "컨테이너 오케스트레이션"],
+	"summary": "수많은 Docker 컨테이너들을 자동화하여 배포, 확장(Scale), 관리할 수 있도록 해주는 오픈소스 컨테이너 오케스트레이션 플랫폼.",
+	"onelinerForNonTech": "수많은 컨테이너 박스들을 알아서 관리하고, 문제 생기면 고쳐주고, 트래픽 많으면 자동으로 늘려주는 '컨테이너 관리 자동 시스템'.",
+	"description": "수천 개의 컨테이너를 실행하는 대규모 환경에서 컨테이너의 상태를 모니터링하고, 필요에 따라 자동으로 재시작, 복제(Replication), 로드 밸런싱 등을 수행한다. Pod, Service, Deployment와 같은 개념을 사용하여 애플리케이션의 구동 방식을 정의하며, 이 설정을 YAML 파일로 작성하는 것이 일반적이다. 클라우드 환경(AWS EKS, GCP GKE, Azure AKS)에서 마이크로서비스 아키텍처(MSA)를 구현하는 데 사실상의 표준(De facto Standard)으로 사용됩니다.",
+	"tags": ["DevOps", "클라우드"],
+	"primaryTag": "DevOps",
+	"relatedIds": [3000, 3004, 3019],
+	"confusableIds": [3000],
+	"useCases": [],
+	"keywords": ["컨테이너 오케스트레이션", "Pod", "Deployment", "Service", "확장", "MSA"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-06"
+}
+

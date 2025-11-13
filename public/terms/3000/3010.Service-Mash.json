@@ -1,0 +1,18 @@
+{
+	"id": 3010,
+	"slug": "service-mesh",
+	"term": { "ko": "Service Mesh", "en": "Service Mesh" },
+	"aliases": ["메시 네트워크", "서비스 통신 인프라"],
+	"summary": "마이크로서비스 아키텍처(MSA)에서 서비스 간의 통신, 보안, 관찰 가능성을 독립적으로 처리하는 전용 인프라 계층.",
+	"onelinerForNonTech": "복잡하게 얽힌 서비스들 사이의 통신을 전담하고, 보안과 관리를 대신 처리해주는 '통신 관리자 네트워크'.",
+	"description": "주요 기능은 서비스 디스커버리, 로드 밸런싱, 트래픽 라우팅, 인증/권한 부여, 모니터링 및 로깅이다. 애플리케이션 코드의 수정 없이 이러한 기능을 제공한다. 일반적으로 Istio나 Linkerd와 같은 기술을 사용하여 구현되며, 각 서비스 옆에 프록시(Proxy) 역할을 하는 사이드카 컨테이너를 배치하여 모든 통신을 가로챈다.",
+	"tags": ["DevOps", "클라우드"],
+	"primaryTag": "DevOps",
+	"relatedIds": [3004, 3001, 3019],
+	"confusableIds": [3019],
+	"useCases": [],
+	"keywords": ["사이드카", "프록시", "통신 관리", "Istio", "트래픽 제어", "mTLS"],
+	"level": "advanced",
+	"updatedAt": "2025-11-06"
+}
+

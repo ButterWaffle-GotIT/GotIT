@@ -1,0 +1,18 @@
+{
+	"id": 3016,
+	"slug": "nginx",
+	"term": { "ko": "Nginx", "en": "Nginx" },
+	"aliases": ["엔진엑스", "웹 서버", "리버스 프록시", "Load Balancer"],
+	"summary": "높은 동시 처리 능력과 낮은 메모리 사용률이 특징인 웹 서버 소프트웨어.",
+	"onelinerForNonTech": "사용자 요청을 대신 받아 처리하고, 서버가 여러 대일 경우 요청을 나눠주는 '빠르고 유능한 서버 문지기'.",
+	"description": "비동기 이벤트 기반(Event-driven) 구조를 사용하여, 하나의 프로세스로 수많은 동시 연결을 효율적으로 처리할 수 있어 Apache보다 성능이 높다. 주로 리버스 프록시(Reverse Proxy)로 사용되어 클라이언트 요청을 애플리케이션 서버(WAS)로 전달하고, 응답을 캐시하거나 로드 밸런싱을 수행하여 서버 부하를 분산시킨다. Kubernetes 환경에서는 Ingress Controller의 기반으로 사용되어, 외부 트래픽을 클러스터 내부의 서비스로 라우팅하는 핵심 역할을 담당한다.",
+	"tags": ["클라우드", "DevOps"],
+	"primaryTag": "클라우드",
+	"relatedIds": [3017,3001],
+	"confusableIds": [3017],
+	"useCases": [],
+	"keywords": ["리버스 프록시", "로드 밸런싱", "HTTP 캐시", "이벤트 기반", "WAS", "Ingress"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-06"
+}
+

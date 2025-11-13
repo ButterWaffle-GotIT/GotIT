@@ -1,0 +1,17 @@
+{
+	"id": 1038,
+	"slug": "eslint",
+	"term": { "ko": "ESLint", "en": "ESLint" },
+	"aliases": ["이에스린트", "린트", "Linter"],
+	"summary": "자바스크립트 코드에서 문법 오류나 코딩 스타일 위반 사항을 찾아내고, 일부는 자동으로 수정해주는 정적 코드 분석 도구.",
+	"onelinerForNonTech": "개발자가 코드를 작성할 때, '맞춤법'이나 '띄어쓰기' 규칙(코딩 스타일)을 잘 지켰는지 검사해주는 '문법 검사기'.",
+	"description": "개발자가 설정한 규칙을 기반으로 코드 베이스를 정적 분석하여 잠재적인 버그나 스타일 가이드를 위반하는 코드를 식별한다. Prettier와 같은 코드 포맷터와 함께 사용되며, 일관된 코드 스타일을 유지하고 협업의 효율성을 높이는 데 필수적인 도구이다.",
+	"tags": ["프론트엔드", "DevOps"],
+	"primaryTag": "프론트엔드",
+	"relatedIds": [1002, 1003],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["eslint", "linter", "lint", "prettier", "정적분석", "코드컨벤션", "style guide"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-13"
+}

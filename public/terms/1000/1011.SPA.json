@@ -1,17 +1,18 @@
 {
-  "id": 1011,
-  "slug": "spa",
-  "term": { "ko": "SPA", "en": "SPA" },
-  "aliases": ["Single Page Application", "단일 페이지 애플리케이션", "싱글 페이지 앱"],
-  "summary": "서버에서 최초 한 번만 페이지 전체를 로드하고, 이후에는 페이지 이동 시 필요한 데이터만 받아와 화면의 일부를 동적으로 갱신하는 웹 애플리케이션 방식.",
-  "onelinerForNonTech": "앱처럼 부드럽게 화면이 전환되며, 클릭할 때마다 서버에서 페이지 전체를 다시 불러오지 않는 웹 서비스.",
-  "description": "페이지 이동 시 서버에 전체 페이지 요청을 보내지 않아 사용자 경험이 빠르고 부드러우며, 네이티브 앱과 유사한 느낌을 준다. React, Vue, Angular 등 현대적인 프론트엔드 프레임워크/라이브러리가 주로 SPA 개발에 사용된다.",
-  "tags": ["프론트엔드"],
-  "primaryTag": "프론트엔드",
-  "relatedIds": [1004, 1005],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": ["싱글", "라우팅", "CSR", "MPA", "동적 갱신"],
-  "level": "intermediate",
-  "updatedAt": "2025-11-05"
+	"id": 1011,
+	"slug": "spa",
+	"term": { "ko": "SPA", "en": "SPA" },
+	"aliases": ["Single Page Application", "단일 페이지 애플리케이션", "싱글 페이지 앱"],
+	"summary": "서버에서 최초 한 번만 페이지 전체를 로드하고, 이후에는 페이지 이동 시 필요한 데이터만 받아와 화면의 일부를 동적으로 갱신하는 웹 애플리케이션 방식.",
+	"onelinerForNonTech": "앱처럼 부드럽게 화면이 전환되며, 클릭할 때마다 서버에서 페이지 전체를 다시 불러오지 않는 웹 서비스.",
+	"description": "페이지 이동 시 서버에 전체 페이지 요청을 보내지 않아 사용자 경험이 빠르고 부드러우며, 네이티브 앱과 유사한 느낌을 준다. React, Vue, Angular 등 현대적인 프론트엔드 프레임워크/라이브러리가 주로 SPA 개발에 사용된다.",
+	"tags": ["프론트엔드"],
+	"primaryTag": "프론트엔드",
+	"relatedIds": [1004, 1005],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["싱글", "라우팅", "CSR", "MPA", "동적 갱신"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-05"
 }
+

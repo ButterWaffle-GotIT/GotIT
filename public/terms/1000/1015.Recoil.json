@@ -1,17 +1,18 @@
 {
-  "id": 1015,
-  "slug": "recoil",
-  "term": { "ko": "Recoil", "en": "Recoil" },
-  "aliases": ["리코일", "아토믹 상태 관리"],
-  "summary": "페이스북이 개발한 React 전용 상태 관리 라이브러리.",
-  "onelinerForNonTech": "필요한 부품만 골라서 꺼내 쓰고, 그 부품만 바뀌면 전체를 재조립하지 않는 '똑똑하고 민첩한 상태 관리 시스템'.",
-  "description": "Recoil은 상태를 Atom(원자)이라는 독립적인 단위로 정의한다. 컴포넌트는 자신이 구독하는 Atom의 상태 변화에만 반응하여 불필요한 리렌더링을 최소화한다. 상태를 기반으로 파생된 데이터를 Selector로 정의하여, 데이터 흐름을 명확하게 하고 복잡한 계산을 효율적으로 처리할 수 있다.",
-  "tags": ["프론트엔드"],
-  "primaryTag": "프론트엔드",
-  "relatedIds": [1013, 1004, 1014],
-  "confusableIds": [1014, 1016],
-  "useCases": [],
-  "keywords": ["Atom", "Selector", "원자성", "Hooks", "파생 상태", "리렌더링"],
-  "level": "intermediate",
-  "updatedAt": "2025-11-05"
+	"id": 1015,
+	"slug": "recoil",
+	"term": { "ko": "Recoil", "en": "Recoil" },
+	"aliases": ["리코일", "아토믹 상태 관리"],
+	"summary": "페이스북이 개발한 React 전용 상태 관리 라이브러리.",
+	"onelinerForNonTech": "필요한 부품만 골라서 꺼내 쓰고, 그 부품만 바뀌면 전체를 재조립하지 않는 '똑똑하고 민첩한 상태 관리 시스템'.",
+	"description": "Recoil은 상태를 Atom(원자)이라는 독립적인 단위로 정의한다. 컴포넌트는 자신이 구독하는 Atom의 상태 변화에만 반응하여 불필요한 리렌더링을 최소화한다. 상태를 기반으로 파생된 데이터를 Selector로 정의하여, 데이터 흐름을 명확하게 하고 복잡한 계산을 효율적으로 처리할 수 있다.",
+	"tags": ["프론트엔드"],
+	"primaryTag": "프론트엔드",
+	"relatedIds": [1013, 1004, 1014],
+	"confusableIds": [1014, 1016],
+	"useCases": [],
+	"keywords": ["Atom", "Selector", "원자성", "Hooks", "파생 상태", "리렌더링"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-05"
 }
+

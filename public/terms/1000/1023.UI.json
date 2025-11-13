@@ -1,17 +1,18 @@
 {
-  "id": 1023,
-  "slug": "user-interface",
-  "term": { "ko": "UI", "en": "UI" },
-  "aliases": ["User Interface", "사용자 인터페이스", "화면", "인터페이스 디자인"],
-  "summary": "사용자가 제품, 시스템 또는 서비스와 직접 상호작용하는 시각적, 물리적 접점과 요소를 의미.",
-  "onelinerForNonTech": "사용자가 눈으로 보고 손으로 조작하는, 앱이나 웹사이트의 모든 '겉모습과 조작 버튼'의 디자인.",
-  "description": "UX를 구현하기 위한 도구이다. UI 디자인은 정보의 배치(Layout), 시각적 요소(Visual), 그리고 사용자가 시스템과 소통하는 방식(Interaction)을 결정한다. 버튼, 입력 필드, 메뉴바, 아이콘 등 화면에 보이는 모든 컴포넌트들이 UI를 구성하며, 일관된 UI는 사용자에게 안정적인 사용성을 제공한다.",
-  "tags": ["UI/UX디자인", "프론트엔드"],
-  "primaryTag": "UI/UX디자인",
-  "relatedIds": [1016, 1015, 1004],
-  "confusableIds": [1016],
-  "useCases": [],
-  "keywords": ["시각 디자인", "레이아웃", "버튼", "아이콘", "컴포넌트", "Interaction"],
-  "level": "beginner",
-  "updatedAt": "2025-11-05"
+	"id": 1023,
+	"slug": "user-interface",
+	"term": { "ko": "UI", "en": "UI" },
+	"aliases": ["User Interface", "사용자 인터페이스", "화면", "인터페이스 디자인"],
+	"summary": "사용자가 제품, 시스템 또는 서비스와 직접 상호작용하는 시각적, 물리적 접점과 요소를 의미.",
+	"onelinerForNonTech": "사용자가 눈으로 보고 손으로 조작하는, 앱이나 웹사이트의 모든 '겉모습과 조작 버튼'의 디자인.",
+	"description": "UX를 구현하기 위한 도구이다. UI 디자인은 정보의 배치(Layout), 시각적 요소(Visual), 그리고 사용자가 시스템과 소통하는 방식(Interaction)을 결정한다. 버튼, 입력 필드, 메뉴바, 아이콘 등 화면에 보이는 모든 컴포넌트들이 UI를 구성하며, 일관된 UI는 사용자에게 안정적인 사용성을 제공한다.",
+	"tags": ["UI/UX디자인", "프론트엔드"],
+	"primaryTag": "UI/UX디자인",
+	"relatedIds": [1016, 1015, 1004],
+	"confusableIds": [1016],
+	"useCases": [],
+	"keywords": ["시각 디자인", "레이아웃", "버튼", "아이콘", "컴포넌트", "Interaction"],
+	"level": "beginner",
+	"updatedAt": "2025-11-05"
 }
+

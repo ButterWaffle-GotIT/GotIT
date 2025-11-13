@@ -1,17 +1,18 @@
 {
-  "id": 1010,
-  "slug": "sass",
-  "term": { "ko": "Sass", "en": "Sass" },
-  "aliases": ["SCSS", "사스", "CSS 전처리기"],
-  "summary": "CSS를 프로그래밍 방식으로 작성할 수 있도록 돕는 전처리기",
-  "onelinerForNonTech": "복잡한 웹 디자인의 스타일 코드를 변수와 규칙을 사용해서 효율적으로 정리해주는 '스타일 정리 도우미'.",
-  "description": "'.scss' 또는 '.sass' 확장자를 사용하며, 웹 브라우저가 이해할 수 있는 순수 CSS로 컴파일이 되어야만 작동한다. 변수(Variables) 기능을 통해 색상이나 폰트 크기 같은 값을 저장하여 일관성을 유지하고, 중첩(Nesting) 기능을 통해 CSS 선택자를 효율적으로 구조화할 수 있다. 믹스인(Mixin), 함수(Function), 상속(Extend) 등의 강력한 기능들을 제공한다.",
-  "tags": ["프론트엔드", "UI/UX디자인"],
-  "primaryTag": "프론트엔드",
-  "relatedIds": [1001, 1009],
-  "confusableIds": [1009],
-  "useCases": [],
-  "keywords": ["전처리기", "SCSS", "변수", "중첩", "Mixin", "컴파일"],
-  "level": "beginner",
-  "updatedAt": "2025-11-05"
+	"id": 1010,
+	"slug": "sass",
+	"term": { "ko": "Sass", "en": "Sass" },
+	"aliases": ["SCSS", "사스", "CSS 전처리기"],
+	"summary": "CSS를 프로그래밍 방식으로 작성할 수 있도록 돕는 전처리기",
+	"onelinerForNonTech": "복잡한 웹 디자인의 스타일 코드를 변수와 규칙을 사용해서 효율적으로 정리해주는 '스타일 정리 도우미'.",
+	"description": "'.scss' 또는 '.sass' 확장자를 사용하며, 웹 브라우저가 이해할 수 있는 순수 CSS로 컴파일이 되어야만 작동한다. 변수(Variables) 기능을 통해 색상이나 폰트 크기 같은 값을 저장하여 일관성을 유지하고, 중첩(Nesting) 기능을 통해 CSS 선택자를 효율적으로 구조화할 수 있다. 믹스인(Mixin), 함수(Function), 상속(Extend) 등의 강력한 기능들을 제공한다.",
+	"tags": ["프론트엔드", "UI/UX디자인"],
+	"primaryTag": "프론트엔드",
+	"relatedIds": [1001, 1009],
+	"confusableIds": [1009],
+	"useCases": [],
+	"keywords": ["전처리기", "SCSS", "변수", "중첩", "Mixin", "컴파일"],
+	"level": "beginner",
+	"updatedAt": "2025-11-05"
 }
+

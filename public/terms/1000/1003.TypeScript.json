@@ -1,17 +1,18 @@
 {
-  "id": 1003,
-  "slug": "typescript",
-  "term": { "ko": "타입스크립트", "en": "TypeScript" },
-  "aliases": ["TS", "정적 타입"],
-  "summary": "JavaScript에 정적 타입 시스템을 추가하여 대규모 애플리케이션 개발의 안정성과 생산성을 높인 프로그래밍 언어.",
-  "onelinerForNonTech": "자바스크립트 코드의 오류를 개발 단계에서 미리 잡아주는 '안전벨트'와 같은 역할.",
-  "description": "컴파일 시점에 타입을 검사하여 런타임 오류를 사전에 방지하고, 코드의 가독성 및 유지보수성을 크게 향상시킨다.대규모 프로젝트에서 협업 시 개발자가 변수의 용도를 명확히 파악할 수 있게 돕고, IDE의 강력한 자동 완성 기능을 지원한다",
-  "tags": ["프론트엔드", "백엔드"],
-  "primaryTag": "프론트엔드",
-  "relatedIds": [1002],
-  "confusableIds": [1002],
-  "useCases": [],
-  "keywords": ["타입", "정적 타입", "Superset", "컴파일", "인터페이스"],
-  "level": "intermediate",
-  "updatedAt": "2025-11-05"
+	"id": 1003,
+	"slug": "typescript",
+	"term": { "ko": "타입스크립트", "en": "TypeScript" },
+	"aliases": ["TS", "정적 타입"],
+	"summary": "JavaScript에 정적 타입 시스템을 추가하여 대규모 애플리케이션 개발의 안정성과 생산성을 높인 프로그래밍 언어.",
+	"onelinerForNonTech": "자바스크립트 코드의 오류를 개발 단계에서 미리 잡아주는 '안전벨트'와 같은 역할.",
+	"description": "컴파일 시점에 타입을 검사하여 런타임 오류를 사전에 방지하고, 코드의 가독성 및 유지보수성을 크게 향상시킨다.대규모 프로젝트에서 협업 시 개발자가 변수의 용도를 명확히 파악할 수 있게 돕고, IDE의 강력한 자동 완성 기능을 지원한다",
+	"tags": ["프론트엔드", "백엔드"],
+	"primaryTag": "프론트엔드",
+	"relatedIds": [1002],
+	"confusableIds": [1002],
+	"useCases": [],
+	"keywords": ["타입", "정적 타입", "Superset", "컴파일", "인터페이스"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-05"
 }
+
