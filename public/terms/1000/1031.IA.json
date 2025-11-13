@@ -11,7 +11,16 @@
 	"relatedIds": [],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": ["IA", "information architecture", "정보구조", "정보설계", "GNB", "LNB", "네비게이션", "레이블링"],
+	"keywords": [
+		"IA",
+		"information architecture",
+		"정보구조",
+		"정보설계",
+		"GNB",
+		"LNB",
+		"네비게이션",
+		"레이블링"
+	],
 	"level": "beginner",
 	"updatedAt": "2025-11-13"
 }

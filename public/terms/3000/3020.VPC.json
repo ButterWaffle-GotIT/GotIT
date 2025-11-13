@@ -11,8 +11,14 @@
 	"relatedIds": [3011, 3018],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": ["격리", "가상 네트워크", "서브넷", "보안 그룹", "CIDR", "IP 주소"],
+	"keywords": [
+		"격리",
+		"가상 네트워크",
+		"서브넷",
+		"보안 그룹",
+		"CIDR",
+		"IP 주소"
+	],
 	"level": "beginner",
 	"updatedAt": "2025-11-06"
 }
-

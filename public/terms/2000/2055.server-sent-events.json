@@ -1,39 +1,20 @@
 {
-  "id": 2055,
-  "slug": "server-sent-events",
-  "term": {
-    "ko": "서버 센트 이벤트",
-    "en": "Server-Sent Events"
-  },
-  "aliases": [
-    "SSE",
-    "EventSource"
-  ],
-  "summary": "HTTP를 통해 서버가 클라이언트로 단방향 스트리밍 이벤트를 지속적으로 전송하는 기술입니다.",
-  "onelinerForNonTech": "서버가 '계속 이어진 라디오 방송'처럼 브라우저로 소식을 흘려보내는 방식.",
-  "description": "SSE는 브라우저의 EventSource API로 쉽게 사용 가능하며, 서버에서 발생하는 업데이트를 실시간으로 푸시할 수 있습니다. 양방향 통신이 필요한 경우에는 WebSocket을 고려하며, 장점은 단순한 프로토콜과 HTTP 인프라 재사용성입니다.",
-  "tags": [
-    "백엔드",
-    "통신",
-    "실시간"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2020,
-    2027
-  ],
-  "confusableIds": [
-    2027,
-    2054
-  ],
-  "useCases": [],
-  "keywords": [
-    "sse",
-    "eventsource",
-    "stream",
-    "push",
-    "realtime"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-12"
+	"id": 2055,
+	"slug": "server-sent-events",
+	"term": {
+		"ko": "서버 센트 이벤트",
+		"en": "Server-Sent Events"
+	},
+	"aliases": ["SSE", "EventSource"],
+	"summary": "HTTP를 통해 서버가 클라이언트로 단방향 스트리밍 이벤트를 지속적으로 전송하는 기술입니다.",
+	"onelinerForNonTech": "서버가 '계속 이어진 라디오 방송'처럼 브라우저로 소식을 흘려보내는 방식.",
+	"description": "SSE는 브라우저의 EventSource API로 쉽게 사용 가능하며, 서버에서 발생하는 업데이트를 실시간으로 푸시할 수 있습니다. 양방향 통신이 필요한 경우에는 WebSocket을 고려하며, 장점은 단순한 프로토콜과 HTTP 인프라 재사용성입니다.",
+	"tags": ["백엔드", "통신", "실시간"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2020, 2027],
+	"confusableIds": [2027, 2054],
+	"useCases": [],
+	"keywords": ["sse", "eventsource", "stream", "push", "realtime"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-12"
 }

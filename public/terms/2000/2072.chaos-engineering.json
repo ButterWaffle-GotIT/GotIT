@@ -1,39 +1,27 @@
 {
-  "id": 2072,
-  "slug": "chaos-engineering",
-  "term": {
-    "ko": "카오스 엔지니어링",
-    "en": "Chaos Engineering"
-  },
-  "aliases": [
-    "Chaos Engineering"
-  ],
-  "summary": "의도적으로 장애를 주입해 시스템의 복원력과 가설(가용성 설계)이 실제로 유효한지 검증하는 실천 방법입니다.",
-  "onelinerForNonTech": "실제 사고가 나기 전에 일부러 작은 사고를 내보며, 진짜 위기에도 버틸 수 있는지 미리 점검하는 훈련.",
-  "description": "카오스 엔지니어링은 실환경 또는 그에 준하는 환경에서 장애 주입(프로세스 종료, 네트워크 지연/손실, 리소스 고갈)을 통해 관측성·알림·자동 치유·폴백 전략을 검증합니다. 목표는 사용자의 체감 장애를 최소화하는 '설계된 회복력' 확보입니다.",
-  "tags": [
-    "백엔드",
-    "신뢰성",
-    "DevOps",
-    "관측성"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2017,
-    2026,
-    2057,
-    2023
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "카오스",
-    "chaos",
-    "resilience",
-    "장애 주입",
-    "가용성",
-    "복원력"
-  ],
-  "level": "advanced",
-  "updatedAt": "2025-11-13"
+	"id": 2072,
+	"slug": "chaos-engineering",
+	"term": {
+		"ko": "카오스 엔지니어링",
+		"en": "Chaos Engineering"
+	},
+	"aliases": ["Chaos Engineering"],
+	"summary": "의도적으로 장애를 주입해 시스템의 복원력과 가설(가용성 설계)이 실제로 유효한지 검증하는 실천 방법입니다.",
+	"onelinerForNonTech": "실제 사고가 나기 전에 일부러 작은 사고를 내보며, 진짜 위기에도 버틸 수 있는지 미리 점검하는 훈련.",
+	"description": "카오스 엔지니어링은 실환경 또는 그에 준하는 환경에서 장애 주입(프로세스 종료, 네트워크 지연/손실, 리소스 고갈)을 통해 관측성·알림·자동 치유·폴백 전략을 검증합니다. 목표는 사용자의 체감 장애를 최소화하는 '설계된 회복력' 확보입니다.",
+	"tags": ["백엔드", "신뢰성", "DevOps", "관측성"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2017, 2026, 2057, 2023],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"카오스",
+		"chaos",
+		"resilience",
+		"장애 주입",
+		"가용성",
+		"복원력"
+	],
+	"level": "advanced",
+	"updatedAt": "2025-11-13"
 }

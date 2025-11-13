@@ -11,8 +11,14 @@
 	"relatedIds": [3030, 3021, 3022],
 	"confusableIds": [3030],
 	"useCases": [],
-	"keywords": ["3-way Handshake", "신뢰성", "연결 지향", "오류 제어", "흐름 제어", "IP"],
+	"keywords": [
+		"3-way Handshake",
+		"신뢰성",
+		"연결 지향",
+		"오류 제어",
+		"흐름 제어",
+		"IP"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-06"
 }
-

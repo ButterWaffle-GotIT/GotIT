@@ -1,37 +1,20 @@
 {
-  "id": 2027,
-  "slug": "websocket",
-  "term": {
-    "ko": "웹소켓",
-    "en": "WebSocket"
-  },
-  "aliases": [
-    "Web Socket"
-  ],
-  "summary": "클라이언트와 서버 간에 단일 TCP 연결을 통해 실시간 양방향 통신을 제공하는 프로토콜입니다.",
-  "onelinerForNonTech": "클라이언트와 서버가 한 번 연결되면 계속 '전화(연결)'를 유지하면서, 필요할 때마다 양쪽에서 바로바로 말하는 방식.",
-  "description": "웹소켓은 HTTP와 달리 연결이 한 번 수립되면(Handshake) 계속 유지됩니다. 서버가 클라이언트의 요청 없이도 데이터를 먼저 보낼 수 있어(Server-Sent), 실시간 채팅, 주식 시세, 온라인 게임 등에 널리 사용됩니다.",
-  "tags": [
-    "백엔드",
-    "통신",
-    "프론트엔드",
-    "API"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2020,
-    2006
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "websocket",
-    "socket",
-    "웹소켓",
-    "실시간",
-    "양방향",
-    "채팅"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-04"
+	"id": 2027,
+	"slug": "websocket",
+	"term": {
+		"ko": "웹소켓",
+		"en": "WebSocket"
+	},
+	"aliases": ["Web Socket"],
+	"summary": "클라이언트와 서버 간에 단일 TCP 연결을 통해 실시간 양방향 통신을 제공하는 프로토콜입니다.",
+	"onelinerForNonTech": "클라이언트와 서버가 한 번 연결되면 계속 '전화(연결)'를 유지하면서, 필요할 때마다 양쪽에서 바로바로 말하는 방식.",
+	"description": "웹소켓은 HTTP와 달리 연결이 한 번 수립되면(Handshake) 계속 유지됩니다. 서버가 클라이언트의 요청 없이도 데이터를 먼저 보낼 수 있어(Server-Sent), 실시간 채팅, 주식 시세, 온라인 게임 등에 널리 사용됩니다.",
+	"tags": ["백엔드", "통신", "프론트엔드", "API"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2020, 2006],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["websocket", "socket", "웹소켓", "실시간", "양방향", "채팅"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-04"
 }

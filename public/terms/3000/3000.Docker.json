@@ -11,8 +11,14 @@
 	"relatedIds": [3001, 3004, 3018],
 	"confusableIds": [3018],
 	"useCases": [],
-	"keywords": ["컨테이너", "Image", "Containerization", "가상화", "Dockerfile", "일관성"],
+	"keywords": [
+		"컨테이너",
+		"Image",
+		"Containerization",
+		"가상화",
+		"Dockerfile",
+		"일관성"
+	],
 	"level": "beginner",
 	"updatedAt": "2025-11-06"
 }
-

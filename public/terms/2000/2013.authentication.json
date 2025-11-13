@@ -1,40 +1,27 @@
 {
-  "id": 2013,
-  "slug": "authentication",
-  "term": {
-    "ko": "인증",
-    "en": "Authentication"
-  },
-  "aliases": [
-    "AuthN",
-    "로그인"
-  ],
-  "summary": "시스템에 접근하려는 사용자가 본인이 맞는지 신원을 확인하는 절차입니다.",
-  "onelinerForNonTech": "서비스를 이용하려는 사람이 '누구인지' 확인하는 절차 (예: 아이디/비밀번호 입력).",
-  "description": "인증(Authentication)은 사용자의 신원을 증명하는 과정입니다. 가장 일반적인 예는 아이디와 비밀번호를 확인하는 것이며, 그 외에도 SMS 인증, 생체 인증, OAuth를 통한 소셜 로그인 등 다양한 방식이 있습니다. '인가(Authorization)'와는 구별되는 개념입니다.",
-  "tags": [
-    "백엔드",
-    "보안-네트워크",
-    "API"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2014,
-    2015,
-    1001
-  ],
-  "confusableIds": [
-    2014
-  ],
-  "useCases": [],
-  "keywords": [
-    "authentication",
-    "authn",
-    "인증",
-    "로그인",
-    "login",
-    "identity"
-  ],
-  "level": "beginner",
-  "updatedAt": "2025-11-04"
+	"id": 2013,
+	"slug": "authentication",
+	"term": {
+		"ko": "인증",
+		"en": "Authentication"
+	},
+	"aliases": ["AuthN", "로그인"],
+	"summary": "시스템에 접근하려는 사용자가 본인이 맞는지 신원을 확인하는 절차입니다.",
+	"onelinerForNonTech": "서비스를 이용하려는 사람이 '누구인지' 확인하는 절차 (예: 아이디/비밀번호 입력).",
+	"description": "인증(Authentication)은 사용자의 신원을 증명하는 과정입니다. 가장 일반적인 예는 아이디와 비밀번호를 확인하는 것이며, 그 외에도 SMS 인증, 생체 인증, OAuth를 통한 소셜 로그인 등 다양한 방식이 있습니다. '인가(Authorization)'와는 구별되는 개념입니다.",
+	"tags": ["백엔드", "보안-네트워크", "API"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2014, 2015, 1001],
+	"confusableIds": [2014],
+	"useCases": [],
+	"keywords": [
+		"authentication",
+		"authn",
+		"인증",
+		"로그인",
+		"login",
+		"identity"
+	],
+	"level": "beginner",
+	"updatedAt": "2025-11-04"
 }

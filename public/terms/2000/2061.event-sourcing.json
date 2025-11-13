@@ -1,37 +1,20 @@
 {
-  "id": 2061,
-  "slug": "event-sourcing",
-  "term": {
-    "ko": "이벤트 소싱",
-    "en": "Event Sourcing"
-  },
-  "aliases": [
-    "Event Sourcing"
-  ],
-  "summary": "시스템 상태를 스냅샷이 아닌 '이벤트의 연속'으로 영속화하여, 상태를 재구성하고 감사 추적을 보장하는 패턴입니다.",
-  "onelinerForNonTech": "가계부처럼 '무슨 일이 언제 일어났는지' 하나도 빠짐없이 기록해두고, 필요할 때 그 기록들로 현재 잔액을 다시 계산하는 방식.",
-  "description": "이벤트 소싱은 모든 상태 변화를 도메인 이벤트로 저장합니다. 현재 상태는 이벤트 스트림을 재생(리플레이)하여 복원하며, 스냅샷을 주기적으로 만들어 재생 비용을 낮출 수 있습니다. CQRS와 조합하면 읽기 모델을 이벤트로 비동기 갱신하는 패턴이 흔합니다.",
-  "tags": [
-    "백엔드",
-    "아키텍처",
-    "데이터",
-    "MSA"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2060,
-    2019,
-    2042
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "event sourcing",
-    "event store",
-    "replay",
-    "snapshot",
-    "audit"
-  ],
-  "level": "advanced",
-  "updatedAt": "2025-11-13"
+	"id": 2061,
+	"slug": "event-sourcing",
+	"term": {
+		"ko": "이벤트 소싱",
+		"en": "Event Sourcing"
+	},
+	"aliases": ["Event Sourcing"],
+	"summary": "시스템 상태를 스냅샷이 아닌 '이벤트의 연속'으로 영속화하여, 상태를 재구성하고 감사 추적을 보장하는 패턴입니다.",
+	"onelinerForNonTech": "가계부처럼 '무슨 일이 언제 일어났는지' 하나도 빠짐없이 기록해두고, 필요할 때 그 기록들로 현재 잔액을 다시 계산하는 방식.",
+	"description": "이벤트 소싱은 모든 상태 변화를 도메인 이벤트로 저장합니다. 현재 상태는 이벤트 스트림을 재생(리플레이)하여 복원하며, 스냅샷을 주기적으로 만들어 재생 비용을 낮출 수 있습니다. CQRS와 조합하면 읽기 모델을 이벤트로 비동기 갱신하는 패턴이 흔합니다.",
+	"tags": ["백엔드", "아키텍처", "데이터", "MSA"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2060, 2019, 2042],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["event sourcing", "event store", "replay", "snapshot", "audit"],
+	"level": "advanced",
+	"updatedAt": "2025-11-13"
 }

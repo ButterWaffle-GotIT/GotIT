@@ -1,38 +1,20 @@
 {
-  "id": 2056,
-  "slug": "rate-limiting",
-  "term": {
-    "ko": "레이트 리미팅",
-    "en": "Rate Limiting"
-  },
-  "aliases": [
-    "Rate Limit",
-    "Throttling"
-  ],
-  "summary": "클라이언트가 일정 시간 동안 보낼 수 있는 요청 수를 제한하여, 남용을 방지하고 서비스 안정성을 확보하는 기법입니다.",
-  "onelinerForNonTech": "한 번에 몰려오는 손님 수를 제한해서, 가게가 과부하로 망가지지 않도록 '입장 인원 조절'을 하는 것.",
-  "description": "일반적으로 토큰 버킷(Token Bucket), 누적 버스트, 슬라이딩 윈도우 카운터 등의 알고리즘을 사용합니다. API 게이트웨이나 리버스 프록시, 애플리케이션 레벨에서 구현할 수 있으며, 사용자별/키별/엔드포인트별로 다르게 적용합니다.",
-  "tags": [
-    "백엔드",
-    "성능",
-    "보안-네트워크",
-    "API"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2040,
-    2039,
-    2024
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "rate limit",
-    "throttle",
-    "token bucket",
-    "api gateway",
-    "dos"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-12"
+	"id": 2056,
+	"slug": "rate-limiting",
+	"term": {
+		"ko": "레이트 리미팅",
+		"en": "Rate Limiting"
+	},
+	"aliases": ["Rate Limit", "Throttling"],
+	"summary": "클라이언트가 일정 시간 동안 보낼 수 있는 요청 수를 제한하여, 남용을 방지하고 서비스 안정성을 확보하는 기법입니다.",
+	"onelinerForNonTech": "한 번에 몰려오는 손님 수를 제한해서, 가게가 과부하로 망가지지 않도록 '입장 인원 조절'을 하는 것.",
+	"description": "일반적으로 토큰 버킷(Token Bucket), 누적 버스트, 슬라이딩 윈도우 카운터 등의 알고리즘을 사용합니다. API 게이트웨이나 리버스 프록시, 애플리케이션 레벨에서 구현할 수 있으며, 사용자별/키별/엔드포인트별로 다르게 적용합니다.",
+	"tags": ["백엔드", "성능", "보안-네트워크", "API"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2040, 2039, 2024],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["rate limit", "throttle", "token bucket", "api gateway", "dos"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-12"
 }

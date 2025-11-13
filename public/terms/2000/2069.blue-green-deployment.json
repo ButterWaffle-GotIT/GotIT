@@ -1,38 +1,26 @@
 {
-  "id": 2069,
-  "slug": "blue-green-deployment",
-  "term": {
-    "ko": "블루-그린 배포",
-    "en": "Blue-Green Deployment"
-  },
-  "aliases": [
-    "Blue/Green",
-    "Blue Green"
-  ],
-  "summary": "두 개의 동일한 운영 환경(Blue/Green)을 유지하며, 트래픽 스위칭으로 무중단 배포와 신속한 롤백을 가능하게 하는 전략입니다.",
-  "onelinerForNonTech": "새 매장을 똑같이 준비해두고, 스위치 한 번에 손님을 새 매장으로 보내며 문제가 있으면 즉시 되돌리는 방식.",
-  "description": "새 버전을 'Green' 환경에 배치하고 테스트한 뒤, 로드 밸런서나 라우팅을 전환해 트래픽을 이동합니다. 문제가 발생하면 즉시 'Blue'로 롤백할 수 있습니다. 카나리 배포, 롤링 업데이트와 함께 자주 비교됩니다.",
-  "tags": [
-    "백엔드",
-    "DevOps",
-    "배포",
-    "신뢰성"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2023,
-    2024,
-    2026
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "blue-green",
-    "deployment",
-    "zero-downtime",
-    "rollback",
-    "routing"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-13"
+	"id": 2069,
+	"slug": "blue-green-deployment",
+	"term": {
+		"ko": "블루-그린 배포",
+		"en": "Blue-Green Deployment"
+	},
+	"aliases": ["Blue/Green", "Blue Green"],
+	"summary": "두 개의 동일한 운영 환경(Blue/Green)을 유지하며, 트래픽 스위칭으로 무중단 배포와 신속한 롤백을 가능하게 하는 전략입니다.",
+	"onelinerForNonTech": "새 매장을 똑같이 준비해두고, 스위치 한 번에 손님을 새 매장으로 보내며 문제가 있으면 즉시 되돌리는 방식.",
+	"description": "새 버전을 'Green' 환경에 배치하고 테스트한 뒤, 로드 밸런서나 라우팅을 전환해 트래픽을 이동합니다. 문제가 발생하면 즉시 'Blue'로 롤백할 수 있습니다. 카나리 배포, 롤링 업데이트와 함께 자주 비교됩니다.",
+	"tags": ["백엔드", "DevOps", "배포", "신뢰성"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2023, 2024, 2026],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"blue-green",
+		"deployment",
+		"zero-downtime",
+		"rollback",
+		"routing"
+	],
+	"level": "intermediate",
+	"updatedAt": "2025-11-13"
 }

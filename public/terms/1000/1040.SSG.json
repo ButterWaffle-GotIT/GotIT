@@ -11,7 +11,16 @@
 	"relatedIds": [1006],
 	"confusableIds": [1039],
 	"useCases": [],
-	"keywords": ["SSG", "static site generation", "정적 사이트 생성", "JAMstack", "Next.js", "Gatsby", "CDN", "TTFB"],
+	"keywords": [
+		"SSG",
+		"static site generation",
+		"정적 사이트 생성",
+		"JAMstack",
+		"Next.js",
+		"Gatsby",
+		"CDN",
+		"TTFB"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-13"
 }

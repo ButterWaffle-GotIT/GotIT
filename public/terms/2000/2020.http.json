@@ -1,38 +1,20 @@
 {
-  "id": 2020,
-  "slug": "http",
-  "term": {
-    "ko": "HTTP",
-    "en": "HTTP"
-  },
-  "aliases": [
-    "HyperText Transfer Protocol"
-  ],
-  "summary": "웹에서 클라이언트와 서버가 데이터를 주고받기 위한 핵심 통신 규약(프로토콜)입니다.",
-  "onelinerForNonTech": "웹사이트나 앱이 서버에게 '이거 보여줘'라고 요청하고, 서버가 '여기 있어'라고 응답하는 '대화 규칙'.",
-  "description": "HTTP(HyperText Transfer Protocol)는 웹 브라우저(클라이언트)와 웹 서버 간의 통신을 위한 애플리케이션 계층 프로토콜입니다. 요청(Request)과 응답(Response) 구조를 가지며, REST API의 기반이 됩니다. (예: GET, POST, PUT, DELETE 메서드)",
-  "tags": [
-    "백엔드",
-    "통신",
-    "API",
-    "네트워크"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2021,
-    2006,
-    1001
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "http",
-    "hypertext",
-    "protocol",
-    "프로토콜",
-    "get",
-    "post"
-  ],
-  "level": "beginner",
-  "updatedAt": "2025-11-04"
+	"id": 2020,
+	"slug": "http",
+	"term": {
+		"ko": "HTTP",
+		"en": "HTTP"
+	},
+	"aliases": ["HyperText Transfer Protocol"],
+	"summary": "웹에서 클라이언트와 서버가 데이터를 주고받기 위한 핵심 통신 규약(프로토콜)입니다.",
+	"onelinerForNonTech": "웹사이트나 앱이 서버에게 '이거 보여줘'라고 요청하고, 서버가 '여기 있어'라고 응답하는 '대화 규칙'.",
+	"description": "HTTP(HyperText Transfer Protocol)는 웹 브라우저(클라이언트)와 웹 서버 간의 통신을 위한 애플리케이션 계층 프로토콜입니다. 요청(Request)과 응답(Response) 구조를 가지며, REST API의 기반이 됩니다. (예: GET, POST, PUT, DELETE 메서드)",
+	"tags": ["백엔드", "통신", "API", "네트워크"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2021, 2006, 1001],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["http", "hypertext", "protocol", "프로토콜", "get", "post"],
+	"level": "beginner",
+	"updatedAt": "2025-11-04"
 }

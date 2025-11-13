@@ -1,39 +1,20 @@
 {
-  "id": 2079,
-  "slug": "tls-termination",
-  "term": {
-    "ko": "TLS 종료",
-    "en": "TLS Termination"
-  },
-  "aliases": [
-    "SSL 종료",
-    "HTTPS 종료"
-  ],
-  "summary": "암호화 통신을 로드 밸런서/프록시 등 경계 지점에서 해제하고, 내부 통신은 평문 또는 재암호화로 처리하는 방식입니다.",
-  "onelinerForNonTech": "입구(로드 밸런서)에서 손님의 자물쇠를 열고 신분을 확인한 뒤, 내부 직원에게 일을 전달하는 구조.",
-  "description": "TLS 종료는 인증서 관리·오프로드로 애플리케이션 서버의 부담을 줄입니다. 내부는 mTLS 재암호화, 서비스 메시 적용, 방화벽 정책 등과 조합하여 보안을 강화합니다.",
-  "tags": [
-    "백엔드",
-    "보안-네트워크",
-    "DevOps",
-    "인프라"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2021,
-    2024,
-    2039
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "tls",
-    "ssl",
-    "termination",
-    "오프로드",
-    "mtls",
-    "인증서"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-13"
+	"id": 2079,
+	"slug": "tls-termination",
+	"term": {
+		"ko": "TLS 종료",
+		"en": "TLS Termination"
+	},
+	"aliases": ["SSL 종료", "HTTPS 종료"],
+	"summary": "암호화 통신을 로드 밸런서/프록시 등 경계 지점에서 해제하고, 내부 통신은 평문 또는 재암호화로 처리하는 방식입니다.",
+	"onelinerForNonTech": "입구(로드 밸런서)에서 손님의 자물쇠를 열고 신분을 확인한 뒤, 내부 직원에게 일을 전달하는 구조.",
+	"description": "TLS 종료는 인증서 관리·오프로드로 애플리케이션 서버의 부담을 줄입니다. 내부는 mTLS 재암호화, 서비스 메시 적용, 방화벽 정책 등과 조합하여 보안을 강화합니다.",
+	"tags": ["백엔드", "보안-네트워크", "DevOps", "인프라"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2021, 2024, 2039],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["tls", "ssl", "termination", "오프로드", "mtls", "인증서"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-13"
 }

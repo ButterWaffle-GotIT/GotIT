@@ -1,36 +1,20 @@
 {
-  "id": 2067,
-  "slug": "hateoas",
-  "term": {
-    "ko": "HATEOAS",
-    "en": "HATEOAS"
-  },
-  "aliases": [
-    "Hypermedia as the Engine of Application State"
-  ],
-  "summary": "REST 제약 조건 중 하나로, 클라이언트가 하이퍼미디어 링크를 통해 동적으로 가능한 행동을 발견할 수 있게 하는 원칙입니다.",
-  "onelinerForNonTech": "응답 안에 '다음에 할 수 있는 행동으로 가는 길표(링크)'를 같이 보내, 메뉴얼 없이도 탐색하게 하는 방식.",
-  "description": "HATEOAS는 리소스 표현에 링크/폼 등을 포함하여, 클라이언트가 서버의 상태 전이를 하이퍼미디어로 발견하게 합니다. 강한 REST 성숙도 모델에서 높은 단계로 간주되지만, 실제 대규모 API에서는 부분 채택이 일반적입니다.",
-  "tags": [
-    "백엔드",
-    "API",
-    "REST",
-    "설계"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2006,
-    2063
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "hateoas",
-    "rest",
-    "hypermedia",
-    "links",
-    "discoverability"
-  ],
-  "level": "advanced",
-  "updatedAt": "2025-11-13"
+	"id": 2067,
+	"slug": "hateoas",
+	"term": {
+		"ko": "HATEOAS",
+		"en": "HATEOAS"
+	},
+	"aliases": ["Hypermedia as the Engine of Application State"],
+	"summary": "REST 제약 조건 중 하나로, 클라이언트가 하이퍼미디어 링크를 통해 동적으로 가능한 행동을 발견할 수 있게 하는 원칙입니다.",
+	"onelinerForNonTech": "응답 안에 '다음에 할 수 있는 행동으로 가는 길표(링크)'를 같이 보내, 메뉴얼 없이도 탐색하게 하는 방식.",
+	"description": "HATEOAS는 리소스 표현에 링크/폼 등을 포함하여, 클라이언트가 서버의 상태 전이를 하이퍼미디어로 발견하게 합니다. 강한 REST 성숙도 모델에서 높은 단계로 간주되지만, 실제 대규모 API에서는 부분 채택이 일반적입니다.",
+	"tags": ["백엔드", "API", "REST", "설계"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2006, 2063],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["hateoas", "rest", "hypermedia", "links", "discoverability"],
+	"level": "advanced",
+	"updatedAt": "2025-11-13"
 }

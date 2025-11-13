@@ -11,7 +11,15 @@
 	"relatedIds": [1022, 1032],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": ["heuristic", "heuristic evaluation", "휴리스틱", "휴리스틱 평가", "사용성 평가", "닐슨", "nielsen"],
+	"keywords": [
+		"heuristic",
+		"heuristic evaluation",
+		"휴리스틱",
+		"휴리스틱 평가",
+		"사용성 평가",
+		"닐슨",
+		"nielsen"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-13"
 }

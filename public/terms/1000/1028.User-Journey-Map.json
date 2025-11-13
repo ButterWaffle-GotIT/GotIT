@@ -11,8 +11,14 @@
 	"relatedIds": [1027, 1026, 1022],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": ["페르소나", "여정", "Pain Point", "터치 포인트", "시각화", "UX 연구"],
+	"keywords": [
+		"페르소나",
+		"여정",
+		"Pain Point",
+		"터치 포인트",
+		"시각화",
+		"UX 연구"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-05"
 }
-

@@ -11,8 +11,15 @@
 	"relatedIds": [3029],
 	"confusableIds": [3029],
 	"useCases": [],
-	"keywords": ["주소 지정", "라우팅", "패킷", "IPv4", "IPv6", "비연결형", "Router"],
+	"keywords": [
+		"주소 지정",
+		"라우팅",
+		"패킷",
+		"IPv4",
+		"IPv6",
+		"비연결형",
+		"Router"
+	],
 	"level": "beginner",
 	"updatedAt": "2025-11-06"
 }
-

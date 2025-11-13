@@ -11,7 +11,17 @@
 	"relatedIds": [1004, 1001],
 	"confusableIds": [1014],
 	"useCases": [],
-	"keywords": ["React Query", "TanStack Query", "리액트 쿼리", "상태관리", "server state", "useQuery", "caching", "fetching", "data"],
+	"keywords": [
+		"React Query",
+		"TanStack Query",
+		"리액트 쿼리",
+		"상태관리",
+		"server state",
+		"useQuery",
+		"caching",
+		"fetching",
+		"data"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-13"
 }

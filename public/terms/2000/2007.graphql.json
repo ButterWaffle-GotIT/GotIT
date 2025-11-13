@@ -1,37 +1,20 @@
 {
-  "id": 2007,
-  "slug": "graphql",
-  "term": {
-    "ko": "GraphQL",
-    "en": "GraphQL"
-  },
-  "aliases": [
-    "그래프큐엘"
-  ],
-  "summary": "API를 위한 쿼리 언어(Query Language)이자, 해당 쿼리를 실행하기 위한 서버사이드 런타임입니다.",
-  "onelinerForNonTech": "서버에게 내가 '딱 필요한 데이터만 골라서' 달라고 구체적으로 요청하는 똑똑한 주문서(쿼리) 규칙.",
-  "description": "GraphQL은 클라이언트가 필요한 데이터의 구조를 직접 쿼리로 정의하여 요청하는 방식입니다. REST API의 Over-fetching(불필요한 데이터까지 받는) 및 Under-fetching(데이터가 부족해 여러 번 요청하는) 문제를 해결하기 위해 등장했습니다. 단일 엔드포인트를 사용하며, 유연한 데이터 요청이 가능합니다.",
-  "tags": [
-    "백엔드",
-    "API",
-    "통신",
-    "쿼리"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2006,
-    1001
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "graphql",
-    "gql",
-    "그래프큐엘",
-    "api",
-    "query",
-    "mutation"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-04"
+	"id": 2007,
+	"slug": "graphql",
+	"term": {
+		"ko": "GraphQL",
+		"en": "GraphQL"
+	},
+	"aliases": ["그래프큐엘"],
+	"summary": "API를 위한 쿼리 언어(Query Language)이자, 해당 쿼리를 실행하기 위한 서버사이드 런타임입니다.",
+	"onelinerForNonTech": "서버에게 내가 '딱 필요한 데이터만 골라서' 달라고 구체적으로 요청하는 똑똑한 주문서(쿼리) 규칙.",
+	"description": "GraphQL은 클라이언트가 필요한 데이터의 구조를 직접 쿼리로 정의하여 요청하는 방식입니다. REST API의 Over-fetching(불필요한 데이터까지 받는) 및 Under-fetching(데이터가 부족해 여러 번 요청하는) 문제를 해결하기 위해 등장했습니다. 단일 엔드포인트를 사용하며, 유연한 데이터 요청이 가능합니다.",
+	"tags": ["백엔드", "API", "통신", "쿼리"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2006, 1001],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["graphql", "gql", "그래프큐엘", "api", "query", "mutation"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-04"
 }

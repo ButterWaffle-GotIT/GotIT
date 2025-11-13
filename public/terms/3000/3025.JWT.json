@@ -11,8 +11,15 @@
 	"relatedIds": [3024],
 	"confusableIds": [3024],
 	"useCases": [],
-	"keywords": ["토큰", "클레임", "서명", "인증", "무상태", "REST", "Access Token"],
+	"keywords": [
+		"토큰",
+		"클레임",
+		"서명",
+		"인증",
+		"무상태",
+		"REST",
+		"Access Token"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-06"
 }
-

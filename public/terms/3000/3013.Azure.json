@@ -11,8 +11,14 @@
 	"relatedIds": [3011, 3012, 3018, 3001],
 	"confusableIds": [3011, 3012],
 	"useCases": [],
-	"keywords": ["클라우드", "Microsoft", "하이브리드", "AKS", ".NET", "엔터프라이즈"],
+	"keywords": [
+		"클라우드",
+		"Microsoft",
+		"하이브리드",
+		"AKS",
+		".NET",
+		"엔터프라이즈"
+	],
 	"level": "beginner",
 	"updatedAt": "2025-11-06"
 }
-

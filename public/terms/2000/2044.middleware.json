@@ -1,38 +1,27 @@
 {
-  "id": 2044,
-  "slug": "middleware",
-  "term": {
-    "ko": "미들웨어",
-    "en": "Middleware"
-  },
-  "aliases": [
-    "Middleware"
-  ],
-  "summary": "클라이언트의 요청(Request)이 서버의 최종 처리 로직(핸들러)에 도달하기 전후에 실행되는 중간 처리 소프트웨어입니다.",
-  "onelinerForNonTech": "식당 입구에서 '안내 직원(미들웨어)'이 손님(요청)의 예약 확인(인증)이나 코트 보관(데이터 처리)을 미리 해주는 것.",
-  "description": "미들웨어는 여러 라우트에서 반복적으로 수행해야 할 공통 작업을 처리하는 데 사용됩니다. (예: 요청 로깅, 사용자 인증, 데이터 파싱, CORS 설정 등). Express.js와 같은 많은 웹 프레임워크에서 핵심적인 역할을 하며, 파이프라인처럼 체인 형태로 연결될 수 있습니다.",
-  "tags": [
-    "백엔드",
-    "프레임워크",
-    "아키텍처",
-    "Node.js"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2003,
-    2013,
-    2022
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "middleware",
-    "미들웨어",
-    "express",
-    "파이프라인",
-    "인증",
-    "로깅"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-04"
+	"id": 2044,
+	"slug": "middleware",
+	"term": {
+		"ko": "미들웨어",
+		"en": "Middleware"
+	},
+	"aliases": ["Middleware"],
+	"summary": "클라이언트의 요청(Request)이 서버의 최종 처리 로직(핸들러)에 도달하기 전후에 실행되는 중간 처리 소프트웨어입니다.",
+	"onelinerForNonTech": "식당 입구에서 '안내 직원(미들웨어)'이 손님(요청)의 예약 확인(인증)이나 코트 보관(데이터 처리)을 미리 해주는 것.",
+	"description": "미들웨어는 여러 라우트에서 반복적으로 수행해야 할 공통 작업을 처리하는 데 사용됩니다. (예: 요청 로깅, 사용자 인증, 데이터 파싱, CORS 설정 등). Express.js와 같은 많은 웹 프레임워크에서 핵심적인 역할을 하며, 파이프라인처럼 체인 형태로 연결될 수 있습니다.",
+	"tags": ["백엔드", "프레임워크", "아키텍처", "Node.js"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2003, 2013, 2022],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"middleware",
+		"미들웨어",
+		"express",
+		"파이프라인",
+		"인증",
+		"로깅"
+	],
+	"level": "intermediate",
+	"updatedAt": "2025-11-04"
 }

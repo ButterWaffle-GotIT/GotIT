@@ -11,8 +11,14 @@
 	"relatedIds": [3025],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": ["권한 부여", "액세스 토큰", "소셜 로그인", "프로토콜", "권한 위임", "Scope"],
+	"keywords": [
+		"권한 부여",
+		"액세스 토큰",
+		"소셜 로그인",
+		"프로토콜",
+		"권한 위임",
+		"Scope"
+	],
 	"level": "beginner",
 	"updatedAt": "2025-11-06"
 }
-

@@ -1,39 +1,20 @@
 {
-  "id": 2049,
-  "slug": "environment-variables",
-  "term": {
-    "ko": "환경 변수",
-    "en": "Environment Variables"
-  },
-  "aliases": [
-    "env"
-  ],
-  "summary": "애플리케이션이 실행되는 환경(개발, 테스트, 운영)에 따라 달라지는 설정 값들을 코드와 분리하여 저장하는 변수입니다.",
-  "onelinerForNonTech": "코드(레시피)에 직접 적지 않고, '개발할 땐 연습용 DB', '실제 서비스엔 진짜 DB'처럼 상황에 맞게 외부에서 주입하는 '설정 값'.",
-  "description": "환경 변수는 데이터베이스 접속 정보, API 키, 암호화 키 등 민감하거나 환경마다 달라져야 하는 설정 값들을 관리하는 데 사용됩니다. 코드 저장소(Git)에 민감한 정보를 노출하지 않도록(`.env` 파일) 분리하여 보안성을 높이고, 배포 환경의 유연성을 제공합니다.",
-  "tags": [
-    "백엔드",
-    "보안-네트워크",
-    "DevOps",
-    "배포"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2010,
-    2015,
-    2023
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "env",
-    "환경변수",
-    "설정",
-    "config",
-    "보안",
-    "배포",
-    ".env"
-  ],
-  "level": "beginner",
-  "updatedAt": "2025-11-04"
+	"id": 2049,
+	"slug": "environment-variables",
+	"term": {
+		"ko": "환경 변수",
+		"en": "Environment Variables"
+	},
+	"aliases": ["env"],
+	"summary": "애플리케이션이 실행되는 환경(개발, 테스트, 운영)에 따라 달라지는 설정 값들을 코드와 분리하여 저장하는 변수입니다.",
+	"onelinerForNonTech": "코드(레시피)에 직접 적지 않고, '개발할 땐 연습용 DB', '실제 서비스엔 진짜 DB'처럼 상황에 맞게 외부에서 주입하는 '설정 값'.",
+	"description": "환경 변수는 데이터베이스 접속 정보, API 키, 암호화 키 등 민감하거나 환경마다 달라져야 하는 설정 값들을 관리하는 데 사용됩니다. 코드 저장소(Git)에 민감한 정보를 노출하지 않도록(`.env` 파일) 분리하여 보안성을 높이고, 배포 환경의 유연성을 제공합니다.",
+	"tags": ["백엔드", "보안-네트워크", "DevOps", "배포"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2010, 2015, 2023],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["env", "환경변수", "설정", "config", "보안", "배포", ".env"],
+	"level": "beginner",
+	"updatedAt": "2025-11-04"
 }

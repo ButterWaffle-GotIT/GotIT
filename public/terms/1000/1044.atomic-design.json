@@ -11,7 +11,16 @@
 	"relatedIds": [1021],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": ["atomic design", "아토믹 디자인", "디자인 시스템", "design system", "brad frost", "atoms", "molecules", "organisms"],
+	"keywords": [
+		"atomic design",
+		"아토믹 디자인",
+		"디자인 시스템",
+		"design system",
+		"brad frost",
+		"atoms",
+		"molecules",
+		"organisms"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-13"
 }

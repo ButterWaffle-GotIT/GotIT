@@ -5,26 +5,16 @@
 		"ko": "해시 테이블",
 		"en": "Hash Table"
 	},
-	"aliases": [
-		"해시 테이블",
-		"Hash Table"
-	],
+	"aliases": ["해시 테이블", "Hash Table"],
 	"summary": "키와 값을 빠르게 매핑하기 위한 자료구조입니다.",
 	"onelinerForNonTech": "데이터를 한눈에 찾게 해주는 디지털 사전.",
 	"description": "해시 테이블은 해시 함수를 통해 키를 주소로 변환해 데이터를 빠르게 검색하고 저장하는 구조입니다.",
-	"tags": [
-		"알고리즘-자료구조",
-		"자료구조"
-	],
+	"tags": ["알고리즘-자료구조", "자료구조"],
 	"primaryTag": "알고리즘-자료구조",
 	"relatedIds": [],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": [
-		"hash-table",
-		"해시 테이블",
-		"Hash Table"
-	],
+	"keywords": ["hash-table", "해시 테이블", "Hash Table"],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",
 	"status": "published"

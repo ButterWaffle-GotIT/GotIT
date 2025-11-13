@@ -11,7 +11,16 @@
 	"relatedIds": [1022],
 	"confusableIds": [1020],
 	"useCases": [],
-	"keywords": ["usability", "사용성", "사용편의성", "UX", "효율성", "효과성", "만족도", "UT"],
+	"keywords": [
+		"usability",
+		"사용성",
+		"사용편의성",
+		"UX",
+		"효율성",
+		"효과성",
+		"만족도",
+		"UT"
+	],
 	"level": "beginner",
 	"updatedAt": "2025-11-13"
 }

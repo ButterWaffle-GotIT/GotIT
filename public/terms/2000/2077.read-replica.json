@@ -1,39 +1,20 @@
 {
-  "id": 2077,
-  "slug": "read-replica",
-  "term": {
-    "ko": "리드 레플리카",
-    "en": "Read Replica"
-  },
-  "aliases": [
-    "읽기 복제본",
-    "Replica"
-  ],
-  "summary": "주(Primary) DB의 데이터를 복제해 읽기 전용으로 제공하는 인스턴스로, 조회 부하 분산과 가용성 향상에 사용됩니다.",
-  "onelinerForNonTech": "본점 데이터베이스 내용을 지점에 복사해, 조회 손님을 지점으로 나눠 받는 방식.",
-  "description": "비동기 복제가 일반적이라 최신성 지연(Replication Lag)이 발생할 수 있습니다. 읽기 전용 트래픽 라우팅, 장애 시 승격(Promote) 전략, 캐시와의 조합이 설계 포인트입니다.",
-  "tags": [
-    "백엔드",
-    "데이터베이스",
-    "성능",
-    "가용성"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2010,
-    2011,
-    2018,
-    2076
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "read replica",
-    "replication",
-    "lag",
-    "promote",
-    "부하 분산"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-13"
+	"id": 2077,
+	"slug": "read-replica",
+	"term": {
+		"ko": "리드 레플리카",
+		"en": "Read Replica"
+	},
+	"aliases": ["읽기 복제본", "Replica"],
+	"summary": "주(Primary) DB의 데이터를 복제해 읽기 전용으로 제공하는 인스턴스로, 조회 부하 분산과 가용성 향상에 사용됩니다.",
+	"onelinerForNonTech": "본점 데이터베이스 내용을 지점에 복사해, 조회 손님을 지점으로 나눠 받는 방식.",
+	"description": "비동기 복제가 일반적이라 최신성 지연(Replication Lag)이 발생할 수 있습니다. 읽기 전용 트래픽 라우팅, 장애 시 승격(Promote) 전략, 캐시와의 조합이 설계 포인트입니다.",
+	"tags": ["백엔드", "데이터베이스", "성능", "가용성"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2010, 2011, 2018, 2076],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["read replica", "replication", "lag", "promote", "부하 분산"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-13"
 }

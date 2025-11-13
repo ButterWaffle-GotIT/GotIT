@@ -5,29 +5,17 @@
 		"ko": "PL",
 		"en": "Project Leader"
 	},
-	"aliases": [
-		"PL",
-		"Project Leader"
-	],
+	"aliases": ["PL", "Project Leader"],
 	"summary": "개발팀의 기술 리더로서 구현과 기술적 의사결정을 담당합니다.",
 	"onelinerForNonTech": "팀의 ‘기술적 선장’.",
 	"description": "PL은 프로젝트의 기술 방향성과 품질을 책임지며, 팀원 교육과 코드 리뷰를 주도합니다.",
-	"tags": [
-		"IT비즈니스-기획-프로젝트관리",
-		"리더십",
-		"기술관리"
-	],
+	"tags": ["IT비즈니스-기획-프로젝트관리", "리더십", "기술관리"],
 	"primaryTag": "IT비즈니스-기획-프로젝트관리",
 	"relatedIds": [],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": [
-		"pl",
-		"PL",
-		"Project Leader"
-	],
+	"keywords": ["pl", "PL", "Project Leader"],
 	"level": "beginner",
 	"updatedAt": "2025-11-11",
 	"status": "published"
 }
-

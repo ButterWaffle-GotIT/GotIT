@@ -11,8 +11,14 @@
 	"relatedIds": [3005, 3002, 3018],
 	"confusableIds": [3006],
 	"useCases": [],
-	"keywords": ["Terraform", "CloudFormation", "선언적", "자동화", "버전 관리", "재현성"],
+	"keywords": [
+		"Terraform",
+		"CloudFormation",
+		"선언적",
+		"자동화",
+		"버전 관리",
+		"재현성"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-06"
 }
-

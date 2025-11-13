@@ -11,7 +11,15 @@
 	"relatedIds": [1011, 1006],
 	"confusableIds": [1040],
 	"useCases": [],
-	"keywords": ["SSR", "server-side rendering", "서버사이드 렌더링", "CSR", "SEO", "성능", "Next.js"],
+	"keywords": [
+		"SSR",
+		"server-side rendering",
+		"서버사이드 렌더링",
+		"CSR",
+		"SEO",
+		"성능",
+		"Next.js"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-13"
 }

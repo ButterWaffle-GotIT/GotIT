@@ -11,7 +11,16 @@
 	"relatedIds": [],
 	"confusableIds": [1022, 1030],
 	"useCases": [],
-	"keywords": ["IxD", "interaction", "interaction design", "인터랙션", "상호작용", "피드백", "feedback", "microinteraction"],
+	"keywords": [
+		"IxD",
+		"interaction",
+		"interaction design",
+		"인터랙션",
+		"상호작용",
+		"피드백",
+		"feedback",
+		"microinteraction"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-13"
 }

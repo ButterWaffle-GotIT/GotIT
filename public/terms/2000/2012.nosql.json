@@ -1,36 +1,20 @@
 {
-  "id": 2012,
-  "slug": "nosql",
-  "term": {
-    "ko": "NoSQL",
-    "en": "NoSQL"
-  },
-  "aliases": [
-    "Not Only SQL"
-  ],
-  "summary": "전통적인 관계형 모델(RDBMS)을 따르지 않는 데이터베이스 시스템을 통칭하는 용어입니다.",
-  "onelinerForNonTech": "정해진 표(테이블) 형식이 아니라, 사진이나 문서처럼 유연한 형태로 데이터를 저장하는 '특수 창고'.",
-  "description": "NoSQL은 주로 대용량의 비정형 데이터를 처리하고 수평적 확장이 용이하도록 설계되었습니다. 데이터 모델에 따라 Document(MongoDB), Key-Value(Redis), Column-Family(Cassandra) 등으로 분류되며, 유연한 스키마와 빠른 속도가 장점입니다.",
-  "tags": [
-    "백엔드",
-    "데이터베이스",
-    "DB",
-    "NoSQL"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2010,
-    2011
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "nosql",
-    "mongodb",
-    "redis",
-    "데이터베이스",
-    "비정형 데이터"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-04"
+	"id": 2012,
+	"slug": "nosql",
+	"term": {
+		"ko": "NoSQL",
+		"en": "NoSQL"
+	},
+	"aliases": ["Not Only SQL"],
+	"summary": "전통적인 관계형 모델(RDBMS)을 따르지 않는 데이터베이스 시스템을 통칭하는 용어입니다.",
+	"onelinerForNonTech": "정해진 표(테이블) 형식이 아니라, 사진이나 문서처럼 유연한 형태로 데이터를 저장하는 '특수 창고'.",
+	"description": "NoSQL은 주로 대용량의 비정형 데이터를 처리하고 수평적 확장이 용이하도록 설계되었습니다. 데이터 모델에 따라 Document(MongoDB), Key-Value(Redis), Column-Family(Cassandra) 등으로 분류되며, 유연한 스키마와 빠른 속도가 장점입니다.",
+	"tags": ["백엔드", "데이터베이스", "DB", "NoSQL"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2010, 2011],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["nosql", "mongodb", "redis", "데이터베이스", "비정형 데이터"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-04"
 }

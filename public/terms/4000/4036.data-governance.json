@@ -5,26 +5,16 @@
 		"ko": "데이터 거버넌스",
 		"en": "Data Governance"
 	},
-	"aliases": [
-		"데이터 거버넌스",
-		"Data Governance"
-	],
+	"aliases": ["데이터 거버넌스", "Data Governance"],
 	"summary": "데이터 품질·보안·표준을 관리하는 체계적 프레임워크입니다.",
 	"onelinerForNonTech": "데이터의 규칙과 질서를 지키는 관리 체계.",
 	"description": "데이터 거버넌스는 조직 내 데이터의 정확성·보안·활용성을 보장하기 위한 정책과 절차를 포함합니다.",
-	"tags": [
-		"데이터-AI",
-		"관리"
-	],
+	"tags": ["데이터-AI", "관리"],
 	"primaryTag": "데이터-AI",
 	"relatedIds": [],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": [
-		"data-governance",
-		"데이터 거버넌스",
-		"Data Governance"
-	],
+	"keywords": ["data-governance", "데이터 거버넌스", "Data Governance"],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",
 	"status": "published"

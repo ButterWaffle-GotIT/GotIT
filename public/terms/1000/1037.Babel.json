@@ -11,7 +11,16 @@
 	"relatedIds": [1002, 1019],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": ["babel", "바벨", "transpiler", "트랜스파일러", "ES6", "ES5", "javascript", "polyfill"],
+	"keywords": [
+		"babel",
+		"바벨",
+		"transpiler",
+		"트랜스파일러",
+		"ES6",
+		"ES5",
+		"javascript",
+		"polyfill"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-13"
 }

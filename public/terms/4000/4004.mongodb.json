@@ -5,27 +5,17 @@
 		"ko": "MongoDB",
 		"en": "MongoDB"
 	},
-	"aliases": [
-		"MongoDB"
-	],
+	"aliases": ["MongoDB"],
 	"summary": "문서 기반 NoSQL 데이터베이스로, JSON 형태로 데이터를 저장합니다.",
 	"onelinerForNonTech": "엑셀 셀 대신 JSON 문서로 데이터를 쌓는 저장소.",
 	"description": "MongoDB는 스키마가 고정되지 않아 구조 변경이 자유롭습니다. 대규모 트래픽, 실시간 분석, 로그 수집 등에 적합하며, 확장성이 뛰어납니다.",
-	"tags": [
-		"데이터-AI",
-		"데이터베이스",
-		"NoSQL"
-	],
+	"tags": ["데이터-AI", "데이터베이스", "NoSQL"],
 	"primaryTag": "데이터-AI",
 	"relatedIds": [],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": [
-		"mongodb",
-		"MongoDB"
-	],
+	"keywords": ["mongodb", "MongoDB"],
 	"level": "beginner",
 	"updatedAt": "2025-11-11",
 	"status": "published"
 }
-

@@ -11,8 +11,14 @@
 	"relatedIds": [3011, 3013, 3001, 3014],
 	"confusableIds": [3011, 3013],
 	"useCases": [],
-	"keywords": ["클라우드", "GKE", "BigQuery", "Compute Engine", "AI", "Kubernetes"],
+	"keywords": [
+		"클라우드",
+		"GKE",
+		"BigQuery",
+		"Compute Engine",
+		"AI",
+		"Kubernetes"
+	],
 	"level": "beginner",
 	"updatedAt": "2025-11-06"
 }
-

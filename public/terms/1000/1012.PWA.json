@@ -11,8 +11,13 @@
 	"relatedIds": [1002, 1011],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": ["Service Worker", "매니페스트", "오프라인", "푸시 알림", "홈 화면"],
+	"keywords": [
+		"Service Worker",
+		"매니페스트",
+		"오프라인",
+		"푸시 알림",
+		"홈 화면"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-05"
 }
-

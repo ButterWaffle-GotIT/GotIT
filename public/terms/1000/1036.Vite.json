@@ -11,7 +11,16 @@
 	"relatedIds": [1019, 1005],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": ["vite", "비트", "bundler", "build tool", "HMR", "ESM", "rollup", "webpack"],
+	"keywords": [
+		"vite",
+		"비트",
+		"bundler",
+		"build tool",
+		"HMR",
+		"ESM",
+		"rollup",
+		"webpack"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-13"
 }

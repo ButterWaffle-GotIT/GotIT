@@ -1,37 +1,20 @@
 {
-  "id": 2065,
-  "slug": "content-negotiation",
-  "term": {
-    "ko": "콘텐츠 협상",
-    "en": "Content Negotiation"
-  },
-  "aliases": [
-    "HTTP Content Negotiation"
-  ],
-  "summary": "클라이언트와 서버가 응답 형식(언어, 미디어 타입, 인코딩 등)을 HTTP 헤더로 협상해 결정하는 메커니즘입니다.",
-  "onelinerForNonTech": "손님이 '한글 메뉴, 매운맛 보통, 포장'처럼 원하는 형식을 알려주면, 서버가 맞춰주는 규칙.",
-  "description": "주요 헤더는 `Accept`, `Accept-Language`, `Accept-Encoding` 등입니다. 품질 가중치(q=)를 사용해 우선순위를 지정할 수 있습니다. API에서는 JSON/Proto 등 포맷 선택이나 다국어 응답 등에 활용됩니다.",
-  "tags": [
-    "백엔드",
-    "HTTP",
-    "API",
-    "국제화"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2020,
-    2066,
-    2006
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "content negotiation",
-    "accept",
-    "language",
-    "encoding",
-    "q"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-13"
+	"id": 2065,
+	"slug": "content-negotiation",
+	"term": {
+		"ko": "콘텐츠 협상",
+		"en": "Content Negotiation"
+	},
+	"aliases": ["HTTP Content Negotiation"],
+	"summary": "클라이언트와 서버가 응답 형식(언어, 미디어 타입, 인코딩 등)을 HTTP 헤더로 협상해 결정하는 메커니즘입니다.",
+	"onelinerForNonTech": "손님이 '한글 메뉴, 매운맛 보통, 포장'처럼 원하는 형식을 알려주면, 서버가 맞춰주는 규칙.",
+	"description": "주요 헤더는 `Accept`, `Accept-Language`, `Accept-Encoding` 등입니다. 품질 가중치(q=)를 사용해 우선순위를 지정할 수 있습니다. API에서는 JSON/Proto 등 포맷 선택이나 다국어 응답 등에 활용됩니다.",
+	"tags": ["백엔드", "HTTP", "API", "국제화"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2020, 2066, 2006],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["content negotiation", "accept", "language", "encoding", "q"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-13"
 }

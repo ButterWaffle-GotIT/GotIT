@@ -1,38 +1,20 @@
 {
-  "id": 2010,
-  "slug": "database",
-  "term": {
-    "ko": "데이터베이스",
-    "en": "Database"
-  },
-  "aliases": [
-    "DB",
-    "디비"
-  ],
-  "summary": "구조화된 정보나 데이터를 체계적으로 저장, 관리, 검색할 수 있도록 조직한 시스템입니다.",
-  "onelinerForNonTech": "데이터를 효율적으로 보관하고 쉽게 찾아 쓸 수 있게 정리해둔 '디지털 창고'.",
-  "description": "데이터베이스(DB)는 여러 사용자가 동시에 접근하고 사용할 수 있도록 데이터를 통합 관리하는 시스템입니다. 관계형 데이터베이스(RDBMS)가 전통적으로 많이 쓰이며, 최근에는 NoSQL 데이터베이스도 용도에 따라 활발히 사용됩니다. 백엔드 시스템의 핵심 구성 요소입니다.",
-  "tags": [
-    "백엔드",
-    "데이터베이스",
-    "DB"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2011,
-    2012,
-    2008
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "database",
-    "db",
-    "데이터베이스",
-    "디비",
-    "rdbms",
-    "nosql"
-  ],
-  "level": "beginner",
-  "updatedAt": "2025-11-04"
+	"id": 2010,
+	"slug": "database",
+	"term": {
+		"ko": "데이터베이스",
+		"en": "Database"
+	},
+	"aliases": ["DB", "디비"],
+	"summary": "구조화된 정보나 데이터를 체계적으로 저장, 관리, 검색할 수 있도록 조직한 시스템입니다.",
+	"onelinerForNonTech": "데이터를 효율적으로 보관하고 쉽게 찾아 쓸 수 있게 정리해둔 '디지털 창고'.",
+	"description": "데이터베이스(DB)는 여러 사용자가 동시에 접근하고 사용할 수 있도록 데이터를 통합 관리하는 시스템입니다. 관계형 데이터베이스(RDBMS)가 전통적으로 많이 쓰이며, 최근에는 NoSQL 데이터베이스도 용도에 따라 활발히 사용됩니다. 백엔드 시스템의 핵심 구성 요소입니다.",
+	"tags": ["백엔드", "데이터베이스", "DB"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2011, 2012, 2008],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["database", "db", "데이터베이스", "디비", "rdbms", "nosql"],
+	"level": "beginner",
+	"updatedAt": "2025-11-04"
 }

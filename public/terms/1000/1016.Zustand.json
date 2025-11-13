@@ -11,8 +11,14 @@
 	"relatedIds": [1013, 1004, 1014, 1015],
 	"confusableIds": [1014, 1015],
 	"useCases": [],
-	"keywords": ["Hooks", "Store", "보일러플레이트", "간결성", "미들웨어", "Shallow Comparison"],
+	"keywords": [
+		"Hooks",
+		"Store",
+		"보일러플레이트",
+		"간결성",
+		"미들웨어",
+		"Shallow Comparison"
+	],
 	"level": "beginner",
 	"updatedAt": "2025-11-05"
 }
-

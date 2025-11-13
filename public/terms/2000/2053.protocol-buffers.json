@@ -1,36 +1,26 @@
 {
-  "id": 2053,
-  "slug": "protocol-buffers",
-  "term": {
-    "ko": "프로토콜 버퍼",
-    "en": "Protocol Buffers"
-  },
-  "aliases": [
-    "Protobuf",
-    "프로토버프"
-  ],
-  "summary": "구글이 만든 언어 중립·플랫폼 중립의 구조화된 데이터 직렬화 포맷으로, 작고 빠른 바이너리 인코딩을 제공합니다.",
-  "onelinerForNonTech": "데이터를 '작고 빠르게' 포장하는 표준 박스. JSON보다 가볍고 빠른 상자라고 보면 돼요.",
-  "description": "Protocol Buffers는 .proto 스키마로 메시지 구조를 정의하고, 생성된 코드로 직렬화/역직렬화를 수행합니다. 버전 호환성이 좋아 서비스 간 계약(Contract)을 엄격히 유지할 수 있으며, gRPC의 기본 메시지 포맷으로 널리 사용됩니다.",
-  "tags": [
-    "백엔드",
-    "데이터 포맷",
-    "통신"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2052,
-    2006
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "protobuf",
-    "protocol buffers",
-    "serialization",
-    "schema",
-    "proto"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-12"
+	"id": 2053,
+	"slug": "protocol-buffers",
+	"term": {
+		"ko": "프로토콜 버퍼",
+		"en": "Protocol Buffers"
+	},
+	"aliases": ["Protobuf", "프로토버프"],
+	"summary": "구글이 만든 언어 중립·플랫폼 중립의 구조화된 데이터 직렬화 포맷으로, 작고 빠른 바이너리 인코딩을 제공합니다.",
+	"onelinerForNonTech": "데이터를 '작고 빠르게' 포장하는 표준 박스. JSON보다 가볍고 빠른 상자라고 보면 돼요.",
+	"description": "Protocol Buffers는 .proto 스키마로 메시지 구조를 정의하고, 생성된 코드로 직렬화/역직렬화를 수행합니다. 버전 호환성이 좋아 서비스 간 계약(Contract)을 엄격히 유지할 수 있으며, gRPC의 기본 메시지 포맷으로 널리 사용됩니다.",
+	"tags": ["백엔드", "데이터 포맷", "통신"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2052, 2006],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"protobuf",
+		"protocol buffers",
+		"serialization",
+		"schema",
+		"proto"
+	],
+	"level": "intermediate",
+	"updatedAt": "2025-11-12"
 }

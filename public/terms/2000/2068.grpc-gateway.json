@@ -1,37 +1,20 @@
 {
-  "id": 2068,
-  "slug": "grpc-gateway",
-  "term": {
-    "ko": "gRPC 게이트웨이",
-    "en": "gRPC Gateway"
-  },
-  "aliases": [
-    "grpc-gateway"
-  ],
-  "summary": "gRPC 서비스를 HTTP/JSON REST 인터페이스로 자동 노출해주는 프록시/코드 생성 도구입니다.",
-  "onelinerForNonTech": "내부는 gRPC로 말하지만, 외부 손님에게는 익숙한 REST/JSON 메뉴판을 자동으로 내주는 번역기.",
-  "description": "Protocol Buffers의 옵션을 이용해 HTTP 경로/메서드/바인딩을 선언하고, 게이트웨이가 이를 REST 호출로 받아 gRPC 호출로 중계합니다. 기존 REST 클라이언트 호환성과 내부 고성능 통신을 동시에 만족시키는 전략입니다.",
-  "tags": [
-    "백엔드",
-    "API",
-    "통신",
-    "MSA"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2052,
-    2053,
-    2040
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "grpc gateway",
-    "rest",
-    "json",
-    "proxy",
-    "transcoding"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-13"
+	"id": 2068,
+	"slug": "grpc-gateway",
+	"term": {
+		"ko": "gRPC 게이트웨이",
+		"en": "gRPC Gateway"
+	},
+	"aliases": ["grpc-gateway"],
+	"summary": "gRPC 서비스를 HTTP/JSON REST 인터페이스로 자동 노출해주는 프록시/코드 생성 도구입니다.",
+	"onelinerForNonTech": "내부는 gRPC로 말하지만, 외부 손님에게는 익숙한 REST/JSON 메뉴판을 자동으로 내주는 번역기.",
+	"description": "Protocol Buffers의 옵션을 이용해 HTTP 경로/메서드/바인딩을 선언하고, 게이트웨이가 이를 REST 호출로 받아 gRPC 호출로 중계합니다. 기존 REST 클라이언트 호환성과 내부 고성능 통신을 동시에 만족시키는 전략입니다.",
+	"tags": ["백엔드", "API", "통신", "MSA"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2052, 2053, 2040],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["grpc gateway", "rest", "json", "proxy", "transcoding"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-13"
 }

@@ -11,8 +11,14 @@
 	"relatedIds": [3000, 3004, 3019],
 	"confusableIds": [3000],
 	"useCases": [],
-	"keywords": ["컨테이너 오케스트레이션", "Pod", "Deployment", "Service", "확장", "MSA"],
+	"keywords": [
+		"컨테이너 오케스트레이션",
+		"Pod",
+		"Deployment",
+		"Service",
+		"확장",
+		"MSA"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-06"
 }
-

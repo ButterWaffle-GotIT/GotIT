@@ -1,38 +1,20 @@
 {
-  "id": 2037,
-  "slug": "rails",
-  "term": {
-    "ko": "루비 온 레일즈",
-    "en": "Ruby on Rails"
-  },
-  "aliases": [
-    "Ruby on Rails",
-    "Rails",
-    "레일즈"
-  ],
-  "summary": "Ruby 언어로 작성된 'Convention over Configuration'(설정보다 관례)을 강조하는 풀스택 웹 프레임워크입니다.",
-  "onelinerForNonTech": "루비(Ruby) 언어를 사용해 웹사이트를 '정해진 규칙(관례)'에 따라 매우 빠르게 만들도록 도와주는 '개발 도구 세트'.",
-  "description": "'Don't Repeat Yourself'(DRY) 원칙과 함께 개발 생산성을 극대화하는 데 중점을 둔 프레임워크입니다. MVC(Model-View-Controller) 패턴을 따르며, 초기 스타트업 씬에서 빠른 프로토타이핑과 개발 속도로 큰 인기를 끌었습니다.",
-  "tags": [
-    "백엔드",
-    "프레임워크",
-    "Ruby"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2004,
-    2005
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "rails",
-    "ruby",
-    "레일즈",
-    "루비",
-    "프레임워크",
-    "mvc"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-04"
+	"id": 2037,
+	"slug": "rails",
+	"term": {
+		"ko": "루비 온 레일즈",
+		"en": "Ruby on Rails"
+	},
+	"aliases": ["Ruby on Rails", "Rails", "레일즈"],
+	"summary": "Ruby 언어로 작성된 'Convention over Configuration'(설정보다 관례)을 강조하는 풀스택 웹 프레임워크입니다.",
+	"onelinerForNonTech": "루비(Ruby) 언어를 사용해 웹사이트를 '정해진 규칙(관례)'에 따라 매우 빠르게 만들도록 도와주는 '개발 도구 세트'.",
+	"description": "'Don't Repeat Yourself'(DRY) 원칙과 함께 개발 생산성을 극대화하는 데 중점을 둔 프레임워크입니다. MVC(Model-View-Controller) 패턴을 따르며, 초기 스타트업 씬에서 빠른 프로토타이핑과 개발 속도로 큰 인기를 끌었습니다.",
+	"tags": ["백엔드", "프레임워크", "Ruby"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2004, 2005],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["rails", "ruby", "레일즈", "루비", "프레임워크", "mvc"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-04"
 }

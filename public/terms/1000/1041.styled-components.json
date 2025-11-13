@@ -11,7 +11,14 @@
 	"relatedIds": [1004, 1001],
 	"confusableIds": [1009, 1010],
 	"useCases": [],
-	"keywords": ["styled-components", "스타일드 컴포넌트", "CSS-in-JS", "React", "CSS", "템플릿 리터럴"],
+	"keywords": [
+		"styled-components",
+		"스타일드 컴포넌트",
+		"CSS-in-JS",
+		"React",
+		"CSS",
+		"템플릿 리터럴"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-13"
 }

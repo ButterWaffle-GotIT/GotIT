@@ -1,39 +1,27 @@
 {
-  "id": 2073,
-  "slug": "backpressure",
-  "term": {
-    "ko": "백프레셔",
-    "en": "Backpressure"
-  },
-  "aliases": [
-    "Back-pressure",
-    "압력 제어"
-  ],
-  "summary": "생산자(프로듀서)의 데이터 생성 속도가 소비자(컨슈머)의 처리 속도를 초과할 때, 흐름을 제어해 서비스 붕괴를 막는 기법입니다.",
-  "onelinerForNonTech": "주방이 밀리면 주문 접수를 잠시 늦추거나 줄 세워 속도를 맞추는 '속도 조절' 장치.",
-  "description": "백프레셔는 큐 길이·처리 지연·오류율 등의 지표로 혼잡을 감지하고, 생산자 속도를 줄이거나(윈도·샘플링), 버퍼링·드롭·우선순위 조절을 수행합니다. 스트리밍, Reactive 시스템, 메시지 큐, WebSocket/SSE에서도 중요합니다.",
-  "tags": [
-    "백엔드",
-    "성능",
-    "스트리밍",
-    "MSA"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2019,
-    2027,
-    2055
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "backpressure",
-    "흐름 제어",
-    "버퍼",
-    "드롭",
-    "우선순위",
-    "리액티브"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-13"
+	"id": 2073,
+	"slug": "backpressure",
+	"term": {
+		"ko": "백프레셔",
+		"en": "Backpressure"
+	},
+	"aliases": ["Back-pressure", "압력 제어"],
+	"summary": "생산자(프로듀서)의 데이터 생성 속도가 소비자(컨슈머)의 처리 속도를 초과할 때, 흐름을 제어해 서비스 붕괴를 막는 기법입니다.",
+	"onelinerForNonTech": "주방이 밀리면 주문 접수를 잠시 늦추거나 줄 세워 속도를 맞추는 '속도 조절' 장치.",
+	"description": "백프레셔는 큐 길이·처리 지연·오류율 등의 지표로 혼잡을 감지하고, 생산자 속도를 줄이거나(윈도·샘플링), 버퍼링·드롭·우선순위 조절을 수행합니다. 스트리밍, Reactive 시스템, 메시지 큐, WebSocket/SSE에서도 중요합니다.",
+	"tags": ["백엔드", "성능", "스트리밍", "MSA"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2019, 2027, 2055],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"backpressure",
+		"흐름 제어",
+		"버퍼",
+		"드롭",
+		"우선순위",
+		"리액티브"
+	],
+	"level": "intermediate",
+	"updatedAt": "2025-11-13"
 }

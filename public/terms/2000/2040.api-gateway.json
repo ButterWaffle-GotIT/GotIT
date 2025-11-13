@@ -1,43 +1,20 @@
 {
-  "id": 2040,
-  "slug": "api-gateway",
-  "term": {
-    "ko": "API 게이트웨이",
-    "en": "API Gateway"
-  },
-  "aliases": [
-    "API Gateway"
-  ],
-  "summary": "모든 API 요청을 받는 단일 진입점으로, 요청을 적절한 백엔드 서비스로 라우팅하고 공통 기능을 처리하는 서버입니다.",
-  "onelinerForNonTech": "회사의 '안내 데스크'처럼, 모든 방문(요청)을 한곳에서 받아 인증하고, 담당 부서(서비스)로 연결해주는 역할.",
-  "description": "API 게이트웨이는 클라이언트와 마이크로서비스(MSA) 사이에 위치합니다. 인증/인가, 로드 밸런싱, 로깅, 캐싱, 요청/응답 변환 등 여러 서비스에 필요한 공통 기능을 중앙에서 처리하여, 개별 서비스의 복잡성을 줄여줍니다.",
-  "tags": [
-    "백엔드",
-    "아키텍처",
-    "API",
-    "MSA",
-    "네트워크"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2016,
-    2024,
-    1001,
-    2013
-  ],
-  "confusableIds": [
-    2024,
-    2039
-  ],
-  "useCases": [],
-  "keywords": [
-    "api",
-    "gateway",
-    "게이트웨이",
-    "msa",
-    "라우팅",
-    "proxy"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-04"
+	"id": 2040,
+	"slug": "api-gateway",
+	"term": {
+		"ko": "API 게이트웨이",
+		"en": "API Gateway"
+	},
+	"aliases": ["API Gateway"],
+	"summary": "모든 API 요청을 받는 단일 진입점으로, 요청을 적절한 백엔드 서비스로 라우팅하고 공통 기능을 처리하는 서버입니다.",
+	"onelinerForNonTech": "회사의 '안내 데스크'처럼, 모든 방문(요청)을 한곳에서 받아 인증하고, 담당 부서(서비스)로 연결해주는 역할.",
+	"description": "API 게이트웨이는 클라이언트와 마이크로서비스(MSA) 사이에 위치합니다. 인증/인가, 로드 밸런싱, 로깅, 캐싱, 요청/응답 변환 등 여러 서비스에 필요한 공통 기능을 중앙에서 처리하여, 개별 서비스의 복잡성을 줄여줍니다.",
+	"tags": ["백엔드", "아키텍처", "API", "MSA", "네트워크"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2016, 2024, 1001, 2013],
+	"confusableIds": [2024, 2039],
+	"useCases": [],
+	"keywords": ["api", "gateway", "게이트웨이", "msa", "라우팅", "proxy"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-04"
 }

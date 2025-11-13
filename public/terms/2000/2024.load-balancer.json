@@ -1,40 +1,28 @@
 {
-  "id": 2024,
-  "slug": "load-balancer",
-  "term": {
-    "ko": "로드 밸런서",
-    "en": "Load Balancer"
-  },
-  "aliases": [
-    "Load Balancing",
-    "LB",
-    "부하 분산"
-  ],
-  "summary": "서버에 가해지는 트래픽(요청)을 여러 대의 서버로 나누어 분산 처리하는 장치 또는 소프트웨어입니다.",
-  "onelinerForNonTech": "한 명의 계산원(서버)에게 손님이 몰리면, 여러 계산대(서버들)로 손님을 적절히 나눠 보내는 '교통정리 담당'.",
-  "description": "로드 밸런서는 특정 서버에 과부하가 걸리는 것을 방지하고, 일부 서버에 장애가 발생하더라도 다른 서버로 요청을 보내 서비스 중단을 막습니다(고가용성). L4(IP/Port), L7(HTTP 헤더/URL) 등 다양한 레벨에서 동작합니다.",
-  "tags": [
-    "백엔드",
-    "인프라",
-    "DevOps",
-    "네트워크"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2016,
-    2026
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "load balancer",
-    "lb",
-    "로드밸런서",
-    "부하분산",
-    "트래픽",
-    "L4",
-    "L7"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-04"
+	"id": 2024,
+	"slug": "load-balancer",
+	"term": {
+		"ko": "로드 밸런서",
+		"en": "Load Balancer"
+	},
+	"aliases": ["Load Balancing", "LB", "부하 분산"],
+	"summary": "서버에 가해지는 트래픽(요청)을 여러 대의 서버로 나누어 분산 처리하는 장치 또는 소프트웨어입니다.",
+	"onelinerForNonTech": "한 명의 계산원(서버)에게 손님이 몰리면, 여러 계산대(서버들)로 손님을 적절히 나눠 보내는 '교통정리 담당'.",
+	"description": "로드 밸런서는 특정 서버에 과부하가 걸리는 것을 방지하고, 일부 서버에 장애가 발생하더라도 다른 서버로 요청을 보내 서비스 중단을 막습니다(고가용성). L4(IP/Port), L7(HTTP 헤더/URL) 등 다양한 레벨에서 동작합니다.",
+	"tags": ["백엔드", "인프라", "DevOps", "네트워크"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2016, 2026],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": [
+		"load balancer",
+		"lb",
+		"로드밸런서",
+		"부하분산",
+		"트래픽",
+		"L4",
+		"L7"
+	],
+	"level": "intermediate",
+	"updatedAt": "2025-11-04"
 }

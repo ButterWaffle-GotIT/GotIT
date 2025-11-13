@@ -1,40 +1,20 @@
 {
-  "id": 2006,
-  "slug": "rest",
-  "term": {
-    "ko": "REST",
-    "en": "REST"
-  },
-  "aliases": [
-    "RESTful API",
-    "Representational State Transfer",
-    "레스트"
-  ],
-  "summary": "자원(Resource)을 URI로 표현하고, HTTP 메서드(GET, POST 등)를 통해 해당 자원에 대한 행위(CRUD)를 정의하는 아키텍처 스타일입니다.",
-  "onelinerForNonTech": "인터넷 주소(URI)만으로 '무엇을' 요청하는지, 행동(GET/POST)으로 '어떻게' 할지 정하는 서버와 대화하는 규칙.",
-  "description": "REST(Representational State Transfer)는 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하는 API 설계 방식입니다. 자원(URI), 행위(Method), 표현(Representation)의 세 가지 요소로 구성되며, Stateless(무상태성)와 같은 원칙을 준수합니다. 웹 API 설계의 표준처럼 널리 사용됩니다.",
-  "tags": [
-    "백엔드",
-    "API",
-    "통신",
-    "아키텍처"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2007,
-    2009,
-    1001
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "rest",
-    "restful",
-    "api",
-    "http",
-    "crud",
-    "uri"
-  ],
-  "level": "beginner",
-  "updatedAt": "2025-11-04"
+	"id": 2006,
+	"slug": "rest",
+	"term": {
+		"ko": "REST",
+		"en": "REST"
+	},
+	"aliases": ["RESTful API", "Representational State Transfer", "레스트"],
+	"summary": "자원(Resource)을 URI로 표현하고, HTTP 메서드(GET, POST 등)를 통해 해당 자원에 대한 행위(CRUD)를 정의하는 아키텍처 스타일입니다.",
+	"onelinerForNonTech": "인터넷 주소(URI)만으로 '무엇을' 요청하는지, 행동(GET/POST)으로 '어떻게' 할지 정하는 서버와 대화하는 규칙.",
+	"description": "REST(Representational State Transfer)는 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하는 API 설계 방식입니다. 자원(URI), 행위(Method), 표현(Representation)의 세 가지 요소로 구성되며, Stateless(무상태성)와 같은 원칙을 준수합니다. 웹 API 설계의 표준처럼 널리 사용됩니다.",
+	"tags": ["백엔드", "API", "통신", "아키텍처"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2007, 2009, 1001],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["rest", "restful", "api", "http", "crud", "uri"],
+	"level": "beginner",
+	"updatedAt": "2025-11-04"
 }

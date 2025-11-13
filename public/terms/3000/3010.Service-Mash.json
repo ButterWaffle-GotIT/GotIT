@@ -11,8 +11,14 @@
 	"relatedIds": [3004, 3001, 3019],
 	"confusableIds": [3019],
 	"useCases": [],
-	"keywords": ["사이드카", "프록시", "통신 관리", "Istio", "트래픽 제어", "mTLS"],
+	"keywords": [
+		"사이드카",
+		"프록시",
+		"통신 관리",
+		"Istio",
+		"트래픽 제어",
+		"mTLS"
+	],
 	"level": "advanced",
 	"updatedAt": "2025-11-06"
 }
-

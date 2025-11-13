@@ -11,8 +11,14 @@
 	"relatedIds": [3021, 3027, 3024, 3025],
 	"confusableIds": [3027],
 	"useCases": [],
-	"keywords": ["GDPR", "민감 정보", "가명 처리", "암호화", "정보 주체", "법적 책임"],
+	"keywords": [
+		"GDPR",
+		"민감 정보",
+		"가명 처리",
+		"암호화",
+		"정보 주체",
+		"법적 책임"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-06"
 }
-

@@ -11,8 +11,14 @@
 	"relatedIds": [1025, 1024, 1022],
 	"confusableIds": [1025],
 	"useCases": [],
-	"keywords": ["고수준 디자인", "인터랙션", "시뮬레이션", "피델리티", "Figma", "사용성 테스트"],
+	"keywords": [
+		"고수준 디자인",
+		"인터랙션",
+		"시뮬레이션",
+		"피델리티",
+		"Figma",
+		"사용성 테스트"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-05"
 }
-

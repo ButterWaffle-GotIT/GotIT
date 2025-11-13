@@ -1,35 +1,20 @@
 {
-  "id": 2004,
-  "slug": "django",
-  "term": {
-    "ko": "장고",
-    "en": "Django"
-  },
-  "aliases": [
-    "Django"
-  ],
-  "summary": "Python으로 작성된 'Batteries-included' (모든 기능이 포함된) 고수준 웹 프레임워크입니다.",
-  "onelinerForNonTech": "파이썬(Python)으로 웹사이트를 만들 때 필요한 모든 기능(로그인, 관리자 페이지 등)을 갖춘 '풀옵션' 도구.",
-  "description": "장고는 'Don't Repeat Yourself' (DRY) 원칙을 따르며, ORM, 관리자 페이지(Admin), 인증 등 웹 개발에 필요한 대부분의 기능을 기본적으로 제공합니다. 신속한 개발과 깔끔하고 실용적인 설계를 중시하며, 복잡하고 규모 있는 웹 서비스를 구축하는 데 적합합니다.",
-  "tags": [
-    "백엔드",
-    "프레임워크",
-    "Python"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2005,
-    2008
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "django",
-    "장고",
-    "python",
-    "파이썬",
-    "프레임워크"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-04"
+	"id": 2004,
+	"slug": "django",
+	"term": {
+		"ko": "장고",
+		"en": "Django"
+	},
+	"aliases": ["Django"],
+	"summary": "Python으로 작성된 'Batteries-included' (모든 기능이 포함된) 고수준 웹 프레임워크입니다.",
+	"onelinerForNonTech": "파이썬(Python)으로 웹사이트를 만들 때 필요한 모든 기능(로그인, 관리자 페이지 등)을 갖춘 '풀옵션' 도구.",
+	"description": "장고는 'Don't Repeat Yourself' (DRY) 원칙을 따르며, ORM, 관리자 페이지(Admin), 인증 등 웹 개발에 필요한 대부분의 기능을 기본적으로 제공합니다. 신속한 개발과 깔끔하고 실용적인 설계를 중시하며, 복잡하고 규모 있는 웹 서비스를 구축하는 데 적합합니다.",
+	"tags": ["백엔드", "프레임워크", "Python"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2005, 2008],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["django", "장고", "python", "파이썬", "프레임워크"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-04"
 }

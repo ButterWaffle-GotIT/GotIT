@@ -1,36 +1,20 @@
 {
-  "id": 2008,
-  "slug": "orm",
-  "term": {
-    "ko": "ORM",
-    "en": "ORM"
-  },
-  "aliases": [
-    "Object-Relational Mapping",
-    "객체-관계 매핑"
-  ],
-  "summary": "객체 지향 프로그래밍 언어의 객체(Object)와 관계형 데이터베이스(RDB)의 데이터를 자동으로 매핑(Mapping)해주는 기술입니다.",
-  "onelinerForNonTech": "개발자가 쓰는 코드(객체)와 데이터베이스(표) 사이에서 자동으로 데이터를 변환해주는 '통역기'.",
-  "description": "ORM(Object-Relational Mapping)은 개발자가 SQL 쿼리를 직접 작성하는 대신, 프로그래밍 언어의 메서드나 객체 조작을 통해 데이터베이스를 다룰 수 있게 해줍니다. 코드의 가독성과 생산성을 높여주며, 데이터베이스 종류에 대한 종속성을 낮춰줍니다. (예: JPA, TypeORM, Django ORM)",
-  "tags": [
-    "백엔드",
-    "데이터베이스",
-    "DB"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2004
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "orm",
-    "db",
-    "database",
-    "jpa",
-    "typeorm",
-    "sql"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-04"
+	"id": 2008,
+	"slug": "orm",
+	"term": {
+		"ko": "ORM",
+		"en": "ORM"
+	},
+	"aliases": ["Object-Relational Mapping", "객체-관계 매핑"],
+	"summary": "객체 지향 프로그래밍 언어의 객체(Object)와 관계형 데이터베이스(RDB)의 데이터를 자동으로 매핑(Mapping)해주는 기술입니다.",
+	"onelinerForNonTech": "개발자가 쓰는 코드(객체)와 데이터베이스(표) 사이에서 자동으로 데이터를 변환해주는 '통역기'.",
+	"description": "ORM(Object-Relational Mapping)은 개발자가 SQL 쿼리를 직접 작성하는 대신, 프로그래밍 언어의 메서드나 객체 조작을 통해 데이터베이스를 다룰 수 있게 해줍니다. 코드의 가독성과 생산성을 높여주며, 데이터베이스 종류에 대한 종속성을 낮춰줍니다. (예: JPA, TypeORM, Django ORM)",
+	"tags": ["백엔드", "데이터베이스", "DB"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2004],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["orm", "db", "database", "jpa", "typeorm", "sql"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-04"
 }

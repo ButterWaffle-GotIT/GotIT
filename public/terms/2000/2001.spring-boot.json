@@ -1,37 +1,20 @@
 {
-  "id": 2001,
-  "slug": "spring-boot",
-  "term": {
-    "ko": "스프링 부트",
-    "en": "Spring Boot"
-  },
-  "aliases": [
-    "Spring Boot",
-    "스프링부트"
-  ],
-  "summary": "Java Spring 프레임워크를 빠르고 쉽게 설정하여 독립 실행형 애플리케이션을 만들 수 있게 돕는 도구입니다.",
-  "onelinerForNonTech": "자바(Java)로 서버를 만들 때 필요한 복잡한 준비 과정을 알아서 해주는 '밀키트' 세트.",
-  "description": "스프링 부트는 기존 Spring 프레임워크의 복잡한 초기 설정을 자동화하고 내장 서버(예: Tomcat)를 포함하여, 개발자가 비즈니스 로직에만 집중할 수 있도록 지원합니다. 'Convention over Configuration' (설정보다 관례) 접근 방식을 따르며, 마이크로서비스 아키텍처(MSA) 구축에 널리 사용됩니다.",
-  "tags": [
-    "백엔드",
-    "프레임워크",
-    "Java",
-    "Spring"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2000
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "spring",
-    "boot",
-    "스프링부트",
-    "스프링",
-    "java",
-    "프레임워크"
-  ],
-  "level": "intermediate",
-  "updatedAt": "2025-11-04"
+	"id": 2001,
+	"slug": "spring-boot",
+	"term": {
+		"ko": "스프링 부트",
+		"en": "Spring Boot"
+	},
+	"aliases": ["Spring Boot", "스프링부트"],
+	"summary": "Java Spring 프레임워크를 빠르고 쉽게 설정하여 독립 실행형 애플리케이션을 만들 수 있게 돕는 도구입니다.",
+	"onelinerForNonTech": "자바(Java)로 서버를 만들 때 필요한 복잡한 준비 과정을 알아서 해주는 '밀키트' 세트.",
+	"description": "스프링 부트는 기존 Spring 프레임워크의 복잡한 초기 설정을 자동화하고 내장 서버(예: Tomcat)를 포함하여, 개발자가 비즈니스 로직에만 집중할 수 있도록 지원합니다. 'Convention over Configuration' (설정보다 관례) 접근 방식을 따르며, 마이크로서비스 아키텍처(MSA) 구축에 널리 사용됩니다.",
+	"tags": ["백엔드", "프레임워크", "Java", "Spring"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2000],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["spring", "boot", "스프링부트", "스프링", "java", "프레임워크"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-04"
 }

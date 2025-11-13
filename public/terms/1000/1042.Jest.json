@@ -11,7 +11,17 @@
 	"relatedIds": [1002, 1004],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": ["jest", "제스트", "테스트", "testing", "unit test", "TDD", "mock", "javascript", "React"],
+	"keywords": [
+		"jest",
+		"제스트",
+		"테스트",
+		"testing",
+		"unit test",
+		"TDD",
+		"mock",
+		"javascript",
+		"React"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-13"
 }

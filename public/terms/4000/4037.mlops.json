@@ -5,28 +5,16 @@
 		"ko": "MLOps",
 		"en": "MLOps"
 	},
-	"aliases": [
-		"MLOps"
-	],
+	"aliases": ["MLOps"],
 	"summary": "머신러닝 모델 개발·배포·운영을 자동화하고 통합하는 접근 방식입니다.",
 	"onelinerForNonTech": "AI 모델이 개발에서 운영까지 자동으로 이어지게 하는 체계.",
 	"description": "MLOps는 모델 학습과 배포를 자동화해 운영 효율과 재현성을 높이는 AI용 DevOps 접근법입니다.",
-	"tags": [
-		"데이터-AI",
-		"ML",
-		"운영"
-	],
+	"tags": ["데이터-AI", "ML", "운영"],
 	"primaryTag": "데이터-AI",
-	"relatedIds": [
-		4034,
-		4035
-	],
+	"relatedIds": [4034, 4035],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": [
-		"mlops",
-		"MLOps"
-	],
+	"keywords": ["mlops", "MLOps"],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",
 	"status": "published"

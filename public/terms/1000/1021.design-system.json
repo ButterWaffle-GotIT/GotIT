@@ -11,8 +11,14 @@
 	"relatedIds": [1004, 1009, 1014],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": ["일관성", "재사용", "Atomic Design", "컴포넌트", "토큰", "Design Tokens"],
+	"keywords": [
+		"일관성",
+		"재사용",
+		"Atomic Design",
+		"컴포넌트",
+		"토큰",
+		"Design Tokens"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-05"
 }
-

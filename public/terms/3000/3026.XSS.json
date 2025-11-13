@@ -11,8 +11,14 @@
 	"relatedIds": [3024, 3025],
 	"confusableIds": [3029],
 	"useCases": [],
-	"keywords": ["스크립트 삽입", "인젝션", "세션", "쿠키 탈취", "이스케이프", "OWASP"],
+	"keywords": [
+		"스크립트 삽입",
+		"인젝션",
+		"세션",
+		"쿠키 탈취",
+		"이스케이프",
+		"OWASP"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-06"
 }
-

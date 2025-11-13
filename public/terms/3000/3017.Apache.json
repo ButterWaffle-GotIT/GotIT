@@ -11,8 +11,14 @@
 	"relatedIds": [3016, 3018],
 	"confusableIds": [3016],
 	"useCases": [],
-	"keywords": ["웹 서버", "모듈", "안정성", "프로세스 기반", ".htaccess", "HTTP"],
+	"keywords": [
+		"웹 서버",
+		"모듈",
+		"안정성",
+		"프로세스 기반",
+		".htaccess",
+		"HTTP"
+	],
 	"level": "beginner",
 	"updatedAt": "2025-11-06"
 }
-

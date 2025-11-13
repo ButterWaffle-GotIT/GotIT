@@ -11,7 +11,15 @@
 	"relatedIds": [1002, 1003],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": ["eslint", "linter", "lint", "prettier", "정적분석", "코드컨벤션", "style guide"],
+	"keywords": [
+		"eslint",
+		"linter",
+		"lint",
+		"prettier",
+		"정적분석",
+		"코드컨벤션",
+		"style guide"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-13"
 }

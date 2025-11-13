@@ -5,28 +5,17 @@
 		"ko": "MySQL",
 		"en": "MySQL"
 	},
-	"aliases": [
-		"MySQL"
-	],
+	"aliases": ["MySQL"],
 	"summary": "오픈소스 관계형 데이터베이스 관리 시스템(RDBMS)입니다.",
 	"onelinerForNonTech": "웹서비스에서 가장 흔히 쓰이는 데이터 저장소.",
 	"description": "MySQL은 빠른 속도와 안정성을 바탕으로 전 세계적으로 가장 많이 사용되는 오픈소스 DB입니다. SQL 표준을 따르며 LAMP 스택의 핵심 구성요소입니다.",
-	"tags": [
-		"데이터-AI",
-		"데이터베이스",
-		"RDBMS"
-	],
+	"tags": ["데이터-AI", "데이터베이스", "RDBMS"],
 	"primaryTag": "데이터-AI",
 	"relatedIds": [],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": [
-		"mysql",
-		"MySQL",
-		"MySQL"
-	],
+	"keywords": ["mysql", "MySQL", "MySQL"],
 	"level": "beginner",
 	"updatedAt": "2025-11-11",
 	"status": "published"
 }
-

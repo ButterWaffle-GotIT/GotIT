@@ -1,39 +1,20 @@
 {
-  "id": 2076,
-  "slug": "data-sharding",
-  "term": {
-    "ko": "데이터 샤딩",
-    "en": "Data Sharding"
-  },
-  "aliases": [
-    "Sharding",
-    "샤딩"
-  ],
-  "summary": "대용량 데이터를 여러 데이터베이스/서버에 수평 분할해 저장·조회 부하를 분산하는 기법입니다.",
-  "onelinerForNonTech": "엄청 큰 창고를 지역별로 나눠 여러 곳에 두어, 가까운 창고에서 빠르게 찾게 하는 방식.",
-  "description": "범위/해시/디렉터리 기반 등 샤딩 전략이 있으며, 샤딩 키 설계가 핵심입니다. 크로스 샤드 조인/트랜잭션 비용이 증가할 수 있어, 리드 레플리카·캐시·서치 엔진과 조합해 사용합니다.",
-  "tags": [
-    "백엔드",
-    "데이터베이스",
-    "확장성",
-    "성능"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2010,
-    2011,
-    2018,
-    2077
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "sharding",
-    "partition",
-    "수평 분할",
-    "샤드 키",
-    "스케일아웃"
-  ],
-  "level": "advanced",
-  "updatedAt": "2025-11-13"
+	"id": 2076,
+	"slug": "data-sharding",
+	"term": {
+		"ko": "데이터 샤딩",
+		"en": "Data Sharding"
+	},
+	"aliases": ["Sharding", "샤딩"],
+	"summary": "대용량 데이터를 여러 데이터베이스/서버에 수평 분할해 저장·조회 부하를 분산하는 기법입니다.",
+	"onelinerForNonTech": "엄청 큰 창고를 지역별로 나눠 여러 곳에 두어, 가까운 창고에서 빠르게 찾게 하는 방식.",
+	"description": "범위/해시/디렉터리 기반 등 샤딩 전략이 있으며, 샤딩 키 설계가 핵심입니다. 크로스 샤드 조인/트랜잭션 비용이 증가할 수 있어, 리드 레플리카·캐시·서치 엔진과 조합해 사용합니다.",
+	"tags": ["백엔드", "데이터베이스", "확장성", "성능"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2010, 2011, 2018, 2077],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["sharding", "partition", "수평 분할", "샤드 키", "스케일아웃"],
+	"level": "advanced",
+	"updatedAt": "2025-11-13"
 }

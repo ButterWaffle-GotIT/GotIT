@@ -5,29 +5,16 @@
 		"ko": "데이터 파이프라인",
 		"en": "Data Pipeline"
 	},
-	"aliases": [
-		"데이터 파이프라인",
-		"Data Pipeline"
-	],
+	"aliases": ["데이터 파이프라인", "Data Pipeline"],
 	"summary": "데이터가 여러 시스템을 거쳐 자동으로 이동·처리되는 흐름 구조입니다.",
 	"onelinerForNonTech": "데이터가 흘러다니며 자동으로 가공되는 공장 라인 같은 구조.",
 	"description": "데이터 파이프라인은 수집, 전처리, 적재, 분석 등 일련의 흐름을 자동화하는 시스템으로, ETL/ELT와 밀접히 연관됩니다.",
-	"tags": [
-		"데이터-AI",
-		"데이터엔지니어링"
-	],
+	"tags": ["데이터-AI", "데이터엔지니어링"],
 	"primaryTag": "데이터-AI",
-	"relatedIds": [
-		4031,
-		4032
-	],
+	"relatedIds": [4031, 4032],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": [
-		"data-pipeline",
-		"데이터 파이프라인",
-		"Data Pipeline"
-	],
+	"keywords": ["data-pipeline", "데이터 파이프라인", "Data Pipeline"],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",
 	"status": "published"

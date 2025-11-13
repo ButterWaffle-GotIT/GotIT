@@ -1,37 +1,20 @@
 {
-  "id": 2009,
-  "slug": "endpoint",
-  "term": {
-    "ko": "엔드포인트",
-    "en": "Endpoint"
-  },
-  "aliases": [
-    "Endpoint",
-    "API Endpoint"
-  ],
-  "summary": "API가 외부와 통신하는 최종 접점으로, 클라이언트가 특정 기능이나 자원에 접근하기 위해 요청을 보내는 URL(URI)입니다.",
-  "onelinerForNonTech": "앱이 서버의 특정 기능(예: 날씨 정보)을 사용하기 위해 접속하는 '전용 창구 주소'.",
-  "description": "엔드포인트는 API 서버가 제공하는 기능에 접근할 수 있는 구체적인 경로(주소)입니다. 예를 들어, `/users/123`이라는 엔드포인트는 '123번 ID를 가진 사용자 정보'라는 특정 자원을 가리킵니다. REST API에서는 이 엔드포인트에 HTTP 메서드(GET, POST 등)를 조합하여 요청을 보냅니다.",
-  "tags": [
-    "백엔드",
-    "API",
-    "통신"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    1001,
-    2006
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "endpoint",
-    "엔드포인트",
-    "api",
-    "url",
-    "uri",
-    "경로"
-  ],
-  "level": "beginner",
-  "updatedAt": "2025-11-04"
+	"id": 2009,
+	"slug": "endpoint",
+	"term": {
+		"ko": "엔드포인트",
+		"en": "Endpoint"
+	},
+	"aliases": ["Endpoint", "API Endpoint"],
+	"summary": "API가 외부와 통신하는 최종 접점으로, 클라이언트가 특정 기능이나 자원에 접근하기 위해 요청을 보내는 URL(URI)입니다.",
+	"onelinerForNonTech": "앱이 서버의 특정 기능(예: 날씨 정보)을 사용하기 위해 접속하는 '전용 창구 주소'.",
+	"description": "엔드포인트는 API 서버가 제공하는 기능에 접근할 수 있는 구체적인 경로(주소)입니다. 예를 들어, `/users/123`이라는 엔드포인트는 '123번 ID를 가진 사용자 정보'라는 특정 자원을 가리킵니다. REST API에서는 이 엔드포인트에 HTTP 메서드(GET, POST 등)를 조합하여 요청을 보냅니다.",
+	"tags": ["백엔드", "API", "통신"],
+	"primaryTag": "백엔드",
+	"relatedIds": [1001, 2006],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["endpoint", "엔드포인트", "api", "url", "uri", "경로"],
+	"level": "beginner",
+	"updatedAt": "2025-11-04"
 }

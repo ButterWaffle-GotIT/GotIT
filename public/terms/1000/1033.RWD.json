@@ -11,7 +11,15 @@
 	"relatedIds": [1001],
 	"confusableIds": [],
 	"useCases": [],
-	"keywords": ["RWD", "responsive", "반응형", "미디어쿼리", "media query", "CSS", "breakpoint"],
+	"keywords": [
+		"RWD",
+		"responsive",
+		"반응형",
+		"미디어쿼리",
+		"media query",
+		"CSS",
+		"breakpoint"
+	],
 	"level": "beginner",
 	"updatedAt": "2025-11-13"
 }

@@ -11,8 +11,15 @@
 	"relatedIds": [3004, 3011],
 	"confusableIds": [3010],
 	"useCases": [],
-	"keywords": ["마이크로서비스", "MSA", "단일 진입점", "라우팅", "인증", "속도 제한", "캐싱"],
+	"keywords": [
+		"마이크로서비스",
+		"MSA",
+		"단일 진입점",
+		"라우팅",
+		"인증",
+		"속도 제한",
+		"캐싱"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-06"
 }
-

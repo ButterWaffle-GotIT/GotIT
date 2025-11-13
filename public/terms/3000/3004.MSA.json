@@ -11,8 +11,14 @@
 	"relatedIds": [3000, 3001, 3019],
 	"confusableIds": [3005],
 	"useCases": [],
-	"keywords": ["마이크로서비스", "독립적 배포", "확장성", "결합도", "API 통신", "분산 시스템"],
+	"keywords": [
+		"마이크로서비스",
+		"독립적 배포",
+		"확장성",
+		"결합도",
+		"API 통신",
+		"분산 시스템"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-06"
 }
-

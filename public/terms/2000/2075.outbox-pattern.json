@@ -1,38 +1,20 @@
 {
-  "id": 2075,
-  "slug": "outbox-pattern",
-  "term": {
-    "ko": "아웃박스 패턴",
-    "en": "Outbox Pattern"
-  },
-  "aliases": [
-    "Transactional Outbox"
-  ],
-  "summary": "로컬 트랜잭션과 이벤트 발행의 일관성을 위해, 같은 DB에 아웃박스 테이블로 이벤트를 저장한 뒤 별도 프로세스가 발행하는 패턴입니다.",
-  "onelinerForNonTech": "주문 저장과 '주문됨' 알림을 한 번에 기록해두고, 나중에 안전하게 알림을 보내는 '발송 대기함'.",
-  "description": "쓰기 트랜잭션 안에서 도메인 이벤트를 아웃박스 테이블에 함께 커밋하고, 폴링/체인지 데이터 캡처(CDC)로 메시지 브로커에 퍼블리시합니다. 분산 트랜잭션 없이도 정확히 한 번(exactly-once)에 가까운 전달을 달성합니다.",
-  "tags": [
-    "백엔드",
-    "아키텍처",
-    "MSA",
-    "트랜잭션"
-  ],
-  "primaryTag": "백엔드",
-  "relatedIds": [
-    2042,
-    2019,
-    2062,
-    2061
-  ],
-  "confusableIds": [],
-  "useCases": [],
-  "keywords": [
-    "outbox",
-    "cdc",
-    "exactly-once",
-    "트랜잭션",
-    "이벤트 발행"
-  ],
-  "level": "advanced",
-  "updatedAt": "2025-11-13"
+	"id": 2075,
+	"slug": "outbox-pattern",
+	"term": {
+		"ko": "아웃박스 패턴",
+		"en": "Outbox Pattern"
+	},
+	"aliases": ["Transactional Outbox"],
+	"summary": "로컬 트랜잭션과 이벤트 발행의 일관성을 위해, 같은 DB에 아웃박스 테이블로 이벤트를 저장한 뒤 별도 프로세스가 발행하는 패턴입니다.",
+	"onelinerForNonTech": "주문 저장과 '주문됨' 알림을 한 번에 기록해두고, 나중에 안전하게 알림을 보내는 '발송 대기함'.",
+	"description": "쓰기 트랜잭션 안에서 도메인 이벤트를 아웃박스 테이블에 함께 커밋하고, 폴링/체인지 데이터 캡처(CDC)로 메시지 브로커에 퍼블리시합니다. 분산 트랜잭션 없이도 정확히 한 번(exactly-once)에 가까운 전달을 달성합니다.",
+	"tags": ["백엔드", "아키텍처", "MSA", "트랜잭션"],
+	"primaryTag": "백엔드",
+	"relatedIds": [2042, 2019, 2062, 2061],
+	"confusableIds": [],
+	"useCases": [],
+	"keywords": ["outbox", "cdc", "exactly-once", "트랜잭션", "이벤트 발행"],
+	"level": "advanced",
+	"updatedAt": "2025-11-13"
 }
