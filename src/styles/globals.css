@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+	/* 커스텀 브레이크포인트 */
+	--breakpoint-narrow: 90rem;
+	--breakpoint-base: 105rem;
+	--breakpoint-wide: 120rem;
+
+	/* 커스텀 너비 */
+	--width-content: 65rem;
+}
