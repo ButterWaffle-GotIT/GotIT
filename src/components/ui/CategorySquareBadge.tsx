@@ -22,7 +22,7 @@ export type CategoryType =
 	| "devops"
 	| "business";
 
-interface CategoryBadgeProps {
+interface CategorySquareBadgeProps {
 	category: CategoryType;
 	className?: string;
 }
@@ -70,7 +70,10 @@ const categoryConfig = {
 	},
 } as const;
 
-export function CategoryBadge({ category, className }: CategoryBadgeProps) {
+export function CategorySquareBadge({
+	category,
+	className,
+}: CategorySquareBadgeProps) {
 	const config = categoryConfig[category];
 	const Icon = config.icon;
 
