@@ -80,6 +80,7 @@
 	--color-tertiary-950: #161d50;
 
 	/* White Opacity */
+	--color-white-5: rgba(255, 255, 255, 0.05);
 	--color-white-10: rgba(255, 255, 255, 0.1);
 	--color-white-20: rgba(255, 255, 255, 0.2);
 	--color-white-30: rgba(255, 255, 255, 0.3);
@@ -112,6 +113,22 @@
 	--color-success-on: #ffffff;
 	--color-success-ctr: #a7dab6;
 	--color-success-on-ctr: #14632b;
+
+	/* Brand Colors */
+	--color-brand-red: #ce5e61;
+	--color-brand-purple: #6e50c8;
+
+	/* Category Colors */
+	--color-category-frontend: #26c7ef;
+	--color-category-backend: #12a849;
+	--color-category-uiux: #f45e8f;
+	--color-category-ai: #ae77fa;
+	--color-category-cloud: #37ade9;
+	--color-category-data: #26cdae;
+	--color-category-security: #f67240;
+	--color-category-devops: #fbaf21;
+	--color-category-business: #6287f6;
+	--color-category-all: #aab1bc;
 
 	/* Font Family */
 	--font-family-pretendard:
