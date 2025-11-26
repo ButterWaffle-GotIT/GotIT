@@ -11,7 +11,14 @@ const nextConfig: NextConfig = {
 			},
 		},
 	},
-	// 필요 시 다른 Next 옵션들...
+	// Webpack 설정
+	webpack(config) {
+		config.module.rules.push({
+			test: /\.svg$/,
+			use: ["@svgr/webpack"],
+		});
+		return config;
+	},
 };
 
 export default nextConfig;
