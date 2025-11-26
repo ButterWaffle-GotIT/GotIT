@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Image from "next/image";
+import { FirebaseAnalytics } from "@/components/FirebaseAnalytics";
 
 export const metadata: Metadata = {
 	title: "GOTIT",
@@ -24,6 +25,7 @@ export default function RootLayout({
 					priority
 				/>
 
+				<FirebaseAnalytics />
 				<div className="w-content narrow:px-52 wide:px-110 relative z-10 mx-auto max-w-full px-80">
 					{children}
 				</div>
