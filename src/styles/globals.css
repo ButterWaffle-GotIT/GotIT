@@ -406,7 +406,7 @@ body {
 		border-radius: inherit;
 		padding: 1px;
 		background: linear-gradient(
-			-65deg,
+			to bottom right,
 			rgba(255, 255, 255, 1) 0%,
 			rgba(255, 255, 255, 0) 50%,
 			rgba(255, 255, 255, 1) 100%
@@ -420,37 +420,5 @@ body {
 			linear-gradient(#fff 0 0);
 		mask-composite: exclude;
 		pointer-events: none;
-	}
-
-	/* Alternative: Border-based Glass */
-	.glass-border {
-		position: relative;
-		border: 1px solid transparent;
-		background-clip: padding-box;
-		background-origin: border-box;
-	}
-
-	.glass-border::before {
-		content: "";
-		position: absolute;
-		inset: -1px;
-		border-radius: inherit;
-		background: linear-gradient(
-			-65deg,
-			rgba(255, 255, 255, 1) 0%,
-			rgba(255, 255, 255, 0) 50%,
-			rgba(255, 255, 255, 1) 100%
-		);
-		z-index: -1;
-		pointer-events: none;
-	}
-
-	.glass-border::after {
-		content: "";
-		position: absolute;
-		inset: 0;
-		border-radius: inherit;
-		background: inherit;
-		z-index: -1;
 	}
 }
