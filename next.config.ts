@@ -1,8 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-	// Static Export 설정
 	output: "export",
+
+	images: {
+		unoptimized: true,
+	},
 
 	// Turbopack 설정 (빈 객체여도 선언해두면 명시적으로 Turbopack 사용)
 	turbopack: {
