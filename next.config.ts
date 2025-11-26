@@ -1,12 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-	output: "export",
-
-	images: {
-		unoptimized: true,
-	},
-
 	// Turbopack 설정 (빈 객체여도 선언해두면 명시적으로 Turbopack 사용)
 	turbopack: {
 		// SVGR: .svg를 React 컴포넌트로 import 할 수 있게

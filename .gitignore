@@ -43,3 +43,5 @@ next-env.d.ts
 # Firebase cache and emulator configurations
 .firebase/
 firebase-debug.log
+firebase.json
+.firebaserc
