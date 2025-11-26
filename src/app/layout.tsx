@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FirebaseAnalytics } from "@/components/FirebaseAnalytics";
 
 export const metadata: Metadata = {
-	title: "GOTIT",
+	title: "got IT - IT 용어사전",
 	description: "Developer-friendly glossary",
 };
 
