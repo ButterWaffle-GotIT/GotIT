@@ -25,8 +25,8 @@ export const LogoText = ({ className, ...props }: IconProps) => {
 					y2="24"
 					gradientUnits="userSpaceOnUse"
 				>
-					<stop stop-color="white" />
-					<stop offset="1" stop-color="#999999" />
+					<stop stopColor="white" />
+					<stop offset="1" stopColor="#999999" />
 				</linearGradient>
 			</defs>
 		</svg>
