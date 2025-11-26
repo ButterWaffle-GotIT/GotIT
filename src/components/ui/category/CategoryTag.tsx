@@ -33,7 +33,7 @@ export function CategoryTag({
 		>
 			<CategoryChip category={category} />
 			<div className="flex items-center gap-0.5">
-				<span className="text-body5 font-bold leading-6 text-white">
+				<span className="text-body5 leading-6 font-bold text-white">
 					#{label}
 				</span>
 			</div>
