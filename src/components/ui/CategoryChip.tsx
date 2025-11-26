@@ -82,7 +82,7 @@ export function CategoryChip({
 	return (
 		<div
 			className={cn(
-				"flex h-6 w-6 items-center self-stretch overflow-hidden rounded-full border-[0.25px] border-white p-1",
+				"glass flex h-6 w-6 items-center self-stretch overflow-visible rounded-full border-[0.25px] border-white p-1",
 				disabled ? "bg-gray-700" : config.bgColor,
 				className
 			)}
