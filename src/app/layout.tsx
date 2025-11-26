@@ -15,13 +15,12 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="ko">
-			<body className="relative min-h-screen bg-[#101010]">
+			<body className="bg-bg relative min-h-screen">
 				<Image
 					src="/images/gradient.webp"
 					alt=""
-					width={1680}
-					height={1080}
-					className="pointer-events-none fixed inset-y-0 right-0 z-0 h-full w-auto"
+					fill
+					className="pointer-events-none fixed z-0 object-cover object-top"
 					priority
 				/>
 
