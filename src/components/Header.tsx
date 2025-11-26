@@ -2,28 +2,24 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Dela_Gothic_One } from "next/font/google";
-import { UserIcon } from "./icons";
+import { UserIcon, LogoText } from "./icons";
 import { GlassButton } from "./GlassButton";
-import type { HeaderProps, NavItem as NavItemType } from "@/types/header";
+import { DEFAULT_NAV_ITEMS } from "@/constants/navigation";
 
-const delaGothicOne = Dela_Gothic_One({
-	weight: "400",
-	subsets: ["latin"],
-	display: "swap",
-});
+type NavItemProps = {
+	label: string;
+	href: string;
+};
+
+type HeaderProps = {
+	isLoggedIn?: boolean;
+	showNav?: boolean;
+	navItems?: readonly NavItemProps[];
+};
 
 const Logo = () => (
-	<Link href="/" className="flex flex-col items-start justify-start">
-		<div className="flex h-7 flex-col items-start justify-start gap-2.5">
-			<div className="inline-flex items-center justify-start gap-3.5">
-				<span
-					className={`${delaGothicOne.className} text-2xl leading-6 font-normal text-white`}
-				>
-					got IT
-				</span>
-			</div>
-		</div>
+	<Link href="/" className="flex items-center">
+		<LogoText width={89} height={30} />
 	</Link>
 );
 
@@ -31,15 +27,11 @@ const NavItem = ({
 	label,
 	href,
 	isActive,
-}: {
-	label: string;
-	href: string;
-	isActive: boolean;
-}) => (
+}: NavItemProps & { isActive: boolean }) => (
 	<Link
 		href={href}
 		data-isactive={isActive}
-		className="group hover:bg-white-10 flex w-24 items-center justify-center rounded py-2 backdrop-blur-sm transition-colors"
+		className="group hover:bg-white-10 flex w-24 items-center justify-center rounded py-2 transition-colors"
 	>
 		<span
 			className={`text-lg leading-7 font-bold ${
@@ -61,44 +53,38 @@ const LoginButton = () => (
 
 const ProfileButton = () => (
 	<GlassButton variant="rounded" className="p-1.5" aria-label="프로필">
-		<div className="relative h-7 w-7">
-			<UserIcon className="h-7 w-7" />
-		</div>
+		<UserIcon width={28} height={28} color="white" />
 	</GlassButton>
 );
 
 export default function Header({
 	isLoggedIn = false,
 	showNav = false,
-	navItems = [
-		{ label: "검색", href: "/search" },
-		{ label: "대시보드", href: "/dashboard" },
-		{ label: "챗봇", href: "/chatbot" },
-	],
+	navItems = DEFAULT_NAV_ITEMS,
 }: HeaderProps) {
 	const pathname = usePathname();
 
+	const displayedNavItems = isLoggedIn ? navItems : navItems.slice(0, 1);
+
 	return (
-		<header className="bg-black-10 isolate inline-flex w-full items-center justify-center px-60 py-4 backdrop-blur-sm">
-			<div className="flex flex-1 items-center justify-between">
-				<div className="flex items-center justify-start gap-10">
-					<Logo />
-					{showNav && (
-						<nav className="flex items-center justify-start gap-2">
-							{navItems.map((item) => (
-								<NavItem
-									key={item.href}
-									label={item.label}
-									href={item.href}
-									isActive={pathname === item.href}
-								/>
-							))}
-						</nav>
-					)}
-				</div>
-				<div className="flex items-start justify-start">
-					{isLoggedIn ? <ProfileButton /> : <LoginButton />}
-				</div>
+		<header className="bg-black-10 isolate flex w-full items-center justify-between px-60 py-4 backdrop-blur-sm">
+			<div className="flex items-center gap-10">
+				<Logo />
+				{showNav && (
+					<nav className="flex items-center gap-2">
+						{displayedNavItems.map((item) => (
+							<NavItem
+								key={item.href}
+								label={item.label}
+								href={item.href}
+								isActive={pathname === item.href}
+							/>
+						))}
+					</nav>
+				)}
+			</div>
+			<div className="flex items-center">
+				{isLoggedIn ? <ProfileButton /> : <LoginButton />}
 			</div>
 		</header>
 	);
