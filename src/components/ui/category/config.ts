@@ -1,4 +1,3 @@
-import { cn } from "@/utils/cn";
 import { CategoryAllIcon } from "@/components/icons/ic_category_all";
 import { CategoryFrontendIcon } from "@/components/icons/ic_category_frontend";
 import { CategoryBackendIcon } from "@/components/icons/ic_category_backend";
@@ -10,6 +9,7 @@ import { CategorySecurityIcon } from "@/components/icons/ic_category_security";
 import { CategoryDevopsIcon } from "@/components/icons/ic_category_devops";
 import { CategoryBusinessIcon } from "@/components/icons/ic_category_business";
 
+// Category Types
 export type CategoryType =
 	| "all"
 	| "frontend"
@@ -22,12 +22,8 @@ export type CategoryType =
 	| "devops"
 	| "business";
 
-interface CategorySquareBadgeProps {
-	category: CategoryType;
-	className?: string;
-}
-
-const categoryConfig = {
+// Category Configuration (Icons & Colors)
+export const categoryConfig = {
 	all: {
 		icon: CategoryAllIcon,
 		bgColor: "bg-category-all",
@@ -70,22 +66,44 @@ const categoryConfig = {
 	},
 } as const;
 
-export function CategorySquareBadge({
-	category,
-	className,
-}: CategorySquareBadgeProps) {
-	const config = categoryConfig[category];
-	const Icon = config.icon;
+// Category Labels (Korean)
+export const categoryLabels = {
+	all: "전체",
+	frontend: "프론트엔드",
+	backend: "백엔드",
+	uiux: "UI/UX",
+	ai: "AI",
+	cloud: "클라우드",
+	data: "데이터",
+	security: "보안/네트워크",
+	devops: "DevOps",
+	business: "IT비즈니스",
+} as const;
 
-	return (
-		<div
-			className={cn(
-				"glass flex h-16 w-16 items-center justify-center overflow-hidden rounded-xl",
-				config.bgColor,
-				className
-			)}
-		>
-			<Icon size={42} color="white" />
-		</div>
-	);
-}
+// Category Hover Colors (for CategoryTag)
+export const categoryHoverColors = {
+	all: "hover:bg-[rgba(170,177,188,0.1)]",
+	frontend: "hover:bg-[rgba(38,199,239,0.1)]",
+	backend: "hover:bg-[rgba(18,168,73,0.1)]",
+	uiux: "hover:bg-[rgba(244,94,143,0.1)]",
+	ai: "hover:bg-[rgba(174,119,250,0.1)]",
+	cloud: "hover:bg-[rgba(55,173,233,0.1)]",
+	data: "hover:bg-[rgba(38,205,174,0.1)]",
+	security: "hover:bg-[rgba(246,114,64,0.1)]",
+	devops: "hover:bg-[rgba(251,175,33,0.1)]",
+	business: "hover:bg-[rgba(98,135,246,0.1)]",
+} as const;
+
+// Category Selected Colors (for CategoryTag)
+export const categorySelectedColors = {
+	all: "bg-[rgba(170,177,188,0.5)]",
+	frontend: "bg-[rgba(38,199,239,0.5)]",
+	backend: "bg-[rgba(18,168,73,0.5)]",
+	uiux: "bg-[rgba(244,94,143,0.5)]",
+	ai: "bg-[rgba(174,119,250,0.5)]",
+	cloud: "bg-[rgba(55,173,233,0.5)]",
+	data: "bg-[rgba(38,205,174,0.5)]",
+	security: "bg-[rgba(246,114,64,0.5)]",
+	devops: "bg-[rgba(251,175,33,0.5)]",
+	business: "bg-[rgba(98,135,246,0.5)]",
+} as const;
