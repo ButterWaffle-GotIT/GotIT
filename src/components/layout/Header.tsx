@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { UserIcon, LogoText } from "./icons";
-import { GlassButton } from "./GlassButton";
+import { UserIcon, LogoText } from "@/components/icons";
+import { GlassButton } from "@/components/ui/GlassButton";
 import { DEFAULT_NAV_ITEMS } from "@/constants/navigation";
 
 type NavItemProps = {

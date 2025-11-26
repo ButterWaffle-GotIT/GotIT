@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Image from "next/image";
-import { FirebaseAnalytics } from "@/components/FirebaseAnalytics";
-import Header from "@/components/Header";
+import { FirebaseAnalytics } from "@/components/providers/FirebaseAnalytics";
+import Header from "@/components/layout/Header";
 
 export const metadata: Metadata = {
 	title: "got IT - IT 용어사전",
