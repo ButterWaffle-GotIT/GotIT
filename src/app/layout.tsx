@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Image from "next/image";
 import { FirebaseAnalytics } from "@/components/FirebaseAnalytics";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
 	title: "got IT - IT 용어사전",
@@ -25,6 +26,7 @@ export default function RootLayout({
 				/>
 
 				<FirebaseAnalytics />
+				<Header />
 				<div className="w-content narrow:px-52 wide:px-110 relative z-10 mx-auto max-w-full px-80">
 					{children}
 				</div>
