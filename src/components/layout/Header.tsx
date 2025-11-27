@@ -87,7 +87,7 @@ export default function Header({
 	const router = useRouter();
 	const { user, loading } = useAuth();
 
-	if (pathname === "/login") {
+	if (pathname === "/login" || pathname === "/onboarding") {
 		return null;
 	}
 
