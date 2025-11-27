@@ -32,17 +32,9 @@ const recommendedTerms = [
 
 export default function HomePage() {
 	// 1. 상태 정의
-	const [searchTerm, setSearchTerm] = useState("");
 	const [selectedTag, setSelectedTag] = useState("전체");
 
 	// 2. 핸들러 함수 정의
-	const handleSearchChange = useCallback(
-		(event: React.ChangeEvent<HTMLInputElement>) => {
-			setSearchTerm(event.target.value);
-		},
-		[]
-	);
-
 	const handleTagSelect = useCallback((tagName: string) => {
 		setSelectedTag(tagName);
 		// ⭐️ API 연동 로직이 여기에 추가됩니다. ⭐️

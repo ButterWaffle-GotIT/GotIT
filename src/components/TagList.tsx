@@ -26,7 +26,7 @@ interface TagData {
 }
 
 // 태그 데이터 (최종 디자인 스펙 반영)
-const tagData = [
+const tagData: TagData[] = [
 	{ name: "전체", color: "bg-gray-400", IconComponent: CategoryAllIcon },
 	{
 		name: "프론트엔드",
