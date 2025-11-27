@@ -58,7 +58,7 @@ const TodayTermCard: React.FC<{ data?: TermData }> = ({ data = mockTermData }) =
 
 			<div className="self-stretch inline-flex justify-start items-center gap-3">
 				{data.tags.map((tag, index) => (
-					<Tag key={index} name={tag} isPrimary={index === 0} />
+					<Tag key={tag} name={tag} isPrimary={index === 0} />
 				))}
 			</div>
 

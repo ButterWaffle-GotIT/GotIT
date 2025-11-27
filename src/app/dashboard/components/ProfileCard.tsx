@@ -34,7 +34,7 @@ const SimpleProfileCard: React.FC<SimpleProfileCardProps> = ({ email, tags }) =>
 				<div className="flex flex-wrap justify-center gap-2">
 					{tags.map((tag) => {
 						const IconComponent = categoryIcons[tag as keyof typeof categoryIcons];
-						const colorClass = categoryColors[tag as keyof typeof categoryColors];
+						const colorClass = categoryColors[tag as keyof typeof categoryColors] || "bg-gray-400";
 
 						return (
 							<div
