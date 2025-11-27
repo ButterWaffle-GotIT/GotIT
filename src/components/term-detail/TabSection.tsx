@@ -37,10 +37,7 @@ export function TabSection({ term, relatedTerms }: TabSectionProps) {
 	return (
 		<section className="flex flex-col gap-5">
 			{/* Tab Navigation */}
-			<TabNavigation
-				activeTab={activeTab}
-				onTabChange={setActiveTab}
-			/>
+			<TabNavigation activeTab={activeTab} onTabChange={setActiveTab} />
 
 			{/* Tab Content */}
 			<div className="flex flex-col gap-5">
@@ -76,10 +73,7 @@ function TabNavigation({
 							isActive ? "bg-tertiary-500/20" : "hover:bg-white-10"
 						)}
 					>
-						<TabIcon
-							size={16}
-							color={isActive ? "#5375FF" : "#BDBDBD"}
-						/>
+						<TabIcon size={16} color={isActive ? "#5375FF" : "#BDBDBD"} />
 						<span
 							className={cn(
 								"text-button-medium",
@@ -173,9 +167,7 @@ function UseCaseTab({ term }: { term: TermDetail }) {
 					))}
 				</ul>
 			) : (
-				<p className="text-body5 text-gray-500">
-					등록된 대화 상황이 없습니다.
-				</p>
+				<p className="text-body5 text-gray-500">등록된 대화 상황이 없습니다.</p>
 			)}
 		</article>
 	);

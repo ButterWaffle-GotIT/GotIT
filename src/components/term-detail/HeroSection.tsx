@@ -53,9 +53,7 @@ export function HeroSection({
 						<Icon size={42} color="white" />
 					</div>
 					{/* Term Name */}
-					<h1 className="text-h2 text-white">
-						{term.term.en || term.term.ko}
-					</h1>
+					<h1 className="text-h2 text-white">{term.term.en || term.term.ko}</h1>
 				</div>
 
 				{/* Action Buttons */}
@@ -64,16 +62,11 @@ export function HeroSection({
 						onClick={onBookmark}
 						className={cn(
 							"flex h-9 w-9 items-center justify-center rounded-md transition-colors",
-							bookmarked
-								? "bg-primary-500/30"
-								: "bg-white-10 hover:bg-white-20"
+							bookmarked ? "bg-primary-500/30" : "bg-white-10 hover:bg-white-20"
 						)}
 						aria-label="스크랩"
 					>
-						<ScrapIcon
-							size={24}
-							color={bookmarked ? "#9F74D8" : "#D4C2F0"}
-						/>
+						<ScrapIcon size={24} color={bookmarked ? "#9F74D8" : "#D4C2F0"} />
 					</button>
 					<button
 						onClick={onShare}
@@ -103,21 +96,17 @@ export function HeroSection({
 						</div>
 					)}
 					{/* Summary */}
-					<p className="text-body4 text-white">
-						&ldquo;{term.summary}&rdquo;
-					</p>
+					<p className="text-body4 text-white">&ldquo;{term.summary}&rdquo;</p>
 				</div>
 			</div>
 
 			{/* One-liner Card */}
 			{term.onelinerForNonTech && (
-				<div className="rounded-xl bg-linear-to-r from-brand-purple/40 to-brand-red/40 p-5">
+				<div className="from-brand-purple/40 to-brand-red/40 rounded-xl bg-linear-to-r p-5">
 					<p className="text-body5 text-gray-500">쉬운 한줄 정리</p>
 					<div className="mt-1 flex items-center gap-3">
 						<LightIcon size={20} color="#D4C2F0" />
-						<p className="text-body3 text-gray-50">
-							{term.onelinerForNonTech}
-						</p>
+						<p className="text-body3 text-gray-50">{term.onelinerForNonTech}</p>
 					</div>
 				</div>
 			)}
