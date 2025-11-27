@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import SearchBar from '@/components/SearchBar';
 import TagList from '@/components/TagList';
 import RecommendedTermCard from '@/components/RecommendedTermCard';
+import { ChevronsDownIcon } from '@/components/icons/ic_chevrons_down';
 
 // --- Mock Data ---
 const recommendedTerms = [
@@ -45,7 +46,7 @@ export default function HomePage() {
                         />
                         <TagList
                             selectedTag={selectedTag}
-                            onTagSelect={handleTagSelect} // 👈 함수를 전달합니다.
+                            onTagSelect={handleTagSelect}
                         />
                     </section>
 
@@ -70,7 +71,11 @@ export default function HomePage() {
 
                         <div className="self-stretch flex flex-col justify-center items-center gap-2.5 overflow-hidden pt-5">
                             <button className="inline-flex justify-center items-center gap-1 text-neutral-300 text-sm font-bold hover:text-white transition-colors">
-                                <svg className="w-4 h-4" fill="none" viewBox="0 0 16 16" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.6" d="M8 10.667v-5.334M8 10.667l2.667-2.666M8 10.667L5.333 8"/></svg>
+                                <ChevronsDownIcon
+                                    className="w-4 h-4"
+                                    width={16}
+                                    height={16}
+                                />
                                 더보기
                             </button>
                         </div>
