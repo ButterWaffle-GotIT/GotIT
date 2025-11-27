@@ -15,6 +15,12 @@ export interface TermIndexItem {
 	file: string;
 }
 
+// 대화 상황 타입
+export interface Conversation {
+	role: "pm" | "developer" | "designer";
+	message: string;
+}
+
 // 상세 용어 타입
 export interface TermDetail {
 	id: number;
@@ -32,6 +38,7 @@ export interface TermDetail {
 	relatedIds?: number[];
 	confusableIds?: number[];
 	useCases?: string[];
+	conversations?: Conversation[];
 	keywords?: string[];
 	level: "beginner" | "intermediate" | "advanced";
 	updatedAt: string;
