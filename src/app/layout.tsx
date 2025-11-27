@@ -29,9 +29,7 @@ export default function RootLayout({
 				<FirebaseAnalytics />
 				<Providers>
 					<Header showNav={true} />
-					<div className="w-content narrow:px-52 wide:px-110 relative z-10 mx-auto max-w-full px-80">
-						{children}
-					</div>
+					<div className="w-content relative z-10 mx-auto">{children}</div>
 				</Providers>
 			</body>
 		</html>
