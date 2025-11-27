@@ -12,8 +12,7 @@ interface SimpleProfileCardProps {
 const SimpleProfileCard: React.FC<SimpleProfileCardProps> = ({ email, tags }) => {
 	return (
 
-		<div className="h-full px-20 py-10 rounded-[20px] inline-flex justify-start items-center gap-2.5
-                       glass bg-white/10 outline-[0.25px] outline-offset-[-0.25px] outline-white-30">
+		<div className="h-full px-20 py-10 rounded-[20px] inline-flex justify-start items-center gap-2.5 glass bg-white/10 outline-[0.25px] outline-offset-[-0.25px] outline-white-30">
 
 			<div className="w-40 inline-flex flex-col justify-start items-center gap-3">
 
