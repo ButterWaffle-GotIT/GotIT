@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { UserIcon, LogoText } from "@/components/icons";
 import { GlassButton } from "@/components/ui/GlassButton";
 import { DEFAULT_NAV_ITEMS } from "@/constants/navigation";
@@ -43,8 +43,8 @@ const NavItem = ({
 	</Link>
 );
 
-const LoginButton = () => (
-	<GlassButton className="px-6 py-2">
+const LoginButton = ({ onClick }: { onClick: () => void }) => (
+	<GlassButton className="px-6 py-2" onClick={onClick}>
 		<span className="text-lg leading-7 font-bold text-neutral-300 transition-colors hover:text-white">
 			로그인
 		</span>
@@ -63,12 +63,17 @@ export default function Header({
 	navItems = DEFAULT_NAV_ITEMS,
 }: HeaderProps) {
 	const pathname = usePathname();
+	const router = useRouter();
 
 	if (pathname === "/login") {
 		return null;
 	}
 
 	const displayedNavItems = isLoggedIn ? navItems : navItems.slice(0, 1);
+
+	const handleLoginClick = () => {
+		router.push("/login");
+	};
 
 	return (
 		<header className="bg-black-10 isolate flex w-full items-center justify-between px-60 py-4 backdrop-blur-sm">
@@ -88,7 +93,11 @@ export default function Header({
 				)}
 			</div>
 			<div className="flex items-center">
-				{isLoggedIn ? <ProfileButton /> : <LoginButton />}
+				{isLoggedIn ? (
+					<ProfileButton />
+				) : (
+					<LoginButton onClick={handleLoginClick} />
+				)}
 			</div>
 		</header>
 	);
