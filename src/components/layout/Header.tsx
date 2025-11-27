@@ -64,6 +64,10 @@ export default function Header({
 }: HeaderProps) {
 	const pathname = usePathname();
 
+	if (pathname === "/login") {
+		return null;
+	}
+
 	const displayedNavItems = isLoggedIn ? navItems : navItems.slice(0, 1);
 
 	return (
