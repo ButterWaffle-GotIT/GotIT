@@ -4,7 +4,7 @@ import { type CategoryType } from "@/components/ui/category/config";
 import CategoryButton from "./categoruButton";
 
 interface CategoryListProps {
-	selectedCategories: CategoryType[];
+	selectedCategory: CategoryType | null;
 	onToggleCategory: (category: CategoryType) => void;
 }
 
@@ -18,7 +18,7 @@ const row2Categories: CategoryType[] = [
 ];
 
 export default function CategoryList({
-	selectedCategories,
+	selectedCategory,
 	onToggleCategory,
 }: CategoryListProps) {
 	return (
@@ -28,7 +28,7 @@ export default function CategoryList({
 					<CategoryButton
 						key={category}
 						category={category}
-						isSelected={selectedCategories.includes(category)}
+						isSelected={selectedCategory === category}
 						onClick={() => onToggleCategory(category)}
 					/>
 				))}
@@ -39,7 +39,7 @@ export default function CategoryList({
 					<CategoryButton
 						key={category}
 						category={category}
-						isSelected={selectedCategories.includes(category)}
+						isSelected={selectedCategory === category}
 						onClick={() => onToggleCategory(category)}
 					/>
 				))}
