@@ -74,10 +74,10 @@ export default function ScrapSection({
 							height={28}
 						/>
 					</div>
-					<p className="text-body3 text-center text-gray-50 mt-5">
+					<p className="text-body3 mt-5 text-center text-gray-50">
 						해당 카테고리에 스크랩한 용어가 없어요
 					</p>
-					<p className="text-body5 text-center text-gray-500 mt-3">
+					<p className="text-body5 mt-3 text-center text-gray-500">
 						관심있는 용어를 스크랩해보세요
 					</p>
 					<button className="text-button-medium mt-5 rounded-lg bg-linear-to-r from-[#6E50C8] to-[#CE5E61] px-5 py-2 text-white">

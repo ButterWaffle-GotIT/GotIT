@@ -1,6 +1,11 @@
 "use client";
 
-import { categoryIcons, categoryColors, categoryHoverStyles, categoryActiveStyles } from "@/types/category";
+import {
+	categoryIcons,
+	categoryColors,
+	categoryHoverStyles,
+	categoryActiveStyles,
+} from "@/types/category";
 
 interface CategoryTagProps {
 	category: string;
@@ -15,8 +20,11 @@ export default function CategoryTag({
 }: CategoryTagProps) {
 	const IconComponent = categoryIcons[category];
 	const colorClass = categoryColors[category];
-	const hoverStyle = categoryHoverStyles[category] || "hover:bg-gray-400/10 hover:outline-white-50";
-	const activeStyle = categoryActiveStyles[category] || "bg-gray-400/50 outline-white";
+	const hoverStyle =
+		categoryHoverStyles[category] ||
+		"hover:bg-gray-400/10 hover:outline-white-50";
+	const activeStyle =
+		categoryActiveStyles[category] || "bg-gray-400/50 outline-white";
 	const defaultStyle = "bg-white/5 outline-white-30";
 	const finalClasses = isActive
 		? activeStyle + " transition-colors"
@@ -38,7 +46,9 @@ export default function CategoryTag({
 					/>
 				)}
 			</div>
-			<span className="text-sm leading-6 font-bold text-white">#{category}</span>
+			<span className="text-sm leading-6 font-bold text-white">
+				#{category}
+			</span>
 		</div>
 	);
 }
