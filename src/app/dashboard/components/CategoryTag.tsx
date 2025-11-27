@@ -1,6 +1,6 @@
 "use client";
 
-import { categoryIcons, categoryColors } from "./categoryData";
+import { categoryIcons, categoryColors, categoryHoverStyles, categoryActiveStyles } from "@/types/category";
 
 interface CategoryTagProps {
 	category: string;
@@ -15,9 +15,9 @@ export default function CategoryTag({
 }: CategoryTagProps) {
 	const IconComponent = categoryIcons[category];
 	const colorClass = categoryColors[category];
+	const hoverStyle = categoryHoverStyles[category] || "hover:bg-gray-400/10 hover:outline-white-50";
+	const activeStyle = categoryActiveStyles[category] || "bg-gray-400/50 outline-white";
 	const defaultStyle = "bg-white/5 outline-white-30";
-	const hoverStyle = `hover:${colorClass}/10 hover:outline-white-50`;
-	const activeStyle = `${colorClass}/50 outline-white`;
 	const finalClasses = isActive
 		? activeStyle + " transition-colors"
 		: defaultStyle + " " + hoverStyle + " transition-colors";
@@ -38,12 +38,7 @@ export default function CategoryTag({
 					/>
 				)}
 			</div>
-			<div className="flex items-center justify-start gap-0.5">
-				<span className="text-sm leading-6 font-bold text-white">#</span>
-				<span className="text-sm leading-6 font-bold text-white">
-					{category}
-				</span>
-			</div>
+			<span className="text-sm leading-6 font-bold text-white">#{category}</span>
 		</div>
 	);
 }

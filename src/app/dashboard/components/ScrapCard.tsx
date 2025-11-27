@@ -2,7 +2,7 @@
 
 import { ScrapIcon } from "@/components/icons/ic_scrap";
 import { ArrowRightIcon } from "@/components/icons/ic_arrow_right";
-import { categoryIcons, categoryColors, ScrapCardData } from "./categoryData";
+import { categoryIcons, categoryColors, ScrapCardData } from "@/types/category";
 
 interface ScrapCardProps {
 	card: ScrapCardData;
@@ -35,9 +35,7 @@ export default function ScrapCard({ card }: ScrapCardProps) {
 					</div>
 				</div>
 
-				<div className="flex items-center rounded-[6.25rem] bg-gray-900 px-2 py-0.5">
-					<span className="text-caption2 text-gray-300">{card.tag}</span>
-				</div>
+			<span className="text-caption2 text-gray-300 rounded-[6.25rem] bg-gray-900 px-2 py-0.5">{card.tag}</span>
 			</div>
 
 			<div className="py-[0.69rem]">

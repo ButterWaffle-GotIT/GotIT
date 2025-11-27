@@ -3,7 +3,7 @@
 import { ScrapIcon } from "@/components/icons/ic_scrap";
 import { SortIcon } from "@/components/icons/ic_sort";
 import { ChevronDownIcon } from "@/components/icons/ic_chevron_down";
-import { categoryIcons, ScrapCardData } from "./categoryData";
+import { categoryIcons, ScrapCardData } from "@/types/category";
 import CategoryTag from "./CategoryTag";
 import ScrapCard from "./ScrapCard";
 
@@ -74,16 +74,12 @@ export default function ScrapSection({
 							height={28}
 						/>
 					</div>
-					<div className="mt-5">
-						<p className="text-body3 text-center text-gray-50">
-							해당 카테고리에 스크랩한 용어가 없어요
-						</p>
-					</div>
-					<div className="mt-3">
-						<p className="text-body5 text-center text-gray-500">
-							관심있는 용어를 스크랩해보세요
-						</p>
-					</div>
+					<p className="text-body3 text-center text-gray-50 mt-5">
+						해당 카테고리에 스크랩한 용어가 없어요
+					</p>
+					<p className="text-body5 text-center text-gray-500 mt-3">
+						관심있는 용어를 스크랩해보세요
+					</p>
 					<button className="text-button-medium mt-5 rounded-lg bg-linear-to-r from-[#6E50C8] to-[#CE5E61] px-5 py-2 text-white">
 						용어 검색하기
 					</button>
