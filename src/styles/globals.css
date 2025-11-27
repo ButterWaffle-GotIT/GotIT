@@ -397,4 +397,33 @@ body {
 		line-height: var(--line-height-legend);
 		font-weight: var(--font-weight-medium);
 	}
+
+	/* Glass Morphism Border */
+	.glass {
+		position: relative;
+		overflow: visible;
+	}
+
+	.glass::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		border-radius: inherit;
+		padding: 1px;
+		background: linear-gradient(
+			to bottom right,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(255, 255, 255, 0) 50%,
+			rgba(255, 255, 255, 1) 100%
+		);
+		-webkit-mask:
+			linear-gradient(#fff 0 0) content-box,
+			linear-gradient(#fff 0 0);
+		-webkit-mask-composite: xor;
+		mask:
+			linear-gradient(#fff 0 0) content-box,
+			linear-gradient(#fff 0 0);
+		mask-composite: exclude;
+		pointer-events: none;
+	}
 }

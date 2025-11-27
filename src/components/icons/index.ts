@@ -38,3 +38,5 @@ export * from "./ic_star";
 export * from "./ic_tag";
 export * from "./ic_time";
 export * from "./ic_user";
+
+export * from "./logo_text";
