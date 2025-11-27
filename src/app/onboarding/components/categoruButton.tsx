@@ -1,7 +1,10 @@
 "use client";
 
 import { CategorySquareBadge } from "@/components/ui/category/CategorySquareBadge";
-import { categoryLabels, type CategoryType } from "@/components/ui/category/config";
+import {
+	categoryLabels,
+	type CategoryType,
+} from "@/components/ui/category/config";
 import { cn } from "@/utils/cn";
 
 interface CategoryButtonProps {
@@ -24,7 +27,7 @@ export default function CategoryButton({
 			)}
 		>
 			<CategorySquareBadge category={category} />
-			<span className="mt-4 text-subtitle3 text-white">
+			<span className="text-subtitle3 mt-4 text-white">
 				{categoryLabels[category]}
 			</span>
 		</div>

@@ -1,13 +1,15 @@
 "use client";
 
-import React, { useState } from 'react'
-import OnboardingHeader from './components/onboardingHeader'
+import React, { useState } from "react";
+import OnboardingHeader from "./components/onboardingHeader";
 import { ArrowRightIcon } from "@/components/icons/ic_arrow_right";
-import CategoryList from './components/categoryList';
+import CategoryList from "./components/categoryList";
 import { type CategoryType } from "@/components/ui/category/config";
 
 const Page = () => {
-	const [selectedCategories, setSelectedCategories] = useState<CategoryType[]>([]);
+	const [selectedCategories, setSelectedCategories] = useState<CategoryType[]>(
+		[]
+	);
 
 	const handleToggleCategory = (category: CategoryType) => {
 		setSelectedCategories((prev) =>
@@ -19,13 +21,11 @@ const Page = () => {
 
 	return (
 		<div className="flex h-screen flex-col items-center justify-center">
-			<OnboardingHeader/>
+			<OnboardingHeader />
 
-
-
-			<button className='flex justify-center items-center gap-2 mt-10 mb-10 text-gray-500 text-button-medium cursor-pointer'>
+			<button className="text-button-medium mt-10 mb-10 flex cursor-pointer items-center justify-center gap-2 text-gray-500">
 				<p>건너뛰기</p>
-				<ArrowRightIcon className="h-4 w-4 text-gray-500"/>
+				<ArrowRightIcon className="h-4 w-4 text-gray-500" />
 			</button>
 
 			<div className="mt-10 mb-10">
@@ -35,17 +35,16 @@ const Page = () => {
 				/>
 			</div>
 			<button
-				className='mt-20 flex items-center gap-2 rounded-lg py-2 pl-6 pr-5 text-white text-button-medium'
+				className="text-button-medium mt-20 flex items-center gap-2 rounded-lg py-2 pr-5 pl-6 text-white"
 				style={{
-					background: 'linear-gradient(90deg, #6E50C8 0.02%, #CE5E61 99.98%)'
+					background: "linear-gradient(90deg, #6E50C8 0.02%, #CE5E61 99.98%)",
 				}}
 			>
 				<p>시작하기</p>
-				<ArrowRightIcon className="h-4 w-4 text-white"/>
+				<ArrowRightIcon className="h-4 w-4 text-white" />
 			</button>
-
 		</div>
-	)
-}
+	);
+};
 
-export default Page
+export default Page;

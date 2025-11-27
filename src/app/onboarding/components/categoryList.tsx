@@ -22,7 +22,7 @@ export default function CategoryList({
 	onToggleCategory,
 }: CategoryListProps) {
 	return (
-		<div className="flex w-content flex-col gap-10">
+		<div className="w-content flex flex-col gap-10">
 			<div className="flex justify-center gap-10">
 				{row1Categories.map((category) => (
 					<CategoryButton
