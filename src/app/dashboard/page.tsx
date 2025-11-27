@@ -67,6 +67,14 @@ const userData = {
 	tags: ["프론트엔드"]
 };
 
+/**
+ * Renders the dashboard layout containing the user's profile, today's term, and a filterable scrap list.
+ *
+ * The scrap list is filtered by the component's internal `selectedCategory` state; selecting a category updates
+ * that state and changes which cards are shown.
+ *
+ * @returns The dashboard React element composed of ProfileCard, TodayTermCard, and ScrapSection populated with the filtered cards.
+ */
 export default function DashboardPage() {
 	const [selectedCategory, setSelectedCategory] = useState("전체");
 
