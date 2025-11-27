@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import ScrapSection from "@app/dashboard/components/ScrapSection";
+import ScrapSection from "@/app/dashboard/components/ScrapSection";
 
 const mockCards = [
 	{
