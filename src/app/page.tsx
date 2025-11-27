@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useCallback } from "react";
-import Header from "@/components/Header";
 import SearchBar from "@/components/SearchBar";
 import TagList from "@/components/TagList";
 import RecommendedTermCard from "@/components/RecommendedTermCard";
@@ -42,7 +41,7 @@ export default function HomePage() {
 
 	return (
 		<>
-			<Header />
+			{/* <Header /> */}
 
 			<main className="flex w-full justify-center pt-20">
 				<div className="flex w-[1040px] flex-col items-center gap-20 px-20 pt-48 pb-20">
