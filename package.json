@@ -11,7 +11,8 @@
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
 		"typecheck": "tsc -p tsconfig.json --noEmit",
-		"lint:config": "editorconfig-checker"
+		"lint:config": "editorconfig-checker",
+		"gen:index": "node scripts/generate-terms-index.mjs"
 	},
 	"dependencies": {
 		"clsx": "^2.1.1",
