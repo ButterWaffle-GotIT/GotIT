@@ -27,7 +27,11 @@ export default function ScrapSection({
 			<div className="flex items-center justify-between">
 				<div className="flex items-center gap-[0.69rem]">
 					<div className="flex items-center justify-center rounded-[0.6rem] bg-linear-to-r from-[#6E50C8] to-[#CE5E61] p-[0.58rem]">
-						<ScrapIcon className="h-4 w-4 text-gray-700" width={16} height={16} />
+						<ScrapIcon
+							className="h-4 w-4 text-gray-700"
+							width={16}
+							height={16}
+						/>
 					</div>
 					<div className="flex flex-col">
 						<h2 className="text-subtitle1 text-gray-50">스크랩한 용어</h2>
@@ -57,36 +61,40 @@ export default function ScrapSection({
 							isActive={selectedCategory === category}
 							onClick={() => onCategorySelect(category)}
 						/>
-				))}
+					))}
+				</div>
 			</div>
-		</div>
 
-		{cards.length === 0 ? (
-			<div className="flex flex-col items-center mt-[3.94rem] mb-[3.94rem]">
-				<div className="w-15 h-15 rounded-full bg-gray-800 flex items-center justify-center">
-					<ScrapIcon className="w-7 h-7 text-gray-700" width={28} height={28} />
+			{cards.length === 0 ? (
+				<div className="mt-[3.94rem] mb-[3.94rem] flex flex-col items-center">
+					<div className="flex h-15 w-15 items-center justify-center rounded-full bg-gray-800">
+						<ScrapIcon
+							className="h-7 w-7 text-gray-700"
+							width={28}
+							height={28}
+						/>
+					</div>
+					<div className="mt-5">
+						<p className="text-body3 text-center text-gray-50">
+							해당 카테고리에 스크랩한 용어가 없어요
+						</p>
+					</div>
+					<div className="mt-3">
+						<p className="text-body5 text-center text-gray-500">
+							관심있는 용어를 스크랩해보세요
+						</p>
+					</div>
+					<button className="text-button-medium mt-5 rounded-lg bg-linear-to-r from-[#6E50C8] to-[#CE5E61] px-5 py-2 text-white">
+						용어 검색하기
+					</button>
 				</div>
-				<div className="mt-5">
-					<p className="text-body3 text-gray-50 text-center">
-						해당 카테고리에 스크랩한 용어가 없어요
-					</p>
+			) : (
+				<div className="grid grid-cols-3 gap-x-4 gap-y-4">
+					{cards.map((card) => (
+						<ScrapCard key={card.id} card={card} />
+					))}
 				</div>
-				<div className="mt-3">
-					<p className="text-body5 text-gray-500 text-center">
-						관심있는 용어를 스크랩해보세요
-					</p>
-				</div>
-				<button className="mt-5 px-5 py-2 rounded-lg bg-linear-to-r from-[#6E50C8] to-[#CE5E61] text-button-medium text-white">
-					용어 검색하기
-				</button>
-			</div>
-		) : (
-			<div className="grid grid-cols-3 gap-x-4 gap-y-4">
-				{cards.map((card) => (
-					<ScrapCard key={card.id} card={card} />
-				))}
-			</div>
-		)}
-	</div>
-);
+			)}
+		</div>
+	);
 }
