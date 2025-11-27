@@ -63,13 +63,18 @@ const mockCards = [
 export default function DashboardPage() {
 	const [selectedCategory, setSelectedCategory] = useState("전체");
 
+	const filteredCards =
+		selectedCategory === "전체"
+			? mockCards
+			: mockCards.filter((card) => card.category === selectedCategory);
+
 	return (
 		<div className="w-full">
 			<ScrapSection
-				totalCount={mockCards.length}
+				totalCount={filteredCards.length}
 				selectedCategory={selectedCategory}
 				onCategorySelect={setSelectedCategory}
-				cards={mockCards}
+				cards={filteredCards}
 			/>
 		</div>
 	);
