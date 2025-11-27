@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useCallback } from "react";
-import Header from "@/components/Header";
 import SearchBar from "@/components/SearchBar";
 import TagList from "@/components/TagList";
 import RecommendedTermCard from "@/components/RecommendedTermCard";

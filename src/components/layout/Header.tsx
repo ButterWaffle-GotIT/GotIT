@@ -85,7 +85,7 @@ export default function Header({
 }: HeaderProps) {
 	const pathname = usePathname();
 	const router = useRouter();
-	const { user, loading, logout } = useAuth();
+	const { user, loading } = useAuth();
 
 	if (pathname === "/login") {
 		return null;
