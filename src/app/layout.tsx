@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Image from "next/image";
 import { FirebaseAnalytics } from "@/components/providers/FirebaseAnalytics";
+import { Providers } from "@/components/providers/Providers";
 import Header from "@/components/layout/Header";
 
 export const metadata: Metadata = {
@@ -26,10 +27,12 @@ export default function RootLayout({
 				/>
 
 				<FirebaseAnalytics />
-				<Header isLoggedIn={false} showNav={true} />
-				<div className="w-content narrow:px-52 wide:px-110 relative z-10 mx-auto max-w-full px-80">
-					{children}
-				</div>
+				<Providers>
+					<Header showNav={true} />
+					<div className="w-content narrow:px-52 wide:px-110 relative z-10 mx-auto max-w-full px-80">
+						{children}
+					</div>
+				</Providers>
 			</body>
 		</html>
 	);

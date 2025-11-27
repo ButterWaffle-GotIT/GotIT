@@ -1,8 +1,26 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { GoogleLoginButtonIcon } from "@/components/buttons/GoogleLoginButtonIcon";
+import { useAuth } from "@/contexts/AuthContext";
 
 export default function LoginBody() {
+	const router = useRouter();
+	const { loginWithGoogle } = useAuth();
+
+	const handleGoogleLogin = async () => {
+		try {
+			await loginWithGoogle();
+			router.push("/");
+		} catch (error) {
+			console.error("로그인 중 오류 발생:", error);
+		}
+	};
+
+	const handleSkip = () => {
+		router.push("/");
+	};
+
 	return (
 		<div className="glass rounded-[1.25rem] bg-white/5 px-20 py-22">
 			<div className="flex flex-col gap-3">
@@ -15,7 +33,7 @@ export default function LoginBody() {
 			</div>
 
 			<div className="mt-12 flex flex-col gap-12">
-				<button onClick={() => {}}>
+				<button onClick={handleGoogleLogin}>
 					<GoogleLoginButtonIcon />
 				</button>
 
@@ -26,7 +44,7 @@ export default function LoginBody() {
 				</div>
 
 				<button
-					onClick={() => {}}
+					onClick={handleSkip}
 					className="bg-white-10 flex items-center self-stretch rounded-[0.625rem] px-[9.15625rem] py-3.5 text-gray-400"
 				>
 					둘러보기
