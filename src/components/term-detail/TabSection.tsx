@@ -178,8 +178,7 @@ const roleConfig = {
 
 // UseCase Tab - 채팅 UI
 function UseCaseTab({ term }: { term: TermDetail }) {
-	const hasConversations =
-		term.conversations && term.conversations.length > 0;
+	const hasConversations = term.conversations && term.conversations.length > 0;
 
 	return (
 		<article className="flex flex-col gap-5 rounded-xl border border-gray-800 p-7">
@@ -197,9 +196,7 @@ function UseCaseTab({ term }: { term: TermDetail }) {
 					))}
 				</div>
 			) : (
-				<p className="text-body5 text-gray-500">
-					등록된 대화 상황이 없습니다.
-				</p>
+				<p className="text-body5 text-gray-500">등록된 대화 상황이 없습니다.</p>
 			)}
 		</article>
 	);
