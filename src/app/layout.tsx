@@ -30,7 +30,6 @@ export default function RootLayout({
 
 				<Header showNav={true} />
 				<div className="w-content relative z-10 mx-auto">{children}</div>
-
 			</body>
 		</html>
 	);
