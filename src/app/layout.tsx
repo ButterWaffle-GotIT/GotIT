@@ -27,9 +27,7 @@ export default function RootLayout({
 
 				<FirebaseAnalytics />
 				<Header isLoggedIn={false} showNav={true} />
-				<div className="w-content relative z-10 mx-auto">
-					{children}
-				</div>
+				<div className="w-content relative z-10 mx-auto">{children}</div>
 			</body>
 		</html>
 	);

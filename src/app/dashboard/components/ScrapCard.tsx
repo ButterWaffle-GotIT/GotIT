@@ -13,43 +13,55 @@ export default function ScrapCard({ card }: ScrapCardProps) {
 	const colorClass = categoryColors[card.category];
 
 	return (
-		<div className="glass flex flex-col rounded-2xl p-5 bg-white/5 w-78.5">
+		<div className="glass flex w-78.5 flex-col rounded-2xl bg-white/5 p-5">
 			<div className="flex items-center justify-between">
 				<div className="flex items-center gap-2">
 					<div
-						className={`w-6 h-6 ${colorClass} flex items-center justify-center rounded-full outline-[0.25px] outline-offset-[-0.25px] outline-white p-1`}
+						className={`h-6 w-6 ${colorClass} flex items-center justify-center rounded-full p-1 outline-[0.25px] outline-offset-[-0.25px] outline-white`}
 					>
 						{IconComponent && (
-							<IconComponent className="w-4 h-4 text-white" width={16} height={16} />
+							<IconComponent
+								className="h-4 w-4 text-white"
+								width={16}
+								height={16}
+							/>
 						)}
 					</div>
 
-					<div className="w-43 h-6">
-						<span className="text-subtitle1 text-gray-50 line-clamp-1">
+					<div className="h-6 w-43">
+						<span className="text-subtitle1 line-clamp-1 text-gray-50">
 							{card.term}
 						</span>
 					</div>
 				</div>
 
-				<div className="bg-gray-900 flex items-center px-2 py-0.5 rounded-[6.25rem]">
+				<div className="flex items-center rounded-[6.25rem] bg-gray-900 px-2 py-0.5">
 					<span className="text-caption2 text-gray-300">{card.tag}</span>
 				</div>
 			</div>
 
 			<div className="py-[0.69rem]">
-				<p className="text-caption1 w-68.5 h-9 text-gray-400 line-clamp-2">
+				<p className="text-caption1 line-clamp-2 h-9 w-68.5 text-gray-400">
 					{card.description}
 				</p>
 			</div>
 
-			<div className="w-full h-px bg-gray-500 mb-[0.62rem]" />
+			<div className="mb-[0.62rem] h-px w-full bg-gray-500" />
 
 			<div className="flex items-center justify-between">
 				<div className="flex items-center gap-1">
-					<ScrapIcon className="w-3 h-3 text-yellow-400" width={12} height={12} />
+					<ScrapIcon
+						className="h-3 w-3 text-yellow-400"
+						width={12}
+						height={12}
+					/>
 					<span className="text-caption2 text-gray-500">{card.date}</span>
 				</div>
-				<ArrowRightIcon className="w-3 h-3 text-gray-400" width={12} height={12} />
+				<ArrowRightIcon
+					className="h-3 w-3 text-gray-400"
+					width={12}
+					height={12}
+				/>
 			</div>
 		</div>
 	);
