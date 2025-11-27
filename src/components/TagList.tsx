@@ -77,7 +77,7 @@ const renderTag = (
 		<div
 			key={tag.name}
 			onClick={() => onTagSelect(tag.name)}
-			className={`inline-flex cursor-pointer items-center justify-center gap-2 rounded-xl px-5 py-2 outline outline-[0.25px] outline-offset-[-0.25px] ${finalClasses} `}
+			className={`glass inline-flex cursor-pointer items-center justify-center gap-2 rounded-xl px-5 py-2 outline outline-[0.25px] outline-offset-[-0.25px] ${finalClasses} `}
 		>
 			{/* 아이콘 컨테이너 */}
 			<div
