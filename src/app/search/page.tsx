@@ -42,27 +42,27 @@ function SearchBar({
 	return (
 		<div className="flex w-[864px] flex-col items-center justify-start gap-10">
 			{/* 중앙 로고: got IT */}
-			<h1 className="font-['Dela_Gothic_One'] text-6xl font-normal leading-[60px] text-white">
+			<h1 className="font-['Dela_Gothic_One'] text-6xl leading-[60px] font-normal text-white">
 				got IT
 			</h1>
 
 			{/* 검색 입력창 컨테이너 */}
 			<div className="relative h-20 w-full">
 				{/* 1. 아우라 레이어 (opacity 30 + blur + gradient border) */}
-				<div className="absolute left-0 top-0 h-20 w-[864px] rounded-[20px] border border-violet-700 bg-gradient-to-r from-violet-700 to-red-400 opacity-30 blur-sm"></div>
+				<div className="absolute top-0 left-0 h-20 w-[864px] rounded-[20px] border border-violet-700 bg-gradient-to-r from-violet-700 to-red-400 opacity-30 blur-sm"></div>
 
 				{/* 2. 실제 입력창 (내부) */}
-				<div className="absolute left-[4px] top-[4px] inline-flex w-[856px] items-center justify-between overflow-hidden rounded-[20px] bg-black/70 px-7 py-4 outline outline-1 outline-offset-[-1px] outline-violet-700">
+				<div className="absolute top-[4px] left-[4px] inline-flex w-[856px] items-center justify-between overflow-hidden rounded-[20px] bg-black/70 px-7 py-4 outline outline-1 outline-offset-[-1px] outline-violet-700">
 					<input
 						value={value}
 						onChange={(e) => onChange(e.target.value)}
-						className="flex-1 bg-transparent font-['Pretendard'] text-base font-normal leading-6 text-white placeholder-gray-500 outline-none"
+						className="flex-1 bg-transparent font-['Pretendard'] text-base leading-6 font-normal text-white placeholder-gray-500 outline-none"
 						placeholder="궁금한 IT 용어를 검색해보세요... (예: API, React, Docker)"
 					/>
 					{/* 검색 아이콘 (SVG placeholder) */}
 					<div className="relative h-9 w-9 overflow-hidden">
 						<SearchIcon
-							className="absolute left-[6px] top-[6px] h-6 w-6 text-violet-700"
+							className="absolute top-[6px] left-[6px] h-6 w-6 text-violet-700"
 							width={24}
 							height={24}
 						/>
@@ -248,7 +248,7 @@ export default function SearchPage() {
 			if (value.trim()) {
 				// searchTerms 함수 사용 (이미 한글/영문/요약/태그 검색 포함)
 				const results = await searchTerms(value);
-				
+
 				// 선택된 태그로 필터링
 				const filtered =
 					selectedTag === "전체"
@@ -257,8 +257,8 @@ export default function SearchPage() {
 								(term) =>
 									term.primaryTag === selectedTag ||
 									term.tags.includes(selectedTag)
-						  );
-				
+							);
+
 				setSearchResults(filtered);
 			} else {
 				setSearchResults([]);
@@ -287,15 +287,15 @@ export default function SearchPage() {
 						? results
 						: results.filter(
 								(term) =>
-									term.primaryTag === selectedTag || term.tags.includes(selectedTag)
-						);
+									term.primaryTag === selectedTag ||
+									term.tags.includes(selectedTag)
+							);
 				setSearchResults(filtered);
 				setIsSearching(false);
 			}
 		};
 		runSearch();
 	}, [selectedTag, searchTerm]);
-
 
 	const displayedRecommendedTerms = showMoreRecommended
 		? recommendedTerms
@@ -315,7 +315,7 @@ export default function SearchPage() {
 					{searchTerm.trim() && (
 						<section className="flex flex-col items-start justify-start gap-5 self-stretch">
 							<div className="flex items-center justify-between self-stretch">
-								<div className="font-['Pretendard'] text-sm font-semibold leading-5 text-gray-500">
+								<div className="font-['Pretendard'] text-sm leading-5 font-semibold text-gray-500">
 									검색 결과 : "{searchTerm}"
 								</div>
 								<button className="rounded-lg border border-gray-700 px-3 py-1.5 text-sm text-gray-400 transition-colors hover:border-gray-600 hover:text-gray-300">
@@ -337,9 +337,7 @@ export default function SearchPage() {
 								<div className="flex w-full items-center justify-center py-20">
 									<div className="text-center text-gray-500">
 										<p className="text-lg">검색 결과가 없습니다.</p>
-										<p className="mt-2 text-sm">
-											다른 키워드로 검색해보세요.
-										</p>
+										<p className="mt-2 text-sm">다른 키워드로 검색해보세요.</p>
 									</div>
 								</div>
 							)}
@@ -349,7 +347,7 @@ export default function SearchPage() {
 					{/* C. 추천 용어 섹션 */}
 					{!searchTerm.trim() && (
 						<section className="flex flex-col items-start justify-start gap-5 self-stretch">
-							<div className="self-stretch font-['Pretendard'] text-sm font-semibold leading-5 text-gray-500">
+							<div className="self-stretch font-['Pretendard'] text-sm leading-5 font-semibold text-gray-500">
 								추천 용어
 							</div>
 							<div className="inline-flex flex-wrap items-start justify-start gap-6 self-stretch">
