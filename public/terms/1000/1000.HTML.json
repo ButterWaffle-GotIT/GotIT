@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1001, 1002],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Marketer",
+			"text": "개발팀, 지난번 페이지 SEO 점수가 너무 낮게 나와요. `div`만 쓰지 말고 시맨틱 태그(Semantic Tag) 좀 신경 써주세요."
+		},
+		{
+			"role": "Dev",
+			"text": "웹 접근성 심사 통과하려면 이미지에 `alt` 값 비어있는 거랑, 버튼에 `aria-label` 없는 거 싹 다 채워 넣어야 합니다."
+		},
+		{
+			"role": "Dev",
+			"text": "폼 유효성 검사 자바스크립트로 다 짜지 말고, 간단한 건 HTML5 `required` 속성 활용해서 브라우저 기본 기능 씁시다."
+		}
+	],
 	"keywords": ["html5", "태그", "마크업", "시맨틱", "표준"],
 	"level": "beginner",
 	"updatedAt": "2025-11-05"

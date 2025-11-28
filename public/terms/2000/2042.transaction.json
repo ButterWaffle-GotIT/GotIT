@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2041, 2011, 2010],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "계좌이체 기능은 'A 계좌 출금'과 'B 계좌 입금'을 하나의 트랜잭션으로 묶어야 해요. 그래야 중간에 하나라도 실패하면 전부 롤백돼서 데이터가 꼬이는 걸 막을 수 있죠."
+		},
+		{
+			"role": "Dev",
+			"text": "주문 생성 시 'orders' 테이블에 데이터를 넣고 'products' 테이블에서 재고를 줄이는 두 작업을 반드시 하나의 트랜잭션으로 묶어주세요. 재고는 빠졌는데 주문은 실패하면 큰일 나요."
+		},
+		{
+			"role": "Other",
+			"text": "주문 생성 API 테스트할 때, 일부러 재고를 0으로 만들고 주문을 시도해서 트랜잭션이 정상적으로 롤백되고 주문 정보가 안 남는지 꼭 확인해야 합니다."
+		}
+	],
 	"keywords": ["transaction", "트랜잭션", "acid", "db", "commit", "rollback"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-04"

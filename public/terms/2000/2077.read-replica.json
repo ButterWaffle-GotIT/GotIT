@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2010, 2011, 2018, 2076],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "우리 서비스는 게시물 조회수처럼 읽기(Read) 요청이 쓰기(Write) 요청보다 훨씬 많아요. 주 DB의 부하를 줄이기 위해 리드 레플리카를 여러 대 만들어서 조회 요청을 분산시켜야 합니다."
+		},
+		{
+			"role": "Dev",
+			"text": "주 DB에 장애가 발생하더라도 서비스가 완전히 중단되지 않도록, 리드 레플리카를 주 DB로 승격(Promote)하는 재해 복구 전략을 미리 세워둬야 해요. 다운타임을 최소화해야죠."
+		},
+		{
+			"role": "Dev",
+			"text": "리드 레플리카는 비동기 복제 방식이라 주 DB에 쓰여진 최신 데이터가 레플리카에 반영되는 데 약간의 지연(Replication Lag)이 있을 수 있어요. 실시간으로 완벽한 최신 데이터가 필요한 기능은 주 DB에서 읽어와야 합니다."
+		}
+	],
 	"keywords": ["read replica", "replication", "lag", "promote", "부하 분산"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-13"

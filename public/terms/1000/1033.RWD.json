@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1001],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "PM",
+			"text": "모바일 전용 사이트를 따로 만들 여력은 없으니까, 반응형 웹(RWD)으로 하나 만들어서 PC랑 모바일 둘 다 대응하시죠."
+		},
+		{
+			"role": "Design",
+			"text": "태블릿에서 보면 레이아웃이 어정쩡하게 깨져요. 브레이크포인트(Breakpoint) 하나 더 추가해서 그리드 다시 잡아야 할 것 같아요."
+		},
+		{
+			"role": "Dev",
+			"text": "이미지가 너무 커서 모바일에서 로딩이 느립니다. 반응형 이미지(srcset) 적용해서 디바이스 크기에 맞는 이미지를 불러오게 할게요."
+		}
+	],
 	"keywords": [
 		"RWD",
 		"responsive",

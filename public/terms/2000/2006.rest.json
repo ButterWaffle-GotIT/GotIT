@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2007, 2009, 1001],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "새로 만들 API는 REST 원칙을 잘 지켜서 설계해주세요. 예를 들어, 유저 정보를 가져오는 건 'GET /users/{id}'로, 생성하는 건 'POST /users'로요. 그래야 프론트 개발자도 이해하기 쉽죠."
+		},
+		{
+			"role": "Dev",
+			"text": "백엔드에서 API 문서 주셨는데, RESTful하게 잘 설계되어 있네요. 엔드포인트 주소랑 HTTP 메서드만 봐도 어떤 기능인지 예측이 돼서 연동하기 편하겠어요."
+		},
+		{
+			"role": "PM",
+			"text": "이번에 외부 업체랑 API 연동해야 하는데, 다행히 양쪽 다 표준적인 REST API를 사용하고 있어서 개발 자체는 어렵지 않겠네요. 데이터 형식만 잘 맞추면 되겠어요."
+		}
+	],
 	"keywords": ["rest", "restful", "api", "http", "crud", "uri"],
 	"level": "beginner",
 	"updatedAt": "2025-11-04"

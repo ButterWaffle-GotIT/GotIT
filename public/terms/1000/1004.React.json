@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1002],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "PM",
+			"text": "이번 프로젝트는 일정상 인력 충원이 급하니까, 개발자 풀(Pool)이 가장 넓은 리액트로 가는 게 안전할 것 같아요."
+		},
+		{
+			"role": "Dev",
+			"text": "대시보드에 들어갈 차트랑 그리드 라이브러리가 리액트 생태계 쪽에 훨씬 잘 되어 있어서, 굳이 다른 걸 써서 고생할 필요 없을 듯해요."
+		},
+		{
+			"role": "Dev",
+			"text": "컴포넌트 재사용성은 좋은데, `useEffect` 의존성 배열 잘못 건드려서 무한 루프 도는 것만 좀 신경 씁시다."
+		}
+	],
 	"keywords": ["라이브러리", "컴포넌트", "가상 DOM", "Hooks", "JSX"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-05"

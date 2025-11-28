@@ -13,7 +13,20 @@
 	"primaryTag": "데이터-AI",
 	"relatedIds": [],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Other",
+			"text": "회사 데이터가 여러 부서에 흩어져 있어서 Data Governance 체계를 구축했어요. 데이터 품질 기준을 정하고, 접근 권한을 명확히 하니까 데이터 신뢰도가 확 올라갔어요. 초기 세팅은 시간이 좀 걸렸지만요."
+		},
+		{
+			"role": "PM",
+			"text": "고객 데이터를 다룰 때 개인정보 보호 규정을 지켜야 해서 Data Governance가 꼭 필요해요. 누가 어떤 데이터에 접근할 수 있는지 명확하게 관리되니까 리스크가 줄어드는 게 체감돼요."
+		},
+		{
+			"role": "Dev",
+			"text": "데이터 거버넌스 정책이 생기고 나서 데이터 사용 규칙이 명확해졌어요. 어떤 필드를 어떻게 써야 하는지 가이드가 있으니까 개발할 때 헷갈릴 일이 줄었는데, 규정 준수하려면 추가 작업이 좀 필요하긴 해요."
+		}
+	],
 	"keywords": ["data-governance", "데이터 거버넌스", "Data Governance"],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",

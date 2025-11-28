@@ -13,7 +13,20 @@
 	"primaryTag": "IT비즈니스-기획-프로젝트관리",
 	"relatedIds": [4053],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "PM",
+			"text": "PMF를 찾기 전까지는 마케팅에 돈을 쓰지 말라는 조언을 들었어요. 제품이 시장에 맞는지 검증되기 전에 확장하면 낭비가 크거든요."
+		},
+		{
+			"role": "PM",
+			"text": "PMF를 찾았다는 신호는 사용자들이 자발적으로 입소문을 퍼뜨리고 유지율이 높아지는 거예요. 저희는 월간 활성 사용자가 40% 이상 증가할 때 PMF를 찾았다고 판단했어요."
+		},
+		{
+			"role": "Marketer",
+			"text": "PMF를 찾기 전에는 여러 고객 세그먼트를 테스트하면서 어떤 그룹이 가장 반응이 좋은지 찾았어요. PMF를 찾고 나서야 본격적인 마케팅을 시작했죠."
+		}
+	],
 	"keywords": ["pmf", "PMF", "Product-Market Fit"],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",

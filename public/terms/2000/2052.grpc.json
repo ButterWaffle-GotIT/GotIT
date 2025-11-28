@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2026, 2016, 2053, 2006],
 	"confusableIds": [2006, 2007],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "마이크로서비스 간의 통신은 JSON 기반의 REST API보다 gRPC를 쓰는 게 훨씬 효율적이에요. HTTP/2 기반이라 빠르고, Protocol Buffers로 메시지 주고받으면 훨씬 가볍거든요."
+		},
+		{
+			"role": "Dev",
+			"text": "gRPC는 서비스 인터페이스를 '.proto' 파일로 명확하게 정의하니까, 각 마이크로서비스 팀 간의 계약(Contract)이 확실해져요. 나중에 API 변경될 때도 타입 체크를 미리 할 수 있어서 버그도 줄일 수 있고요."
+		},
+		{
+			"role": "Dev",
+			"text": "실시간으로 대용량 데이터를 주고받는 스트리밍 서비스는 HTTP/1.1 기반의 REST로는 한계가 있어요. gRPC의 양방향 스트리밍 기능을 활용하면 훨씬 안정적이고 효율적으로 구현할 수 있습니다."
+		}
+	],
 	"keywords": ["grpc", "rpc", "http2", "streaming", "protobuf"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-12"

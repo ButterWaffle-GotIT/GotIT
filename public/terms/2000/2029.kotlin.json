@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2000, 2001],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "자바로 개발할 때 가장 지긋지긋했던 NullPointerException(NPE)을 코틀린은 언어 차원에서 막아주니까 너무 좋아요. 코드도 훨씬 간결해지고요."
+		},
+		{
+			"role": "Dev",
+			"text": "새로운 백엔드 프로젝트는 스프링 부트에 코틀린 조합으로 가시죠. 기존 자바 라이브러리는 그대로 쓰면서 코드 생산성은 훨씬 높일 수 있어요. 요즘 잘하는 개발자들은 코틀린을 더 선호하기도 하고요."
+		},
+		{
+			"role": "Dev",
+			"text": "자바로 비동기 로직 짜려면 너무 복잡한데, 코틀린은 코루틴(Coroutine)을 지원해서 비동기 코드를 동기 코드처럼 간단하게 짤 수 있어요. 가독성이 비교가 안 되죠."
+		}
+	],
 	"keywords": ["kotlin", "코틀린", "java", "jvm", "spring", "android"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-04"

@@ -13,7 +13,20 @@
 	"primaryTag": "IT비즈니스-기획-프로젝트관리",
 	"relatedIds": [],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "PM",
+			"text": "이번 마케팅 캠페인에 5천만 원 투자해서 1억 원 매출이 나왔으니 ROI가 100%네요. 다음에도 비슷한 전략으로 가면 좋을 것 같아요."
+		},
+		{
+			"role": "Dev",
+			"text": "새 라이브러리 도입을 검토 중인데, 초기 학습 비용과 유지보수성 개선 효과를 따져봐야 ROI를 계산할 수 있을 것 같아요. 단기적으로는 비용이 들지만, 장기적으로는 이득이겠죠?"
+		},
+		{
+			"role": "Marketer",
+			"text": "SNS 광고 ROI가 낙적이 안 나와서 채널을 바꾸려고해요. 같은 예산으로 검색 광고를 돌려보니 전환율이 2배 높더라고요."
+		}
+	],
 	"keywords": ["roi", "ROI", "Return on Investment"],
 	"level": "beginner",
 	"updatedAt": "2025-11-11",

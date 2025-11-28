@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2004],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "일일이 SQL 쿼리 짤 필요 없이, 자바스크립트 객체 다루듯이 DB 데이터를 조작할 수 있으니까 ORM을 쓰는 거죠. 생산성이 비교가 안 돼요."
+		},
+		{
+			"role": "Dev",
+			"text": "ORM이 편하긴 한데, 너무 의존하면 복잡한 JOIN문 같은 데서 N+1 같은 성능 문제가 터질 수 있어요. 어떤 SQL이 실행될지 항상 의식하면서 써야 해요."
+		},
+		{
+			"role": "Dev",
+			"text": "나중에 데이터베이스를 MySQL에서 PostgreSQL로 바꿀 수도 있는데, ORM을 써두면 DB 종속적인 코드가 줄어서 마이그레이션이 훨씬 편해져요."
+		}
+	],
 	"keywords": ["orm", "db", "database", "jpa", "typeorm", "sql"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-04"

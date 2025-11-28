@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2020, 2006, 2042, 2054],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "사용자가 결제 버튼을 실수로 두 번 눌러서 중복 결제가 되는 걸 막으려면 멱등성(Idempotency)을 구현해야 해요. 클라이언트에서 보낸 고유한 요청 ID를 받아서, 이미 처리된 요청이면 무시하고 첫 번째 결과만 반환하도록요."
+		},
+		{
+			"role": "Dev",
+			"text": "HTTP 메서드 중에 GET이나 DELETE는 여러 번 호출해도 서버 상태가 바뀌지 않아서 기본적으로 멱등성을 보장해요. 하지만 POST는 새로 자원을 생성하니까 멱등성이 없죠."
+		},
+		{
+			"role": "PM",
+			"text": "결제 시스템은 네트워크가 불안정해서 타임아웃이 잦은데, 멱등성을 구현해두면 사용자가 결제 실패 시에도 중복 결제 걱정 없이 안심하고 재시도할 수 있겠네요."
+		}
+	],
 	"keywords": ["idempotency", "idempotent", "idempotency-key", "retry", "http"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-12"

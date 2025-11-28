@@ -13,7 +13,20 @@
 	"primaryTag": "IT비즈니스-기획-프로젝트관리",
 	"relatedIds": [4054],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Design",
+			"text": "사용자 인터뷰로 공감 단계부터 시작했어요. 진짜 문제가 무엇인지 파악하고 나니까 해결책이 명확해졌고, 프로토타입 테스트로 빠르게 검증할 수 있었어요."
+		},
+		{
+			"role": "PM",
+			"text": "디자인 씭킹 워크숨을 하면서 PM, 개발자, 디자이너가 함께 아이디어를 내는 게 좋았어요. 각자의 관점이 모여서 더 폭넓은 솔루션이 나왔더라고요."
+		},
+		{
+			"role": "Design",
+			"text": "프로토타입 단계에서 Figma로 빠르게 목업을 만들어서 테스트했어요. 완벽하게 만들기 전에 사용자 피드백을 받으니까 헛수고가 확 줄었어요."
+		}
+	],
 	"keywords": ["design-thinking", "디자인 씽킹", "Design Thinking"],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",

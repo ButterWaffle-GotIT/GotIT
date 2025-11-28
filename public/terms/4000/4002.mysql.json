@@ -13,7 +13,20 @@
 	"primaryTag": "데이터-AI",
 	"relatedIds": [],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "새로 만드는 웹 서비스의 사용자 정보, 게시물, 댓글 같은 구조화된 데이터는 MySQL에 저장하는 게 제일 일반적이고 안정적이에요. RDBMS라 데이터 무결성도 보장되고요."
+		},
+		{
+			"role": "Dev",
+			"text": "MySQL은 오픈소스라 라이선스 비용 부담이 적고, 워낙 널리 쓰여서 장애 발생 시 해결책을 찾기 쉽다는 장점이 있어요. 백업이나 복구 툴도 잘 되어있고요."
+		},
+		{
+			"role": "PM",
+			"text": "우리 팀은 PHP나 Node.js 개발자가 많으니까, 이 언어들과 궁합이 잘 맞는 MySQL을 기본 DB로 사용하는 게 좋겠어요. 기존 인력으로도 충분히 운영 가능하고, 필요하면 쉽게 인력을 수급할 수 있죠."
+		}
+	],
 	"keywords": ["mysql", "MySQL", "MySQL"],
 	"level": "beginner",
 	"updatedAt": "2025-11-11",

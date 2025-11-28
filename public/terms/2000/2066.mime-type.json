@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2020, 2065, 2006],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "API 응답으로 JSON 데이터를 보낼 때는 반드시 HTTP 헤더에 'Content-Type: application/json'을 명시해줘야 해요. 그래야 프론트엔드 브라우저나 클라이언트 앱에서 이 데이터를 JSON으로 올바르게 파싱할 수 있어요."
+		},
+		{
+			"role": "Dev",
+			"text": "파일 업로드 기능을 만들 때, 이미지만 업로드 가능하도록 하려면 클라이언트 단에서 'accept=\"image/*\"' 속성을 사용하고, 서버 단에서도 'Content-Type' 헤더가 이미지 MIME 타입인지 꼭 검증해야 해요."
+		},
+		{
+			"role": "Dev",
+			"text": "웹 서버가 '.html' 파일을 'text/plain'으로 잘못 서빙해서 브라우저가 HTML로 인식을 못 하네요. Nginx 설정에서 '.html' 파일에 대한 'Content-Type'을 'text/html'로 명시적으로 지정해줘야 합니다."
+		}
+	],
 	"keywords": [
 		"mime",
 		"content-type",

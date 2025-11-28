@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2020],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "새로 구입한 도메인 'gotit.com'을 우리 서버 IP 주소에 연결해야 하니까, DNS 레코드에 A 레코드랑 CNAME 레코드를 추가해주세요."
+		},
+		{
+			"role": "Dev",
+			"text": "외부 API 호출이 자꾸 안 되는데, 혹시 도메인 주소에 해당하는 IP가 잘못 매핑된 건 아니죠? DNS 설정 한번 확인해봐야 할 것 같아요."
+		},
+		{
+			"role": "PM",
+			"text": "우리 서비스가 글로벌로 확장하려면, 사용자 위치에 따라 가장 가까운 서버로 연결해주는 DNS 설정이 중요하다고 들었어요. 그래야 해외에서도 서비스가 빠릿빠릿할 테니까요."
+		}
+	],
 	"keywords": ["dns", "domain", "ip", "도메인", "네트워크", "주소"],
 	"level": "beginner",
 	"updatedAt": "2025-11-04"

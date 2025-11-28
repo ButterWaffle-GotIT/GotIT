@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2003],
 	"confusableIds": [2000],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "PM",
+			"text": "우리 팀 프론트엔드 개발자들이 자바스크립트에 익숙하니까, 이번 신규 API 서버는 Node.js로 구축하면 풀스택으로 빠르게 개발할 수 있지 않을까요?"
+		},
+		{
+			"role": "Dev",
+			"text": "실시간 채팅이나 푸시 알림처럼 I/O가 빈번한 기능에는 논블로킹 방식으로 작동하는 Node.js가 정말 효율적이에요. 요청을 쌓아두지 않고 바로바로 처리하니까요."
+		},
+		{
+			"role": "Dev",
+			"text": "Node.js가 싱글 스레드 기반이라 CPU 많이 쓰는 무거운 작업에는 불리해요. 이미지 처리 같은 기능은 파이썬이나 코틀린으로 만든 별도 서버에 맡기는 게 낫죠."
+		}
+	],
 	"keywords": ["node.js", "node", "노드", "javascript", "js", "v8"],
 	"level": "beginner",
 	"updatedAt": "2025-11-04"

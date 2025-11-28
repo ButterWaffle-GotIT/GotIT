@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2005, 2008],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "이번 프로젝트는 어드민(관리자) 페이지 기능이 중요한데, Django는 기본으로 제공되는 admin 기능이 워낙 강력해서 따로 개발할 필요가 없어요. 생산성이 엄청나죠."
+		},
+		{
+			"role": "PM",
+			"text": "우리 MVP는 빠르게 만들고 사용자 데이터를 분석하는 게 중요하니까, 파이썬 기반의 Django로 가는 게 좋겠어요. 데이터 사이언스팀과의 협업도 훨씬 수월할 거고요."
+		},
+		{
+			"role": "Dev",
+			"text": "Django는 '배터리 포함(batteries-included)' 철학이라 ORM부터 인증까지 다 들어있어서 편하긴 한데, 너무 무겁고 규격이 빡빡하게 느껴질 때도 있어요. 간단한 API 서버라면 Flask가 더 나을 수도 있죠."
+		}
+	],
 	"keywords": ["django", "장고", "python", "파이썬", "프레임워크"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-04"

@@ -10,7 +10,20 @@
 	"primaryTag": "UI/UX디자인",
 	"relatedIds": [1017, 1015, 1014],
 	"confusableIds": [],
-	"useCases": [1017],
+	"useCases": [
+		{
+			"role": "Design",
+			"text": "화면 예쁜 것도 중요한데, 지금 UX가 너무 불친절해요. 결제 오류 났을 때 왜 났는지 안 알려주면 사용자들 다 떠납니다."
+		},
+		{
+			"role": "PM",
+			"text": "단순히 클릭 수 줄이는 게 좋은 UX는 아닙니다. 사용자가 확신을 갖고 다음 단계로 넘어가게 만드는 경험 설계가 필요해요."
+		},
+		{
+			"role": "Marketer",
+			"text": "고객들이 우리 앱 쓰면서 '편안하다', '대접받는다'는 느낌을 받아야 락인(Lock-in) 효과가 생겨요. UX 라이팅부터 좀 더 따뜻하게 바꿔보죠."
+		}
+	],
 	"keywords": ["사용자 중심", "페르소나", "유저 여정", "Pain Point", "감성"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-05"

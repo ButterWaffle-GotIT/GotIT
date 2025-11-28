@@ -13,7 +13,20 @@
 	"primaryTag": "IT비즈니스-기획-프로젝트관리",
 	"relatedIds": [],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "PM",
+			"text": "이번 분기 OKR은 '사용자 경험 개선'을 Objective로 잡고, Key Results는 '앱 로딩 속도 2초 이내', '버그 리포트 50% 감소', '사용자 만족도 4.5점 달성'으로 설정했어요."
+		},
+		{
+			"role": "Dev",
+			"text": "개발팀 OKR을 전체 공유하니까 좋네요. 다른 팀이 뭐 하는지 알 수 있고, 우리 팀이 어떤 목표로 일하는지도 명확해져서 동기부여가 돼요."
+		},
+		{
+			"role": "PM",
+			"text": "OKR 세팅할 때 KPI와 헷갈리는 분들이 있는데, KPI는 수치 지표 자체고 OKR은 목표와 결과를 연결하는 프레임워크라는 걸 이해하시면 돼요."
+		}
+	],
 	"keywords": ["okr", "OKR", "Objectives and Key Results"],
 	"level": "beginner",
 	"updatedAt": "2025-11-11",

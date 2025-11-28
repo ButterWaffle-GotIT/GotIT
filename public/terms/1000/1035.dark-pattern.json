@@ -10,7 +10,20 @@
 	"primaryTag": "UI/UX",
 	"relatedIds": [1022],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Design",
+			"text": "탈퇴 버튼을 이렇게 옅은 회색으로 숨기는 건 좀 아니지 않나요? 이건 명백한 다크 패턴(Dark Pattern)이라 나중에 욕먹을 것 같아요."
+		},
+		{
+			"role": "Marketer",
+			"text": "구독 해지 방어율 높이는 건 좋은데, 고객들이 '속았다'고 느끼면 브랜드 이미지 타격이 더 커요. 너무 꼬아놓지 맙시다."
+		},
+		{
+			"role": "PM",
+			"text": "법무팀에서 연락 왔는데, 이번에 추가한 '자동 동의 체크박스'가 규제 대상이 될 수도 있다고 하네요. UI 다시 잡아야겠습니다."
+		}
+	],
 	"keywords": ["dark pattern", "다크패턴", "기만적 디자인", "UX", "속임수"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-13"

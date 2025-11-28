@@ -13,7 +13,20 @@
 	"primaryTag": "개발문화-프로세스",
 	"relatedIds": [4047],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "GitHub Actions로 CI/CD 파이프라인을 구축했어요. 코드를 푸시하면 자동으로 테스트가 돌고, main 브랜치에 머지되면 자동으로 배포까지 되니까 정말 편해요."
+		},
+		{
+			"role": "Dev",
+			"text": "CI에서 테스트가 실패하면 머지가 안 되게 설정해뒀어요. 덕분에 버그가 프로덕션에 올라갈 가능성이 확 줄었고, 코드 품질도 올라갔어요."
+		},
+		{
+			"role": "PM",
+			"text": "CI/CD 덕분에 배포 속도가 엄청 빨라졌어요. 고객 피드백을 받으면 바로 반영해서 다음 날 배포할 수 있으니까 시장 대응력이 좋아졌어요."
+		}
+	],
 	"keywords": ["cicd", "ci/cd", "CI/CD"],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",

@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1001, 1004, 1010],
 	"confusableIds": [1010],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "클래스 이름 짓느라 `wrapper-inner-box` 같은 거 고민할 시간에, 테일윈드로 그냥 `flex justify-center` 박고 빨리 퇴근하죠."
+		},
+		{
+			"role": "Design",
+			"text": "저희 디자인 시스템 컬러랑 간격 토큰들, `tailwind.config.js`에 미리 세팅해두면 개발할 때 픽셀 안 맞춰봐도 돼서 편할 거예요."
+		},
+		{
+			"role": "Dev",
+			"text": "HTML 코드가 너무 지저분해지긴 하는데, 한번 익숙해지니까 CSS 파일 왔다 갔다 안 해도 돼서 생산성은 진짜 압도적이네요."
+		}
+	],
 	"keywords": ["유틸리티", "Atomic CSS", "Tailwind", "Purge", "JIT"],
 	"level": "beginner",
 	"updatedAt": "2025-11-05"

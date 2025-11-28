@@ -7,13 +7,26 @@
 	},
 	"aliases": ["MongoDB"],
 	"summary": "문서 기반 NoSQL 데이터베이스로, JSON 형태로 데이터를 저장합니다.",
-	"onelinerForNonTech": "엑셀 셀 대신 JSON 문서로 데이터를 쌓는 저장소.",
+	"onelinerForNonTech": "엑셀 셀 대신 자유로운 JSON 박스에 데이터를 담는 방식.",
 	"description": "MongoDB는 스키마가 고정되지 않아 구조 변경이 자유롭습니다. 대규모 트래픽, 실시간 분석, 로그 수집 등에 적합하며, 확장성이 뛰어납니다.",
 	"tags": ["데이터-AI", "데이터베이스", "NoSQL"],
 	"primaryTag": "데이터-AI",
 	"relatedIds": [],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "사용자 프로필 정보처럼 필드가 자주 추가되거나 변경될 수 있는 데이터는 MongoDB 같은 문서 기반 NoSQL DB에 저장하는 게 훨씬 유연해요. 스키마 변경 때문에 배포를 멈출 필요가 없으니까요."
+		},
+		{
+			"role": "Dev",
+			"text": "소셜 미디어에서 수집한 방대한 양의 비정형 데이터를 분석해야 하는데, MongoDB는 JSON 형태로 데이터를 저장하고 Aggregation Framework 같은 강력한 쿼리 기능도 있어서 데이터 전처리나 탐색적 분석에 매우 유용해요."
+		},
+		{
+			"role": "PM",
+			"text": "우리 서비스는 사용자 생성 콘텐츠(UGC)가 많아서 데이터 양이 폭발적으로 늘어날 수 있어요. MongoDB는 샤딩(Sharding) 같은 기능을 통해 수평 확장이 용이하니까, 서비스가 아무리 커져도 데이터베이스 스케일링에 대한 걱정을 덜 수 있습니다."
+		}
+	],
 	"keywords": ["mongodb", "MongoDB"],
 	"level": "beginner",
 	"updatedAt": "2025-11-11",

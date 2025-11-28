@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1001, 1009],
 	"confusableIds": [1009],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Design",
+			"text": "디자인 시스템 개편되면서 메인 컬러가 싹 바뀌었는데, 개발 쪽 반영 오래 걸릴까요?"
+		},
+		{
+			"role": "Dev",
+			"text": "아뇨, 저희 Sass 변수(Variables)로 컬러값 다 관리하고 있어서, 변수 파일 하나만 수정하면 전체 사이트에 바로 적용됩니다."
+		},
+		{
+			"role": "Dev",
+			"text": "근데 SCSS 작성할 때 중첩(Nesting) 너무 깊게 하지 마세요. 3단계 넘어가면 나중에 선택자 우선순위 꼬여서 유지보수 힘듭니다."
+		}
+	],
 	"keywords": ["전처리기", "SCSS", "변수", "중첩", "Mixin", "컴파일"],
 	"level": "beginner",
 	"updatedAt": "2025-11-05"

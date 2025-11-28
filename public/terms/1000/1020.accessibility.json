@@ -10,7 +10,20 @@
 	"primaryTag": "UI/UX디자인",
 	"relatedIds": [1000, 1001],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Other",
+			"text": "공공기관 프로젝트라 웹 접근성(Web Accessibility) 인증 마크 필수로 받아야 해요. 이미지에 대체 텍스트(alt) 빠진 거 싹 다 채워주세요."
+		},
+		{
+			"role": "Dev",
+			"text": "이 색상 조합은 명도 대비가 너무 낮아서 접근성 검사 통과 못 합니다. 텍스트 컬러를 좀 더 진하게 수정해야 할 것 같아요."
+		},
+		{
+			"role": "PM",
+			"text": "스크린 리더 사용자가 키보드만으로도 결제까지 할 수 있어야 합니다. 탭(Tab) 키 눌렀을 때 포커스 순서가 뒤죽박죽이네요."
+		}
+	],
 	"keywords": ["WCAG", "KWCAG", "스크린 리더", "대체 텍스트", "시맨틱", "ARIA"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-05"

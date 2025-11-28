@@ -13,7 +13,20 @@
 	"primaryTag": "데이터-AI",
 	"relatedIds": [4038, 4040],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Other",
+			"text": "비즈니스 대시보드를 위해 Data Warehouse를 구축했어요. 여러 DB에서 데이터를 모아서 정제하고 구조화해두니까 SQL로 쉽게 조회할 수 있어요. 다만 실시간 데이터가 필요하면 별도 처리가 필요해요."
+		},
+		{
+			"role": "PM",
+			"text": "월별 매출 분석 리포트를 뽑을 때 Data Warehouse가 정말 유용해요. 데이터가 이미 정리돼 있어서 비전문가도 쿼리만 짜면 원하는 인사이트를 얻을 수 있거든요."
+		},
+		{
+			"role": "Dev",
+			"text": "운영 DB에서 직접 분석 쿼리를 돌리면 성능에 영향을 줄까봐 Data Warehouse를 따로 만들었어요. ETL 파이프라인으로 데이터를 주기적으로 동기화하니까 안정적으로 분석할 수 있어요."
+		}
+	],
 	"keywords": ["data-warehouse", "데이터 웨어하우스", "Data Warehouse"],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",

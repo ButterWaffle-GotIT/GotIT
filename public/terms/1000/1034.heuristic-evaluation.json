@@ -10,7 +10,20 @@
 	"primaryTag": "UI/UX",
 	"relatedIds": [1022, 1032],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Design",
+			"text": "UT(사용자 테스트) 하기엔 시간도 예산도 부족하니까, 일단 우리끼리 닐슨 원칙 기준으로 휴리스틱 평가(Heuristic Evaluation) 돌려서 급한 불부터 끄죠."
+		},
+		{
+			"role": "PM",
+			"text": "경쟁사 앱 3개 정도 잡아서 휴리스틱 분석 해봤는데, 다들 '시스템 상태 가시성' 점수가 높더라고요. 우리도 로딩 피드백 좀 강화합시다."
+		},
+		{
+			"role": "Design",
+			"text": "전문가 리뷰 결과, '일관성과 표준' 항목에서 감점이 많아요. 페이지마다 버튼 위치가 달라서 사용자가 혼란스러워합니다."
+		}
+	],
 	"keywords": [
 		"heuristic",
 		"heuristic evaluation",

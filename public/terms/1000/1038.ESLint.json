@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1002, 1003],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "코드 리뷰할 때마다 띄어쓰기나 세미콜론 같은 걸로 시간 쓰지 말고, 그냥 ESLint 규칙 빡빡하게 정해서 자동화합시다."
+		},
+		{
+			"role": "Dev",
+			"text": "신규 입사자분이 `var`를 자꾸 쓰시는데, 린트(Linter) 설정에서 `no-var` 에러로 띄우게 바꿔서 아예 빌드 안 되게 막죠."
+		},
+		{
+			"role": "PM",
+			"text": "개발팀끼리 코드 스타일 달라서 머지할 때마다 충돌 난다면서요? 프리티어(Prettier)랑 린트 도입해서 컨벤션 통일하는 게 시급해 보여요."
+		}
+	],
 	"keywords": [
 		"eslint",
 		"linter",

@@ -13,7 +13,20 @@
 	"primaryTag": "개발문화-프로세스",
 	"relatedIds": [],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "새로운 기능 개발은 항상 feature 브랜치에서 진행하고, 개발이 완료되면 Pull Request를 통해서 코드 리뷰를 받은 후에 main 브랜치에 머지하는 Git Flow 전략을 따르죠. 그래야 안정적인 배포가 가능합니다."
+		},
+		{
+			"role": "Dev",
+			"text": "다른 팀원과 같은 파일을 수정하다가 컨플릭트(Conflict)가 났네요. 'git diff'로 변경 내용을 확인하고, 'git merge'나 'git rebase' 명령어를 사용해서 충돌을 해결해야겠어요."
+		},
+		{
+			"role": "Dev",
+			"text": "이번 스프린트 마지막 날인데, 아직 테스트가 덜 된 코드를 커밋하려니 불안해요. 'git commit --amend'나 'git rebase -i'를 사용해서 커밋 이력을 좀 더 깔끔하게 정리하고, 완성된 기능 단위로 커밋해야겠어요."
+		}
+	],
 	"keywords": ["git", "깃", "Git"],
 	"level": "beginner",
 	"updatedAt": "2025-11-11",

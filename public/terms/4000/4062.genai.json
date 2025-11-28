@@ -13,7 +13,20 @@
 	"primaryTag": "IT비즈니스-기획-프로젝트관리",
 	"relatedIds": [4059],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "ChatGPT API를 연동해서 고객 상담 봇을 만들었어요. 생성형 AI로 자연스러운 대화가 가능해져서 사용자 만족도가 확 올라갔는데, API 비용이 생각보다 많이 나와서 비용 최적화가 필요해요."
+		},
+		{
+			"role": "Marketer",
+			"text": "블로그 포스팅 초안을 생성형 AI로 만들고 있어요. 키워드만 주면 글의 틀을 잡아주니까 시간이 확 절약되더라고요. 물론 최종 검토는 사람이 하지만요."
+		},
+		{
+			"role": "PM",
+			"text": "생성형 AI를 활용해서 제품 설명서를 자동으로 생성하는 기능을 기획 중이에요. 환각(hallucination) 문제가 있어서 검증 로직을 꼭 넣어야 하는데, 그래도 생산성은 확실히 올라갈 거예요."
+		}
+	],
 	"keywords": ["genai", "생성형 AI", "Generative AI"],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",

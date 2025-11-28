@@ -13,7 +13,20 @@
 	"primaryTag": "알고리즘-자료구조",
 	"relatedIds": [4042],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "소셜 네트워크에서 친구 추천 기능을 만들 때 그래프 탐색을 썼어요. BFS로 가까운 친구들부터 탐색하니까 연결 관계를 효율적으로 찾을 수 있더라고요."
+		},
+		{
+			"role": "Dev",
+			"text": "미로 찾기 문제를 DFS와 BFS로 각각 풀어봤는데, DFS는 깊이 우선이라 메모리가 적게 들고, BFS는 최단 경로를 보장해요. 상황에 맞게 선택하는 게 중요해요."
+		},
+		{
+			"role": "Dev",
+			"text": "파일 시스템 디렉토리 구조를 탐색할 때 DFS를 사용했어요. 재귀적으로 하위 폴더를 탐색하면서 파일 목록을 만드니까 코드가 간결하고 이해하기 쉬웠어요."
+		}
+	],
 	"keywords": ["graph-traversal", "그래프 탐색", "Graph Traversal"],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",

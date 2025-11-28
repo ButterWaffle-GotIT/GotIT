@@ -13,7 +13,20 @@
 	"primaryTag": "알고리즘-자료구조",
 	"relatedIds": [],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "사용자 수가 수백만 명인 서비스에서 친구 추천 기능을 만들려면, 단순히 모든 사용자를 비교하는 건 너무 비효율적이에요. 그래프 탐색 알고리즘(예: BFS, DFS)을 사용해서 관계망을 효율적으로 분석해야 합니다."
+		},
+		{
+			"role": "Dev",
+			"text": "대규모 데이터셋에서 이상 탐지(Anomaly Detection)를 하려면, 어떤 알고리즘을 쓸지 잘 선택해야 해요. K-평균 군집화(K-Means Clustering) 같은 알고리즘을 사용해서 정상 범주에서 벗어나는 패턴을 찾아낼 수 있습니다."
+		},
+		{
+			"role": "Dev",
+			"text": "검색창에서 입력되는 단어들을 실시간으로 자동 완성해주는 기능을 만들려면, 접두사 매칭 알고리즘과 트라이(Trie) 자료구조를 조합해서 O(L) 시간에 결과를 찾아낼 수 있도록 최적화해야 합니다."
+		}
+	],
 	"keywords": ["algorithm", "알고리즘", "Algorithm"],
 	"level": "beginner",
 	"updatedAt": "2025-11-11",

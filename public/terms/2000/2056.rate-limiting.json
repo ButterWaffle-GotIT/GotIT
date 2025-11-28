@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2040, 2039, 2024],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "비밀번호 5회 이상 틀리면 일정 시간 동안 로그인 시도를 막는 레이트 리미팅을 적용해야 해요. 무차별 대입 공격(Brute-force attack)을 막는 가장 기본적인 보안 조치입니다."
+		},
+		{
+			"role": "PM",
+			"text": "우리 API를 쓰는 파트너사들이 너무 요청을 많이 보내서 서버 부하가 심해지고 있어요. 무료 플랜 사용자들에게는 시간당 1000회, 유료 플랜 사용자에게는 시간당 1만 회처럼 레이트 리미팅 정책을 차등 적용해야 합니다."
+		},
+		{
+			"role": "Dev",
+			"text": "새로운 API 배포했는데, 갑자기 요청이 폭증해서 서버가 불안정해지고 있어요. 긴급하게 API 게이트웨이에 엔드포인트별로 레이트 리미팅을 걸어서 일단 과부하부터 막아야 합니다."
+		}
+	],
 	"keywords": ["rate limit", "throttle", "token bucket", "api gateway", "dos"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-12"

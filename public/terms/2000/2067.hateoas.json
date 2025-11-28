@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2006, 2063],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "API가 변경될 때마다 클라이언트 개발팀에 문서 업데이트를 강요하는 건 힘들어요. HATEOAS 원칙을 적용해서 응답에 다음 가능한 행동(링크)을 포함시키면, 클라이언트가 API를 동적으로 탐색해서 따라올 수 있습니다."
+		},
+		{
+			"role": "Dev",
+			"text": "백엔드에서 주문 상태에 따라 '주문 취소', '결제 완료' 같은 링크를 응답에 포함해서 보내주니까, 프론트에서는 API 호출 경로를 하드코딩할 필요 없이 링크를 따라가기만 하면 되네요. API 변경에 훨씬 유연하게 대응할 수 있어요."
+		},
+		{
+			"role": "Dev",
+			"text": "HATEOAS 원칙이 REST의 이상적인 모델인 건 알겠는데, 실제 대규모 서비스에서는 구현 복잡도가 너무 높아요. 모든 응답에 링크를 다 넣어주려면 백엔드 개발 부담도 크고, 클라이언트도 그걸 다 파싱해야 하는데..."
+		}
+	],
 	"keywords": ["hateoas", "rest", "hypermedia", "links", "discoverability"],
 	"level": "advanced",
 	"updatedAt": "2025-11-13"

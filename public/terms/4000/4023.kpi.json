@@ -13,7 +13,20 @@
 	"primaryTag": "IT비즈니스-기획-프로젝트관리",
 	"relatedIds": [],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "PM",
+			"text": "이번 분기 KPI는 MAU 20% 증가랑 결제 전환율 5% 개선이에요. 마케팅팀과 협업해서 유저 유입 캐페인을 돌리고, 결제 플로우를 개선하는 작업을 진행할거예요."
+		},
+		{
+			"role": "Dev",
+			"text": "API 응답 속도를 KPI로 잡으니까 성능 최적화를 더 신경 써야 할 것 같아요. 현재 평균 500ms인데, 300ms로 낮추려면 캐싱 전략을 전면 수정해야 해요."
+		},
+		{
+			"role": "Marketer",
+			"text": "이번 달 KPI가 회원가입 500명이라 광고 예산을 늘렸는데, 랜딩 페이지 로딩 속도가 느려서 이탈률이 높아요. 개발팀에서 성능 개선 좋 해주시면 좋겠어요!"
+		}
+	],
 	"keywords": ["kpi", "KPI", "Key Performance Indicator"],
 	"level": "beginner",
 	"updatedAt": "2025-11-11",

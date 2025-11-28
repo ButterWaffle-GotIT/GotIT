@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1004, 1001],
 	"confusableIds": [1009, 1010],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "전역 CSS로 관리하니까 자꾸 스타일이 겹쳐서 깨지고, 클래스명 짓기도 너무 힘들어요. 그냥 styled-components 도입해서 컴포넌트 안에 스타일을 다 캡슐화하죠."
+		},
+		{
+			"role": "Design",
+			"text": "이번에 개편되는 디자인 시스템 보셨죠? 버튼 스타일이 primary, secondary, disabled 세 가지인데, 이거 styled-components의 props로 쉽게 구현 가능할까요? 그럼 디자인 일관성 지키기 훨씬 편할 것 같아요."
+		},
+		{
+			"role": "Dev",
+			"text": "요즘은 성능 때문에 바닐라 익스트랙트 같은 걸 많이 쓴다지만, 우리 서비스의 동적인 UI 처리에는 아직 styled-components가 제일 편한 것 같아요. 개발 속도도 더 빠르고요."
+		}
+	],
 	"keywords": [
 		"styled-components",
 		"스타일드 컴포넌트",

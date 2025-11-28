@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2002],
 	"confusableIds": [2001],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "이번에 만들 토이 프로젝트는 기능이 복잡하지 않으니까, Node.js에 Express 올려서 빠르게 API만 만들면 될 것 같아요. 제일 가볍고 간단하잖아요."
+		},
+		{
+			"role": "Dev",
+			"text": "사용자 요청마다 로그를 남겨야 하는데, 이건 Express 미들웨어로 하나 만들어서 등록해두면 모든 API에 일괄적으로 적용할 수 있어요."
+		},
+		{
+			"role": "Dev",
+			"text": "Express가 워낙 가볍고 자유도가 높아서 간단한 서버 만들긴 좋은데, 프로젝트 규모가 커지면 구조를 잡기가 좀 애매해져요. 차라리 처음부터 NestJS 같은 프레임워크를 쓰는 게 나을 수도 있어요."
+		}
+	],
 	"keywords": ["express", "익스프레스", "node.js", "프레임워크"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-04"

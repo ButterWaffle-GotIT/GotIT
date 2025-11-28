@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1000, 1002],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "아니, 이거 `z-index`가 9999인데 왜 모달 뒤로 숨는 거야? 스택 컨텍스트(Stacking Context) 또 꼬인 것 같은데..."
+		},
+		{
+			"role": "Design",
+			"text": "개발자님, 버튼 호버(Hover) 했을 때 색상 바뀌는 트랜지션이 너무 딱딱해서요. `ease-in-out`으로 부드럽게 처리 가능할까요?"
+		},
+		{
+			"role": "Dev",
+			"text": "반응형 때문에 미디어 쿼리(Media Query) 일일이 작성하다가 시간 다 가겠어요. 공통 레이아웃부터 먼저 잡죠."
+		}
+	],
 	"keywords": ["스타일", "레이아웃", "선택자", "박스 모델", "CSS3"],
 	"level": "beginner",
 	"updatedAt": "2025-11-05"

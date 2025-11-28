@@ -10,7 +10,20 @@
 	"primaryTag": "UI/UX디자인",
 	"relatedIds": [1022, 1023, 1025],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Marketer",
+			"text": "상세 페이지에서 상위 카테고리로 바로 못 가니까 답답하네요. SEO 점수도 올릴 겸 브레드크럼(Breadcrumb) 추가하는 게 좋겠어요."
+		},
+		{
+			"role": "Design",
+			"text": "모바일 화면은 좁아서 브레드크럼 다 보여주기 힘들 것 같은데, 그냥 '뒤로 가기' 화살표만 남기고 생략해도 될까요?"
+		},
+		{
+			"role": "PM",
+			"text": "이커머스처럼 뎁스(Depth)가 깊은 사이트는 사용자가 길 잃기 쉬워요. '홈 > 의류 > 상의' 처럼 현재 위치 명확하게 박아줍시다."
+		}
+	],
 	"keywords": ["계층 구조", "탐색", "UX", "SEO", "경로", "보조 내비게이션"],
 	"level": "beginner",
 	"updatedAt": "2025-11-05"

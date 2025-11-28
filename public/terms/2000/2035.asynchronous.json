@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2002, 2019],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "용량 큰 파일을 다운로드하는 동안 화면이 멈추면 안 되니까, 그 작업은 비동기로 처리하고 사용자에게는 로딩 프로그레스 바를 보여줘야 해요."
+		},
+		{
+			"role": "Dev",
+			"text": "Node.js가 싱글 스레드인데도 성능이 좋은 이유가 바로 비동기 I/O 덕분이에요. DB 조회 같은 오래 걸리는 작업을 기다리지 않고 바로 다음 요청을 처리하니까요."
+		},
+		{
+			"role": "Dev",
+			"text": "예전에는 콜백(Callback) 패턴 때문에 비동기 코드가 조금만 깊어져도 '콜백 지옥'이 펼쳐졌는데, 요즘은 async/await 문법 덕분에 동기 코드처럼 깔끔하게 짤 수 있어요."
+		}
+	],
 	"keywords": ["async", "await", "promise", "callback", "비동기", "동기"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-04"

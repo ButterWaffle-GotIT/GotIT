@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1011, 1006],
 	"confusableIds": [1040],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Marketer",
+			"text": "우리 서비스는 구글 검색 상단 노출이 생명인데, CSR로 만들면 크롤봇이 못 긁어가잖아요. 무조건 SSR(Server-Side Rendering)로 가야 합니다."
+		},
+		{
+			"role": "Dev",
+			"text": "첫 로딩 속도(FCP)가 너무 느려서 이탈률이 높아요. 서버에서 미리 HTML을 그려서 보내주는 방식으로 전환하는 게 좋겠어요."
+		},
+		{
+			"role": "PM",
+			"text": "SSR 도입하면 서버 비용은 좀 더 나오겠지만, 초기 진입 속도랑 SEO 생각하면 감수해야 할 투자라고 봅니다."
+		}
+	],
 	"keywords": [
 		"SSR",
 		"server-side rendering",
