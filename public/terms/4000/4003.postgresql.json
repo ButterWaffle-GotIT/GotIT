@@ -13,7 +13,20 @@
 	"primaryTag": "데이터-AI",
 	"relatedIds": [],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "금융 서비스처럼 데이터의 정합성과 트랜잭션의 안정성이 최우선인 프로젝트에는 PostgreSQL이 가장 적합해요. ACID 속성을 완벽히 준수하고, 데이터 무결성을 강력하게 보장해주거든요."
+		},
+		{
+			"role": "Dev",
+			"text": "우리 서비스는 위치 정보나 복잡한 문서 형태의 데이터도 많이 다루는데, PostgreSQL은 JSONB 타입이나 PostGIS 같은 고급 확장 기능을 지원해서 RDB 안에서도 다양한 형태의 데이터를 유연하게 분석할 수 있어요."
+		},
+		{
+			"role": "Dev",
+			"text": "PostgreSQL은 오픈소스이면서도 상용 DB 못지않은 강력한 기능과 안정성을 제공해요. 특히 커뮤니티 지원도 활발해서 문제가 생겼을 때 해결책을 찾기 쉽고, 장기적으로 운영하기에 부담이 적습니다."
+		}
+	],
 	"keywords": ["postgresql", "PostgreSQL"],
 	"level": "beginner",
 	"updatedAt": "2025-11-11",

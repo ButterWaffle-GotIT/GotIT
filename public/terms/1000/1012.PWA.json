@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1002, 1011],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "PM",
+			"text": "지금 당장 네이티브 앱 개발할 리소스는 부족하니까, 일단 PWA로 만들어서 홈 화면 추가 유도하는 걸로 MVP 냅시다."
+		},
+		{
+			"role": "Marketer",
+			"text": "앱 스토어에 안 올려도 푸시 알림 보낼 수 있다는 거죠? 재방문율 높이려면 그 기능은 꼭 필요해요."
+		},
+		{
+			"role": "Dev",
+			"text": "서비스 워커(Service Worker) 잘 세팅해두면, 네트워크 불안정한 지하철에서도 캐시된 화면은 보여줄 수 있어요. 오프라인 대응도 어느 정도 됩니다."
+		}
+	],
 	"keywords": [
 		"Service Worker",
 		"매니페스트",

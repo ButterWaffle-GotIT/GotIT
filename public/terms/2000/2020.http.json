@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2021, 2006, 1001],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "검색 기능 구현할 때, 검색어는 GET 요청의 쿼리 파라미터로 보내고, 회원가입처럼 데이터를 생성할 때는 POST 요청의 바디에 담아 보내는 게 HTTP 메서드의 의미에 맞아요."
+		},
+		{
+			"role": "Dev",
+			"text": "API 호출 실패했을 때 그냥 500 에러만 주지 마시고, 클라이언트 요청이 잘못됐으면 400번대, 서버 문제면 500번대처럼 HTTP 상태 코드를 명확하게 구분해서 줘야 디버깅하기 편해요."
+		},
+		{
+			"role": "Other",
+			"text": "회원가입 API 테스트하는데, 가입 성공 시에는 201 Created 코드가 오는지, 아이디가 중복되었을 때는 409 Conflict 코드가 오는지 확인해야 해요."
+		}
+	],
 	"keywords": ["http", "hypertext", "protocol", "프로토콜", "get", "post"],
 	"level": "beginner",
 	"updatedAt": "2025-11-04"

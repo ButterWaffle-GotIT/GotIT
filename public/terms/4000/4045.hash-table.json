@@ -13,7 +13,20 @@
 	"primaryTag": "알고리즘-자료구조",
 	"relatedIds": [],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "사용자 세션 관리를 해시 테이블로 구현했어요. 키로 사용자 ID를 쓰고 값으로 세션 정보를 저장하니까 O(1) 시간에 조회할 수 있어서 성능이 좋아요."
+		},
+		{
+			"role": "Dev",
+			"text": "중복 제거 로직을 짤 때 해시 테이블이 정말 유용해요. 배열로 하면 O(n²)이 걸리는데, 해시 테이블로 하면 O(n)으로 확 줄일 수 있거든요."
+		},
+		{
+			"role": "Dev",
+			"text": "JavaScript의 객체나 Python의 딕셔너리가 다 해시 테이블 기반이에요. 실무에서 가장 자주 쓰는 자료구조 중 하나라 제대로 이해하고 있으면 정말 도움이 많이 돼요."
+		}
+	],
 	"keywords": ["hash-table", "해시 테이블", "Hash Table"],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",

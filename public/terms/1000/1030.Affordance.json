@@ -10,7 +10,20 @@
 	"primaryTag": "UI/UX디자인",
 	"relatedIds": [1022, 1023, 1029],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Design",
+			"text": "이 버튼은 너무 평면적(Flat)이라 사용자가 누를 수 있다는 걸 인지 못 할 것 같아요. 그림자를 넣어서 행동 유도성(Affordance)을 높여보죠."
+		},
+		{
+			"role": "PM",
+			"text": "사람들이 저 텍스트가 링크인 줄 모르고 그냥 지나치네요. 밑줄을 긋거나 색을 바꿔서 '클릭 가능함'을 명확히 보여줘야겠어요."
+		},
+		{
+			"role": "Dev",
+			"text": "드래그 앤 드롭 기능이 있는데, 손잡이 아이콘이 없으니까 아무도 안 쓰네요. 시각적인 힌트(Affordance)가 좀 더 필요해 보입니다."
+		}
+	],
 	"keywords": ["노먼", "직관성", "인지", "행동", "디자인 원칙", "CTA"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-05"

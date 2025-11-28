@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1000, 1001, 1003],
 	"confusableIds": [2000],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "이거 비동기 처리 `Promise.all`로 묶어서 병렬로 안 돌리면 데이터 불러오는 데 세월아 네월아 걸릴 겁니다."
+		},
+		{
+			"role": "Dev",
+			"text": "간단한 이벤트 페이지인데 굳이 무겁게 프레임워크 올리지 말고, 그냥 바닐라 JS(Vanilla JS)로 가볍게 짜서 배포하죠."
+		},
+		{
+			"role": "Dev",
+			"text": "ES6 화살표 함수(Arrow Function) 쓰는 건 좋은데, `this` 바인딩 꼬일 수 있으니까 문맥 잘 확인하고 쓰세요."
+		}
+	],
 	"keywords": ["스크립트", "ECMA", "DOM", "노드", "비동기"],
 	"level": "beginner",
 	"updatedAt": "2025-11-05"

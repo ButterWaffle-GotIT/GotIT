@@ -10,7 +10,20 @@
 	"primaryTag": "UI/UX",
 	"relatedIds": [],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "PM",
+			"text": "기능이 너무 산으로 가는데, 우리 메인 페르소나(Persona)인 '30대 워킹맘'이 진짜 이 기능을 필요로 할까요? 다시 원점으로 돌아갑시다."
+		},
+		{
+			"role": "Design",
+			"text": "페르소나 구체화가 덜 돼서 디자인 컨셉 잡기가 애매해요. 타겟이 'IT에 익숙한 대학생'인지 '컴맹 중장년층'인지부터 정해주세요."
+		},
+		{
+			"role": "Marketer",
+			"text": "이번 광고 카피는 우리 서브 페르소나인 '갓 입사한 신입사원'의 고민을 건드리는 방향으로 뽑아봤습니다."
+		}
+	],
 	"keywords": ["persona", "UX", "사용자 경험", "디자인", "가상 사용자"],
 	"level": "beginner",
 	"updatedAt": "2025-11-12"

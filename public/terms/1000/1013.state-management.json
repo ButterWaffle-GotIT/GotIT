@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1004],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "PM",
+			"text": "장바구니에 담은 물건이 결제 페이지 가면 사라진다는 CS가 계속 들어오는데, 이거 데이터 관리가 어떻게 되고 있는 거예요?"
+		},
+		{
+			"role": "Dev",
+			"text": "지금 로컬 상태로만 관리해서 그래요. 전역 상태 관리(Global State Management) 도입해서 장바구니 데이터는 앱 어디서든 접근 가능하게 싱크 맞춰야 합니다."
+		},
+		{
+			"role": "Dev",
+			"text": "그렇다고 모든 걸 전역으로 빼진 말죠. 폼 입력값 같은 건 그냥 컴포넌트 내부 상태로 두는 게 성능상 유리해요."
+		}
+	],
 	"keywords": ["상태", "로컬 상태", "전역 상태", "Flux", "불변성"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-05"

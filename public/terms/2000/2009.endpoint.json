@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [1001, 2006],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "프론트 개발자인데요, 이번에 새로 추가된 유저 검색 기능 API 엔드포인트가 어떻게 되나요? 문서에 아직 업데이트가 안 된 것 같아서요."
+		},
+		{
+			"role": "Dev",
+			"text": "기존에 '/getUser' 처럼 동사로 만들었던 엔드포인트들을 이번에 '/users/{id}' 같은 명사 형태로 리팩토링하는 게 좋겠어요. 이게 더 RESTful한 방식이에요."
+		},
+		{
+			"role": "Other",
+			"text": "이번 QA는 주문 취소 로직만 확인하면 되니까, '/orders/{orderId}/cancel' 엔드포인트만 집중적으로 테스트하면 되겠네요."
+		}
+	],
 	"keywords": ["endpoint", "엔드포인트", "api", "url", "uri", "경로"],
 	"level": "beginner",
 	"updatedAt": "2025-11-04"

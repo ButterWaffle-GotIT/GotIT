@@ -10,7 +10,20 @@
 	"primaryTag": "UI/UX",
 	"relatedIds": [],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "PM",
+			"text": "메뉴가 너무 중구난방이라 사용자들이 길을 잃는 것 같아요. IA(Information Architecture) 다시 잡아서 카테고리 정리부터 하시죠."
+		},
+		{
+			"role": "Design",
+			"text": "지금 뎁스(Depth)가 너무 깊어요. 중요한 기능은 메인에서 2번 클릭 안에 들어갈 수 있게 정보 구조를 납작하게 펴야 합니다."
+		},
+		{
+			"role": "Dev",
+			"text": "기획서에 IA가 확정이 안 돼서 URL 구조를 못 잡겠어요. GNB랑 LNB 계층 구조 먼저 픽스해주실 수 있나요?"
+		}
+	],
 	"keywords": [
 		"IA",
 		"information architecture",

@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2014, 2015, 1001],
 	"confusableIds": [2014],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "이번 프로젝트에서는 단순 세션-쿠키 방식 대신 JWT(Json Web Token)를 써서 인증을 구현하죠. 그래야 나중에 모바일 앱이 붙어도 확장하기 편해요."
+		},
+		{
+			"role": "PM",
+			"text": "요즘 사용자들은 회원가입 자체를 귀찮아하니까, 구글이나 카카오 계정으로 바로 로그인하는 소셜 인증 기능을 먼저 구현하는 게 좋겠어요. 가입 전환율이 확실히 오를 거예요."
+		},
+		{
+			"role": "Dev",
+			"text": "자꾸 헷갈리시는데, 인증(Authentication)은 이 사람이 '누구인지' 확인하는 거고, 인가(Authorization)는 그 사람이 '어떤 권한을 갖는지' 확인하는 거예요. 이 둘은 명확히 다른 개념입니다."
+		}
+	],
 	"keywords": [
 		"authentication",
 		"authn",

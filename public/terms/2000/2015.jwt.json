@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2013, 2014],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "우리 API는 stateless 구조로 갈 거니까, 서버에 세션 정보를 저장할 필요 없이 JWT를 발급해서 클라이언트가 관리하도록 합시다. 요청 올 때마다 토큰만 검증하면 되니까요."
+		},
+		{
+			"role": "Dev",
+			"text": "프론트엔드에서는 로그인 후에 받은 JWT를 로컬스토리지보다는 httpOnly 쿠키에 저장하는 게 XSS 공격을 막는 데 더 안전해요."
+		},
+		{
+			"role": "PM",
+			"text": "사용자가 너무 자주 로그인하면 불편하니까 JWT 만료 시간은 한 달 정도로 길게 가져가되, 리프레시 토큰을 도입해서 보안을 강화하는 방향으로 가시죠."
+		}
+	],
 	"keywords": [
 		"jwt",
 		"token",

@@ -13,7 +13,20 @@
 	"primaryTag": "IT비즈니스-기획-프로젝트관리",
 	"relatedIds": [],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Other",
+			"text": "이번 배포 빌드에서 회원가입 플로우에 엣지 케이스가 많아서 테스트 케이스를 50개 정도 추가했어요. 모바일 환경에서 iOS랑 안드로이드 둘 다 테스트했는데 문제 없었어요."
+		},
+		{
+			"role": "Dev",
+			"text": "QA팀에서 발견한 버그가 생각보다 심각하네요. 결제 부분이라 바로 핫픽스 배포해야 할 것 같아요. QA님들이 미리 잡아줘서 다행이에요."
+		},
+		{
+			"role": "PM",
+			"text": "QA 테스트 기간을 3일에서 5일로 늘려야 할 것 같아요. 이번 기능이 코어 비즈니스 로직이라 버그 없이 안정적으로 배포되는 게 중요해요."
+		}
+	],
 	"keywords": ["qa", "QA", "Quality Assurance"],
 	"level": "beginner",
 	"updatedAt": "2025-11-11",

@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1004, 1001],
 	"confusableIds": [1014],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "컴포넌트마다 useEffect로 데이터 가져오고 로딩, 에러 상태 관리하는 거 너무 번거로워요. React Query 도입하면 useQuery 훅 하나로 다 처리돼요."
+		},
+		{
+			"role": "Dev",
+			"text": "사용자가 이 페이지를 보다가 다른 탭에 갔다 올 수도 있으니까, React Query의 refetchOnWindowFocus 옵션을 켜두죠. 그럼 알아서 최신 데이터를 다시 불러와 줄 거예요."
+		},
+		{
+			"role": "PM",
+			"text": "데이터 불러오는 로직을 리액트 쿼리로 바꾸면, 불필요한 로딩 스피너가 줄어서 사용자 경험이 훨씬 좋아질 것 같은데요? 개발 생산성도 올라가고요."
+		}
+	],
 	"keywords": [
 		"React Query",
 		"TanStack Query",

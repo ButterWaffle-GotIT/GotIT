@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2010, 2011],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "이번 프로젝트는 MySQL 대신 PostgreSQL을 써보는 게 어때요? SQL 표준도 더 잘 지키고, JSONB 타입으로 NoSQL처럼 유연하게 데이터를 다룰 수 있어서 좋아요."
+		},
+		{
+			"role": "PM",
+			"text": "상용 데이터베이스는 라이선스 비용이 너무 부담스러운데, PostgreSQL은 오픈소스이면서도 기능이나 안정성 면에서 상용 DB 못지않다고 들었어요. 우리 같은 스타트업에 딱이겠네요."
+		},
+		{
+			"role": "Dev",
+			"text": "위치 기반 서비스 만들어야 하는데, PostgreSQL에 PostGIS 확장 모듈을 설치하면 위/경도 데이터 기반의 거리 계산이나 주변 검색 같은 복잡한 공간 쿼리를 쉽게 처리할 수 있어요."
+		}
+	],
 	"keywords": [
 		"postgresql",
 		"postgres",

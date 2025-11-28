@@ -13,7 +13,20 @@
 	"primaryTag": "데이터-AI",
 	"relatedIds": [4032, 4033],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "ETL 파이프라인을 Airflow로 구축했어요. 매일 새벽 2시에 여러 DB에서 데이터를 추출해서 정제한 다음 데이터 웨어하우스에 적재하는 워크플로우예요."
+		},
+		{
+			"role": "Other",
+			"text": "ETL 과정에서 Transform 단계가 가장 복잡해요. 중복 데이터 제거하고, 포맷 통일하고, null 값 처리하는 로직을 다 짜야 하거든요. 시간이 오래 걸리는 작업이에요."
+		},
+		{
+			"role": "PM",
+			"text": "ETL 작업이 실패하면 데이터 분석팀이 대시보드를 못 보게 되니까, 모니터링이랑 알람 시스템이 필수예요. 실시간으로 파이프라인 상태를 체크해야 해요."
+		}
+	],
 	"keywords": ["etl", "ETL"],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",

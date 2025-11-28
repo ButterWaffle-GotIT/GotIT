@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2010, 2011, 2018],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "우리 서비스 게시물 목록은 데이터가 계속 추가되고 양도 엄청 많아요. 기존 OFFSET/LIMIT 방식은 페이지가 뒤로 갈수록 느려지니까, 커서 기반 페이지네이션으로 바꿔야 해요. 생성 시간이나 ID를 커서로 쓰면 훨씬 빠르죠."
+		},
+		{
+			"role": "Dev",
+			"text": "인스타그램처럼 스크롤을 내리면 다음 게시물이 계속 로드되는 무한 스크롤 기능을 구현하려면 커서 기반 페이지네이션 API가 필수적이에요. 사용자 경험도 훨씬 부드러워지죠."
+		},
+		{
+			"role": "Dev",
+			"text": "OFFSET 방식은 중간에 데이터가 삽입/삭제되면 결과가 밀리거나 중복될 수 있어요. 커서 기반은 항상 '이 데이터 다음'을 기준으로 가져오기 때문에 데이터 정합성을 훨씬 안정적으로 유지할 수 있습니다."
+		}
+	],
 	"keywords": ["pagination", "cursor", "offset", "seek", "infinite scroll"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-12"

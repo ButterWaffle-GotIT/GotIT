@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1013, 1004, 1014],
 	"confusableIds": [1014, 1016],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "리덕스까지 쓰기엔 오버엔지니어링 같고, Context API는 렌더링 최적화가 안 되니까 리액트스러운 리코일(Recoil)로 가시죠."
+		},
+		{
+			"role": "Dev",
+			"text": "Atom으로 상태 쪼개서 관리하니까, 확실히 관련 없는 컴포넌트까지 리렌더링되는 문제는 사라졌네요."
+		},
+		{
+			"role": "Dev",
+			"text": "환율 계산처럼 상태 기반으로 파생되는 데이터들은 Selector로 정의해두니까 로직이 훨씬 깔끔해요."
+		}
+	],
 	"keywords": ["Atom", "Selector", "원자성", "Hooks", "파생 상태", "리렌더링"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-05"

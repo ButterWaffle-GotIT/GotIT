@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2020, 2066, 2006],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "모바일 앱에서는 API 응답을 JSON으로 받고 싶은데, 특정 레거시 시스템에서는 XML로 받아야 해요. 클라이언트가 'Accept' 헤더에 원하는 미디어 타입을 보내면, 서버에서 그에 맞는 형식으로 데이터를 돌려주도록 콘텐츠 협상 기능을 구현해야 합니다."
+		},
+		{
+			"role": "Dev",
+			"text": "우리 서비스가 글로벌 사용자들을 위해 다국어를 지원하니까, 'Accept-Language' 헤더에 따라 영어, 한국어 등 요청한 언어에 맞는 데이터를 응답으로 보내주도록 콘텐츠 협상 로직을 추가해야 해요."
+		},
+		{
+			"role": "PM",
+			"text": "우리 API를 쓰는 파트너사가 다양한데, 어떤 곳은 JSON을 쓰고 어떤 곳은 Protocol Buffers를 써요. 콘텐츠 협상 기능을 잘 구현해두면, 클라이언트가 원하는 형식으로 데이터를 제공할 수 있어서 파트너 연동이 훨씬 쉬워질 거예요."
+		}
+	],
 	"keywords": ["content negotiation", "accept", "language", "encoding", "q"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-13"

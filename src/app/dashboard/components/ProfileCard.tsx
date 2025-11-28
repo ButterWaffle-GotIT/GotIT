@@ -1,5 +1,5 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 import { UserIcon } from "@/components/icons/ic_user";
 import { EditIcon } from "@/components/icons/ic_edit";
 import { categoryIcons, categoryColors } from "@/types/category";
@@ -9,37 +9,42 @@ interface SimpleProfileCardProps {
 	tags: string[];
 }
 
-const SimpleProfileCard: React.FC<SimpleProfileCardProps> = ({ email, tags }) => {
+const SimpleProfileCard: React.FC<SimpleProfileCardProps> = ({
+	email,
+	tags,
+}) => {
 	return (
-
-		<div className="h-full px-20 py-10 rounded-[20px] inline-flex justify-start items-center gap-2.5 glass bg-white/10 outline-[0.25px] outline-offset-[-0.25px] outline-white-30">
-
-			<div className="w-40 inline-flex flex-col justify-start items-center gap-3">
-
-				<div className="w-24 h-24 px-6 py-6 bg-neutral-400 rounded-full inline-flex justify-center items-center gap-2.5 overflow-hidden">
-					<UserIcon className="w-16 h-16 text-white" />
+		<div className="glass outline-white-30 inline-flex h-full items-center justify-start gap-2.5 rounded-[20px] bg-white/10 px-20 py-10 outline-[0.25px] outline-offset-[-0.25px]">
+			<div className="inline-flex w-40 flex-col items-center justify-start gap-3">
+				<div className="inline-flex h-24 w-24 items-center justify-center gap-2.5 overflow-hidden rounded-full bg-neutral-400 px-6 py-6">
+					<UserIcon className="h-16 w-16 text-white" />
 				</div>
 
-				<div className="self-stretch justify-center text-gray-300 text-base font-normal font-['Pretendard'] leading-6">
+				<div className="justify-center self-stretch font-['Pretendard'] text-base leading-6 font-normal text-gray-300">
 					{email}
 				</div>
 
-				<div className="inline-flex justify-start items-center gap-1">
-					<div className="justify-center text-gray-500 text-xs font-normal font-['Pretendard'] uppercase leading-5">관심 분야</div>
-					<div className="w-4 h-4 p-px flex justify-center items-center gap-2.5 overflow-hidden">
-						<EditIcon className="w-16 h-16 text-gray-500" />
+				<div className="inline-flex items-center justify-start gap-1">
+					<div className="justify-center font-['Pretendard'] text-xs leading-5 font-normal text-gray-500 uppercase">
+						관심 분야
+					</div>
+					<div className="flex h-4 w-4 items-center justify-center gap-2.5 overflow-hidden p-px">
+						<EditIcon className="h-16 w-16 text-gray-500" />
 					</div>
 				</div>
 
 				<div className="flex flex-wrap justify-center gap-2">
 					{tags.map((tag) => {
-						const IconComponent = categoryIcons[tag as keyof typeof categoryIcons];
-						const colorClass = categoryColors[tag as keyof typeof categoryColors] || "bg-gray-400";
+						const IconComponent =
+							categoryIcons[tag as keyof typeof categoryIcons];
+						const colorClass =
+							categoryColors[tag as keyof typeof categoryColors] ||
+							"bg-gray-400";
 
 						return (
 							<div
 								key={tag}
-								className={`glass inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2 outline-[0.25px] outline-offset-[-0.25px] bg-white/5 outline-white-30 shrink-0`}
+								className={`glass outline-white-30 inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-white/5 px-5 py-2 outline-[0.25px] outline-offset-[-0.25px]`}
 							>
 								<div
 									className={`w-6 p-1 ${colorClass} flex items-center justify-start gap-2.5 overflow-hidden rounded-[100px] outline-[0.25px] outline-offset-[-0.25px] outline-white`}
@@ -59,7 +64,6 @@ const SimpleProfileCard: React.FC<SimpleProfileCardProps> = ({ email, tags }) =>
 						);
 					})}
 				</div>
-
 			</div>
 		</div>
 	);

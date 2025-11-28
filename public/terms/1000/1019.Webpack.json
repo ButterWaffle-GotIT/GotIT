@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1006],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "초기 로딩이 너무 느린데, 웹팩(Webpack) 설정 좀 만져서 코드 스플리팅(Code Splitting) 해야겠는데요? 번들 파일이 너무 커졌어요."
+		},
+		{
+			"role": "Dev",
+			"text": "Sass랑 이미지 파일들도 다 자바스크립트 모듈로 변환해야 하니까, 로더(Loader) 설정 한 번만 다시 체크해주세요."
+		},
+		{
+			"role": "PM",
+			"text": "배포 속도가 너무 걸리는데, 빌드 최적화 작업 얼마나 걸릴까요? 웹팩 설정이 복잡해서 건드리기 무섭다는 얘기가 있던데."
+		}
+	],
 	"keywords": ["모듈", "번들", "로더", "플러그인", "의존성 그래프", "빌드"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-05"

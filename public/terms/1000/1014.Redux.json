@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1013, 1004, 1015],
 	"confusableIds": [1015, 1016],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "이 프로젝트는 결제 로직이랑 유저 데이터 흐름이 너무 복잡해서, 좀 번거로워도 리덕스(Redux) 써서 상태 변화를 확실하게 추적하는 게 안전해요."
+		},
+		{
+			"role": "Dev",
+			"text": "근데 간단한 기능인데 액션 만들고 리듀서 짜고... 보일러플레이트가 너무 많지 않나요? 리덕스 툴킷(Redux Toolkit) 도입해서 코드를 좀 줄입시다."
+		},
+		{
+			"role": "PM",
+			"text": "나중에 유지보수 할 때 데이터가 어디서 꼬였는지 파악하기 쉬워야 합니다. 개발팀에서 리덕스의 단방향 데이터 흐름이 디버깅엔 최고라고 하니 믿고 갈게요."
+		}
+	],
 	"keywords": ["Flux", "Store", "Action", "Reducer", "Dispatch", "Middleware"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-05"

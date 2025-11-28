@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2021, 2024, 2039],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "우리 애플리케이션 서버는 HTTPS 트래픽 처리 때문에 CPU 부하가 너무 심해요. 로드 밸런서에서 TLS 종료(Termination)를 처리하게 만들면, 애플리케이션 서버는 암호화/복호화 부담 없이 순수하게 비즈니스 로직에만 집중할 수 있어서 성능을 올릴 수 있어요."
+		},
+		{
+			"role": "Dev",
+			"text": "SSL 인증서 관리나 갱신 작업이 복잡한데, TLS 종료를 로드 밸런서나 API 게이트웨이에서 일괄적으로 처리하면 모든 서버에 개별적으로 인증서를 설치하고 관리할 필요가 없어서 훨씬 효율적이에요."
+		},
+		{
+			"role": "Dev",
+			"text": "TLS 종료를 프록시에서 처리하고 나서, 내부망 통신은 평문으로 가는 건 보안상 위험해요. 내부 서비스 간에도 mTLS(Mutual TLS)나 VPN 같은 걸로 다시 암호화해서 엔드-투-엔드 보안을 강화해야 합니다."
+		}
+	],
 	"keywords": ["tls", "ssl", "termination", "오프로드", "mtls", "인증서"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-13"

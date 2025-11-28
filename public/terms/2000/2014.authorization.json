@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2013, 2015, 1001],
 	"confusableIds": [2013],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "관리자 전용 API는 일반 유저가 호출하면 안 되니까, 토큰에 담긴 사용자 role이 'admin'일 경우에만 접근을 허용하도록 인가 로직을 추가해야 해요."
+		},
+		{
+			"role": "PM",
+			"text": "우리 서비스는 '읽기전용 유저', '일반 유저', '어드민' 세 등급으로 나뉘는데, 각 등급별로 접근 가능한 메뉴가 어떻게 되죠? 인가 정책부터 명확하게 정의하고 갑시다."
+		},
+		{
+			"role": "Other",
+			"text": "일반 사용자 계정으로 로그인해서 관리자 페이지에 접근하는 시나리오를 테스트해봤는데, 접근이 거부되는 걸 보니 인가 처리는 제대로 적용됐네요."
+		}
+	],
 	"keywords": ["authorization", "authz", "인가", "권한", "permission", "role"],
 	"level": "beginner",
 	"updatedAt": "2025-11-04"

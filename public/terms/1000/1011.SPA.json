@@ -14,7 +14,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1004, 1005],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "PM",
+			"text": "사용자가 메뉴 누를 때마다 화면이 하얗게 깜빡이는데, 앱처럼 부드럽게 넘어갈 순 없나요?"
+		},
+		{
+			"role": "Dev",
+			"text": "그럼 SPA(Single Page Application) 방식으로 가야죠. 처음에만 로딩하고 그 뒤론 데이터만 받아오니까 사용자 경험은 훨씬 좋을 거예요."
+		},
+		{
+			"role": "Marketer",
+			"text": "근데 SPA로 만들면 검색 엔진이 우리 사이트 못 읽는 거 아니에요? SEO 문제 해결할 방법은 확보하고 시작하는 거죠?"
+		}
+	],
 	"keywords": ["싱글", "라우팅", "CSR", "MPA", "동적 갱신"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-05"

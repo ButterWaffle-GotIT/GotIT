@@ -13,7 +13,20 @@
 	"primaryTag": "개발문화-프로세스",
 	"relatedIds": [4048],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "DevOps 문화를 도입하고 나서 배포 주기가 월 1회에서 주 2회로 늘었어요. CI/CD 파이프라인으로 자동화하니까 배포가 무섭지 않고, 문제 생기면 빠르게 롤백할 수 있어요."
+		},
+		{
+			"role": "PM",
+			"text": "예전엔 개발팀과 운영팀이 따로 놀았는데, DevOps 체계를 갖추니까 협업이 훨씬 수월해졌어요. 개발자가 배포까지 책임지니까 더 안정적으로 운영되는 느낌이에요."
+		},
+		{
+			"role": "Dev",
+			"text": "인프라를 코드로 관리하는 IaC도 DevOps의 일부예요. Terraform으로 서버 환경을 버전 관리하니까 재현 가능하고, 장애 시 복구도 빨라졌어요."
+		}
+	],
 	"keywords": ["devops", "Devops", "DevOps"],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",

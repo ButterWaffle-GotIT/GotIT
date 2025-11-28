@@ -13,7 +13,20 @@
 	"primaryTag": "개발문화-프로세스",
 	"relatedIds": [4050, 4051],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "클린 코드 책을 읽고 나서 변수명을 짓는 방식이 완전히 바껴었어요. `data`, `temp` 같은 모호한 이름 대신 `userProfile`, `filteredOrders` 처럼 명확하게 짓니까 코드가 훨씬 읽기 쉬워졌어요."
+		},
+		{
+			"role": "Dev",
+			"text": "함수는 한 가지 일만 해야 한다는 원칙이 정말 중요해요. 100줄짜리 함수 하나보다 10줄짜리 함수 열 개로 나누는 게 테스트하기도 쉬우고 재사용도 편해요."
+		},
+		{
+			"role": "Dev",
+			"text": "주석은 최소화하고 코드 자체가 설명이 되도록 작성하려고 노력해요. '왜'를 설명하는 주석은 필요하지만 '무엇을'을 설명하는 주석은 코드가 불분명하다는 신호죠."
+		}
+	],
 	"keywords": ["clean-code", "클린 코드", "Clean Code"],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",

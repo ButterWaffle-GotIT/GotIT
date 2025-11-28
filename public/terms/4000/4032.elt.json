@@ -13,7 +13,20 @@
 	"primaryTag": "데이터-AI",
 	"relatedIds": [4031, 4033],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Other",
+			"text": "클라우드 데이터 웨어하우스를 쓰면서 ELT 방식으로 바꿨어요. 데이터를 먼저 BigQuery에 적재하고 나중에 SQL로 변환하니까 확장성이 훨씬 좋아졌어요."
+		},
+		{
+			"role": "Dev",
+			"text": "ETL은 데이터를 변환한 후에 적재하는 거고, ELT는 일단 적재하고 나중에 변환하는 거예요. ELT가 클라우드 환경에서는 더 효율적이지만, 변환 로직이 복잡하면 쿼리 비용이 올라갈 수 있어요."
+		},
+		{
+			"role": "Other",
+			"text": "ELT는 Raw 데이터를 먼저 저장해두니까 나중에 비즈니스 요구사항이 바뀌어도 유연하게 대응할 수 있어요. 데이터 레이크 개념이랑도 잘 맞아요."
+		}
+	],
 	"keywords": ["elt", "ELT"],
 	"level": "beginner",
 	"updatedAt": "2025-11-12",

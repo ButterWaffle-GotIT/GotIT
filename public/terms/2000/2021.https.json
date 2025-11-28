@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2020, 2013],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "다음 주에 서비스 오픈인데, 로그인이나 결제 정보 같은 민감한 데이터가 오가니까 반드시 HTTPS를 적용해야 해요. 제가 SSL 인증서 발급받아서 웹서버에 설정할게요."
+		},
+		{
+			"role": "PM",
+			"text": "우리 웹사이트 주소-창에 '주의 요함'이라고 뜨는 거 고객들이 불안해해요. HTTPS 적용해서 '안전한 사이트'로 보이게 하는 것만으로도 신뢰도가 올라갈 거예요."
+		},
+		{
+			"role": "Marketer",
+			"text": "최근에 구글 검색엔진이 HTTPS를 적용한 사이트에 SEO 가산점을 준다고 하니까, 장기적으로 검색 노출을 위해서라도 빨리 HTTPS로 전환하는 게 유리해요."
+		}
+	],
 	"keywords": ["https", "ssl", "tls", "암호화", "보안", "인증서"],
 	"level": "beginner",
 	"updatedAt": "2025-11-04"

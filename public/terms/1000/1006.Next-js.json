@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1004],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Marketer",
+			"text": "대표님이 우리 서비스 구글 검색하면 무조건 상단에 떠야 한다고 하시니까, SSR(서버 사이드 렌더링) 지원되는 Next.js로 가는 게 맞습니다."
+		},
+		{
+			"role": "Dev",
+			"text": "이미지 최적화 일일이 하기 귀찮은데 `next/image` 쓰면 알아서 리사이징이랑 포맷 변경해주니까 그걸로 퉁치시죠."
+		},
+		{
+			"role": "Dev",
+			"text": "백엔드 API 아직 안 나왔으면, 일단 Next.js API 라우트로 목업(Mock-up) API 만들어서 프론트 먼저 개발하고 있을게요."
+		}
+	],
 	"keywords": ["SSR", "SSG", "App Router", "렌더링", "SEO"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-05"

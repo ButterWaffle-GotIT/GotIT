@@ -10,7 +10,20 @@
 	"primaryTag": "프론트엔드",
 	"relatedIds": [1000, 1001, 1002, 1004],
 	"confusableIds": [1018],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "지금 제이쿼리로 짠 레거시 코드 보면, DOM 트리를 직접 하나하나 찾아서 수정하고 있어서 속도가 느린 거예요."
+		},
+		{
+			"role": "Design",
+			"text": "개발자님, 이 애니메이션 넣었을 때 레이아웃이 좀 깨지는 것 같은데, HTML 구조 문제인가요?"
+		},
+		{
+			"role": "Dev",
+			"text": "아뇨, 자바스크립트로 DOM 요소 위치를 강제로 잡다 보니 리플로우가 발생해서 그래요. CSS로 빼거나 돔 조작을 최소화해볼게요."
+		}
+	],
 	"keywords": ["노드", "DOM 트리", "API", "조작", "Virtual DOM", "렌더링"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-05"

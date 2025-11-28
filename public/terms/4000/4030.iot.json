@@ -13,7 +13,20 @@
 	"primaryTag": "IT비즈니스-기획-프로젝트관리",
 	"relatedIds": [],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "IoT 디바이스에서 수집한 센서 데이터를 실시간으로 처리하려면 MQTT 프로토콜이랑 AWS IoT Core를 쓰는 게 좋아요. 저전력으로 통신할 수 있어서 배터리 효율도 좋고요."
+		},
+		{
+			"role": "PM",
+			"text": "스마트 홈 서비스를 기획 중인데, IoT 디바이스가 많아질수록 네트워크 안정성이랑 보안이 중요해져요. 해킹 리스크를 고려해서 엔드투엔드 암호화를 적용해야 해요."
+		},
+		{
+			"role": "Dev",
+			"text": "IoT 프로젝트는 하드웨어랑 소프트웨어를 모두 다뤄야 해서 협업이 까다로워요. 펌웨어 업데이트 방식도 신경 써야 하고, 디바이스가 오프라인일 때 대응 로직도 필요하죠."
+		}
+	],
 	"keywords": ["iot", "IoT", "Internet of Things"],
 	"level": "beginner",
 	"updatedAt": "2025-11-11",

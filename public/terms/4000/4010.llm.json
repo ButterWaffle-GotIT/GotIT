@@ -13,7 +13,20 @@
 	"primaryTag": "데이터-AI",
 	"relatedIds": [],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "PM",
+			"text": "우리 서비스 사용자들을 위한 FAQ나 고객 지원 문서를 만드는 데 시간과 인력이 너무 많이 들어요. 대규모 언어 모델(LLM)을 활용해서 초안을 자동 생성하게 만들면 콘텐츠 제작 효율을 크게 높일 수 있을 거예요."
+		},
+		{
+			"role": "Dev",
+			"text": "LLM 모델을 우리 서비스 데이터에 맞춰서 Fine-tuning하면 특정 도메인에 대한 이해도를 높이고, 더 정확하고 관련성 높은 답변을 생성할 수 있을 거예요. Prompt Engineering도 중요하지만, 모델 자체의 최적화도 필요합니다."
+		},
+		{
+			"role": "Dev",
+			"text": "고객들이 AI 챗봇과 대화하는 걸 좋아하니까, LLM을 활용해서 더 자연스럽고 유연하게 대화할 수 있는 인터랙티브 챗봇 기능을 개발하고 싶어요. 단순 키워드 매칭이 아니라 문맥을 이해하고 답변하는 챗봇이요."
+		}
+	],
 	"keywords": ["llm", "대규모 언어모델", "Large Language Model"],
 	"level": "beginner",
 	"updatedAt": "2025-11-11",

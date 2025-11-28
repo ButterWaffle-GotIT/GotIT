@@ -10,7 +10,20 @@
 	"primaryTag": "보안/네트워크",
 	"relatedIds": [3021, 3027, 3024, 3025],
 	"confusableIds": [3027],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "PM",
+			"text": "유럽 사용자를 대상으로 서비스를 확장하려면 GDPR(General Data Protection Regulation)을 준수해야 해요. 개인 정보 수집 시 명확한 동의를 받고, 데이터 처리 목적을 투명하게 공개하는 개인정보처리방침을 업데이트해야 합니다."
+		},
+		{
+			"role": "Dev",
+			"text": "사용자 개인 식별 정보(PII)는 DB에 그대로 저장하지 말고, 비식별화(Pseudonymization) 또는 암호화(Encryption) 처리해야 해요. 혹시 모를 데이터 유출 사고에도 사용자 정보가 보호될 수 있도록 기술적인 조치를 마련해야 합니다."
+		},
+		{
+			"role": "PM",
+			"text": "우리 서비스가 사용자 개인정보를 얼마나 안전하게 다루고 있는지 고객들에게 투명하게 알려야 해요. 웹사이트에 개인정보보호 관련 섹션을 강화하고, 사용자가 자신의 데이터를 열람/수정/삭제 요청할 수 있는 기능(GDPR의 'Right to be forgotten')을 제공해야 합니다."
+		}
+	],
 	"keywords": [
 		"GDPR",
 		"민감 정보",

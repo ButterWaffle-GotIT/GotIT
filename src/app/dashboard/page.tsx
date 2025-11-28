@@ -64,7 +64,7 @@ const mockCards = [
 
 const userData = {
 	email: "nickname@gmail.com",
-	tags: ["프론트엔드"]
+	tags: ["프론트엔드"],
 };
 
 export default function DashboardPage() {
@@ -76,13 +76,10 @@ export default function DashboardPage() {
 			: mockCards.filter((card) => card.category === selectedCategory);
 
 	return (
-		<div className="w-[1040px] pt-20 pb-20 flex flex-col justify-start items-start gap-10">
-			<div className="self-stretch inline-flex justify-start items-stretch gap-5">
+		<div className="flex w-[1040px] flex-col items-start justify-start gap-10 pt-20 pb-20">
+			<div className="inline-flex items-stretch justify-start gap-5 self-stretch">
 				<div className="w-80 flex-shrink-0">
-					<ProfileCard
-						email={userData.email}
-						tags={userData.tags}
-					/>
+					<ProfileCard email={userData.email} tags={userData.tags} />
 				</div>
 
 				<div className="flex-1">

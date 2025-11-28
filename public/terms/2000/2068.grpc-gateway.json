@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2052, 2053, 2040],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "내부 서비스 간에는 고성능 gRPC로 통신하고 싶은데, 외부 클라이언트(웹, 모바일)는 아직 REST/JSON API에 익숙해요. gRPC 게이트웨이를 사용하면 내부 통신은 gRPC로 유지하면서도, 외부에는 REST/JSON API로 자동 변환해서 노출할 수 있어서 좋아요."
+		},
+		{
+			"role": "Dev",
+			"text": "백엔드가 gRPC로 돼 있어서 걱정했는데, gRPC 게이트웨이 덕분에 그냥 기존 REST API처럼 JSON 형식으로 데이터를 주고받을 수 있네요. 프론트엔드 코드 수정할 필요가 없어서 편해요."
+		},
+		{
+			"role": "Dev",
+			"text": "gRPC 게이트웨이가 gRPC 서비스를 HTTP/JSON으로 자동 변환해주는 프록시 역할을 하니까, API 게이트웨이에 통합해서 인증, 로깅 같은 공통 기능도 한 번에 관리할 수 있어요. 아키텍처가 더 깔끔해지죠."
+		}
+	],
 	"keywords": ["grpc gateway", "rest", "json", "proxy", "transcoding"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-13"

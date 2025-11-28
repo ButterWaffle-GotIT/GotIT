@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2004, 2005],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "Rails는 '설정보다 관례(Convention over Configuration)'를 따르기 때문에, 프레임워크가 정해준 규칙대로만 개발하면 정말 설정 파일 하나 없이도 기능이 뚝딱 만들어져요. 생산성은 최고죠."
+		},
+		{
+			"role": "PM",
+			"text": "빠르게 아이디어 검증하고 MVP 만들어야 하는 초기 스타트업한테는 아직도 레일즈만한 게 없는 것 같아요. 개발 속도가 워낙 압도적이어서요."
+		},
+		{
+			"role": "Dev",
+			"text": "레일즈는 너무 마법처럼 숨겨진 기능이 많아서, 내부 동작을 모르면 문제 생겼을 때 디버깅하기가 너무 힘들어요. 저는 좀 더 명시적인 프레임워크가 좋은 것 같아요."
+		}
+	],
 	"keywords": ["rails", "ruby", "레일즈", "루비", "프레임워크", "mvc"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-04"

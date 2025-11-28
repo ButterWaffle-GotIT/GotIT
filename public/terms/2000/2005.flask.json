@@ -13,7 +13,20 @@
 	"primaryTag": "백엔드",
 	"relatedIds": [2004],
 	"confusableIds": [],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "이번에 만들려는 기능은 복잡한 로직 없이 간단한 API 역할만 하면 되니까, 무겁게 Django 쓸 필요 없이 Flask로 가볍게 만드는 게 좋겠어요."
+		},
+		{
+			"role": "Dev",
+			"text": "Flask는 ORM 같은 기능이 내장되어 있지 않아서, SQLAlchemy처럼 우리 프로젝트에 맞는 라이브러리를 직접 골라 쓸 수 있다는 게 장점이에요. 커스터마이징이 자유롭죠."
+		},
+		{
+			"role": "PM",
+			"text": "아이디어 검증용 프로토타입을 빨리 만들어야 하는데, Flask를 쓰면 핵심 기능만 구현해서 빠르게 띄워볼 수 있겠네요. 나중에 서비스가 커지면 그때 Django로 전환하는 걸 고려해보고요."
+		}
+	],
 	"keywords": ["flask", "플라스크", "python", "파이썬", "마이크로 프레임워크"],
 	"level": "intermediate",
 	"updatedAt": "2025-11-04"

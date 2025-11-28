@@ -10,7 +10,20 @@
 	"primaryTag": "클라우드",
 	"relatedIds": [3011, 3012, 3018, 3001],
 	"confusableIds": [3011, 3012],
-	"useCases": [],
+	"useCases": [
+		{
+			"role": "Dev",
+			"text": "우리 회사는 이미 온프레미스에 많은 Microsoft 서버를 운영하고 있어요. Azure는 하이브리드 클라우드 솔루션이 강력해서, 기존 인프라랑 Azure 클라우드를 유기적으로 연결해서 통합 관리할 수 있다는 게 큰 장점이에요."
+		},
+		{
+			"role": "Dev",
+			"text": "닷넷(.NET) 기반으로 엔터프라이즈 솔루션을 개발하고 있는데, Azure는 Visual Studio나 GitHub와 연동도 잘 되고, Azure DevOps 같은 CI/CD 툴도 제공해서 개발 워크플로우를 Microsoft 생태계 안에서 Seamless하게 가져갈 수 있어요."
+		},
+		{
+			"role": "PM",
+			"text": "보안이나 규제 준수(Compliance)가 중요한 기업형 고객들을 대상으로 서비스를 확장하고 싶은데, Azure는 엔터프라이즈 등급의 보안 기능과 다양한 산업별 규제 준수 인증을 제공해서 고객들에게 신뢰를 줄 수 있어요."
+		}
+	],
 	"keywords": [
 		"클라우드",
 		"Microsoft",
