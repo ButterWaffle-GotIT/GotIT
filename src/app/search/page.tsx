@@ -6,7 +6,7 @@ import TagList from "@/components/TagList";
 import RecommendedTermCard from "@/components/RecommendedTermCard";
 import { ChevronsDownIcon } from "@/components/icons/ic_chevrons_down";
 import { SearchIcon } from "@/components/icons/ic_search";
-import { getTermsIndex, searchTerms, type TermIndexItem } from "@/lib/terms";
+import { searchTerms, type TermIndexItem } from "@/lib/terms";
 import { isBookmarked, toggleBookmark } from "@/lib/bookmarks";
 
 // --- Mock Data ---
@@ -76,11 +76,8 @@ function SearchBar({
 // 검색 결과 카드 컴포넌트
 function SearchResultCard({ item }: { item: TermIndexItem }) {
 	const router = useRouter();
-	const [bookmarked, setBookmarked] = useState(false);
-
-	useEffect(() => {
-		setBookmarked(isBookmarked(item.id));
-	}, [item.id]);
+	// useEffect 대신 초기값을 직접 계산
+	const [bookmarked, setBookmarked] = useState(() => isBookmarked(item.id));
 
 	const handleBookmark = (e: React.MouseEvent) => {
 		e.stopPropagation();
@@ -222,22 +219,11 @@ export default function SearchPage() {
 	const [selectedTag, setSelectedTag] = useState("전체");
 	const [searchTerm, setSearchTerm] = useState("");
 	const [searchResults, setSearchResults] = useState<TermIndexItem[]>([]);
-	const [allTerms, setAllTerms] = useState<TermIndexItem[]>([]);
 	const [isSearching, setIsSearching] = useState(false);
 	const [showMoreRecommended, setShowMoreRecommended] = useState(false);
 
-	// 초기 데이터 로드
-	useEffect(() => {
-		async function loadTerms() {
-			const terms = await getTermsIndex();
-			setAllTerms(terms);
-		}
-		loadTerms();
-	}, []);
-
 	const handleTagSelect = useCallback((tagName: string) => {
 		setSelectedTag(tagName);
-		// TODO: 태그별 필터링 로직
 	}, []);
 
 	const handleSearchChange = useCallback(
@@ -246,10 +232,8 @@ export default function SearchPage() {
 			setIsSearching(true);
 
 			if (value.trim()) {
-				// searchTerms 함수 사용 (이미 한글/영문/요약/태그 검색 포함)
 				const results = await searchTerms(value);
 
-				// 선택된 태그로 필터링
 				const filtered =
 					selectedTag === "전체"
 						? results
@@ -270,16 +254,9 @@ export default function SearchPage() {
 	);
 
 	// 태그가 변경되면 검색 재실행
-	// useEffect(() => {
-	// 	if (searchTerm.trim()) {
-	// 		performSearch(searchTerm);
-	// 	}
-	// }, [selectedTag, performSearch]);
-	// 태그가 변경되면 검색 재실행
 	useEffect(() => {
 		const runSearch = async () => {
 			if (searchTerm.trim()) {
-				// 기존 handleSearchChange 로직을 재사용
 				setIsSearching(true);
 				const results = await searchTerms(searchTerm);
 				const filtered =
@@ -316,7 +293,7 @@ export default function SearchPage() {
 						<section className="flex flex-col items-start justify-start gap-5 self-stretch">
 							<div className="flex items-center justify-between self-stretch">
 								<div className="font-['Pretendard'] text-sm leading-5 font-semibold text-gray-500">
-									검색 결과 : "{searchTerm}"
+									검색 결과 : &ldquo;{searchTerm}&rdquo;
 								</div>
 								<button className="rounded-lg border border-gray-700 px-3 py-1.5 text-sm text-gray-400 transition-colors hover:border-gray-600 hover:text-gray-300">
 									최신순 ▼

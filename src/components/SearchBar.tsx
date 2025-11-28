@@ -1,7 +1,7 @@
 // components/SearchBar.tsx
 "use client";
 
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import { SearchIcon } from "@/components/icons/ic_search";
 import {
 	TermIndexItem,
@@ -33,27 +33,26 @@ export default function SearchBar() {
 		getAllTags().then(setAllTags);
 	}, []);
 
-	// performSearch 정의
-	const performSearch = useCallback(async (query: string, tag?: string) => {
-		let res: TermIndexItem[] = [];
-
-		if (query.trim()) {
-			res = await searchTerms(query);
-		} else if (tag) {
-			res = await getTermsByTag(tag);
-		}
-
-		if (tag) {
-			res = res.filter((t) => t.tags.includes(tag) || t.primaryTag === tag);
-		}
-
-		setResults(res);
-	}, []);
-
 	// 검색어 또는 태그 변경 시 재검색
 	useEffect(() => {
-		performSearch(debouncedTerm, selectedTag);
-	}, [debouncedTerm, selectedTag, performSearch]);
+		async function performSearch() {
+			let res: TermIndexItem[] = [];
+
+			if (debouncedTerm.trim()) {
+				res = await searchTerms(debouncedTerm);
+			} else if (selectedTag) {
+				res = await getTermsByTag(selectedTag);
+			}
+
+			if (selectedTag) {
+				res = res.filter((t) => t.tags.includes(selectedTag) || t.primaryTag === selectedTag);
+			}
+
+			setResults(res);
+		}
+
+		performSearch();
+	}, [debouncedTerm, selectedTag]);
 
 	return (
 		<div className="flex w-full flex-col items-center justify-start gap-6">
