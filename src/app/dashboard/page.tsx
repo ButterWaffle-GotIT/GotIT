@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+import ProfileCard from "@/app/dashboard/components/ProfileCard";
+import TodayTermCard from "@/app/dashboard/components/TodayTermCard";
 import ScrapSection from "@/app/dashboard/components/ScrapSection";
 
 const mockCards = [
@@ -60,6 +62,11 @@ const mockCards = [
 	},
 ];
 
+const userData = {
+	email: "nickname@gmail.com",
+	tags: ["프론트엔드"]
+};
+
 export default function DashboardPage() {
 	const [selectedCategory, setSelectedCategory] = useState("전체");
 
@@ -69,13 +76,28 @@ export default function DashboardPage() {
 			: mockCards.filter((card) => card.category === selectedCategory);
 
 	return (
-		<div className="w-full">
-			<ScrapSection
-				totalCount={filteredCards.length}
-				selectedCategory={selectedCategory}
-				onCategorySelect={setSelectedCategory}
-				cards={filteredCards}
-			/>
+		<div className="w-[1040px] pt-20 pb-20 flex flex-col justify-start items-start gap-10">
+			<div className="self-stretch inline-flex justify-start items-stretch gap-5">
+				<div className="w-80 flex-shrink-0">
+					<ProfileCard
+						email={userData.email}
+						tags={userData.tags}
+					/>
+				</div>
+
+				<div className="flex-1">
+					<TodayTermCard />
+				</div>
+			</div>
+
+			<div className="self-stretch">
+				<ScrapSection
+					totalCount={filteredCards.length}
+					selectedCategory={selectedCategory}
+					onCategorySelect={setSelectedCategory}
+					cards={filteredCards}
+				/>
+			</div>
 		</div>
 	);
 }
