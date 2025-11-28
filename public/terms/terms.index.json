@@ -93,7 +93,7 @@
 		"termKo": "Next.js",
 		"termEn": "Next.js",
 		"summary": "React를 기반으로 하는 프로덕션용 프레임워크.",
-		"tags": ["프론트엔드", "클라우드-DevOps"],
+		"tags": ["프론트엔드", "클라우드", "DevOps"],
 		"primaryTag": "프론트엔드",
 		"level": "intermediate",
 		"file": "/terms/1000/1006.Next-js.json"
