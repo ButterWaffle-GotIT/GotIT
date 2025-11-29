@@ -5,7 +5,7 @@ import CategoryButton from "./categoruButton";
 
 interface CategoryListProps {
 	selectedCategory: CategoryType | null;
-	onToggleCategory: (category: CategoryType) => void;
+	onSelectCategory: (category: CategoryType) => void;
 }
 
 const row1Categories: CategoryType[] = ["frontend", "backend", "uiux", "ai"];
@@ -19,7 +19,7 @@ const row2Categories: CategoryType[] = [
 
 export default function CategoryList({
 	selectedCategory,
-	onToggleCategory,
+	onSelectCategory,
 }: CategoryListProps) {
 	return (
 		<div className="w-content flex flex-col gap-10">
@@ -29,7 +29,7 @@ export default function CategoryList({
 						key={category}
 						category={category}
 						isSelected={selectedCategory === category}
-						onClick={() => onToggleCategory(category)}
+						onClick={() => onSelectCategory(category)}
 					/>
 				))}
 			</div>
@@ -40,7 +40,7 @@ export default function CategoryList({
 						key={category}
 						category={category}
 						isSelected={selectedCategory === category}
-						onClick={() => onToggleCategory(category)}
+						onClick={() => onSelectCategory(category)}
 					/>
 				))}
 			</div>

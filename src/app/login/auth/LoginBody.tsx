@@ -10,8 +10,12 @@ export default function LoginBody() {
 
 	const handleGoogleLogin = async () => {
 		try {
-			await loginWithGoogle();
-			router.push("/");
+			const needsOnboarding = await loginWithGoogle();
+			if (needsOnboarding) {
+				router.push("/onboarding");
+			} else {
+				router.push("/");
+			}
 		} catch (error) {
 			console.error("로그인 중 오류 발생:", error);
 		}
