@@ -100,7 +100,7 @@ export default function ChatBot() {
 							onClick={() =>
 								handleSubmit(
 									undefined,
-									"React, Next.js, Docker 이 세 가지 용어를 각각 최대 두 줄로 간략하게 설명해줘"
+									"React, Next.js, Docker 이 세 가지 용어를 각각 설명해줘."
 								)
 							}
 						/>
