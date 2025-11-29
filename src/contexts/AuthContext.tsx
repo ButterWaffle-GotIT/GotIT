@@ -38,7 +38,9 @@ type AuthContextType = {
 	logout: () => Promise<void>;
 	completeOnboarding: (category: CategoryType) => Promise<void>;
 	updateCategory: (category: CategoryType) => Promise<void>;
-	toggleScrap: (termId: number) => Promise<{ success: boolean; isScraped: boolean }>;
+	toggleScrap: (
+		termId: number
+	) => Promise<{ success: boolean; isScraped: boolean }>;
 	isScraped: (termId: number) => boolean;
 };
 

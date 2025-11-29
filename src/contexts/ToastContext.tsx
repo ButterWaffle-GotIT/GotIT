@@ -41,7 +41,14 @@ export function ToastProvider({ children }: { children: ReactNode }) {
 		const id = "login-toast";
 		setToasts((prev) => {
 			if (prev.some((t) => t.id === id)) return prev;
-			return [...prev, { id, message: "로그인이 필요한 기능입니다", type: "login" as ToastType }];
+			return [
+				...prev,
+				{
+					id,
+					message: "로그인이 필요한 기능입니다",
+					type: "login" as ToastType,
+				},
+			];
 		});
 	}, []);
 

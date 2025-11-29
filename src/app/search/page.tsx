@@ -108,7 +108,9 @@ function SearchResultCard({ item }: { item: TermIndexItem }) {
 		const result = await toggleScrap(item.id);
 		if (result.success) {
 			setBookmarked(result.isScraped);
-			showToast(result.isScraped ? "스크랩되었습니다" : "스크랩이 해제되었습니다");
+			showToast(
+				result.isScraped ? "스크랩되었습니다" : "스크랩이 해제되었습니다"
+			);
 		}
 	};
 
