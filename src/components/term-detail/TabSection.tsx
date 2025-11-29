@@ -16,7 +16,8 @@ import {
 	ChevronRightIcon,
 } from "@/components/icons";
 import { categoryConfig } from "@/components/ui/category/config";
-import { type TabType, getCategoryFromTag } from "./types";
+import { getCategoryType } from "@/lib/category";
+import { type TabType } from "./types";
 
 interface TabSectionProps {
 	term: TermDetail;
@@ -95,7 +96,7 @@ function TabNavigation({
 
 // Description Tab
 function DescriptionTab({ term }: { term: TermDetail }) {
-	const category = getCategoryFromTag(term.primaryTag);
+	const category = getCategoryType(term.primaryTag);
 
 	return (
 		<>
@@ -271,7 +272,7 @@ function RelatedTab({
 // 연관 용어 카드 컴포넌트
 function RelatedTermCard({ term }: { term: TermIndexItem }) {
 	const router = useRouter();
-	const category = getCategoryFromTag(term.primaryTag);
+	const category = getCategoryType(term.primaryTag);
 	const config = categoryConfig[category];
 	const CategoryIcon = config.icon;
 

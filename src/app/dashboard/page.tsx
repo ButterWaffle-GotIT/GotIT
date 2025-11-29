@@ -6,40 +6,9 @@ import ProfileCard from "@/app/dashboard/components/ProfileCard";
 import TodayTermCard from "@/app/dashboard/components/TodayTermCard";
 import ScrapSection from "@/app/dashboard/components/ScrapSection";
 import { useAuth } from "@/contexts/AuthContext";
-import { getRelatedTerms, type TermIndexItem } from "@/lib/terms";
+import { getRelatedTerms } from "@/lib/terms";
+import { termToScrapCard } from "@/lib/scrap";
 import { type ScrapCardData } from "@/types/category";
-
-const tagToCategoryMap: Record<string, string> = {
-	frontend: "프론트엔드",
-	backend: "백엔드",
-	uiux: "UI/UX",
-	ai: "AI",
-	cloud: "클라우드",
-	data: "데이터",
-	security: "보안/네트워크",
-	devops: "DevOps",
-	business: "IT비즈니스",
-};
-
-function termToScrapCard(term: TermIndexItem): ScrapCardData {
-	const category = tagToCategoryMap[term.primaryTag] || term.primaryTag;
-	return {
-		id: String(term.id),
-		slug: term.slug,
-		category,
-		term: term.termEn || term.termKo,
-		tag: term.tags[0] || "",
-		description: term.summary,
-		date: new Date()
-			.toLocaleDateString("ko-KR", {
-				year: "numeric",
-				month: "2-digit",
-				day: "2-digit",
-			})
-			.replace(/\. /g, ".")
-			.replace(/\.$/, ""),
-	};
-}
 
 export default function DashboardPage() {
 	const router = useRouter();
