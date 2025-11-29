@@ -13,6 +13,7 @@ import {
 } from "@/components/icons";
 import { categoryConfig } from "@/components/ui/category/config";
 import { getCategoryType } from "@/lib/category";
+import { useScrapToggle } from "@/hooks/useScrapToggle";
 
 interface RelatedTabProps {
 	term: TermDetail;
@@ -48,9 +49,16 @@ export function RelatedTab({ term, relatedTerms }: RelatedTabProps) {
 // 연관 용어 카드 컴포넌트
 function RelatedTermCard({ term }: { term: TermIndexItem }) {
 	const router = useRouter();
+	const { bookmarked, handleToggle } = useScrapToggle(term.id);
+
 	const category = getCategoryType(term.primaryTag);
 	const config = categoryConfig[category];
 	const CategoryIcon = config.icon;
+
+	const handleBookmark = (e: React.MouseEvent) => {
+		e.stopPropagation();
+		handleToggle();
+	};
 
 	return (
 		<div
@@ -79,12 +87,17 @@ function RelatedTermCard({ term }: { term: TermIndexItem }) {
 					{/* Action Buttons */}
 					<div className="flex items-center gap-1">
 						<button
-							className="bg-white-10 flex h-6 w-6 items-center justify-center rounded"
-							onClick={(e) => {
-								e.stopPropagation();
-							}}
+							className={cn(
+								"flex h-6 w-6 items-center justify-center rounded transition-colors",
+								bookmarked ? "bg-yellow-500/20" : "bg-white-10 hover:bg-white-20"
+							)}
+							onClick={handleBookmark}
 						>
-							<ScrapIcon size={16} color="#D4C2F0" />
+							<ScrapIcon
+								size={16}
+								color={bookmarked ? "#FFC107" : "#D4C2F0"}
+								filled={bookmarked}
+							/>
 						</button>
 						<button className="bg-white-10 flex h-6 w-6 items-center justify-center rounded">
 							<ChevronRightIcon size={16} color="#D4C2F0" />

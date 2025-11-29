@@ -7,9 +7,7 @@ import RecommendedTermCard from "@/components/RecommendedTermCard";
 import { ChevronsDownIcon } from "@/components/icons/ic_chevrons_down";
 import { SearchIcon } from "@/components/icons/ic_search";
 import { searchTerms, type TermIndexItem } from "@/lib/terms";
-import { isBookmarked, toggleBookmark } from "@/lib/bookmarks";
-import { useAuth } from "@/contexts/AuthContext";
-import { useToast } from "@/contexts/ToastContext";
+import { useScrapToggle } from "@/hooks/useScrapToggle";
 
 // --- Mock Data ---
 const recommendedTerms = [
@@ -78,42 +76,11 @@ function SearchBar({
 // 검색 결과 카드 컴포넌트
 function SearchResultCard({ item }: { item: TermIndexItem }) {
 	const router = useRouter();
-	const { user, isScraped, toggleScrap } = useAuth();
-	const { showLoginToast, showToast } = useToast();
+	const { bookmarked, handleToggle } = useScrapToggle(item.id);
 
-	// 서버/로컬 북마크 상태 (파생 값)
-	const serverBookmarked = user ? isScraped(item.id) : isBookmarked(item.id);
-
-	// 로컬 오버라이드 (일시적 상태 변경용)
-	const [localOverride, setLocalOverride] = useState<boolean | null>(null);
-	const [lastUser, setLastUser] = useState(user);
-
-	// user가 변경되면 로컬 오버라이드 초기화 (렌더링 중 상태 조정)
-	if (user !== lastUser) {
-		setLastUser(user);
-		setLocalOverride(null);
-	}
-
-	// 최종 북마크 상태
-	const bookmarked = localOverride ?? serverBookmarked;
-
-	const handleBookmark = async (e: React.MouseEvent) => {
+	const handleBookmark = (e: React.MouseEvent) => {
 		e.stopPropagation();
-
-		if (!user) {
-			const newState = toggleBookmark(item.id);
-			setLocalOverride(newState);
-			showLoginToast();
-			return;
-		}
-
-		const result = await toggleScrap(item.id);
-		if (result.success) {
-			setLocalOverride(result.isScraped);
-			showToast(
-				result.isScraped ? "스크랩되었습니다" : "스크랩이 해제되었습니다"
-			);
-		}
+		handleToggle();
 	};
 
 	const handleShare = async (e: React.MouseEvent) => {
