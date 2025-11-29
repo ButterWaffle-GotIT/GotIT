@@ -81,33 +81,35 @@ function SearchResultCard({ item }: { item: TermIndexItem }) {
 	const { user, isScraped, toggleScrap } = useAuth();
 	const { showLoginToast, showToast } = useToast();
 
-	// 로그인 상태에 따라 북마크 상태 결정
-	const [bookmarked, setBookmarked] = useState(() =>
-		user ? isScraped(item.id) : isBookmarked(item.id)
-	);
+	// 서버/로컬 북마크 상태 (파생 값)
+	const serverBookmarked = user ? isScraped(item.id) : isBookmarked(item.id);
 
-	// user나 isScraped가 변경되면 상태 업데이트
-	useEffect(() => {
-		if (user) {
-			setBookmarked(isScraped(item.id));
-		} else {
-			setBookmarked(isBookmarked(item.id));
-		}
-	}, [user, isScraped, item.id]);
+	// 로컬 오버라이드 (일시적 상태 변경용)
+	const [localOverride, setLocalOverride] = useState<boolean | null>(null);
+	const [lastUser, setLastUser] = useState(user);
+
+	// user가 변경되면 로컬 오버라이드 초기화 (렌더링 중 상태 조정)
+	if (user !== lastUser) {
+		setLastUser(user);
+		setLocalOverride(null);
+	}
+
+	// 최종 북마크 상태
+	const bookmarked = localOverride ?? serverBookmarked;
 
 	const handleBookmark = async (e: React.MouseEvent) => {
 		e.stopPropagation();
 
 		if (!user) {
 			const newState = toggleBookmark(item.id);
-			setBookmarked(newState);
+			setLocalOverride(newState);
 			showLoginToast();
 			return;
 		}
 
 		const result = await toggleScrap(item.id);
 		if (result.success) {
-			setBookmarked(result.isScraped);
+			setLocalOverride(result.isScraped);
 			showToast(
 				result.isScraped ? "스크랩되었습니다" : "스크랩이 해제되었습니다"
 			);
