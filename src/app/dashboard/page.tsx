@@ -62,11 +62,6 @@ const mockCards = [
 	},
 ];
 
-const userData = {
-	email: "nickname@gmail.com",
-	tags: ["프론트엔드"],
-};
-
 export default function DashboardPage() {
 	const [selectedCategory, setSelectedCategory] = useState("전체");
 
@@ -79,7 +74,7 @@ export default function DashboardPage() {
 		<div className="flex w-[1040px] flex-col items-start justify-start gap-10 pt-20 pb-20">
 			<div className="inline-flex items-stretch justify-start gap-5 self-stretch">
 				<div className="w-80 flex-shrink-0">
-					<ProfileCard email={userData.email} tags={userData.tags} />
+					<ProfileCard />
 				</div>
 
 				<div className="flex-1">
