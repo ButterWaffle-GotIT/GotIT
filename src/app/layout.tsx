@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FirebaseAnalytics } from "@/components/providers/FirebaseAnalytics";
 import { Providers } from "@/components/providers/Providers";
 import Header from "@/components/layout/Header";
+import ScrollToTop from "@/components/layout/ScrollToTop";
 
 export const metadata: Metadata = {
 	title: "got IT - IT 용어사전",
@@ -26,6 +27,7 @@ export default function RootLayout({
 					priority
 				/>
 
+				<ScrollToTop />
 				<FirebaseAnalytics />
 				<Providers>
 					<Header showNav={true} />
