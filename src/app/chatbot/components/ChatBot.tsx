@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { useRouter } from "next/navigation";
 import { getChatResponse } from "@/app/chatbot/utils/actions";
 import { FireIcon, StarIcon, SearchIcon, SendIcon } from "@/components/icons";
 import ChatMessage from "./ChatMessage";
@@ -16,7 +15,6 @@ interface Message {
 }
 
 export default function ChatBot() {
-	const router = useRouter();
 	const [messages, setMessages] = useState<Message[]>([
 		{
 			role: "bot",
@@ -28,7 +26,6 @@ export default function ChatBot() {
 	const [isLoading, setIsLoading] = useState(false);
 
 	const messagesEndRef = useRef<HTMLDivElement>(null);
-	const chatAreaRef = useRef<HTMLDivElement>(null);
 
 	const scrollToBottom = () => {
 		messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -66,28 +63,22 @@ export default function ChatBot() {
 	};
 
 	return (
-		<div className="mx-auto flex h-screen w-full max-w-260 flex-col">
-			<div
-				ref={chatAreaRef}
-				className="flex-1 overflow-y-auto px-4 pt-20"
-				style={{ paddingBottom: "11rem" }}
-			>
-				<div className="flex flex-col gap-15">
-					{messages.map((msg, index) =>
-						msg.role === "bot" ? (
-							<ChatMessage
-								key={index}
-								content={msg.content}
-								recommendations={msg.recommendations}
-								onRecommendationClick={handleRecommendationClick}
-							/>
-						) : (
-							<UserMessage key={index} content={msg.content} />
-						)
-					)}
-					{isLoading && <BotLoading />}
-					<div ref={messagesEndRef} />
-				</div>
+		<div className="mx-auto min-h-screen w-full max-w-260 px-4 pt-20">
+			<div className="flex flex-col gap-15 pb-52">
+				{messages.map((msg, index) =>
+					msg.role === "bot" ? (
+						<ChatMessage
+							key={index}
+							content={msg.content}
+							recommendations={msg.recommendations}
+							onRecommendationClick={handleRecommendationClick}
+						/>
+					) : (
+						<UserMessage key={index} content={msg.content} />
+					)
+				)}
+				{isLoading && <BotLoading />}
+				<div ref={messagesEndRef} />
 			</div>
 
 			<div
@@ -106,21 +97,28 @@ export default function ChatBot() {
 								<FireIcon width={14} height={14} className="text-[#FB923C]" />
 							}
 							label="인기 용어"
-							onClick={() => router.push("/search")}
+							onClick={() =>
+								handleSubmit(
+									undefined,
+									"React, Next.js, Docker 이 세 가지 용어를 각각 최대 두 줄로 간략하게 설명해줘"
+								)
+							}
 						/>
 						<QuickActionButton
 							icon={
 								<StarIcon width={14} height={14} className="text-[#FACC15]" />
 							}
 							label="오늘의 용어"
-							onClick={() => router.push("/dashboard")}
+							onClick={() => handleSubmit(undefined, "TypeScript")}
 						/>
 						<QuickActionButton
 							icon={
 								<SearchIcon width={14} height={14} className="text-[#22D3EE]" />
 							}
 							label="용어 검색"
-							onClick={() => router.push("/search")}
+							onClick={() =>
+								handleSubmit(undefined, "gotIT에 없는 단어를 검색해주세요")
+							}
 						/>
 					</div>
 

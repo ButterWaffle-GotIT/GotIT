@@ -45,7 +45,9 @@ export default function SearchBar() {
 			}
 
 			if (selectedTag) {
-				res = res.filter((t) => t.tags.includes(selectedTag) || t.primaryTag === selectedTag);
+				res = res.filter(
+					(t) => t.tags.includes(selectedTag) || t.primaryTag === selectedTag
+				);
 			}
 
 			setResults(res);
