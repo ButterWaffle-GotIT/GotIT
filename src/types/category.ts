@@ -64,6 +64,7 @@ export const categoryActiveStyles: Record<string, string> = {
 
 export interface ScrapCardData {
 	id: string;
+	slug?: string;
 	category: string;
 	term: string;
 	tag: string;

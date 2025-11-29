@@ -8,6 +8,8 @@ import { ChevronsDownIcon } from "@/components/icons/ic_chevrons_down";
 import { SearchIcon } from "@/components/icons/ic_search";
 import { searchTerms, type TermIndexItem } from "@/lib/terms";
 import { isBookmarked, toggleBookmark } from "@/lib/bookmarks";
+import { useAuth } from "@/contexts/AuthContext";
+import { useToast } from "@/contexts/ToastContext";
 
 // --- Mock Data ---
 const recommendedTerms = [
@@ -76,13 +78,38 @@ function SearchBar({
 // 검색 결과 카드 컴포넌트
 function SearchResultCard({ item }: { item: TermIndexItem }) {
 	const router = useRouter();
-	// useEffect 대신 초기값을 직접 계산
-	const [bookmarked, setBookmarked] = useState(() => isBookmarked(item.id));
+	const { user, isScraped, toggleScrap } = useAuth();
+	const { showLoginToast, showToast } = useToast();
 
-	const handleBookmark = (e: React.MouseEvent) => {
+	// 로그인 상태에 따라 북마크 상태 결정
+	const [bookmarked, setBookmarked] = useState(() =>
+		user ? isScraped(item.id) : isBookmarked(item.id)
+	);
+
+	// user나 isScraped가 변경되면 상태 업데이트
+	useEffect(() => {
+		if (user) {
+			setBookmarked(isScraped(item.id));
+		} else {
+			setBookmarked(isBookmarked(item.id));
+		}
+	}, [user, isScraped, item.id]);
+
+	const handleBookmark = async (e: React.MouseEvent) => {
 		e.stopPropagation();
-		const newState = toggleBookmark(item.id);
-		setBookmarked(newState);
+
+		if (!user) {
+			const newState = toggleBookmark(item.id);
+			setBookmarked(newState);
+			showLoginToast();
+			return;
+		}
+
+		const result = await toggleScrap(item.id);
+		if (result.success) {
+			setBookmarked(result.isScraped);
+			showToast(result.isScraped ? "스크랩되었습니다" : "스크랩이 해제되었습니다");
+		}
 	};
 
 	const handleShare = async (e: React.MouseEvent) => {
