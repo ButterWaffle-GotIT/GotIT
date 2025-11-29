@@ -61,8 +61,10 @@ export default function TermDetailPage({
 		if (result.success) {
 			setBookmarked(result.isScraped);
 			showToast(
-				result.isScraped ? "스크랩되었습니다" : "스크랩이 해제되었습니다"
+				result.isScraped ? "스크랩 되었습니다" : "스크랩이 해제되었습니다"
 			);
+		} else {
+			showToast("스크랩 처리 중 오류가 발생했습니다", "error");
 		}
 	};
 
