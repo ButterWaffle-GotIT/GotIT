@@ -125,7 +125,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 		});
 
 		setUserData((prev) =>
-			prev ? { ...prev, onboardingCompleted: true, selectedCategory: category } : null
+			prev
+				? { ...prev, onboardingCompleted: true, selectedCategory: category }
+				: null
 		);
 		setIsNewUser(false);
 	};
