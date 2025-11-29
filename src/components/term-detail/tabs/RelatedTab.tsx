@@ -89,7 +89,9 @@ function RelatedTermCard({ term }: { term: TermIndexItem }) {
 						<button
 							className={cn(
 								"flex h-6 w-6 items-center justify-center rounded transition-colors",
-								bookmarked ? "bg-yellow-500/20" : "bg-white-10 hover:bg-white-20"
+								bookmarked
+									? "bg-yellow-500/20"
+									: "bg-white-10 hover:bg-white-20"
 							)}
 							onClick={handleBookmark}
 						>
