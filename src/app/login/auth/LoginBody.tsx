@@ -6,7 +6,7 @@ import { useAuth } from "@/contexts/AuthContext";
 
 export default function LoginBody() {
 	const router = useRouter();
-	const { loginWithGoogle } = useAuth();
+	const { loginWithGoogle, loginWithDemo } = useAuth();
 
 	const handleGoogleLogin = async () => {
 		try {
@@ -18,6 +18,20 @@ export default function LoginBody() {
 			}
 		} catch (error) {
 			console.error("로그인 중 오류 발생:", error);
+		}
+	};
+
+	const handleDemoLogin = async () => {
+		try {
+			const needsOnboarding = await loginWithDemo();
+			if (needsOnboarding) {
+				router.push("/onboarding");
+			} else {
+				router.push("/");
+			}
+		} catch (error) {
+			console.error("데모 계정 로그인 중 오류 발생:", error);
+			alert("데모 계정 로그인에 실패했습니다.");
 		}
 	};
 
@@ -37,9 +51,17 @@ export default function LoginBody() {
 			</div>
 
 			<div className="mt-12 flex flex-col gap-12">
-				<button onClick={handleGoogleLogin}>
-					<GoogleLoginButtonIcon />
-				</button>
+				<div className="flex flex-col gap-3">
+					<button onClick={handleGoogleLogin}>
+						<GoogleLoginButtonIcon />
+					</button>
+					<button
+						onClick={handleDemoLogin}
+						className="text-sm text-gray-400 underline transition-colors hover:text-gray-300"
+					>
+						데모 계정으로 체험하기
+					</button>
+				</div>
 
 				<div className="flex items-center">
 					<div className="h-px w-35 shrink-0 bg-gray-600" />
