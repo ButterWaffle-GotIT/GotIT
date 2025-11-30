@@ -5,21 +5,8 @@
 import { getTermsIndex, getTermsByTag, type TermIndexItem } from "./terms";
 import { CATEGORIES, type CategoryType } from "@/config/categories";
 
-export interface QuizQuestion {
-	term: TermIndexItem;
-	correctAnswer: string;
-	choices: string[];
-	questionType: "summary" | "term";
-}
-
-export interface QuizResult {
-	totalQuestions: number;
-	correctAnswers: number;
-	wrongAnswers: number;
-	score: number;
-	questions: QuizQuestion[];
-	userAnswers: (string | null)[];
-}
+export type { QuizQuestion, QuizResult } from "@/types/quiz";
+import type { QuizQuestion, QuizResult } from "@/types/quiz";
 
 /**
  * 배열을 랜덤하게 섞기
