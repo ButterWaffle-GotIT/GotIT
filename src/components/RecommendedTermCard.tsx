@@ -24,7 +24,7 @@ const CategoryIconMap: { [key: string]: ElementType } = {
 	전체: CategoryAllIcon,
 	프론트엔드: CategoryFrontendIcon,
 	백엔드: CategoryBackendIcon,
-	"UI/UX": CategoryUiuxIcon,
+	"UX/UI": CategoryUiuxIcon,
 	AI: CategoryAiIcon,
 	클라우드: CategoryCloudIcon,
 	데이터: CategoryDataIcon,

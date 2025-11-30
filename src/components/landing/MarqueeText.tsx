@@ -7,7 +7,7 @@ export function MarqueeText() {
 		"AI",
 		"Data",
 		"Security",
-		"UI/UX",
+		"UX/UI",
 		"Product",
 		"Mobile",
 		"Business",

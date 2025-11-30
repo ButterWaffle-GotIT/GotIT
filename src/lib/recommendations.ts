@@ -21,7 +21,7 @@ export const categoryIdMap: Record<Exclude<CategoryType, "all">, number> = {
 
 // 카테고리별 아이콘 색상
 export const categoryColors: Record<number, string> = {
-	1000: "bg-cyan-400", // 프론트엔드·UI/UX
+	1000: "bg-cyan-400", // 프론트엔드·UX/UI
 	2000: "bg-green-500", // 백엔드
 	3000: "bg-amber-400", // 클라우드·DevOps·보안
 	4000: "bg-purple-500", // AI·데이터·IT비즈니스
