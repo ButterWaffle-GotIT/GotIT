@@ -67,23 +67,15 @@ function validateIndex(index: TermIndexItem[]): void {
 	for (const item of index) {
 		// ID 중복 체크
 		if (seenIds.has(item.id)) {
-			const existing = seenIds.get(item.id);
-			console.error(`❌ Duplicate ID detected in index: ${item.id}`);
-			console.error(`   First: ${existing}`);
-			console.error(`   Duplicate: ${item.file}`);
 			throw new Error(
-				`Duplicate term ID: ${item.id}. Please fix the term data.`
+				`Duplicate ID ${item.id}: ${seenIds.get(item.id)} ↔ ${item.file}`
 			);
 		}
 
 		// Slug 중복 체크
 		if (seenSlugs.has(item.slug)) {
-			const existing = seenSlugs.get(item.slug);
-			console.error(`❌ Duplicate slug detected in index: "${item.slug}"`);
-			console.error(`   First: ${existing}`);
-			console.error(`   Duplicate: ${item.file}`);
 			throw new Error(
-				`Duplicate term slug: "${item.slug}". Please fix the term data.`
+				`Duplicate slug "${item.slug}": ${seenSlugs.get(item.slug)} ↔ ${item.file}`
 			);
 		}
 
