@@ -11,8 +11,14 @@
 	"relatedIds": [3034, 4105, 3043],
 	"confusableIds": [3034],
 	"useCases": [
-		{ "role": "Dev", "text": "대규모 L7 공격을 방어하기 위해 클라우드 WAF의 DDoS 완화 기능을 활성화하고 규칙을 강화했습니다." },
-		{ "role": "PM", "text": "서비스 인기가 높아지면서 DDoS 완화 비용이 급증하고 있으니, 비용 효율적인 방어 전략을 세워야 합니다." }
+		{
+			"role": "Dev",
+			"text": "대규모 L7 공격을 방어하기 위해 클라우드 WAF의 DDoS 완화 기능을 활성화하고 규칙을 강화했습니다."
+		},
+		{
+			"role": "PM",
+			"text": "서비스 인기가 높아지면서 DDoS 완화 비용이 급증하고 있으니, 비용 효율적인 방어 전략을 세워야 합니다."
+		}
 	],
 	"keywords": ["ddos", "완화", "mitigation", "방어", "필터링"],
 	"level": "intermediate",

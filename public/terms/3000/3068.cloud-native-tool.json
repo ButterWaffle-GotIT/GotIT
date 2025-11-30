@@ -11,8 +11,14 @@
 	"relatedIds": [3001, 3004, 3010],
 	"confusableIds": [3007],
 	"useCases": [
-		{ "role": "Dev", "text": "새로운 환경을 구축할 때 클라우드 네이티브 툴셋(K8s, Prometheus, Grafana)을 표준으로 채택했습니다." },
-		{ "role": "PM", "text": "CNCF 인증 클라우드 네이티브 툴을 사용하여 시스템 안정성과 커뮤니티 지원을 확보했습니다." }
+		{
+			"role": "Dev",
+			"text": "새로운 환경을 구축할 때 클라우드 네이티브 툴셋(K8s, Prometheus, Grafana)을 표준으로 채택했습니다."
+		},
+		{
+			"role": "PM",
+			"text": "CNCF 인증 클라우드 네이티브 툴을 사용하여 시스템 안정성과 커뮤니티 지원을 확보했습니다."
+		}
 	],
 	"keywords": ["cncf", "툴", "kubernetes", "도커", "클라우드네이티브"],
 	"level": "intermediate",

@@ -11,8 +11,14 @@
 	"relatedIds": [3020, 3032, 3062],
 	"confusableIds": [3037],
 	"useCases": [
-		{ "role": "Dev", "text": "외부 파트너의 서비스에 접속할 때, VPC Private Link를 사용하여 통신 보안을 확보하고 인터넷 노출을 막았습니다." },
-		{ "role": "PM", "text": "데이터베이스 연결을 Private Link로 전환하여 보안 정책 준수 문제를 해결했습니다." }
+		{
+			"role": "Dev",
+			"text": "외부 파트너의 서비스에 접속할 때, VPC Private Link를 사용하여 통신 보안을 확보하고 인터넷 노출을 막았습니다."
+		},
+		{
+			"role": "PM",
+			"text": "데이터베이스 연결을 Private Link로 전환하여 보안 정책 준수 문제를 해결했습니다."
+		}
 	],
 	"keywords": ["private-link", "vpc", "보안", "aws", "연결"],
 	"level": "advanced",

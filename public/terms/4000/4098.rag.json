@@ -11,8 +11,14 @@
 	"relatedIds": [4010, 4081, 4097],
 	"confusableIds": [4010],
 	"useCases": [
-		{ "role": "Dev", "text": "회사 내부 지침에 관한 질문에는 RAG 시스템을 통해 답변의 신뢰도를 확보해야 합니다." },
-		{ "role": "PM", "text": "RAG를 도입하여 AI 챗봇이 최신 제품 설명서를 기반으로 답변하도록 개선합시다." }
+		{
+			"role": "Dev",
+			"text": "회사 내부 지침에 관한 질문에는 RAG 시스템을 통해 답변의 신뢰도를 확보해야 합니다."
+		},
+		{
+			"role": "PM",
+			"text": "RAG를 도입하여 AI 챗봇이 최신 제품 설명서를 기반으로 답변하도록 개선합시다."
+		}
 	],
 	"keywords": ["rag", "검색증강", "retrieval", "llm", "환각", "벡터"],
 	"level": "intermediate",

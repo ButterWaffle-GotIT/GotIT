@@ -11,8 +11,14 @@
 	"relatedIds": [3026, 3027, 3030],
 	"confusableIds": [3016],
 	"useCases": [
-		{ "role": "Dev", "text": "개발 서버의 불필요한 포트 접근을 막기 위해 클라우드 방화벽(Security Group) 규칙을 엄격하게 설정했습니다." },
-		{ "role": "PM", "text": "SQL Injection 공격에 대비하여 WAF 정책을 주기적으로 업데이트하고 있습니다." }
+		{
+			"role": "Dev",
+			"text": "개발 서버의 불필요한 포트 접근을 막기 위해 클라우드 방화벽(Security Group) 규칙을 엄격하게 설정했습니다."
+		},
+		{
+			"role": "PM",
+			"text": "SQL Injection 공격에 대비하여 WAF 정책을 주기적으로 업데이트하고 있습니다."
+		}
 	],
 	"keywords": ["firewall", "방화벽", "waf", "보안규칙", "트래픽"],
 	"level": "beginner",

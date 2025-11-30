@@ -11,8 +11,14 @@
 	"relatedIds": [3040, 3033, 3035],
 	"confusableIds": [3040],
 	"useCases": [
-		{ "role": "Dev", "text": "IDS 로그를 분석하여 최근 발생한 네트워크 스캔 시도의 출처와 패턴을 파악했습니다." },
-		{ "role": "PM", "text": "서비스 도입 시 방화벽(3033.firewall.json) 외에 IDS를 추가하여 보안 가시성을 높여야 합니다." }
+		{
+			"role": "Dev",
+			"text": "IDS 로그를 분석하여 최근 발생한 네트워크 스캔 시도의 출처와 패턴을 파악했습니다."
+		},
+		{
+			"role": "PM",
+			"text": "서비스 도입 시 방화벽(3033.firewall.json) 외에 IDS를 추가하여 보안 가시성을 높여야 합니다."
+		}
 	],
 	"keywords": ["ids", "침입탐지", "snort", "모니터링", "보안"],
 	"level": "intermediate",

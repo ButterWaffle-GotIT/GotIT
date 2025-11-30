@@ -11,8 +11,14 @@
 	"relatedIds": [3041, 3042, 3024],
 	"confusableIds": [3024],
 	"useCases": [
-		{ "role": "Dev", "text": "우리 서비스를 외부 IdP와 SAML로 연동하여 고객사 계정으로 SSO 로그인이 가능하도록 구현해야 합니다." },
-		{ "role": "PM", "text": "회사 정책상 모든 내부 서비스는 중앙 IdP를 통해 인증해야 합니다." }
+		{
+			"role": "Dev",
+			"text": "우리 서비스를 외부 IdP와 SAML로 연동하여 고객사 계정으로 SSO 로그인이 가능하도록 구현해야 합니다."
+		},
+		{
+			"role": "PM",
+			"text": "회사 정책상 모든 내부 서비스는 중앙 IdP를 통해 인증해야 합니다."
+		}
 	],
 	"keywords": ["idp", "인증", "신원", "sso", "saml"],
 	"level": "intermediate",
