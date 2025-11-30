@@ -6,6 +6,7 @@
 
 import {
 	createContext,
+	useCallback,
 	useContext,
 	useEffect,
 	useState,
@@ -43,18 +44,7 @@ export function UserDataProvider({ children }: { children: ReactNode }) {
 	const [userDataLoading, setUserDataLoading] = useState(true);
 	const [isNewUser, setIsNewUser] = useState(false);
 
-	useEffect(() => {
-		if (!user) {
-			setUserData(null);
-			setIsNewUser(false);
-			setUserDataLoading(false);
-			return;
-		}
-
-		loadUserData();
-	}, [user]);
-
-	const loadUserData = async () => {
+	const loadUserData = useCallback(async () => {
 		if (!user) return;
 
 		setUserDataLoading(true);
@@ -89,7 +79,18 @@ export function UserDataProvider({ children }: { children: ReactNode }) {
 		} finally {
 			setUserDataLoading(false);
 		}
-	};
+	}, [user]);
+
+	useEffect(() => {
+		if (!user) {
+			setUserData(null);
+			setIsNewUser(false);
+			setUserDataLoading(false);
+			return;
+		}
+
+		loadUserData();
+	}, [user, loadUserData]);
 
 	const refreshUserData = async () => {
 		await loadUserData();

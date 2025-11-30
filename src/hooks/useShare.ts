@@ -22,7 +22,7 @@ export function useShare() {
 				// 지원하지 않으면 클립보드에 복사
 				await navigator.clipboard.writeText(params.url);
 			}
-		} catch (error) {
+		} catch {
 			// 사용자가 공유를 취소했거나 에러 발생 시 클립보드에 복사
 			try {
 				await navigator.clipboard.writeText(params.url);
