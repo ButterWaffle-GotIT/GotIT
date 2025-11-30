@@ -34,7 +34,9 @@ export default function ScrapSection({
 		<div className="glass flex w-full flex-col gap-8 rounded-3xl bg-white/10 px-9 py-10">
 			<div className="flex items-center justify-between">
 				<div className="flex items-center gap-[0.69rem]">
-					<div className={`flex items-center justify-center rounded-[0.6rem] ${BRAND_GRADIENT.bg} p-[0.58rem]`}>
+					<div
+						className={`flex items-center justify-center rounded-[0.6rem] ${BRAND_GRADIENT.bg} p-[0.58rem]`}
+					>
 						<ScrapIcon
 							className="h-4 w-4 text-white"
 							width={16}
