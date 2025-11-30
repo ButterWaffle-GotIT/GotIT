@@ -25,6 +25,7 @@ const LABEL_TO_CATEGORY: Record<string, CategoryType> = {
 	백엔드: "backend",
 	"UX/UI": "uxui",
 	"UI/UX": "uxui",
+	"UX/UI디자인": "uxui",
 	"UI/UX디자인": "uxui",
 	AI: "ai",
 	클라우드: "cloud",
