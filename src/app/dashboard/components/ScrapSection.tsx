@@ -8,8 +8,7 @@ import { ChevronDownIcon } from "@/components/icons/ic_chevron_down";
 import { categoryIcons, ScrapCardData } from "@/types/category";
 import CategoryTag from "./CategoryTag";
 import ScrapCard from "./ScrapCard";
-
-type SortType = "latest" | "alphabetical";
+import { sortCards, SortType } from "../utils/order";
 
 interface ScrapSectionProps {
 	totalCount: number;
@@ -17,16 +16,6 @@ interface ScrapSectionProps {
 	onCategorySelect: (category: string) => void;
 	cards: ScrapCardData[];
 	isLoading?: boolean;
-}
-
-function getCharTypeOrder(str: string): number {
-	if (!str) return 4;
-	const char = str.charAt(0);
-
-	if (/[0-9]/.test(char)) return 1;
-	if (/[^0-9a-zA-Z가-힣]/.test(char)) return 2;
-	if (/[가-힣]/.test(char)) return 3;
-	return 4;
 }
 
 export default function ScrapSection({
@@ -55,23 +44,7 @@ export default function ScrapSection({
 		return () => document.removeEventListener("mousedown", handleClickOutside);
 	}, []);
 
-	const sortedCards = [...cards].sort((a, b) => {
-		if (sortType === "latest") {
-			return new Date(b.date).getTime() - new Date(a.date).getTime();
-		} else {
-			const termA = a.term;
-			const termB = b.term;
-
-			const priorityA = getCharTypeOrder(termA);
-			const priorityB = getCharTypeOrder(termB);
-
-			if (priorityA !== priorityB) {
-				return priorityA - priorityB;
-			}
-
-			return termA.localeCompare(termB, "ko", { sensitivity: "base" });
-		}
-	});
+	const sortedCards = sortCards(cards, sortType);
 
 	return (
 		<div className="glass flex w-full flex-col gap-8 rounded-3xl bg-white/10 px-9 py-10">
