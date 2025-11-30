@@ -8,11 +8,12 @@ import {
 	categoryConfig,
 	categoryLabels,
 } from "@/components/ui/category/config";
-import { useAuth } from "@/contexts/AuthContext";
+import { useAuthCore, useUserData } from "@/contexts/auth";
 import CategoryEditModal from "./CategoryEditModal";
 
 const SimpleProfileCard: React.FC = () => {
-	const { userData, user, updateCategory } = useAuth();
+	const { user } = useAuthCore();
+	const { userData, updateCategory } = useUserData();
 	const [isModalOpen, setIsModalOpen] = useState(false);
 
 	const selectedCategory = userData?.selectedCategory || "all";

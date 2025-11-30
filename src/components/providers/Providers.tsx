@@ -1,13 +1,13 @@
 "use client";
 
 import { type ReactNode } from "react";
-import { AuthProvider } from "@/contexts/AuthContext";
+import { CombinedAuthProvider } from "@/contexts/auth";
 import { ToastProvider } from "@/contexts/ToastContext";
 
 export function Providers({ children }: { children: ReactNode }) {
 	return (
-		<AuthProvider>
+		<CombinedAuthProvider>
 			<ToastProvider>{children}</ToastProvider>
-		</AuthProvider>
+		</CombinedAuthProvider>
 	);
 }

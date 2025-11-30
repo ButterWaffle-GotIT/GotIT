@@ -7,7 +7,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { UserIcon, LogoText } from "@/components/icons";
 import { GlassButton } from "@/components/ui/GlassButton";
 import { DEFAULT_NAV_ITEMS } from "@/constants/navigation";
-import { useAuth } from "@/contexts/AuthContext";
+import { useAuthCore } from "@/contexts/auth";
 
 type NavItemProps = {
 	label: string;
@@ -142,7 +142,7 @@ export default function Header({
 }: HeaderProps) {
 	const pathname = usePathname();
 	const router = useRouter();
-	const { user, loading, logout } = useAuth();
+	const { user, loading, logout } = useAuthCore();
 
 	if (pathname === "/login" || pathname === "/onboarding") {
 		return null;

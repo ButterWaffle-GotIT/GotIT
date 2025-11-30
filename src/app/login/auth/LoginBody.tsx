@@ -1,21 +1,32 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { GoogleLoginButtonIcon } from "@/components/buttons/GoogleLoginButtonIcon";
-import { useAuth } from "@/contexts/AuthContext";
+import { useAuthCore, useUserData } from "@/contexts/auth";
 
 export default function LoginBody() {
 	const router = useRouter();
-	const { loginWithGoogle, loginWithDemo } = useAuth();
+	const { loginWithGoogle, loginWithDemo } = useAuthCore();
+	const { isNewUser, userDataLoading } = useUserData();
+	const isLoggingIn = useRef(false);
 
-	const handleGoogleLogin = async () => {
-		try {
-			const needsOnboarding = await loginWithGoogle();
-			if (needsOnboarding) {
+	// 로그인 후 userData 로딩이 완료되면 라우팅
+	useEffect(() => {
+		if (isLoggingIn.current && !userDataLoading) {
+			if (isNewUser) {
 				router.push("/onboarding");
 			} else {
 				router.push("/");
 			}
+			isLoggingIn.current = false;
+		}
+	}, [isNewUser, userDataLoading, router]);
+
+	const handleGoogleLogin = async () => {
+		try {
+			await loginWithGoogle();
+			isLoggingIn.current = true;
 		} catch (error) {
 			console.error("로그인 중 오류 발생:", error);
 		}
@@ -23,12 +34,8 @@ export default function LoginBody() {
 
 	const handleDemoLogin = async () => {
 		try {
-			const needsOnboarding = await loginWithDemo();
-			if (needsOnboarding) {
-				router.push("/onboarding");
-			} else {
-				router.push("/");
-			}
+			await loginWithDemo();
+			isLoggingIn.current = true;
 		} catch (error) {
 			console.error("데모 계정 로그인 중 오류 발생:", error);
 			alert("데모 계정 로그인에 실패했습니다.");

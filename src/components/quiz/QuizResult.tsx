@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useAuth } from "@/contexts/AuthContext";
+import { useAuthCore, useScrap } from "@/contexts/auth";
 import { useToast } from "@/contexts/ToastContext";
 import {
 	generateQuizQuestions,
@@ -25,7 +25,8 @@ export default function QuizResult({
 	onRestart,
 	onRetry,
 }: QuizResultProps) {
-	const { user, toggleScrap, isScraped } = useAuth();
+	const { user } = useAuthCore();
+	const { toggleScrap, isScraped } = useScrap();
 	const { showToast } = useToast();
 	const [isRetrying, setIsRetrying] = useState(false);
 

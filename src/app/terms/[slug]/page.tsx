@@ -6,7 +6,7 @@ import { type TermDetail, getTermBySlug, getRelatedTerms } from "@/lib/terms";
 import type { TermIndexItem } from "@/lib/terms";
 import { toggleBookmark, isBookmarked } from "@/lib/bookmarks";
 import { HeroSection, TabSection, Footer } from "@/components/term-detail";
-import { useAuth } from "@/contexts/AuthContext";
+import { useAuthCore, useScrap } from "@/contexts/auth";
 import { useToast } from "@/contexts/ToastContext";
 import { useShare } from "@/hooks/useShare";
 
@@ -16,7 +16,8 @@ export default function TermDetailPage({
 	params: Promise<{ slug: string }>;
 }) {
 	const router = useRouter();
-	const { user, isScraped, toggleScrap } = useAuth();
+	const { user } = useAuthCore();
+	const { isScraped, toggleScrap } = useScrap();
 	const { showLoginToast, showToast } = useToast();
 	const { shareCurrentPage } = useShare();
 	const [term, setTerm] = useState<TermDetail | null>(null);
