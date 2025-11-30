@@ -37,7 +37,7 @@ export function HeroSection() {
 					</p>
 
 					{/* Main Headline */}
-					<h1 className="max-w-4xl text-[clamp(2.5rem,8vw,6rem)] leading-[0.95] font-light tracking-tight text-white">
+					<h1 className="max-w-4xl text-[clamp(2rem,6vw,5rem)] leading-[0.95] font-light tracking-tight text-white">
 						누구나 쉽게 이해하는
 						<br />
 						<span className="font-medium text-gray-400">IT 용어 사전</span>
