@@ -4,7 +4,7 @@
  * ScrapContext - 스크랩 관리
  */
 
-import { createContext, useContext, type ReactNode } from "react";
+import { createContext, useContext, useState, type ReactNode } from "react";
 import { doc, updateDoc } from "firebase/firestore";
 import { db } from "@/utils/firebase";
 import { useAuthCore } from "./AuthContext";
@@ -23,6 +23,7 @@ const ScrapContext = createContext<ScrapContextType | null>(null);
 export function ScrapProvider({ children }: { children: ReactNode }) {
 	const { user } = useAuthCore();
 	const { userData, updateScrapList } = useUserData();
+	const [pendingTerms, setPendingTerms] = useState<Set<number>>(new Set());
 
 	/**
 	 * 해당 용어가 스크랩되어 있는지 확인
@@ -41,6 +42,13 @@ export function ScrapProvider({ children }: { children: ReactNode }) {
 		if (!user || !userData) {
 			return { success: false, isScraped: false };
 		}
+
+		// 이미 처리 중인 경우 무시
+		if (pendingTerms.has(termId)) {
+			return { success: false, isScraped: userData.scrapList.includes(termId) };
+		}
+
+		setPendingTerms((prev) => new Set(prev).add(termId));
 
 		const currentlyScraped = userData.scrapList.includes(termId);
 		const newScrapList = currentlyScraped
@@ -61,6 +69,12 @@ export function ScrapProvider({ children }: { children: ReactNode }) {
 		} catch (error) {
 			console.error("스크랩 토글 실패:", error);
 			return { success: false, isScraped: currentlyScraped };
+		} finally {
+			setPendingTerms((prev) => {
+				const next = new Set(prev);
+				next.delete(termId);
+				return next;
+			});
 		}
 	};
 

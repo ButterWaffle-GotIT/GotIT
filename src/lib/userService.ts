@@ -28,7 +28,16 @@ export async function fetchUserData(uid: string): Promise<UserData | null> {
 		return null;
 	}
 
-	return userSnap.data() as UserData;
+	const data = userSnap.data();
+	return {
+		email: data.email ?? null,
+		displayName: data.displayName ?? null,
+		photoURL: data.photoURL ?? null,
+		createdAt: data.createdAt ?? "",
+		scrapList: data.scrapList ?? [],
+		onboardingCompleted: data.onboardingCompleted ?? false,
+		selectedCategory: data.selectedCategory ?? "all",
+	};
 }
 
 /**

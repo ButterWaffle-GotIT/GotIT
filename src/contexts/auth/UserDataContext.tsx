@@ -99,22 +99,32 @@ export function UserDataProvider({ children }: { children: ReactNode }) {
 	const completeOnboarding = async (category: CategoryType) => {
 		if (!user) return;
 
-		await completeUserOnboarding(user.uid, category);
-		setUserData((prev) =>
-			prev
-				? { ...prev, onboardingCompleted: true, selectedCategory: category }
-				: null
-		);
-		setIsNewUser(false);
+		try {
+			await completeUserOnboarding(user.uid, category);
+			setUserData((prev) =>
+				prev
+					? { ...prev, onboardingCompleted: true, selectedCategory: category }
+					: null
+			);
+			setIsNewUser(false);
+		} catch (error) {
+			console.error("온보딩 완료 실패:", error);
+			throw error;
+		}
 	};
 
 	const updateCategory = async (category: CategoryType) => {
 		if (!user) return;
 
-		await updateUserCategory(user.uid, category);
-		setUserData((prev) =>
-			prev ? { ...prev, selectedCategory: category } : null
-		);
+		try {
+			await updateUserCategory(user.uid, category);
+			setUserData((prev) =>
+				prev ? { ...prev, selectedCategory: category } : null
+			);
+		} catch (error) {
+			console.error("카테고리 업데이트 실패:", error);
+			throw error;
+		}
 	};
 
 	const updateScrapList = (newScrapList: number[]) => {

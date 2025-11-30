@@ -25,18 +25,20 @@ export default function LoginBody() {
 
 	const handleGoogleLogin = async () => {
 		try {
-			await loginWithGoogle();
 			isLoggingIn.current = true;
+			await loginWithGoogle();
 		} catch (error) {
+			isLoggingIn.current = false;
 			console.error("로그인 중 오류 발생:", error);
 		}
 	};
 
 	const handleDemoLogin = async () => {
 		try {
-			await loginWithDemo();
 			isLoggingIn.current = true;
+			await loginWithDemo();
 		} catch (error) {
+			isLoggingIn.current = false;
 			console.error("데모 계정 로그인 중 오류 발생:", error);
 			alert("데모 계정 로그인에 실패했습니다.");
 		}
