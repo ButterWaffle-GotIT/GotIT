@@ -5,17 +5,16 @@ import TagList from "@/components/TagList";
 import SearchBar from "@/components/search/SearchBar";
 import SearchResultsSection from "@/components/search/SearchResultsSection";
 import RecommendedTermsSection from "@/components/search/RecommendedTermsSection";
-import {
-	searchTerms,
-	getTermsByTag,
-	type TermIndexItem,
-} from "@/lib/terms";
+import { searchTerms, getTermsByTag, type TermIndexItem } from "@/lib/terms";
+import { useDebounce } from "@/hooks/useDebounce";
 
 export default function SearchPage() {
 	const [selectedTag, setSelectedTag] = useState("전체");
 	const [searchTerm, setSearchTerm] = useState("");
 	const [searchResults, setSearchResults] = useState<TermIndexItem[]>([]);
 	const [isSearching, setIsSearching] = useState(false);
+
+	const debouncedSearchTerm = useDebounce(searchTerm, 400);
 
 	const handleTagSelect = useCallback((tagName: string) => {
 		setSelectedTag(tagName);
@@ -25,14 +24,16 @@ export default function SearchPage() {
 		setSearchTerm(value);
 	}, []);
 
-	// 태그가 변경되거나 검색어가 변경되면 결과 업데이트
+	// 태그가 변경되거나 debounced 검색어가 변경되면 결과 업데이트
 	useEffect(() => {
 		const runSearch = async () => {
 			setIsSearching(true);
 
-			if (searchTerm.trim()) {
-				// 검색어가 있는 경우: 검색 후 태그로 필터링
-				const results = await searchTerms(searchTerm);
+			const trimmedSearchTerm = debouncedSearchTerm.trim();
+
+			// 검색어가 2글자 이상일 때만 검색
+			if (trimmedSearchTerm && trimmedSearchTerm.length >= 2) {
+				const results = await searchTerms(debouncedSearchTerm);
 				const filtered =
 					selectedTag === "전체"
 						? results
@@ -43,18 +44,18 @@ export default function SearchPage() {
 							);
 				setSearchResults(filtered);
 			} else if (selectedTag !== "전체") {
-				// 검색어가 없지만 태그가 선택된 경우: 해당 태그의 모든 용어 표시
+				// 검색어가 없거나 2글자 미만이지만 태그가 선택된 경우
 				const results = await getTermsByTag(selectedTag);
 				setSearchResults(results);
 			} else {
-				// 검색어도 없고 태그도 "전체"인 경우: 결과 초기화
+				// 검색어도 없고(또는 2글자 미만) 태그도 "전체"인 경우
 				setSearchResults([]);
 			}
 
 			setIsSearching(false);
 		};
 		runSearch();
-	}, [selectedTag, searchTerm]);
+	}, [selectedTag, debouncedSearchTerm]);
 
 	return (
 		<>
@@ -67,9 +68,10 @@ export default function SearchPage() {
 					</section>
 
 					{/* B. 검색 결과 섹션 */}
-					{(searchTerm.trim() || selectedTag !== "전체") && (
+					{(debouncedSearchTerm.trim().length >= 2 ||
+						selectedTag !== "전체") && (
 						<SearchResultsSection
-							searchTerm={searchTerm}
+							searchTerm={debouncedSearchTerm}
 							selectedTag={selectedTag}
 							isSearching={isSearching}
 							searchResults={searchResults}
@@ -77,7 +79,7 @@ export default function SearchPage() {
 					)}
 
 					{/* C. 추천 용어 섹션 */}
-					{!searchTerm.trim() && selectedTag === "전체" && (
+					{debouncedSearchTerm.trim().length < 2 && selectedTag === "전체" && (
 						<RecommendedTermsSection />
 					)}
 				</div>
