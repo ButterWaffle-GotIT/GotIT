@@ -11,8 +11,14 @@
 	"relatedIds": [3015, 3085],
 	"confusableIds": [3085],
 	"useCases": [
-		{ "role": "Dev", "text": "인프라 상태 파일을 S3 버킷에 저장하고 잠금(Lock) 기능을 적용하여 팀원 간의 동시 변경 충돌을 방지했습니다." },
-		{ "role": "PM", "text": "인프라 상태를 정기적으로 감사하여, 코드와 실제 환경 간의 불일치(Drift) 여부를 확인해야 합니다." }
+		{
+			"role": "Dev",
+			"text": "인프라 상태 파일을 S3 버킷에 저장하고 잠금(Lock) 기능을 적용하여 팀원 간의 동시 변경 충돌을 방지했습니다."
+		},
+		{
+			"role": "PM",
+			"text": "인프라 상태를 정기적으로 감사하여, 코드와 실제 환경 간의 불일치(Drift) 여부를 확인해야 합니다."
+		}
 	],
 	"keywords": ["state", "상태", "iac", "terraform", "인프라"],
 	"level": "intermediate",

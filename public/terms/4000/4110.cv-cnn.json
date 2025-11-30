@@ -11,8 +11,14 @@
 	"relatedIds": [4008, 4094],
 	"confusableIds": [4109],
 	"useCases": [
-		{ "role": "Dev", "text": "VGG나 ResNet과 같은 CNN 모델을 사용하여 이미지 분류 작업의 정확도를 높였습니다." },
-		{ "role": "PM", "text": "제조 공정에서 불량품을 자동으로 검출하기 위해 CNN 기반의 비전 시스템을 도입했습니다." }
+		{
+			"role": "Dev",
+			"text": "VGG나 ResNet과 같은 CNN 모델을 사용하여 이미지 분류 작업의 정확도를 높였습니다."
+		},
+		{
+			"role": "PM",
+			"text": "제조 공정에서 불량품을 자동으로 검출하기 위해 CNN 기반의 비전 시스템을 도입했습니다."
+		}
 	],
 	"keywords": ["cnn", "합성곱", "convolution", "컴퓨터비전", "이미지"],
 	"level": "intermediate",

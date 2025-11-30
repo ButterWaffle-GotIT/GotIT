@@ -11,8 +11,14 @@
 	"relatedIds": [4005, 4053],
 	"confusableIds": [],
 	"useCases": [
-		{ "role": "Marketer", "text": "새로운 광고 배너가 전환율을 높인다는 가설 검정을 p-value 0.05 기준으로 진행했습니다." },
-		{ "role": "PM", "text": "A/B 테스트 결과를 가설 검정해보니, 새로운 디자인이 기존 디자인보다 통계적으로 유의미한 차이를 보이지 않았습니다." }
+		{
+			"role": "Marketer",
+			"text": "새로운 광고 배너가 전환율을 높인다는 가설 검정을 p-value 0.05 기준으로 진행했습니다."
+		},
+		{
+			"role": "PM",
+			"text": "A/B 테스트 결과를 가설 검정해보니, 새로운 디자인이 기존 디자인보다 통계적으로 유의미한 차이를 보이지 않았습니다."
+		}
 	],
 	"keywords": ["hypothesis", "가설", "ab-test", "통계", "p-value"],
 	"level": "advanced",

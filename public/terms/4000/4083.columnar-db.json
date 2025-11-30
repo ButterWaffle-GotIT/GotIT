@@ -11,8 +11,14 @@
 	"relatedIds": [4077, 4039],
 	"confusableIds": [4002],
 	"useCases": [
-		{ "role": "Dev", "text": "분석용 데이터 웨어하우스는 OLAP 쿼리에 최적화된 컬럼형 데이터베이스로 구축하는 것이 맞습니다." },
-		{ "role": "Data", "text": "컬럼형 DB 덕분에 특정 속성(컬럼)에 대한 대규모 통계 분석이 순식간에 끝났습니다." }
+		{
+			"role": "Dev",
+			"text": "분석용 데이터 웨어하우스는 OLAP 쿼리에 최적화된 컬럼형 데이터베이스로 구축하는 것이 맞습니다."
+		},
+		{
+			"role": "Data",
+			"text": "컬럼형 DB 덕분에 특정 속성(컬럼)에 대한 대규모 통계 분석이 순식간에 끝났습니다."
+		}
 	],
 	"keywords": ["columnar-db", "컬럼", "열", "olap", "redshift"],
 	"level": "intermediate",

@@ -11,8 +11,14 @@
 	"relatedIds": [3048, 3055, 3035],
 	"confusableIds": [3048],
 	"useCases": [
-		{ "role": "Dev", "text": "클릭재킹을 막기 위해 모든 응답에 X-Frame-Options 보안 헤더를 `DENY`로 설정했습니다." },
-		{ "role": "PM", "text": "모든 도메인에 Content Security Policy(CSP) 헤더를 적용하여 XSS 공격 방어 능력을 강화했습니다." }
+		{
+			"role": "Dev",
+			"text": "클릭재킹을 막기 위해 모든 응답에 X-Frame-Options 보안 헤더를 `DENY`로 설정했습니다."
+		},
+		{
+			"role": "PM",
+			"text": "모든 도메인에 Content Security Policy(CSP) 헤더를 적용하여 XSS 공격 방어 능력을 강화했습니다."
+		}
 	],
 	"keywords": ["security-header", "헤더", "보안", "csp", "hsts"],
 	"level": "intermediate",

@@ -11,10 +11,22 @@
 	"relatedIds": [4007, 4008, 4010],
 	"confusableIds": [4007],
 	"useCases": [
-		{ "role": "Dev", "text": "기존 GPT 모델에 우리 회사 문서 데이터를 파인튜닝하여 전이 학습을 진행했습니다." },
-		{ "role": "Data", "text": "소량의 불량품 이미지 데이터만 가지고 있으므로, 대규모 이미지로 학습된 모델을 이용한 전이 학습을 적용해야 합니다." }
+		{
+			"role": "Dev",
+			"text": "기존 GPT 모델에 우리 회사 문서 데이터를 파인튜닝하여 전이 학습을 진행했습니다."
+		},
+		{
+			"role": "Data",
+			"text": "소량의 불량품 이미지 데이터만 가지고 있으므로, 대규모 이미지로 학습된 모델을 이용한 전이 학습을 적용해야 합니다."
+		}
 	],
-	"keywords": ["transfer-learning", "전이학습", "파인튜닝", "fine-tuning", "bert"],
+	"keywords": [
+		"transfer-learning",
+		"전이학습",
+		"파인튜닝",
+		"fine-tuning",
+		"bert"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-30"
 }

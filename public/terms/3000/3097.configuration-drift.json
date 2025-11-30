@@ -11,8 +11,14 @@
 	"relatedIds": [3094, 3085, 3084],
 	"confusableIds": [3084],
 	"useCases": [
-		{ "role": "Dev", "text": "형상 불일치 문제를 해결하기 위해, 모든 환경에 대해 Terraform `plan` 명령어를 주기적으로 실행하여 차이점을 모니터링하고 있습니다." },
-		{ "role": "PM", "text": "운영팀의 수동 작업을 최소화하여 형상 불일치 발생 가능성을 줄이는 것이 중요합니다." }
+		{
+			"role": "Dev",
+			"text": "형상 불일치 문제를 해결하기 위해, 모든 환경에 대해 Terraform `plan` 명령어를 주기적으로 실행하여 차이점을 모니터링하고 있습니다."
+		},
+		{
+			"role": "PM",
+			"text": "운영팀의 수동 작업을 최소화하여 형상 불일치 발생 가능성을 줄이는 것이 중요합니다."
+		}
 	],
 	"keywords": ["configuration-drift", "드리프트", "불일치", "iac", "형상관리"],
 	"level": "intermediate",

@@ -11,8 +11,14 @@
 	"relatedIds": [3024, 3025, 3041],
 	"confusableIds": [3024],
 	"useCases": [
-		{ "role": "Dev", "text": "외부 파트너의 서비스에 SSO 기능을 구현하기 위해 SAML 2.0 표준을 사용했습니다." },
-		{ "role": "PM", "text": "클라우드 서비스 구독 시, 직원 계정을 회사 내부 IdP와 SAML로 연동하여 관리 효율을 높였습니다." }
+		{
+			"role": "Dev",
+			"text": "외부 파트너의 서비스에 SSO 기능을 구현하기 위해 SAML 2.0 표준을 사용했습니다."
+		},
+		{
+			"role": "PM",
+			"text": "클라우드 서비스 구독 시, 직원 계정을 회사 내부 IdP와 SAML로 연동하여 관리 효율을 높였습니다."
+		}
 	],
 	"keywords": ["saml", "sso", "인증", "xml", "assertion", "idp"],
 	"level": "intermediate",

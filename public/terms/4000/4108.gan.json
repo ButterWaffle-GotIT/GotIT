@@ -11,8 +11,14 @@
 	"relatedIds": [4062, 4008, 4104],
 	"confusableIds": [4008],
 	"useCases": [
-		{ "role": "Dev", "text": "GAN 모델을 훈련시켜 실제 인물과 구별이 불가능한 가상 인물 이미지를 생성하는 데 성공했습니다." },
-		{ "role": "PM", "text": "제품 디자인 초기 단계에서 GAN을 활용하여 다양한 컨셉 이미지를 자동으로 생성했습니다." }
+		{
+			"role": "Dev",
+			"text": "GAN 모델을 훈련시켜 실제 인물과 구별이 불가능한 가상 인물 이미지를 생성하는 데 성공했습니다."
+		},
+		{
+			"role": "PM",
+			"text": "제품 디자인 초기 단계에서 GAN을 활용하여 다양한 컨셉 이미지를 자동으로 생성했습니다."
+		}
 	],
 	"keywords": ["gan", "생성형ai", "generator", "discriminator", "이미지생성"],
 	"level": "advanced",

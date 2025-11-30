@@ -11,8 +11,14 @@
 	"relatedIds": [4039, 4040, 4074],
 	"confusableIds": [4078],
 	"useCases": [
-		{ "role": "PM", "text": "분기별 실적 보고를 위해 OLAP 큐브를 활용하여 매출 데이터를 다각도로 분석해 봅시다." },
-		{ "role": "Marketer", "text": "특정 광고 채널의 성과를 지역별, 제품군별로 드릴다운해서 확인해 보겠습니다." }
+		{
+			"role": "PM",
+			"text": "분기별 실적 보고를 위해 OLAP 큐브를 활용하여 매출 데이터를 다각도로 분석해 봅시다."
+		},
+		{
+			"role": "Marketer",
+			"text": "특정 광고 채널의 성과를 지역별, 제품군별로 드릴다운해서 확인해 보겠습니다."
+		}
 	],
 	"keywords": ["olap", "oltp", "분석", "다차원", "큐브"],
 	"level": "intermediate",

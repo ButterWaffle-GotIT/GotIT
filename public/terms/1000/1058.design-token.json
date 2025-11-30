@@ -11,8 +11,14 @@
 	"relatedIds": [1021, 1044, 1055],
 	"confusableIds": [1041],
 	"useCases": [
-		{ "role": "Dev", "text": "모든 스타일 값을 디자인 토큰으로 대체하여, 디자이너가 피그마(Figma)에서 색상을 변경하면 자동으로 반영되도록 했습니다." },
-		{ "role": "Design", "text": "다크 모드 구현을 위해 'background-primary' 토큰의 값을 변경하여 모든 컴포넌트에 일괄 적용했습니다." }
+		{
+			"role": "Dev",
+			"text": "모든 스타일 값을 디자인 토큰으로 대체하여, 디자이너가 피그마(Figma)에서 색상을 변경하면 자동으로 반영되도록 했습니다."
+		},
+		{
+			"role": "Design",
+			"text": "다크 모드 구현을 위해 'background-primary' 토큰의 값을 변경하여 모든 컴포넌트에 일괄 적용했습니다."
+		}
 	],
 	"keywords": ["design-token", "토큰", "디자인시스템", "figma", "css"],
 	"level": "advanced",

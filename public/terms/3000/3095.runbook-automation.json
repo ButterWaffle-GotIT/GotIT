@@ -11,8 +11,14 @@
 	"relatedIds": [3082, 3089, 3088],
 	"confusableIds": [3082],
 	"useCases": [
-		{ "role": "Dev", "text": "특정 API의 오류율이 높아지면 런북 자동화를 통해 자동으로 이전 버전으로 롤백하도록 설정했습니다." },
-		{ "role": "PM", "text": "런북 자동화 도입 후 운영팀의 Toil 시간이 40% 감소했습니다." }
+		{
+			"role": "Dev",
+			"text": "특정 API의 오류율이 높아지면 런북 자동화를 통해 자동으로 이전 버전으로 롤백하도록 설정했습니다."
+		},
+		{
+			"role": "PM",
+			"text": "런북 자동화 도입 후 운영팀의 Toil 시간이 40% 감소했습니다."
+		}
 	],
 	"keywords": ["runbook-automation", "런북", "자동화", "sre", "장애대응"],
 	"level": "intermediate",
