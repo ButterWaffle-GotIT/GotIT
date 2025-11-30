@@ -3,14 +3,10 @@
 import { useRouter } from "next/navigation";
 import { cn } from "@/utils/cn";
 import type { TermIndexItem } from "@/lib/terms";
-import {
-	RelationIcon,
-	HashtagIcon,
-	ScrapIcon,
-	ChevronRightIcon,
-} from "@/components/icons";
+import { RelationIcon, HashtagIcon, ChevronRightIcon } from "@/components/icons";
 import { getCategoryType } from "@/config/categories";
 import { CategoryChip } from "@/components/ui/category";
+import { ScrapButton } from "@/components/ui/buttons/ScrapButton";
 import { useScrapToggle } from "@/hooks/useScrapToggle";
 
 interface RelatedTabProps {
@@ -68,21 +64,7 @@ function RelatedTermCard({ term }: { term: TermIndexItem }) {
 
 					{/* Action Buttons */}
 					<div className="flex items-center gap-1">
-						<button
-							className={cn(
-								"flex h-6 w-6 items-center justify-center rounded transition-colors",
-								bookmarked
-									? "bg-yellow-500/20"
-									: "bg-white-10 hover:bg-white-20"
-							)}
-							onClick={handleBookmark}
-						>
-							<ScrapIcon
-								size={16}
-								color={bookmarked ? "#FFC107" : "#D4C2F0"}
-								filled={bookmarked}
-							/>
-						</button>
+						<ScrapButton bookmarked={bookmarked} onClick={handleBookmark} />
 						<button className="bg-white-10 flex h-6 w-6 items-center justify-center rounded">
 							<ChevronRightIcon size={16} color="#D4C2F0" />
 						</button>

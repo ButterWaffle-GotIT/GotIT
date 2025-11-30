@@ -4,8 +4,9 @@ import { useRouter } from "next/navigation";
 import { useScrapToggle } from "@/hooks/useScrapToggle";
 import { useShare } from "@/hooks/useShare";
 import type { TermIndexItem } from "@/lib/terms";
-import { ScrapIcon, ShareIcon, HashtagIcon } from "@/components/icons";
+import { ShareIcon, HashtagIcon } from "@/components/icons";
 import { CategoryChip } from "@/components/ui/category/CategoryChip";
+import { ScrapButton } from "@/components/ui/buttons/ScrapButton";
 import { CATEGORIES, getCategoryType } from "@/config/categories";
 
 interface SearchResultCardProps {
@@ -47,16 +48,7 @@ export default function SearchResultCard({ item }: SearchResultCardProps) {
 							</h3>
 						</div>
 						<div className="flex items-center gap-1">
-							<button
-								onClick={handleBookmark}
-								className="flex h-6 w-6 items-center justify-center overflow-hidden rounded bg-white/10 transition-colors hover:bg-white/20"
-							>
-								<ScrapIcon
-									size={16}
-									color={bookmarked ? "#FFC107" : "#D4C2F0"}
-									filled={bookmarked}
-								/>
-							</button>
+							<ScrapButton bookmarked={bookmarked} onClick={handleBookmark} />
 							<button
 								onClick={handleShare}
 								className="flex h-6 w-6 items-center justify-center overflow-hidden rounded bg-white/10 transition-colors hover:bg-white/20"
