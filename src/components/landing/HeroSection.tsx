@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@/components/icons";
 import { RotatingWords } from "./RotatingWords";
 import { MarqueeText } from "./MarqueeText";
@@ -19,8 +19,6 @@ const words = [
 
 export function HeroSection() {
 	const router = useRouter();
-	const { scrollYProgress } = useScroll();
-	const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
 	return (
 		<section className="relative flex h-screen snap-start snap-always flex-col justify-between pt-0">
@@ -58,13 +56,15 @@ export function HeroSection() {
 			{/* Bottom Section */}
 			<div className="px-12 pb-8 md:px-24 lg:px-60">
 				<motion.div
-					style={{ opacity }}
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 1, delay: 0.5 }}
 					className="mb-12 flex items-end justify-between"
 				>
 					<p className="max-w-md text-sm leading-relaxed text-gray-500">
-						개발자와의 소통이 어려운 비전공자를 위해,
+						비전공자부터 이제 막 실무를 접한 주니어까지,
 						<br />
-						실무 용어를 쉬운 예시로 풀이해 드립니다.
+						낯선 IT 용어를 쉬운 예시로 풀이해 드립니다.
 					</p>
 
 					<button
