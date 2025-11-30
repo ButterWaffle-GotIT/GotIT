@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { SearchIcon, ArrowRightIcon, LogoText } from "@/components/icons";
+import GradientButton from "@/components/ui/buttons/GradientButton";
 
 export function CTASection() {
 	const router = useRouter();
@@ -27,9 +28,10 @@ export function CTASection() {
 						transition={{ duration: 0.6, delay: 0.1 }}
 						className="mt-10"
 					>
-						<button
+						<GradientButton
 							onClick={() => router.push("/search")}
-							className="group inline-flex items-center gap-4 rounded-full bg-gradient-to-r from-violet-700 to-red-400 px-8 py-4 text-white transition-all hover:opacity-90"
+							rounded="full"
+							className="group inline-flex items-center gap-4"
 						>
 							<SearchIcon size={20} color="currentColor" />
 							<span>용어 검색</span>
@@ -38,7 +40,7 @@ export function CTASection() {
 								color="currentColor"
 								className="transition-transform group-hover:translate-x-1"
 							/>
-						</button>
+						</GradientButton>
 					</motion.div>
 				</div>
 			</div>
