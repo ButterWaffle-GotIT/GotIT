@@ -58,24 +58,6 @@ export interface TermDetail {
 let indexCache: TermIndexItem[] | null = null;
 
 /**
- * 서버/클라이언트 환경에 맞는 Base URL 반환
- */
-function getBaseUrl(): string {
-	// 서버 사이드 (SSR)
-	if (typeof window === "undefined") {
-		if (process.env.NEXT_PUBLIC_BASE_URL) {
-			return process.env.NEXT_PUBLIC_BASE_URL;
-		}
-		if (process.env.VERCEL_URL) {
-			return `https://${process.env.VERCEL_URL}`;
-		}
-		return "http://localhost:3000";
-	}
-	// 클라이언트 사이드
-	return "";
-}
-
-/**
  * 인덱스 데이터 검증 - 중복 ID/slug 체크
  */
 function validateIndex(index: TermIndexItem[]): void {
@@ -108,8 +90,7 @@ function validateIndex(index: TermIndexItem[]): void {
 export async function getTermsIndex(): Promise<TermIndexItem[]> {
 	if (indexCache) return indexCache;
 
-	const baseUrl = getBaseUrl();
-	const res = await fetch(`${baseUrl}/terms/terms.index.json`);
+	const res = await fetch("/terms/terms.index.json");
 	if (!res.ok) throw new Error("Failed to load terms index");
 
 	const data: TermIndexItem[] = await res.json();
@@ -132,8 +113,7 @@ export async function getTermById(id: number): Promise<TermDetail | null> {
 
 	if (!item) return null;
 
-	const baseUrl = getBaseUrl();
-	const res = await fetch(`${baseUrl}${item.file}`);
+	const res = await fetch(item.file);
 	if (!res.ok) return null;
 
 	return res.json();
@@ -148,8 +128,7 @@ export async function getTermBySlug(slug: string): Promise<TermDetail | null> {
 
 	if (!item) return null;
 
-	const baseUrl = getBaseUrl();
-	const res = await fetch(`${baseUrl}${item.file}`);
+	const res = await fetch(item.file);
 	if (!res.ok) return null;
 
 	return res.json();

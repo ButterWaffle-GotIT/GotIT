@@ -67,8 +67,12 @@ export async function getRecommendedTerms(
 			}));
 		}
 
-		// 랜덤으로 count개 선택
-		const shuffled = [...terms].sort(() => Math.random() - 0.5);
+		// Fisher-Yates 셔플로 랜덤 선택
+		const shuffled = [...terms];
+		for (let i = shuffled.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+		}
 		return shuffled.slice(0, count).map((t) => ({
 			term: t.termKo,
 			category: categoryLabels[targetCategory],

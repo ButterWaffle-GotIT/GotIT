@@ -1,4 +1,4 @@
-import { getTodaysTerm, getTermById } from "@/lib/terms";
+import { getTodaysTermServer, getTermByIdServer } from "@/lib/terms.server";
 import TodayTermCard from "./TodayTermCard";
 
 interface TermData {
@@ -16,7 +16,7 @@ function formatDate(date: Date): string {
 
 export default async function TodayTermCardWrapper() {
 	// 날짜 기반으로 오늘의 용어 가져오기
-	const todayTermIndex = await getTodaysTerm();
+	const todayTermIndex = getTodaysTermServer();
 
 	if (!todayTermIndex) {
 		// 폴백 데이터
@@ -34,7 +34,7 @@ export default async function TodayTermCardWrapper() {
 	}
 
 	// 상세 정보 가져오기
-	const termDetail = await getTermById(todayTermIndex.id);
+	const termDetail = getTermByIdServer(todayTermIndex.id);
 
 	if (!termDetail) {
 		// 인덱스 정보만으로 구성
