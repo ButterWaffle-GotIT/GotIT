@@ -8,7 +8,10 @@ interface WrongAnswerCardProps {
 	userAnswer: string | null;
 }
 
-export function WrongAnswerCard({ question, userAnswer }: WrongAnswerCardProps) {
+export function WrongAnswerCard({
+	question,
+	userAnswer,
+}: WrongAnswerCardProps) {
 	return (
 		<div className="glass outline-white-30 flex flex-col gap-4 rounded-2xl bg-white/5 p-6 outline outline-[0.5px]">
 			<div className="flex items-start justify-between">

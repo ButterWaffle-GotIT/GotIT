@@ -1,7 +1,11 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { calculateQuizResult, type QuizQuestion, type QuizResult } from "@/lib/quiz";
+import {
+	calculateQuizResult,
+	type QuizQuestion,
+	type QuizResult,
+} from "@/lib/quiz";
 
 interface UseQuizStateProps {
 	questions: QuizQuestion[];
@@ -54,7 +58,14 @@ export function useQuizState({
 			const result = calculateQuizResult(questions, newAnswers);
 			onComplete(result);
 		}
-	}, [currentQuestionIndex, selectedAnswer, userAnswers, isLastQuestion, questions, onComplete]);
+	}, [
+		currentQuestionIndex,
+		selectedAnswer,
+		userAnswers,
+		isLastQuestion,
+		questions,
+		onComplete,
+	]);
 
 	const goPrevious = useCallback(() => {
 		if (!isFirstQuestion) {
