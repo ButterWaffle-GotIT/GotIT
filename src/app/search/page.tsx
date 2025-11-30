@@ -6,7 +6,11 @@ import TagList from "@/components/TagList";
 import RecommendedTermCard from "@/components/RecommendedTermCard";
 import { ChevronsDownIcon } from "@/components/icons/ic_chevrons_down";
 import { SearchIcon } from "@/components/icons/ic_search";
-import { searchTerms, type TermIndexItem } from "@/lib/terms";
+import {
+	searchTerms,
+	getTermsByTag,
+	type TermIndexItem,
+} from "@/lib/terms";
 import { useScrapToggle } from "@/hooks/useScrapToggle";
 
 // --- Mock Data ---
@@ -224,38 +228,17 @@ export default function SearchPage() {
 		setSelectedTag(tagName);
 	}, []);
 
-	const handleSearchChange = useCallback(
-		async (value: string) => {
-			setSearchTerm(value);
-			setIsSearching(true);
+	const handleSearchChange = useCallback((value: string) => {
+		setSearchTerm(value);
+	}, []);
 
-			if (value.trim()) {
-				const results = await searchTerms(value);
-
-				const filtered =
-					selectedTag === "전체"
-						? results
-						: results.filter(
-								(term) =>
-									term.primaryTag === selectedTag ||
-									term.tags.includes(selectedTag)
-							);
-
-				setSearchResults(filtered);
-			} else {
-				setSearchResults([]);
-			}
-
-			setIsSearching(false);
-		},
-		[selectedTag]
-	);
-
-	// 태그가 변경되면 검색 재실행
+	// 태그가 변경되거나 검색어가 변경되면 결과 업데이트
 	useEffect(() => {
 		const runSearch = async () => {
+			setIsSearching(true);
+
 			if (searchTerm.trim()) {
-				setIsSearching(true);
+				// 검색어가 있는 경우: 검색 후 태그로 필터링
 				const results = await searchTerms(searchTerm);
 				const filtered =
 					selectedTag === "전체"
@@ -266,8 +249,16 @@ export default function SearchPage() {
 									term.tags.includes(selectedTag)
 							);
 				setSearchResults(filtered);
-				setIsSearching(false);
+			} else if (selectedTag !== "전체") {
+				// 검색어가 없지만 태그가 선택된 경우: 해당 태그의 모든 용어 표시
+				const results = await getTermsByTag(selectedTag);
+				setSearchResults(results);
+			} else {
+				// 검색어도 없고 태그도 "전체"인 경우: 결과 초기화
+				setSearchResults([]);
 			}
+
+			setIsSearching(false);
 		};
 		runSearch();
 	}, [selectedTag, searchTerm]);
@@ -287,11 +278,13 @@ export default function SearchPage() {
 					</section>
 
 					{/* B. 검색 결과 섹션 */}
-					{searchTerm.trim() && (
+					{(searchTerm.trim() || selectedTag !== "전체") && (
 						<section className="flex flex-col items-start justify-start gap-5 self-stretch">
 							<div className="flex items-center justify-between self-stretch">
 								<div className="font-['Pretendard'] text-sm leading-5 font-semibold text-gray-500">
-									검색 결과 : &ldquo;{searchTerm}&rdquo;
+									{searchTerm.trim()
+										? `검색 결과 : "${searchTerm}"`
+										: `${selectedTag} 카테고리의 모든 용어`}
 								</div>
 								<button className="rounded-lg border border-gray-700 px-3 py-1.5 text-sm text-gray-400 transition-colors hover:border-gray-600 hover:text-gray-300">
 									최신순 ▼
@@ -320,7 +313,7 @@ export default function SearchPage() {
 					)}
 
 					{/* C. 추천 용어 섹션 */}
-					{!searchTerm.trim() && (
+					{!searchTerm.trim() && selectedTag === "전체" && (
 						<section className="flex flex-col items-start justify-start gap-5 self-stretch">
 							<div className="self-stretch font-['Pretendard'] text-sm leading-5 font-semibold text-gray-500">
 								추천 용어
