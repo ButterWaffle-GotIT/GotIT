@@ -27,7 +27,7 @@
 		"termKo": "CSS",
 		"termEn": "CSS",
 		"summary": "웹 문서의 전반적인 스타일을 미리 저장해둔 파일.",
-		"tags": ["프론트엔드", "UI/UX디자인"],
+		"tags": ["프론트엔드", "UX/UI"],
 		"primaryTag": "프론트엔드",
 		"level": "beginner",
 		"file": "/terms/1000/1001.CSS.json"
@@ -60,7 +60,7 @@
 		"termKo": "리액트",
 		"termEn": "React",
 		"summary": "페이스북이 개발한 사용자 인터페이스(UI) 구축을 위한 JavaScript 라이브러리.",
-		"tags": ["프론트엔드", "UI/UX디자인"],
+		"tags": ["프론트엔드", "UX/UI"],
 		"primaryTag": "프론트엔드",
 		"level": "intermediate",
 		"file": "/terms/1000/1004.React.json"
@@ -71,7 +71,7 @@
 		"termKo": "Vue.js",
 		"termEn": "Vue.js",
 		"summary": "직관적인 문법과 낮은 학습 곡선이 특징인 JavaScript 프레임워크.",
-		"tags": ["프론트엔드", "UI/UX디자인"],
+		"tags": ["프론트엔드", "UX/UI"],
 		"primaryTag": "프론트엔드",
 		"level": "beginner",
 		"file": "/terms/1000/1005.Vue-js.json"
@@ -115,7 +115,7 @@
 		"termKo": "Tailwind CSS",
 		"termEn": "Tailwind CSS",
 		"summary": "미리 정의된 유틸리티 클래스를 HTML 태그에 직접 적용하여 스타일링하는 유틸리티 우선 CSS 프레임워크.",
-		"tags": ["프론트엔드", "UI/UX디자인"],
+		"tags": ["프론트엔드", "UX/UI"],
 		"primaryTag": "프론트엔드",
 		"level": "beginner",
 		"file": "/terms/1000/1009.Tailwind.json"
@@ -126,7 +126,7 @@
 		"termKo": "Sass",
 		"termEn": "Sass",
 		"summary": "CSS를 프로그래밍 방식으로 작성할 수 있도록 돕는 전처리기",
-		"tags": ["프론트엔드", "UI/UX디자인"],
+		"tags": ["프론트엔드", "UX/UI"],
 		"primaryTag": "프론트엔드",
 		"level": "beginner",
 		"file": "/terms/1000/1010.Sass.json"
@@ -148,7 +148,7 @@
 		"termKo": "PWA",
 		"termEn": "PWA",
 		"summary": "모바일 웹사이트가 네이티브 앱과 유사한 기능을 제공할 수 있도록 구현된 웹 애플리케이션 기술.",
-		"tags": ["프론트엔드", "UI/UX디자인"],
+		"tags": ["프론트엔드", "UX/UI"],
 		"primaryTag": "프론트엔드",
 		"level": "intermediate",
 		"file": "/terms/1000/1012.PWA.json"
@@ -236,8 +236,8 @@
 		"termKo": "웹 접근성",
 		"termEn": "Web Accessibility",
 		"summary": "장애 유무나 사용 환경에 관계없이 모든 사용자가 웹 사이트의 정보와 기능에 동등하게 접근하고 이용할 수 있도록 보장하는 것을 목표로 하는 원칙 및 기술.",
-		"tags": ["프론트엔드", "UI/UX디자인"],
-		"primaryTag": "UI/UX디자인",
+		"tags": ["프론트엔드", "UX/UI"],
+		"primaryTag": "UX/UI",
 		"level": "intermediate",
 		"file": "/terms/1000/1020.accessibility.json"
 	},
@@ -247,8 +247,8 @@
 		"termKo": "디자인 시스템",
 		"termEn": "Design System",
 		"summary": "제품을 개발하고 디자인하는 데 필요한 재사용 가능한 모든 요소를 통합적으로 모아둔 공식적인 문서 및 도구 세트",
-		"tags": ["UI/UX디자인", "프론트엔드"],
-		"primaryTag": "UI/UX디자인",
+		"tags": ["UX/UI", "프론트엔드"],
+		"primaryTag": "UX/UI",
 		"level": "intermediate",
 		"file": "/terms/1000/1021.design-system.json"
 	},
@@ -258,8 +258,8 @@
 		"termKo": "UX",
 		"termEn": "UX",
 		"summary": "사용자가 특정 제품, 시스템, 또는 서비스를 이용하면서 느끼고 생각하는 모든 총체적인 경험.",
-		"tags": ["UI/UX디자인"],
-		"primaryTag": "UI/UX디자인",
+		"tags": ["UX/UI"],
+		"primaryTag": "UX/UI",
 		"level": "intermediate",
 		"file": "/terms/1000/1022.UX.json"
 	},
@@ -269,8 +269,8 @@
 		"termKo": "UI",
 		"termEn": "UI",
 		"summary": "사용자가 제품, 시스템 또는 서비스와 직접 상호작용하는 시각적, 물리적 접점과 요소를 의미.",
-		"tags": ["UI/UX디자인", "프론트엔드"],
-		"primaryTag": "UI/UX디자인",
+		"tags": ["UX/UI", "프론트엔드"],
+		"primaryTag": "UX/UI",
 		"level": "beginner",
 		"file": "/terms/1000/1023.UI.json"
 	},
@@ -280,8 +280,8 @@
 		"termKo": "피그마",
 		"termEn": "Figma",
 		"summary": "웹 기반으로 작동하며, UI/UX 디자인, 벡터 그래픽 편집, 실시간 협업 및 인터랙티브 프로토타이핑 기능을 통합적으로 제공하는 디자인 협업 플랫폼.",
-		"tags": ["UI/UX디자인", "프론트엔드"],
-		"primaryTag": "UI/UX디자인",
+		"tags": ["UX/UI", "프론트엔드"],
+		"primaryTag": "UX/UI",
 		"level": "beginner",
 		"file": "/terms/1000/1024.Figma.json"
 	},
@@ -291,8 +291,8 @@
 		"termKo": "와이어프레임",
 		"termEn": "Wireframe",
 		"summary": "제품이나 서비스의 초기 단계에서 레이아웃, 정보 구조(IA), 콘텐츠의 우선순위 등을 단순한 선과 상자 형태로 표현한 저수준(Low-fidelity) 시각적 설계도.",
-		"tags": ["UI/UX디자인"],
-		"primaryTag": "UI/UX디자인",
+		"tags": ["UX/UI"],
+		"primaryTag": "UX/UI",
 		"level": "beginner",
 		"file": "/terms/1000/1025.WireFrame.json"
 	},
@@ -302,8 +302,8 @@
 		"termKo": "프로토타입",
 		"termEn": "Prototype",
 		"summary": "최종 제품 출시 이전에 사용자 경험(UX)과 기능을 사전에 검증하고 테스트하기 위해, 실제 제품처럼 작동하도록 만들어진 동적(Dynamic) 시뮬레이션 모델.",
-		"tags": ["UI/UX디자인"],
-		"primaryTag": "UI/UX디자인",
+		"tags": ["UX/UI"],
+		"primaryTag": "UX/UI",
 		"level": "intermediate",
 		"file": "/terms/1000/1026.Prototype.json"
 	},
@@ -324,8 +324,8 @@
 		"termKo": "사용자 여정 지도",
 		"termEn": "User Journey Map",
 		"summary": "특정 페르소나가 제품이나 서비스를 이용하는 과정(시작부터 끝까지)을 시간의 흐름에 따라 시각화한 지도.",
-		"tags": ["UI/UX디자인"],
-		"primaryTag": "UI/UX디자인",
+		"tags": ["UX/UI"],
+		"primaryTag": "UX/UI",
 		"level": "intermediate",
 		"file": "/terms/1000/1028.User-Journey-Map.json"
 	},
@@ -335,8 +335,8 @@
 		"termKo": "Breadcrumb",
 		"termEn": "Breadcrumb",
 		"summary": "사용자가 웹사이트나 애플리케이션의 계층적 구*에서 현재 위치를 파악할 수 있도록, 지나온 경로를 순차적으로 표시하는 보조적인 탐색 요소.",
-		"tags": ["UI/UX디자인"],
-		"primaryTag": "UI/UX디자인",
+		"tags": ["UX/UI"],
+		"primaryTag": "UX/UI",
 		"level": "beginner",
 		"file": "/terms/1000/1029.Breadcrumb.json"
 	},
@@ -346,8 +346,8 @@
 		"termKo": "Affordance",
 		"termEn": "Affordance",
 		"summary": "사용자가 별다른 설명 없이도 특정 물체나 UI 요소의 사용 방법과 기능을 직관적으로 인지하고 행동을 유도하도록 설계된 디자인 원칙.",
-		"tags": ["UI/UX디자인"],
-		"primaryTag": "UI/UX디자인",
+		"tags": ["UX/UI"],
+		"primaryTag": "UX/UI",
 		"level": "intermediate",
 		"file": "/terms/1000/1030.Affordance.json"
 	},

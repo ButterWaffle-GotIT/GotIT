@@ -8,7 +8,7 @@ interface CategoryListProps {
 	onSelectCategory: (category: CategoryType) => void;
 }
 
-const row1Categories: CategoryType[] = ["frontend", "backend", "uiux", "ai"];
+const row1Categories: CategoryType[] = ["frontend", "backend", "uxui", "ai"];
 const row2Categories: CategoryType[] = [
 	"cloud",
 	"data",
