@@ -1,6 +1,5 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
@@ -8,6 +7,7 @@ import { UserIcon, LogoText } from "@/components/icons";
 import { GlassButton } from "@/components/ui/GlassButton";
 import { DEFAULT_NAV_ITEMS } from "@/constants/navigation";
 import { useAuthCore } from "@/contexts/auth";
+import { useDropdown } from "@/hooks/useDropdown";
 
 type NavItemProps = {
 	label: string;
@@ -62,31 +62,16 @@ const ProfileDropdown = ({
 	email?: string | null;
 	onLogout: () => void;
 }) => {
-	const [isOpen, setIsOpen] = useState(false);
-	const dropdownRef = useRef<HTMLDivElement>(null);
+	const { isOpen, toggle, close, dropdownRef } = useDropdown<HTMLDivElement>();
 	const router = useRouter();
 
-	useEffect(() => {
-		const handleClickOutside = (event: MouseEvent) => {
-			if (
-				dropdownRef.current &&
-				!dropdownRef.current.contains(event.target as Node)
-			) {
-				setIsOpen(false);
-			}
-		};
-
-		document.addEventListener("mousedown", handleClickOutside);
-		return () => document.removeEventListener("mousedown", handleClickOutside);
-	}, []);
-
 	const handleDashboardClick = () => {
-		setIsOpen(false);
+		close();
 		router.push("/dashboard");
 	};
 
 	const handleLogoutClick = () => {
-		setIsOpen(false);
+		close();
 		onLogout();
 	};
 
@@ -96,7 +81,7 @@ const ProfileDropdown = ({
 				variant="rounded"
 				className="p-1.5"
 				aria-label="프로필"
-				onClick={() => setIsOpen(!isOpen)}
+				onClick={toggle}
 			>
 				{photoURL ? (
 					<Image
