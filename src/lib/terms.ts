@@ -63,7 +63,6 @@ let indexCache: TermIndexItem[] | null = null;
 function getBaseUrl(): string {
 	// 서버 사이드 (SSR)
 	if (typeof window === "undefined") {
-
 		if (process.env.NEXT_PUBLIC_BASE_URL) {
 			return process.env.NEXT_PUBLIC_BASE_URL;
 		}

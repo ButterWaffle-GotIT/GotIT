@@ -13,7 +13,9 @@ interface DashboardClientProps {
 	todayTermCard: ReactNode;
 }
 
-export default function DashboardClient({ todayTermCard }: DashboardClientProps) {
+export default function DashboardClient({
+	todayTermCard,
+}: DashboardClientProps) {
 	const router = useRouter();
 	const { user, userData, loading } = useAuth();
 	const [selectedCategory, setSelectedCategory] = useState("전체");
@@ -71,9 +73,7 @@ export default function DashboardClient({ todayTermCard }: DashboardClientProps)
 					<ProfileCard />
 				</div>
 
-				<div className="flex-1">
-					{todayTermCard}
-				</div>
+				<div className="flex-1">{todayTermCard}</div>
 			</div>
 
 			<div className="self-stretch">

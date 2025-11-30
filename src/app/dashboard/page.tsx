@@ -2,7 +2,5 @@ import TodayTermCardWrapper from "@/app/dashboard/components/TodayTermCardWrappe
 import DashboardClient from "@/app/dashboard/components/DashboardClient";
 
 export default function DashboardPage() {
-	return (
-		<DashboardClient todayTermCard={<TodayTermCardWrapper />} />
-	);
+	return <DashboardClient todayTermCard={<TodayTermCardWrapper />} />;
 }

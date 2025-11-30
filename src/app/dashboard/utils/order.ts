@@ -12,7 +12,10 @@ function getCharTypeOrder(str: string): number {
 	return 4;
 }
 
-export function sortCards(cards: ScrapCardData[], sortType: SortType): ScrapCardData[] {
+export function sortCards(
+	cards: ScrapCardData[],
+	sortType: SortType
+): ScrapCardData[] {
 	return [...cards].sort((a, b) => {
 		if (sortType === "latest") {
 			return new Date(b.date).getTime() - new Date(a.date).getTime();
