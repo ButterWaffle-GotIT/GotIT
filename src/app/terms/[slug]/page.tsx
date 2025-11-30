@@ -6,6 +6,8 @@ import { type TermDetail, getTermBySlug, getRelatedTerms } from "@/lib/terms";
 import type { TermIndexItem } from "@/lib/terms";
 import { toggleBookmark, isBookmarked } from "@/lib/bookmarks";
 import { HeroSection, TabSection, Footer } from "@/components/term-detail";
+import { useAuth } from "@/contexts/AuthContext";
+import { useToast } from "@/contexts/ToastContext";
 
 export default function TermDetailPage({
 	params,
@@ -13,6 +15,8 @@ export default function TermDetailPage({
 	params: Promise<{ slug: string }>;
 }) {
 	const router = useRouter();
+	const { user, isScraped, toggleScrap } = useAuth();
+	const { showLoginToast, showToast } = useToast();
 	const [term, setTerm] = useState<TermDetail | null>(null);
 	const [relatedTerms, setRelatedTerms] = useState<TermIndexItem[]>([]);
 	const [bookmarked, setBookmarked] = useState(false);
@@ -25,7 +29,12 @@ export default function TermDetailPage({
 			setTerm(data);
 
 			if (data) {
-				setBookmarked(isBookmarked(data.id));
+				// 로그인한 경우 Firestore에서, 아니면 로컬스토리지에서 확인
+				if (user) {
+					setBookmarked(isScraped(data.id));
+				} else {
+					setBookmarked(isBookmarked(data.id));
+				}
 				if (data.relatedIds && data.relatedIds.length > 0) {
 					const related = await getRelatedTerms(data.relatedIds);
 					setRelatedTerms(related);
@@ -34,12 +43,29 @@ export default function TermDetailPage({
 			setLoading(false);
 		}
 		loadTerm();
-	}, [params]);
+	}, [params, user, isScraped]);
 
-	const handleBookmark = () => {
+	const handleBookmark = async () => {
 		if (!term) return;
-		const newState = toggleBookmark(term.id);
-		setBookmarked(newState);
+
+		if (!user) {
+			// 비로그인: 로컬스토리지에 저장하고 토스트 표시
+			const newState = toggleBookmark(term.id);
+			setBookmarked(newState);
+			showLoginToast();
+			return;
+		}
+
+		// 로그인: Firestore에 저장
+		const result = await toggleScrap(term.id);
+		if (result.success) {
+			setBookmarked(result.isScraped);
+			showToast(
+				result.isScraped ? "스크랩 되었습니다" : "스크랩이 해제되었습니다"
+			);
+		} else {
+			showToast("스크랩 처리 중 오류가 발생했습니다", "error");
+		}
 	};
 
 	const handleShare = async () => {

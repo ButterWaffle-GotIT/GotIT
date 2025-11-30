@@ -62,11 +62,15 @@ export function HeroSection({
 						onClick={onBookmark}
 						className={cn(
 							"flex h-9 w-9 items-center justify-center rounded-md transition-colors",
-							bookmarked ? "bg-primary-500/30" : "bg-white-10 hover:bg-white-20"
+							bookmarked ? "bg-yellow-500/20" : "bg-white-10 hover:bg-white-20"
 						)}
 						aria-label="스크랩"
 					>
-						<ScrapIcon size={24} color={bookmarked ? "#9F74D8" : "#D4C2F0"} />
+						<ScrapIcon
+							size={24}
+							color={bookmarked ? "#FFC107" : "#D4C2F0"}
+							filled={bookmarked}
+						/>
 					</button>
 					<button
 						onClick={onShare}

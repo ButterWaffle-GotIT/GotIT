@@ -7,7 +7,7 @@ import RecommendedTermCard from "@/components/RecommendedTermCard";
 import { ChevronsDownIcon } from "@/components/icons/ic_chevrons_down";
 import { SearchIcon } from "@/components/icons/ic_search";
 import { searchTerms, type TermIndexItem } from "@/lib/terms";
-import { isBookmarked, toggleBookmark } from "@/lib/bookmarks";
+import { useScrapToggle } from "@/hooks/useScrapToggle";
 
 // --- Mock Data ---
 const recommendedTerms = [
@@ -76,13 +76,11 @@ function SearchBar({
 // 검색 결과 카드 컴포넌트
 function SearchResultCard({ item }: { item: TermIndexItem }) {
 	const router = useRouter();
-	// useEffect 대신 초기값을 직접 계산
-	const [bookmarked, setBookmarked] = useState(() => isBookmarked(item.id));
+	const { bookmarked, handleToggle } = useScrapToggle(item.id);
 
 	const handleBookmark = (e: React.MouseEvent) => {
 		e.stopPropagation();
-		const newState = toggleBookmark(item.id);
-		setBookmarked(newState);
+		handleToggle();
 	};
 
 	const handleShare = async (e: React.MouseEvent) => {

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ScrapIcon } from "@/components/icons/ic_scrap";
 import { SortIcon } from "@/components/icons/ic_sort";
 import { ChevronDownIcon } from "@/components/icons/ic_chevron_down";
@@ -12,6 +13,7 @@ interface ScrapSectionProps {
 	selectedCategory: string;
 	onCategorySelect: (category: string) => void;
 	cards: ScrapCardData[];
+	isLoading?: boolean;
 }
 
 export default function ScrapSection({
@@ -19,6 +21,7 @@ export default function ScrapSection({
 	selectedCategory,
 	onCategorySelect,
 	cards,
+	isLoading = false,
 }: ScrapSectionProps) {
 	const categories = Object.keys(categoryIcons);
 
@@ -65,7 +68,11 @@ export default function ScrapSection({
 				</div>
 			</div>
 
-			{cards.length === 0 ? (
+			{isLoading ? (
+				<div className="mt-[3.94rem] mb-[3.94rem] flex flex-col items-center">
+					<div className="text-gray-500">스크랩 목록을 불러오는 중...</div>
+				</div>
+			) : cards.length === 0 ? (
 				<div className="mt-[3.94rem] mb-[3.94rem] flex flex-col items-center">
 					<div className="flex h-15 w-15 items-center justify-center rounded-full bg-gray-800">
 						<ScrapIcon
@@ -80,9 +87,12 @@ export default function ScrapSection({
 					<p className="text-body5 mt-3 text-center text-gray-500">
 						관심있는 용어를 스크랩해보세요
 					</p>
-					<button className="text-button-medium mt-5 rounded-lg bg-linear-to-r from-[#6E50C8] to-[#CE5E61] px-5 py-2 text-white">
+					<Link
+						href="/search"
+						className="text-button-medium mt-5 rounded-lg bg-linear-to-r from-[#6E50C8] to-[#CE5E61] px-5 py-2 text-white"
+					>
 						용어 검색하기
-					</button>
+					</Link>
 				</div>
 			) : (
 				<div className="grid grid-cols-3 gap-x-4 gap-y-4">

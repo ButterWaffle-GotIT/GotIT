@@ -1,79 +1,70 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import ProfileCard from "@/app/dashboard/components/ProfileCard";
 import TodayTermCard from "@/app/dashboard/components/TodayTermCard";
 import ScrapSection from "@/app/dashboard/components/ScrapSection";
-
-const mockCards = [
-	{
-		id: "1",
-		category: "프론트엔드",
-		term: "React Hooks",
-		tag: "라이브러리",
-		description:
-			"React 16.8에서 도입된 기능으로, 클래스 컴포넌트 없이 state와 다른 React 기능들을 사용할 수 있게 해줍니다.",
-		date: "2024.11.27",
-	},
-	{
-		id: "2",
-		category: "백엔드",
-		term: "RESTful API",
-		tag: "아키텍처",
-		description:
-			"HTTP 프로토콜을 기반으로 자원을 정의하고 자원에 대한 주소를 지정하는 방법론입니다.",
-		date: "2024.11.26",
-	},
-	{
-		id: "3",
-		category: "DevOps",
-		term: "Docker",
-		tag: "컨테이너",
-		description:
-			"애플리케이션을 신속하게 구축, 테스트 및 배포할 수 있는 소프트웨어 플랫폼입니다.",
-		date: "2024.11.25",
-	},
-	{
-		id: "4",
-		category: "프론트엔드",
-		term: "React Hooks",
-		tag: "라이브러리",
-		description:
-			"React 16.8에서 도입된 기능으로, 클래스 컴포넌트 없이 state와 다른 React 기능들을 사용할 수 있게 해줍니다.",
-		date: "2024.11.27",
-	},
-	{
-		id: "5",
-		category: "백엔드",
-		term: "RESTful API",
-		tag: "아키텍처",
-		description:
-			"HTTP 프로토콜을 기반으로 자원을 정의하고 자원에 대한 주소를 지정하는 방법론입니다.",
-		date: "2024.11.26",
-	},
-	{
-		id: "6",
-		category: "DevOps",
-		term: "Docker",
-		tag: "컨테이너",
-		description:
-			"애플리케이션을 신속하게 구축, 테스트 및 배포할 수 있는 소프트웨어 플랫폼입니다.",
-		date: "2024.11.25",
-	},
-];
+import { useAuth } from "@/contexts/AuthContext";
+import { getRelatedTerms } from "@/lib/terms";
+import { termToScrapCard } from "@/lib/scrap";
+import { type ScrapCardData } from "@/types/category";
 
 export default function DashboardPage() {
+	const router = useRouter();
+	const { user, userData, loading } = useAuth();
 	const [selectedCategory, setSelectedCategory] = useState("전체");
+	const [scrapCards, setScrapCards] = useState<ScrapCardData[]>([]);
+	const [isLoading, setIsLoading] = useState(true);
+
+	useEffect(() => {
+		async function loadScrapTerms() {
+			if (!userData || userData.scrapList.length === 0) {
+				setScrapCards([]);
+				setIsLoading(false);
+				return;
+			}
+
+			try {
+				const terms = await getRelatedTerms(userData.scrapList);
+				const cards = terms.map(termToScrapCard);
+				setScrapCards(cards);
+			} catch (error) {
+				console.error("스크랩 목록 로드 실패:", error);
+				setScrapCards([]);
+			} finally {
+				setIsLoading(false);
+			}
+		}
+
+		if (!loading) {
+			loadScrapTerms();
+		}
+	}, [userData, loading]);
+
+	useEffect(() => {
+		if (!loading && !user) {
+			router.push("/login");
+		}
+	}, [user, loading, router]);
+
+	if (loading || !user) {
+		return (
+			<div className="flex min-h-screen items-center justify-center">
+				<div className="text-gray-500">로딩 중...</div>
+			</div>
+		);
+	}
 
 	const filteredCards =
 		selectedCategory === "전체"
-			? mockCards
-			: mockCards.filter((card) => card.category === selectedCategory);
+			? scrapCards
+			: scrapCards.filter((card) => card.category === selectedCategory);
 
 	return (
-		<div className="flex w-[1040px] flex-col items-start justify-start gap-10 pt-20 pb-20">
+		<div className="w-content flex flex-col items-start justify-start gap-10 pt-20 pb-20">
 			<div className="inline-flex items-stretch justify-start gap-5 self-stretch">
-				<div className="w-80 flex-shrink-0">
+				<div className="w-80 shrink-0">
 					<ProfileCard />
 				</div>
 
@@ -88,6 +79,7 @@ export default function DashboardPage() {
 					selectedCategory={selectedCategory}
 					onCategorySelect={setSelectedCategory}
 					cards={filteredCards}
+					isLoading={isLoading}
 				/>
 			</div>
 		</div>

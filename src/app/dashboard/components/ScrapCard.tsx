@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { ScrapIcon } from "@/components/icons/ic_scrap";
 import { ArrowRightIcon } from "@/components/icons/ic_arrow_right";
 import { categoryIcons, categoryColors, ScrapCardData } from "@/types/category";
@@ -9,11 +10,21 @@ interface ScrapCardProps {
 }
 
 export default function ScrapCard({ card }: ScrapCardProps) {
+	const router = useRouter();
 	const IconComponent = categoryIcons[card.category];
 	const colorClass = categoryColors[card.category];
 
+	const handleClick = () => {
+		if (card.slug) {
+			router.push(`/terms/${card.slug}`);
+		}
+	};
+
 	return (
-		<div className="glass flex w-78.5 flex-col rounded-2xl bg-white/5 p-5">
+		<div
+			onClick={handleClick}
+			className="glass flex w-78.5 cursor-pointer flex-col rounded-2xl bg-white/5 p-5 transition-colors hover:bg-white/10"
+		>
 			<div className="flex items-center justify-between">
 				<div className="flex items-center gap-2">
 					<div
