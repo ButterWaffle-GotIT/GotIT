@@ -1,20 +1,20 @@
 {
-  "id": 4092,
-  "slug": "data-consolidation",
-  "term": { "ko": "데이터 콘솔리데이션", "en": "Data Consolidation" },
-  "aliases": ["데이터 통합"],
-  "summary": "서로 다른 출처에 분산되어 있는 여러 데이터 세트들을 모아 하나의 중앙 저장소나 단일 뷰로 합치는 과정.",
-  "onelinerForNonTech": "회사 곳곳에 흩어져 있는 엑셀 파일, 서버 로그, DB 자료 등을 모두 모아 하나의 '통합된 마스터 데이터'로 만드는 작업.",
-  "description": "데이터 콘솔리데이션은 데이터 중복 제거(Deduplication), 데이터 클렌징, 표준화(Standardization) 단계를 포함하여, 통합된 데이터의 일관성과 정확성을 확보하는 데 중점을 둔다. 이는 데이터 웨어하우징, 데이터 분석, 그리고 전사적 보고서 작성의 기초를 마련하는 데 필수적이며, 시스템 통합(System Integration) 프로젝트의 핵심 요소가 된다.",
-  "tags": ["데이터", "IT비즈니스", "데이터 파이프라인"],
-  "primaryTag": "데이터",
-  "relatedIds": [4033, 4076],
-  "confusableIds": [],
-  "useCases": [
-    { "role": "PM", "text": "각 지점별 매출 데이터를 콘솔리데이션하여 월말에 최종 전사 보고서를 만들어야 합니다." },
-    { "role": "Dev", "text": "외부 시스템과의 API 연동을 통해 실시간으로 데이터를 콘솔리데이션하는 ETL 파이프라인을 구축했습니다." }
-  ],
-  "keywords": ["consolidation", "통합", "콘솔리데이션", "합치기", "표준화"],
-  "level": "intermediate",
-  "updatedAt": "2025-11-30"
+	"id": 4092,
+	"slug": "data-consolidation",
+	"term": { "ko": "데이터 콘솔리데이션", "en": "Data Consolidation" },
+	"aliases": ["데이터 통합"],
+	"summary": "서로 다른 출처에 분산되어 있는 여러 데이터 세트들을 모아 하나의 중앙 저장소나 단일 뷰로 합치는 과정.",
+	"onelinerForNonTech": "회사 곳곳에 흩어져 있는 엑셀 파일, 서버 로그, DB 자료 등을 모두 모아 하나의 '통합된 마스터 데이터'로 만드는 작업.",
+	"description": "데이터 콘솔리데이션은 데이터 중복 제거(Deduplication), 데이터 클렌징, 표준화(Standardization) 단계를 포함하여, 통합된 데이터의 일관성과 정확성을 확보하는 데 중점을 둔다. 이는 데이터 웨어하우징, 데이터 분석, 그리고 전사적 보고서 작성의 기초를 마련하는 데 필수적이며, 시스템 통합(System Integration) 프로젝트의 핵심 요소가 된다.",
+	"tags": ["데이터", "IT비즈니스", "데이터 파이프라인"],
+	"primaryTag": "데이터",
+	"relatedIds": [4033, 4076],
+	"confusableIds": [],
+	"useCases": [
+		{ "role": "PM", "text": "각 지점별 매출 데이터를 콘솔리데이션하여 월말에 최종 전사 보고서를 만들어야 합니다." },
+		{ "role": "Dev", "text": "외부 시스템과의 API 연동을 통해 실시간으로 데이터를 콘솔리데이션하는 ETL 파이프라인을 구축했습니다." }
+	],
+	"keywords": ["consolidation", "통합", "콘솔리데이션", "합치기", "표준화"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
 }
