@@ -1,0 +1,20 @@
+{
+	"id": 3074,
+	"slug": "iaas-compute",
+	"term": { "ko": "IaaS (컴퓨트)", "en": "IaaS Compute" },
+	"aliases": ["EC2", "가상 머신 인스턴스"],
+	"summary": "클라우드 환경에서 CPU, 메모리 등의 컴퓨팅 자원을 가상 머신 형태로 빌려 사용하는 서비스.",
+	"onelinerForNonTech": "실제 컴퓨터를 사는 대신, 클라우드에서 성능(CPU/RAM)을 원하는 대로 설정하여 빌려 쓰는 '가상의 컴퓨터 본체'.",
+	"description": "IaaS의 핵심 요소이며, 클라우드 서비스의 가장 기본적인 컴퓨팅 파워를 제공한다. 사용자는 운영체제(OS)를 포함하여 모든 소프트웨어를 직접 설치하고 관리해야 한다. 필요에 따라 사양을 유연하게 변경할 수 있으며, 이 가상 머신 인스턴스는 자동 확장 그룹의 기본 단위가 된다.",
+	"tags": ["클라우드", "백엔드", "DevOps"],
+	"primaryTag": "클라우드",
+	"relatedIds": [3018, 4104, 3069],
+	"confusableIds": [3075],
+	"useCases": [
+		{ "role": "Dev", "text": "새로운 환경에 필요한 컴퓨트 자원을 IaaS Compute 인스턴스 타입으로 프로비저닝했습니다." },
+		{ "role": "PM", "text": "가장 비용 효율적인 IaaS 컴퓨트 인스턴스 모델을 선택하여 서버 운영 예산을 절감해야 합니다." }
+	],
+	"keywords": ["iaas-compute", "vm", "ec2", "인스턴스", "컴퓨팅"],
+	"level": "beginner",
+	"updatedAt": "2025-11-30"
+}

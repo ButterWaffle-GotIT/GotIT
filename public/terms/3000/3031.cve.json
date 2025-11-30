@@ -1,0 +1,20 @@
+{
+  "id": 3031,
+  "slug": "cve",
+  "term": { "ko": "CVE", "en": "Common Vulnerabilities and Exposures" },
+  "aliases": ["공통 취약점 및 노출"],
+  "summary": "공개적으로 알려진 정보 보안 취약점에 고유하게 할당되는 식별자(ID).",
+  "onelinerForNonTech": "컴퓨터 소프트웨어에서 발견된 '보안 구멍'에 대해 전 세계가 공통으로 사용하는 '주민등록번호' 같은 식별표.",
+  "description": "CVE ID는 특정 취약점(Vulnerability)을 빠르고 명확하게 식별하고 추적하는 데 사용된다. 모든 보안 전문가와 조직은 이 ID를 사용하여 특정 취약점의 영향을 평가하고 패치나 대응책을 마련한다. CVE 데이터베이스는 MITRE Corporation에 의해 유지 관리되며, 소프트웨어 공급업체나 보안 연구원들이 새로운 취약점을 발견하면 이 ID를 신청한다.",
+  "tags": ["보안", "IT비즈니스", "DevOps"],
+  "primaryTag": "보안/네트워크",
+  "relatedIds": [3028],
+  "confusableIds": [],
+  "useCases": [
+    { "role": "Dev", "text": "최근에 발표된 CVE ID를 확인하고, 우리 서비스가 사용하는 라이브러리에 해당 취약점이 있는지 점검해야 합니다." },
+    { "role": "PM", "text": "외부 감사 시, 서비스에서 발견된 모든 보안 문제가 CVE 번호를 통해 정확하게 식별되고 처리되었는지 보고해야 합니다." }
+  ],
+  "keywords": ["cve", "취약점", "보안id", "취약성", "패치"],
+  "level": "intermediate",
+  "updatedAt": "2025-11-30"
+}

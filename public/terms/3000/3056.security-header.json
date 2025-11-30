@@ -1,0 +1,20 @@
+{
+	"id": 3056,
+	"slug": "security-header",
+	"term": { "ko": "보안 헤더", "en": "Security Header" },
+	"aliases": ["HTTP 보안 헤더"],
+	"summary": "웹 서버 응답에 포함되어 브라우저에게 보안 관련 동작을 지시함으로써, 웹 애플리케이션의 특정 공격(XSS, 클릭재킹 등)을 예방하는 HTTP 응답 헤더.",
+	"onelinerForNonTech": "웹사이트가 브라우저(손님)에게 '내 페이지는 이렇게 사용해야 안전하다'고 알려주는 일종의 '안전 사용 설명서' 조항.",
+	"description": "대표적인 보안 헤더로는 HSTS, Content Security Policy(CSP), X-Frame-Options 등이 있다. 이 헤더들은 주로 클라이언트 측(브라우저)의 보안 메커니즘을 강화한다. 웹 서버나 리버스 프록시 설정에서 쉽게 적용할 수 있으며, 최신 웹 보안 점검에서 필수 항목으로 평가된다.",
+	"tags": ["보안/네트워크", "프론트엔드", "백엔드"],
+	"primaryTag": "보안/네트워크",
+	"relatedIds": [3048, 3055, 3035],
+	"confusableIds": [3048],
+	"useCases": [
+		{ "role": "Dev", "text": "클릭재킹을 막기 위해 모든 응답에 X-Frame-Options 보안 헤더를 `DENY`로 설정했습니다." },
+		{ "role": "PM", "text": "모든 도메인에 Content Security Policy(CSP) 헤더를 적용하여 XSS 공격 방어 능력을 강화했습니다." }
+	],
+	"keywords": ["security-header", "헤더", "보안", "csp", "hsts"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

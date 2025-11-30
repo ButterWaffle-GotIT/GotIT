@@ -1,0 +1,20 @@
+{
+	"id": 4066,
+	"slug": "time-series-db",
+	"term": { "ko": "시계열 데이터베이스", "en": "Time-Series DB" },
+	"aliases": ["TSDB"],
+	"summary": "시간 순서에 따라 기록되는 데이터를 저장하고 관리하는 데 최적화된 데이터베이스.",
+	"onelinerForNonTech": "주식 가격, 서버 온도처럼 시간이 지남에 따라 계속 쌓이는 데이터만을 빠르고 효율적으로 저장하는 특수 저장고.",
+	"description": "일반적인 관계형 데이터베이스와 달리, 시계열 DB는 삽입(Insert) 속도가 빠르고 시간 기반의 쿼리(Query)에 매우 효율적이다. IoT 센서 데이터, 애플리케이션 모니터링 지표, 금융 거래 데이터 등 시간이 핵심 요소인 데이터 처리에 주로 사용되며, 데이터 보존 정책(Retention Policy)에 따른 오래된 데이터의 자동 삭제 기능을 제공하기도 한다.",
+	"tags": ["데이터", "데이터베이스", "IoT"],
+	"primaryTag": "데이터",
+	"relatedIds": [4000, 4001, 4030],
+	"confusableIds": [4002],
+	"useCases": [
+		{ "role": "Dev", "text": "수백 대 서버의 실시간 로그와 지표는 시계열 DB인 인플럭스DB(InfluxDB)에 저장하는 것이 성능에 유리합니다." },
+		{ "role": "PM", "text": "대시보드에서 1년 전의 IoT 장치 데이터를 빠르게 조회할 수 있도록 TSDB를 도입합시다." }
+	],
+	"keywords": ["tsdb", "time-series", "시계열", "iot", "지표", "로그"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

@@ -1,0 +1,20 @@
+{
+	"id": 4094,
+	"slug": "computer-vision",
+	"term": { "ko": "컴퓨터 비전", "en": "Computer Vision" },
+	"aliases": ["CV"],
+	"summary": "이미지와 동영상 같은 시각 데이터를 컴퓨터가 해석하고 이해할 수 있도록 하는 AI 분야.",
+	"onelinerForNonTech": "컴퓨터에게 '눈'을 달아주어 사진 속의 물체가 무엇인지, 사람이 어디에 있는지 등을 인식하고 파악할 수 있게 하는 기술.",
+	"description": "CV는 객체 인식, 이미지 분류, 이미지 분할, 얼굴 인식 등 다양한 기술을 포함한다. 딥러닝의 CNN(Convolutional Neural Network)과 같은 기술 발달로 성능이 크게 향상되었으며, 자율 주행차, 의료 영상 분석, 제조 공정의 불량품 검사, 보안 감시 시스템 등에 폭넓게 응용된다.",
+	"tags": ["AI", "데이터", "프론트엔드"],
+	"primaryTag": "AI",
+	"relatedIds": [4008],
+	"confusableIds": [4009],
+	"useCases": [
+		{ "role": "Dev", "text": "CCTV 영상에서 침입자를 실시간으로 감지하는 컴퓨터 비전 모델을 개발했습니다." },
+		{ "role": "PM", "text": "스마트폰 앱에 CV 기술을 적용하여 사용자가 찍은 옷의 종류를 자동으로 분류하는 기능을 추가합시다." }
+	],
+	"keywords": ["cv", "컴퓨터비전", "객체인식", "cnn", "이미지"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

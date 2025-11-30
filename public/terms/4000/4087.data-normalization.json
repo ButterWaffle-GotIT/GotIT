@@ -1,0 +1,20 @@
+{
+	"id": 4087,
+	"slug": "data-normalization",
+	"term": { "ko": "데이터 정규화", "en": "Data Normalization" },
+	"aliases": ["정규형", "Normalization"],
+	"summary": "관계형 데이터베이스에서 데이터 중복성을 최소화하고 데이터 삽입/삭제/갱신 시 발생하는 비일관성을 제거하기 위한 데이터 모델링 기법.",
+	"onelinerForNonTech": "데이터를 가장 효율적이고 깔끔한 형태로 쪼개고 정리해서, 한 곳만 수정해도 다른 곳에 문제가 생기지 않게 만드는 설계 원칙.",
+	"description": "정규화는 데이터 모델링 과정에서 무결성을 확보하기 위해 필수적이다. 제1정규형(1NF)부터 시작하여 3정규형(3NF), BCNF 등 단계별로 규칙을 적용하며, 데이터 테이블을 분리하는 과정이 포함된다. 지나친 정규화는 조인(JOIN)을 복잡하게 만들어 성능을 저하시킬 수 있어, 필요에 따라 비정규화(Denormalization)를 함께 고려하기도 한다.",
+	"tags": ["데이터", "데이터베이스", "백엔드"],
+	"primaryTag": "데이터",
+	"relatedIds": [4072, 4000],
+	"confusableIds": [4073],
+	"useCases": [
+		{ "role": "Dev", "text": "새로운 테이블을 3정규형(3NF)에 맞게 정규화하여 데이터 중복을 완전히 제거해야 합니다." },
+		{ "role": "PM", "text": "데이터 정규화 수준이 높으면 데이터 수정 시 오류가 발생할 가능성이 줄어듭니다." }
+	],
+	"keywords": ["normalization", "정규화", "비정규화", "3nf", "모델링", "관계형"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

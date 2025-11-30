@@ -1,0 +1,20 @@
+{
+	"id": 4111,
+	"slug": "zero-shot-learning",
+	"term": { "ko": "제로 샷 학습", "en": "Zero-Shot Learning" },
+	"aliases": ["영샷 학습"],
+	"summary": "모델이 훈련 과정에서 한 번도 본 적 없는 새로운 범주의 객체나 개념에 대해 예측을 수행할 수 있는 능력.",
+	"onelinerForNonTech": "AI에게 '토끼' 사진은 보여준 적 없지만, '토끼는 귀가 길고 깡총거리는 동물'이라는 설명만 듣고도 토끼 사진을 정확히 골라낼 수 있는 능력.",
+	"description": "이는 LLM과 같은 대규모 모델의 핵심 특징 중 하나로, 방대한 사전 학습 덕분에 일반화 능력이 뛰어나기 때문에 가능하다. 프롬프트 엔지니어링 기법과 결합하여, 새로운 작업에 대한 추가 데이터 학습 없이도 즉시 대응하는 유연성을 제공한다. Few-Shot Learning과 함께 응용된다.",
+	"tags": ["AI", "LLM", "알고리즘"],
+	"primaryTag": "AI",
+	"relatedIds": [4010, 4106, 4105],
+	"confusableIds": [4105],
+	"useCases": [
+		{ "role": "Dev", "text": "제로 샷 학습 능력을 활용하여 새로운 언어 챗봇 서비스를 별도의 재학습 없이 출시했습니다." },
+		{ "role": "PM", "text": "제로 샷 학습은 초기 데이터 수집 비용을 획기적으로 줄여주는 기술적 이점을 제공합니다." }
+	],
+	"keywords": ["zero-shot-learning", "제로샷", "llm", "일반화", "few-shot"],
+	"level": "advanced",
+	"updatedAt": "2025-11-30"
+}

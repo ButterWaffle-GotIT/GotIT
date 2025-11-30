@@ -1,0 +1,20 @@
+{
+	"id": 3041,
+	"slug": "kerberos",
+	"term": { "ko": "Kerberos", "en": "Kerberos" },
+	"aliases": ["케르베로스"],
+	"summary": "암호화된 티켓을 사용하여 네트워크 서비스에 접속하는 사용자들의 신원을 상호 검증(양방향 인증)하는 컴퓨터 네트워크 인증 프로토콜.",
+	"onelinerForNonTech": "한 번 로그인하면 여러 곳에서 '암호화된 입장권(티켓)'을 사용하여 다시 비밀번호를 입력할 필요 없이 안전하게 서비스를 이용하게 해주는 인증 방식.",
+	"description": "Kerberos는 MIT에서 개발되었으며, 주로 기업 내부의 분산된 시스템 환경에서 싱글 사인온(SSO, Single Sign-On)을 구현하는 데 사용된다. 비밀번호가 네트워크를 통해 전송되지 않도록 하여 보안성이 높으며, 사용자, 서버, 그리고 제3의 신뢰할 수 있는 기관(KDC) 간의 복잡한 티켓 교환 과정을 통해 인증을 수행한다.",
+	"tags": ["보안/네트워크", "백엔드", "IT비즈니스"],
+	"primaryTag": "보안/네트워크",
+	"relatedIds": [3024, 3025],
+	"confusableIds": [3024],
+	"useCases": [
+		{ "role": "Dev", "text": "사내 LDAP 시스템과 연동하여 Kerberos 인증 프로토콜을 구현하여 SSO를 적용했습니다." },
+		{ "role": "PM", "text": "직원들의 계정 관리 복잡도를 낮추기 위해 Kerberos 기반의 중앙 인증 시스템 도입이 시급합니다." }
+	],
+	"keywords": ["kerberos", "티켓", "인증", "sso", "프로토콜"],
+	"level": "advanced",
+	"updatedAt": "2025-11-30"
+}

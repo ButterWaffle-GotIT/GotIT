@@ -1,0 +1,20 @@
+{
+	"id": 4113,
+	"slug": "model-explainability",
+	"term": { "ko": "모델 설명 가능성", "en": "Model Explainability (XAI)" },
+	"aliases": ["XAI", "설명 가능 AI"],
+	"summary": "AI 모델이 특정 결과를 도출한 이유를 사람이 이해할 수 있는 방식으로 설명할 수 있도록 하는 AI 분야.",
+	"onelinerForNonTech": "AI가 '이 고객에게 대출을 거부해야 합니다'라고 결정했을 때, '왜 그런 결정을 내렸는지'를 사람이 이해할 수 있게 설명해 주는 능력.",
+	"description": "XAI는 AI 윤리 및 규제 준수와 밀접하게 관련된다. 특히 의료 진단, 금융 심사 등 결과의 투명성과 공정성이 요구되는 분야에서 중요하다. SHAP, LIME 등의 기법이 모델의 예측에 영향을 미친 요소를 분석하여 설명력을 제공한다.",
+	"tags": ["AI", "IT비즈니스", "데이터"],
+	"primaryTag": "AI",
+	"relatedIds": [4108, 4099, 3079],
+	"confusableIds": [4108],
+	"useCases": [
+		{ "role": "Data", "text": "모델 설명 가능성(XAI) 분석을 통해 모델이 예측에 부적절한 특징(Feature)을 사용하고 있음을 발견하고 제거했습니다." },
+		{ "role": "PM", "text": "사용자에게 AI 기반 추천 결과의 근거를 제공하여 투명성을 확보해야 합니다." }
+	],
+	"keywords": ["xai", "설명가능성", "ai윤리", "투명성", "shap"],
+	"level": "advanced",
+	"updatedAt": "2025-11-30"
+}

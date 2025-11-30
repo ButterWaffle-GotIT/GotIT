@@ -1,0 +1,20 @@
+{
+	"id": 4083,
+	"slug": "columnar-db",
+	"term": { "ko": "컬럼형 데이터베이스", "en": "Columnar Database" },
+	"aliases": ["열 지향 DB"],
+	"summary": "데이터를 행(Row) 단위가 아닌, 열(Column) 단위로 저장하는 방식에 최적화된 데이터베이스.",
+	"onelinerForNonTech": "가로로 긴 고객 정보 대신, 모든 고객의 '주소'만 세로로 모아 저장해 주소 분석에 특화된 저장소.",
+	"description": "대부분의 트랜잭션 DB는 행 단위 저장을 사용하지만, 컬럼형 DB는 데이터 분석(OLAP) 환경에서 성능 우위를 갖는다. 분석 쿼리는 보통 특정 컬럼 몇 개만 필요로 하므로, 열 단위로 저장된 데이터를 읽어오는 것이 효율적이다. 데이터 압축률이 높고, 합산이나 평균 계산 같은 집계 작업이 빠르다는 장점이 있다. Amazon Redshift, Google BigQuery 등이 대표적이다.",
+	"tags": ["데이터", "데이터베이스", "데이터 분석"],
+	"primaryTag": "데이터",
+	"relatedIds": [4077, 4039],
+	"confusableIds": [4002],
+	"useCases": [
+		{ "role": "Dev", "text": "분석용 데이터 웨어하우스는 OLAP 쿼리에 최적화된 컬럼형 데이터베이스로 구축하는 것이 맞습니다." },
+		{ "role": "Data", "text": "컬럼형 DB 덕분에 특정 속성(컬럼)에 대한 대규모 통계 분석이 순식간에 끝났습니다." }
+	],
+	"keywords": ["columnar-db", "컬럼", "열", "olap", "redshift"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

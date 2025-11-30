@@ -1,0 +1,20 @@
+{
+	"id": 3055,
+	"slug": "waf-rule",
+	"term": { "ko": "WAF 규칙", "en": "WAF Rule" },
+	"aliases": ["웹 방화벽 규칙", "Web Application Firewall Rule"],
+	"summary": "웹 애플리케이션 방화벽에 적용되어, 특정 패턴을 갖는 HTTP 요청을 검사하고 차단할지 여부를 결정하는 조건문.",
+	"onelinerForNonTech": "웹 서버에 들어오는 손님(요청)들의 '행동 목록'을 검사하여, 수상한 행동(SQL 인젝션 시도 등)이 발견되면 즉시 출입을 금지하는 세부 규정.",
+	"description": "WAF 규칙은 SQL 인젝션(SQLi), 크로스 사이트 스크립팅(XSS), 경로 탐색(Path Traversal) 등 웹 애플리케이션 취약점을 악용한 공격을 방어하는 데 특화되어 있다. 관리자는 자체적으로 규칙을 정의하거나, OWASP Core Rule Set과 같은 표준화된 규칙 세트를 사용한다. 규칙의 오탐(False Positive)을 줄이기 위해 정교한 튜닝이 필수적이다.",
+	"tags": ["보안/네트워크", "백엔드", "DevOps"],
+	"primaryTag": "보안/네트워크",
+	"relatedIds": [3033, 3047],
+	"confusableIds": [3033],
+	"useCases": [
+		{ "role": "Dev", "text": "새로운 취약점에 대비하기 위해 WAF 규칙을 주간 단위로 검토하고 업데이트해야 합니다." },
+		{ "role": "PM", "text": "새로운 기능 배포 시, WAF 규칙이 정상적인 사용자 트래픽을 차단하는 오탐이 발생하지 않는지 미리 테스트해야 합니다." }
+	],
+	"keywords": ["waf", "규칙", "sql-injection", "xss", "웹보안"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

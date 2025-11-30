@@ -1,0 +1,20 @@
+{
+	"id": 3085,
+	"slug": "configuration-management",
+	"term": { "ko": "형상 관리", "en": "Configuration Management" },
+	"aliases": ["CM", "설정 관리"],
+	"summary": "하드웨어, 소프트웨어, 문서 등 IT 시스템의 모든 구성 요소(형상)의 상태를 정의하고 일관되게 유지하는 관리 활동.",
+	"onelinerForNonTech": "수백 대의 서버가 모두 동일한 설정과 동일한 버전의 소프트웨어를 사용하도록 '기준'을 정하고 관리하는 활동.",
+	"description": "DevOps에서 형상 관리는 서버와 애플리케이션의 설정 상태를 코드로 정의하고 관리하는 IaC를 통해 주로 구현된다. Ansible, Chef, Puppet 등의 도구를 사용하여 서버를 원하는 상태로 자동 설정하고, 불변 인프라 환경 구축에 기여한다. 이는 시스템의 복원력과 일관성을 높이는 데 필수적이다.",
+	"tags": ["DevOps", "클라우드", "백엔드"],
+	"primaryTag": "DevOps",
+	"relatedIds": [3015, 3049],
+	"confusableIds": [3083],
+	"useCases": [
+		{ "role": "Dev", "text": "Ansible을 사용하여 모든 프로덕션 서버에 공통 보안 설정을 형상 관리 코드로 적용했습니다." },
+		{ "role": "PM", "text": "형상 관리 시스템을 통해 개발 환경과 운영 환경 간의 설정 차이로 인한 버그 발생을 제거했습니다." }
+	],
+	"keywords": ["configuration-management", "형상관리", "ansible", "설정", "일관성"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

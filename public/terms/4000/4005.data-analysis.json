@@ -10,7 +10,7 @@
 	"onelinerForNonTech": "숫자 속에서 ‘이유’를 찾는 탐정 일.",
 	"description": "데이터 분석은 수집된 데이터를 통계, 시각화, 모델링을 통해 해석하고 의사결정에 활용하는 활동입니다. Python, R, Excel, Tableau 등이 자주 사용됩니다.",
 	"tags": ["AI", "분석", "통계"],
-	"primaryTag": "AI",
+	"primaryTag": "데이터",
 	"relatedIds": [],
 	"confusableIds": [],
 	"useCases": [

@@ -1,0 +1,20 @@
+{
+	"id": 1052,
+	"slug": "aesthetics-usability-effect",
+	"term": { "ko": "심미적 사용성 효과", "en": "Aesthetic-Usability Effect" },
+	"aliases": ["미적 사용성 효과"],
+	"summary": "사용자는 미학적으로 더 보기 좋은 디자인이, 실제 사용성이 낮더라도 사용성이 더 좋을 것이라고 인식하는 경향.",
+	"onelinerForNonTech": "보기 좋은 떡이 먹기도 좋다는 말처럼, '디자인이 예쁜 앱'은 실제 사용성이 조금 불편해도 '사용하기 좋다'고 느끼는 심리적 효과.",
+	"description": "이 효과는 UX/UI 디자인에서 심미성(Aesthetics)의 중요성을 강조하지만, 디자인만으로는 근본적인 사용성 문제를 해결할 수 없음을 시사한다. 사용자에게 긍정적인 첫인상과 인내심을 제공하여, 사소한 오류에 대한 관용도를 높이는 효과가 있다.",
+	"tags": ["UX/UI", "디자인", "IT비즈니스"],
+	"primaryTag": "UX/UI",
+	"relatedIds": [1022, 1023, 1046],
+	"confusableIds": [1023],
+	"useCases": [
+		{ "role": "Design", "text": "심미적 사용성 효과를 고려하여, 기능 업데이트 시 디자인 시스템의 비주얼 톤을 최신 트렌드에 맞게 개선했습니다." },
+		{ "role": "PM", "text": "새로운 기능의 심미적 사용성 효과를 극대화하여 사용자 만족도를 빠르게 높여야 합니다." }
+	],
+	"keywords": ["aesthetic-usability", "심미성", "미적", "사용성", "심리학"],
+	"level": "advanced",
+	"updatedAt": "2025-11-30"
+}

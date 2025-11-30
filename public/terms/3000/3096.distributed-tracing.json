@@ -1,0 +1,20 @@
+{
+	"id": 3096,
+	"slug": "distributed-tracing",
+	"term": { "ko": "분산 추적", "en": "Distributed Tracing" },
+	"aliases": ["트레이싱"],
+	"summary": "마이크로서비스 아키텍처에서 사용자 요청 하나가 여러 서비스를 거쳐 처리되는 전 과정을 추적하고 기록하는 기술.",
+	"onelinerForNonTech": "복잡하게 연결된 여러 서버를 지나는 고객의 요청에 '택배 송장'을 붙여서, 어디서 늦어지고 있는지 경로를 실시간으로 파악하는 것.",
+	"description": "관측 가능성 (Observability)의 세 가지 요소(로그, 메트릭, 추적) 중 하나이다. 복잡한 시스템에서 특정 요청이 어느 서비스에서 병목 현상이나 오류를 일으켰는지 정확하게 파악하여 문제 해결(Troubleshooting) 시간을 단축한다. Jaeger, Zipkin, OpenTelemetry 등이 대표적인 툴이다. 모니터링을 보완한다.",
+	"tags": ["DevOps", "백엔드", "클라우드"],
+	"primaryTag": "DevOps",
+	"relatedIds": [3004, 3087, 3088],
+	"confusableIds": [3087],
+	"useCases": [
+		{ "role": "Dev", "text": "분산 추적 시스템을 통해 사용자 로그인 요청이 데이터베이스에서 3초 동안 지연되는 것을 발견하고 최적화했습니다." },
+		{ "role": "PM", "text": "신규 서비스의 성능 지표를 명확히 측정하기 위해 분산 추적 시스템을 필수적으로 도입했습니다." }
+	],
+	"keywords": ["distributed-tracing", "추적", "마이크로서비스", "병목", "observability"],
+	"level": "advanced",
+	"updatedAt": "2025-11-30"
+}

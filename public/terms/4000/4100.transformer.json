@@ -1,0 +1,20 @@
+{
+	"id": 4100,
+	"slug": "transformer",
+	"term": { "ko": "트랜스포머", "en": "Transformer" },
+	"aliases": ["Transformer Model"],
+	"summary": "어텐션(Attention) 메커니즘을 기반으로 시퀀스 데이터를 효율적으로 처리하며, LLM과 딥러닝 모델의 혁신을 이끈 신경망 아키텍처.",
+	"onelinerForNonTech": "컴퓨터가 긴 문장을 읽을 때, 문장의 모든 단어 중 '가장 중요한 단어'에 집중(어텐션)하여 의미를 파악하게 하는 똑똑한 구조.",
+	"description": "2017년 Google이 'Attention Is All You Need' 논문에서 발표한 모델로, 기존의 RNN/CNN 기반 모델의 한계를 극복했다. 트랜스포머는 병렬 처리가 가능하여 학습 속도를 획기적으로 높였으며, 특히 셀프-어텐션(Self-Attention) 메커니즘을 통해 장거리 의존성 문제를 해결하여 자연어 처리 분야의 표준이 되었다. GPT와 BERT 등 대부분의 최신 LLM이 이 구조를 기반으로 한다.",
+	"tags": ["AI", "백엔드", "알고리즘"],
+	"primaryTag": "AI",
+	"relatedIds": [4010, 4095, 4009],
+	"confusableIds": [4095],
+	"useCases": [
+		{ "role": "Dev", "text": "GPT-4는 트랜스포머 구조를 기반으로 하며, 이 아키텍처 덕분에 대규모 병렬 학습이 가능했습니다." },
+		{ "role": "Data", "text": "모델이 문맥상 중요한 단어를 놓치지 않도록 어텐션 메커니즘을 시각화하여 디버깅했습니다." }
+	],
+	"keywords": ["transformer", "트랜스포머", "attention", "어텐션", "llm", "bert"],
+	"level": "advanced",
+	"updatedAt": "2025-11-30"
+}

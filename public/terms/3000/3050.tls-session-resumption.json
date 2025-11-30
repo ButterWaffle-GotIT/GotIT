@@ -1,0 +1,20 @@
+{
+	"id": 3050,
+	"slug": "tls-session-resumption",
+	"term": { "ko": "TLS 세션 재개", "en": "TLS Session Resumption" },
+	"aliases": ["TLS 재사용"],
+	"summary": "클라이언트와 서버가 이전에 협상했던 암호화 키와 설정을 재사용하여, 새로운 TLS 핸드셰이크 과정을 생략하거나 단축하는 기술.",
+	"onelinerForNonTech": "비밀 대화를 한 번 나눈 상대와 다시 대화할 때, 처음처럼 복잡한 신원 확인 절차 없이 '이전에 약속한 암호 코드를 다시 쓰자'고 빠르게 건너뛰는 방식.",
+	"description": "완전한 TLS 핸드셰이크(Full Handshake)는 성능 오버헤드를 유발하는데, 세션 재개를 사용하면 이 오버헤드를 줄여 접속 지연 시간(Latency)을 크게 개선할 수 있다. 이는 특히 모바일 환경이나 짧은 시간 내에 여러 번 접속하는 환경에서 웹 성능 최적화에 필수적이다. Session ID나 Session Ticket 방식을 통해 구현된다.",
+	"tags": ["보안/네트워크", "백엔드", "성능"],
+	"primaryTag": "보안/네트워크",
+	"relatedIds": [3049, 3035],
+	"confusableIds": [3035],
+	"useCases": [
+		{ "role": "Dev", "text": "모바일 앱의 API 통신 속도를 개선하기 위해 로드 밸런서에 TLS 세션 재개 기능을 활성화해야 합니다." },
+		{ "role": "PM", "text": "세션 재개는 보안상 문제가 없도록 정기적으로 세션 키의 유효 기간을 점검해야 합니다." }
+	],
+	"keywords": ["tls", "핸드셰이크", "재개", "성능", "암호화"],
+	"level": "advanced",
+	"updatedAt": "2025-11-30"
+}

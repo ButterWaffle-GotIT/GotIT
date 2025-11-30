@@ -1,0 +1,20 @@
+{
+	"id": 3083,
+	"slug": "issue-tracker",
+	"term": { "ko": "이슈 트래커", "en": "Issue Tracker" },
+	"aliases": ["버그 트래커", "작업 관리 시스템"],
+	"summary": "소프트웨어 개발 프로젝트에서 발생하는 버그, 기능 개선 요청, 작업 항목 등을 기록하고 진행 상황을 추적하는 시스템.",
+	"onelinerForNonTech": "개발팀이 해야 할 모든 일(버그 고치기, 새 기능 만들기)을 한곳에 모아두고, 누가, 언제, 무엇을 하고 있는지 기록하는 시스템.",
+	"description": "Jira, Trello, Asana 등이 대표적인 도구이다. 애자일 방법론에서 스크럼 스프린트를 관리하고, DevOps 파이프라인과 연동하여 CI/CD 과정에서 발생하는 결함을 추적하는 데 필수적이다. 투명한 협업과 빠른 문제 해결에 기여한다.",
+	"tags": ["DevOps", "IT비즈니스", "백엔드"],
+	"primaryTag": "DevOps",
+	"relatedIds": [4026, 4014, 4015],
+	"confusableIds": [4027],
+	"useCases": [
+		{ "role": "Dev", "text": "CI 파이프라인에서 발견된 빌드 실패를 이슈 트래커에 자동으로 등록하고 담당자를 배정해야 합니다." },
+		{ "role": "PM", "text": "이슈 트래커를 통해 백로그를 관리하고, 다음 스프린트에 포함될 기능을 확정했습니다." }
+	],
+	"keywords": ["issue-tracker", "jira", "버그", "작업관리", "애자일"],
+	"level": "beginner",
+	"updatedAt": "2025-11-30"
+}

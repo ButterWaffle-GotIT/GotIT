@@ -1,0 +1,20 @@
+{
+	"id": 3089,
+	"slug": "error-budget",
+	"term": { "ko": "오류 버짓", "en": "Error Budget" },
+	"aliases": ["에러 버짓"],
+	"summary": "서비스 수준 목표를 달성하기 위해 '허용되는 최대 오류 또는 다운타임'의 총량.",
+	"onelinerForNonTech": "서비스의 완벽한 100% 목표치 중, '괜찮아, 이 정도는 고장나도 돼'라고 미리 허락한 '오류 허용치'.",
+	"description": "SLO가 99.9%라면, 나머지 0.1%가 오류 버짓이 된다. SRE 팀은 이 버짓을 초과하지 않는 범위 내에서 신규 기능 출시(리스크)와 안정화(운영) 활동 간의 균형을 맞춘다. 버짓이 남아 있으면 신속한 배포가 가능하고, 버짓을 소진하면 서비스 안정화 작업에 집중해야 한다.",
+	"tags": ["DevOps", "IT비즈니스", "SRE"],
+	"primaryTag": "DevOps",
+	"relatedIds": [3082, 3009],
+	"confusableIds": [4025],
+	"useCases": [
+		{ "role": "Dev", "text": "이번 배포로 오류 버짓의 50%를 소진했으므로, 다음 배포는 신중하게 진행해야 합니다." },
+		{ "role": "PM", "text": "오류 버짓 덕분에 안정성 팀과 개발 팀이 리스크 관리 목표를 공유할 수 있게 되었습니다." }
+	],
+	"keywords": ["error-budget", "버짓", "slo", "sre", "안정성"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

@@ -1,0 +1,20 @@
+{
+	"id": 3092,
+	"slug": "devsecops",
+	"term": { "ko": "DevSecOps", "en": "DevSecOps" },
+	"aliases": ["쉬프트 레프트 보안"],
+	"summary": "소프트웨어 개발 전 과정(DevOps 라이프사이클)에 보안을 통합하여, 개발 초기 단계(Shift Left)부터 보안 취약점을 예방하고 해결하는 문화 및 방법론.",
+	"onelinerForNonTech": "코딩할 때부터 보안 전문가가 옆에서 함께 보면서, 나중에 해킹당할 구멍을 미리미리 막아두는 개발 문화.",
+	"description": "기존에는 보안(Sec)을 개발(Dev)과 운영(Ops)의 마지막 단계에서 테스트했지만, DevSecOps는 정적/동적 코드 분석, 컨테이너 이미지 스캔, IaC 보안 검사 등 자동화된 보안 도구를 CI/CD 파이프라인에 내장한다. 이는 보안 문제를 조기에 발견하여 수정 비용을 절감하는 데 핵심적인 역할을 한다.",
+	"tags": ["DevOps", "보안/네트워크", "IT비즈니스"],
+	"primaryTag": "DevOps",
+	"relatedIds": [3002, 3086, 3037],
+	"confusableIds": [4047],
+	"useCases": [
+		{ "role": "Dev", "text": "PR이 머지되기 전에 DevSecOps 파이프라인을 통해 모든 코드의 보안 취약점을 자동으로 스캔해야 합니다." },
+		{ "role": "PM", "text": "DevSecOps 문화 도입으로 보안 팀과 개발 팀 간의 협업이 크게 개선되었습니다." }
+	],
+	"keywords": ["devsecops", "보안", "ci/cd", "shift-left", "취약점"],
+	"level": "beginner",
+	"updatedAt": "2025-11-30"
+}

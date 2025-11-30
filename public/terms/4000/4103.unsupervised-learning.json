@@ -1,0 +1,20 @@
+{
+	"id": 4103,
+	"slug": "unsupervised-learning",
+	"term": { "ko": "비지도 학습", "en": "Unsupervised Learning" },
+	"aliases": ["자율 학습"],
+	"summary": "레이블(정답)이 없는 데이터 세트에서 모델이 스스로 숨겨진 패턴, 구조 또는 관계를 찾아 학습하는 머신러닝 방법론.",
+	"onelinerForNonTech": "선생님(레이블)이 없이 혼자 공부하면서, 수많은 데이터 속에서 스스로 '비슷한 것들'끼리 그룹을 나누고 규칙을 발견하는 학습 방식.",
+	"description": "주요 기법으로는 군집화(Clustering)와 차원 축소(Dimensionality Reduction)가 있다. 이는 데이터의 구조를 이해하거나, 이상 탐지의 기초 단계로 사용된다. 레이블링 작업의 비용과 시간이 많이 들 때 유용하며, 지도 학습과 대조된다.",
+	"tags": ["AI", "데이터", "알고리즘"],
+	"primaryTag": "AI",
+	"relatedIds": [4007, 4104, 4005],
+	"confusableIds": [4104],
+	"useCases": [
+		{ "role": "Data", "text": "레이블링 비용 문제로 비지도 학습의 군집화 기법을 사용하여 고객 세그먼트를 자동으로 분류했습니다." },
+		{ "role": "PM", "text": "비지도 학습을 통해 예상치 못한 데이터 패턴과 잠재적인 시장 기회를 발견했습니다." }
+	],
+	"keywords": ["unsupervised-learning", "비지도학습", "군집화", "레이블", "차원축소"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

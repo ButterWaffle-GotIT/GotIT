@@ -1,0 +1,20 @@
+{
+	"id": 4090,
+	"slug": "data-transformation",
+	"term": { "ko": "데이터 변환", "en": "Data Transformation" },
+	"aliases": ["T (Transform)", "데이터 가공"],
+	"summary": "원본 데이터를 분석 또는 적재 대상 시스템의 요구사항에 맞게 구조, 형식, 내용을 변경하는 모든 과정.",
+	"onelinerForNonTech": "가져온 원본 데이터를 계산, 통합, 정리, 요약해서 분석하기 좋은 '최종 모양'으로 만드는 요리 과정.",
+	"description": "변환 단계에는 데이터 정제, 형식 변경, 값 계산, 데이터 집계 및 요약, 여러 소스의 데이터 통합(조인) 등 다양한 작업이 포함된다. ETL 또는 ELT 파이프라인에서 가장 많은 자원을 소모하는 단계이며, 데이터 품질과 분석 결과의 정확도를 결정하는 중요한 부분이다. 변환 로직은 코드나 ETL 툴을 통해 구현된다.",
+	"tags": ["데이터", "데이터 파이프라인", "데이터 분석"],
+	"primaryTag": "데이터",
+	"relatedIds": [4031, 4032, 4073],
+	"confusableIds": [],
+	"useCases": [
+		{ "role": "Dev", "text": "외부 결제 시스템의 환율 데이터를 우리 내부 기준에 맞게 변환하는 로직을 추가해야 합니다." },
+		{ "role": "Data", "text": "분석에 필요한 최종 지표를 얻기 위해 원본 로그 데이터를 복잡하게 변환해야 했습니다." }
+	],
+	"keywords": ["data-transformation", "변환", "가공", "etl", "elt", "t"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

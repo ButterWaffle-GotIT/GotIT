@@ -1,0 +1,20 @@
+{
+	"id": 4093,
+	"slug": "reinforcement-learning",
+	"term": { "ko": "강화 학습", "en": "Reinforcement Learning" },
+	"aliases": ["RL"],
+	"summary": "에이전트(Agent)가 보상(Reward)을 최대화하는 방향으로 행동을 학습하는 머신러닝 방법론.",
+	"onelinerForNonTech": "컴퓨터가 시행착오를 겪으며 스스로 정답을 찾아가고, 잘하면 칭찬(보상)을 받고 못하면 혼나는(페널티) 방식으로 학습하는 기술.",
+	"description": "RL은 환경 속에서 행동을 선택하고, 그 결과로 주어지는 보상을 통해 장기적인 최적의 정책을 학습하는 데 초점을 맞춘다. 자율 주행, 로봇 제어, 게임 AI, 복잡한 의사 결정이 필요한 금융 투자 분야 등에 활용된다. 딥러닝과 결합된 DRL(Deep Reinforcement Learning)이 최근 주목받고 있다.",
+	"tags": ["AI", "데이터", "알고리즘"],
+	"primaryTag": "AI",
+	"relatedIds": [4007, 4008],
+	"confusableIds": [4007],
+	"useCases": [
+		{ "role": "Dev", "text": "로봇 팔 제어 모델을 강화 학습으로 훈련시켜 다양한 상황에 유연하게 대처하도록 했습니다." },
+		{ "role": "PM", "text": "개인화된 콘텐츠 추천 순서를 강화 학습으로 최적화하여 사용자 만족도를 높여봅시다." }
+	],
+	"keywords": ["rl", "강화학습", "보상", "agent", "정책"],
+	"level": "advanced",
+	"updatedAt": "2025-11-30"
+}

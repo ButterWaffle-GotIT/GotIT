@@ -1,0 +1,20 @@
+{
+	"id": 4075,
+	"slug": "sampling",
+	"term": { "ko": "데이터 샘플링", "en": "Data Sampling" },
+	"aliases": ["표본 추출"],
+	"summary": "방대한 모집단 데이터 전체를 분석하는 대신, 그 특성을 대표할 수 있는 일부 데이터를 추출하여 분석하는 기법.",
+	"onelinerForNonTech": "엄청나게 많은 쌀알 전체를 맛보는 대신, 한 그릇만 떠서 맛보고 전체 밥맛을 예측하는 것.",
+	"description": "샘플링은 전체 데이터를 처리하기 어려울 정도로 대규모일 때, 분석 속도를 높이고 컴퓨팅 자원을 절약하기 위해 사용된다. 무작위 추출(Random Sampling), 계통 추출(Systematic Sampling), 층화 추출(Stratified Sampling) 등 다양한 방법이 있으며, 샘플이 모집단의 특성을 정확하게 반영해야 분석 결과의 신뢰성을 확보할 수 있다.",
+	"tags": ["데이터", "AI", "데이터 분석"],
+	"primaryTag": "데이터",
+	"relatedIds": [4005, 4007],
+	"confusableIds": [4042],
+	"useCases": [
+		{ "role": "Dev", "text": "모델 학습 시간이 너무 길어 데이터의 10%만 무작위로 샘플링하여 실험을 진행했습니다." },
+		{ "role": "Data", "text": "전체 사용자 데이터를 분석하기에는 비용이 많이 드니, 지역별로 층화 샘플링을 적용해 분석을 시작합시다." }
+	],
+	"keywords": ["sampling", "샘플링", "표본", "추출", "통계"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

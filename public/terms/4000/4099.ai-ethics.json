@@ -1,0 +1,20 @@
+{
+	"id": 4099,
+	"slug": "ai-ethics",
+	"term": { "ko": "AI 윤리", "en": "AI Ethics" },
+	"aliases": ["AI 규범", "AI 책임"],
+	"summary": "인공지능 시스템 개발 및 사용에 있어 공정성, 투명성, 책임성 등 인간 사회의 도덕적 원칙을 준수하도록 하는 연구 및 실천 분야.",
+	"onelinerForNonTech": "AI가 사람을 차별하거나 편향되지 않고, 왜 그런 결정을 내렸는지 설명할 수 있도록 만드는 도덕적 가이드라인.",
+	"description": "AI 윤리는 AI가 사회에 미칠 잠재적 위험(편향, 차별, 오용 등)을 최소화하는 데 중점을 둔다. 공정성(Fairness), 설명 가능성(Explainability), 투명성(Transparency)이 주요 원칙이다. 이 분야는 기술 개발의 방향을 설정하고, AI 관련 법률 및 규제를 마련하는 데 중요한 역할을 한다.",
+	"tags": ["AI", "IT비즈니스", "보안/네트워크"],
+	"primaryTag": "AI",
+	"relatedIds": [4086, 4036],
+	"confusableIds": [],
+	"useCases": [
+		{ "role": "PM", "text": "대출 심사 AI 모델에 잠재된 인종 차별 편향성을 제거하기 위해 AI 윤리 가이드라인을 적용해야 합니다." },
+		{ "role": "Design", "text": "사용자가 AI의 결정에 대해 이의를 제기할 수 있는 투명한 인터페이스를 설계해야 합니다." }
+	],
+	"keywords": ["ai-ethics", "윤리", "편향", "설명가능성", "투명성"],
+	"level": "beginner",
+	"updatedAt": "2025-11-30"
+}

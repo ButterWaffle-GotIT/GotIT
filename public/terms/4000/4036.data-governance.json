@@ -10,7 +10,7 @@
 	"onelinerForNonTech": "데이터의 규칙과 질서를 지키는 관리 체계.",
 	"description": "데이터 거버넌스는 조직 내 데이터의 정확성·보안·활용성을 보장하기 위한 정책과 절차를 포함합니다.",
 	"tags": ["AI", "관리"],
-	"primaryTag": "AI",
+	"primaryTag": "데이터",
 	"relatedIds": [],
 	"confusableIds": [],
 	"useCases": [
