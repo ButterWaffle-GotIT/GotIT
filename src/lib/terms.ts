@@ -135,11 +135,11 @@ export async function getTermBySlug(slug: string): Promise<TermDetail | null> {
 }
 
 /**
- * 태그로 용어 목록 필터링
+ * 카테고리(primaryTag)로 용어 목록 필터링
  */
 export async function getTermsByTag(tag: string): Promise<TermIndexItem[]> {
 	const index = await getTermsIndex();
-	return index.filter((t) => t.tags.includes(tag) || t.primaryTag === tag);
+	return index.filter((t) => t.primaryTag === tag);
 }
 
 /**
