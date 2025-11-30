@@ -9,7 +9,7 @@ import {
 	type QuizResult as QuizResultType,
 	type QuizQuestion,
 } from "@/lib/quiz";
-import { type CategoryType } from "@/components/ui/category/config";
+import { type CategoryType } from "@/config/categories";
 import GradientButton from "@/components/ui/buttons/GradientButton";
 
 interface QuizResultProps {

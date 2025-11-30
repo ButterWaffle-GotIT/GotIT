@@ -3,7 +3,8 @@
 import { useRouter } from "next/navigation";
 import { ScrapIcon } from "@/components/icons/ic_scrap";
 import { ArrowRightIcon } from "@/components/icons/ic_arrow_right";
-import { categoryIcons, categoryColors, ScrapCardData } from "@/types/category";
+import { CATEGORIES, getCategoryType } from "@/config/categories";
+import type { ScrapCardData } from "@/types/scrapCard";
 
 interface ScrapCardProps {
 	card: ScrapCardData;
@@ -11,8 +12,10 @@ interface ScrapCardProps {
 
 export default function ScrapCard({ card }: ScrapCardProps) {
 	const router = useRouter();
-	const IconComponent = categoryIcons[card.category];
-	const colorClass = categoryColors[card.category];
+	const categoryType = getCategoryType(card.category);
+	const config = CATEGORIES[categoryType];
+	const IconComponent = config.icon;
+	const colorClass = config.bgColor;
 
 	const handleClick = () => {
 		if (card.slug) {

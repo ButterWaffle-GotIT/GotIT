@@ -1,6 +1,6 @@
 import type { TermIndexItem } from "@/lib/terms";
-import type { ScrapCardData } from "@/types/category";
-import { getCategoryLabel, getCategoryType } from "@/lib/category";
+import type { ScrapCardData } from "@/types/scrapCard";
+import { getCategoryLabel, getCategoryType } from "@/config/categories";
 import { formatKoreanDate } from "@/utils/date";
 
 /**

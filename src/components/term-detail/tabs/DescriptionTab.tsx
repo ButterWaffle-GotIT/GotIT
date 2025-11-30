@@ -1,7 +1,7 @@
 import { cn } from "@/utils/cn";
 import type { TermDetail } from "@/lib/terms";
 import { InfoIcon, HashtagIcon } from "@/components/icons";
-import { getCategoryType } from "@/lib/category";
+import { getCategoryType } from "@/config/categories";
 
 interface DescriptionTabProps {
 	term: TermDetail;

@@ -7,7 +7,7 @@ import ScrapSection from "@/app/dashboard/components/ScrapSection";
 import { useAuthCore, useUserData } from "@/contexts/auth";
 import { getRelatedTerms } from "@/lib/terms";
 import { termToScrapCard } from "@/lib/scrap";
-import { type ScrapCardData } from "@/types/category";
+import { type ScrapCardData } from "@/types/scrapCard";
 
 interface DashboardClientProps {
 	todayTermCard: ReactNode;

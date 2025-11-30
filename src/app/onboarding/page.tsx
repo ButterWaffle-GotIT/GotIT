@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import OnboardingHeader from "./components/onboardingHeader";
 import { ArrowRightIcon } from "@/components/icons/ic_arrow_right";
 import CategoryList from "./components/categoryList";
-import { type CategoryType } from "@/components/ui/category/config";
+import { type CategoryType } from "@/config/categories";
 import { useAuthCore, useUserData } from "@/contexts/auth";
 
 const Page = () => {

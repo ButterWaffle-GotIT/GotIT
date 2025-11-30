@@ -13,7 +13,7 @@ import {
 } from "react";
 import { doc, setDoc, getDoc, updateDoc } from "firebase/firestore";
 import { db } from "@/utils/firebase";
-import { type CategoryType } from "@/components/ui/category/config";
+import { type CategoryType } from "@/config/categories";
 import { getBookmarks, clearBookmarks } from "@/lib/bookmarks";
 import { useAuthCore } from "./AuthContext";
 

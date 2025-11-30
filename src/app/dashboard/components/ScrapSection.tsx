@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { ScrapIcon } from "@/components/icons/ic_scrap";
-import { categoryIcons, ScrapCardData } from "@/types/category";
+import { CATEGORIES, CATEGORY_KEYS } from "@/config/categories";
+import type { ScrapCardData } from "@/types/scrapCard";
 import CategoryTag from "./CategoryTag";
 import ScrapCard from "./ScrapCard";
 import { sortCards, SortType } from "../utils/order";
@@ -25,7 +26,8 @@ export default function ScrapSection({
 	cards,
 	isLoading = false,
 }: ScrapSectionProps) {
-	const categories = Object.keys(categoryIcons);
+	// 한글 라벨 목록 생성
+	const categories = CATEGORY_KEYS.map((key) => CATEGORIES[key].label);
 	const [sortType, setSortType] = useState<SortType>("latest");
 
 	const sortedCards = sortCards(cards, sortType);

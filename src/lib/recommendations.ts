@@ -3,8 +3,7 @@
  */
 
 import { getTermsByCategory } from "./terms";
-import type { CategoryType } from "@/components/ui/category/config";
-import { categoryLabels } from "@/components/ui/category/config";
+import { CATEGORIES, type CategoryType } from "@/config/categories";
 
 // 카테고리 ID 매핑
 export const categoryIdMap: Record<Exclude<CategoryType, "all">, number> = {
@@ -58,11 +57,13 @@ export async function getRecommendedTerms(
 		const categoryId = categoryIdMap[targetCategory];
 
 		const terms = await getTermsByCategory(categoryId);
+		const categoryLabel = CATEGORIES[targetCategory].label;
+
 		if (terms.length < count) {
 			// 용어 개수가 부족하면 있는 만큼만 반환
 			return terms.map((t) => ({
 				term: t.termKo,
-				category: categoryLabels[targetCategory],
+				category: categoryLabel,
 				description: t.summary,
 				iconColor: categoryColors[categoryId],
 				slug: t.slug,
@@ -77,7 +78,7 @@ export async function getRecommendedTerms(
 		}
 		return shuffled.slice(0, count).map((t) => ({
 			term: t.termKo,
-			category: categoryLabels[targetCategory],
+			category: categoryLabel,
 			description: t.summary,
 			iconColor: categoryColors[categoryId],
 			slug: t.slug,

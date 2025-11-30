@@ -3,10 +3,7 @@
  */
 
 import { getTermsIndex, getTermsByTag, type TermIndexItem } from "./terms";
-import {
-	categoryLabels,
-	type CategoryType,
-} from "@/components/ui/category/config";
+import { CATEGORIES, type CategoryType } from "@/config/categories";
 
 export interface QuizQuestion {
 	term: TermIndexItem;
@@ -51,7 +48,7 @@ export async function generateQuizQuestions(
 		terms = shuffleArray(allTerms);
 	} else {
 		// CategoryType을 한글 이름으로 변환하여 검색
-		const categoryLabel = categoryLabels[category];
+		const categoryLabel = CATEGORIES[category].label;
 		terms = await getTermsByTag(categoryLabel);
 		terms = shuffleArray(terms);
 	}

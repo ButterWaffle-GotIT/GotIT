@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { type CategoryType } from "@/components/ui/category/config";
+import { type CategoryType, CATEGORY_ROWS } from "@/config/categories";
 import CategoryButton from "@/app/onboarding/components/CategoryButton";
 import { generateQuizQuestions, type QuizQuestion } from "@/lib/quiz";
 import { ArrowRightIcon } from "@/components/icons/ic_arrow_right";
@@ -11,21 +11,6 @@ import GradientButton from "@/components/ui/buttons/GradientButton";
 interface CategorySelectionProps {
 	onCategorySelect: (category: CategoryType, questions: QuizQuestion[]) => void;
 }
-
-const row1Categories: CategoryType[] = [
-	"all",
-	"frontend",
-	"backend",
-	"uxui",
-	"ai",
-];
-const row2Categories: CategoryType[] = [
-	"cloud",
-	"data",
-	"security",
-	"devops",
-	"business",
-];
 
 export default function CategorySelection({
 	onCategorySelect,
@@ -78,29 +63,18 @@ export default function CategorySelection({
 			<div className="flex w-full flex-col items-center gap-6">
 				<h2 className="text-lg text-gray-700">카테고리 선택</h2>
 				<div className="flex flex-col gap-10">
-					{/* 첫 번째 줄 */}
-					<div className="flex justify-center gap-10">
-						{row1Categories.map((category) => (
-							<CategoryButton
-								key={category}
-								category={category}
-								isSelected={selectedCategory === category}
-								onClick={() => handleSelectCategory(category)}
-							/>
-						))}
-					</div>
-
-					{/* 두 번째 줄 */}
-					<div className="flex justify-center gap-10">
-						{row2Categories.map((category) => (
-							<CategoryButton
-								key={category}
-								category={category}
-								isSelected={selectedCategory === category}
-								onClick={() => handleSelectCategory(category)}
-							/>
-						))}
-					</div>
+					{CATEGORY_ROWS.map((row, rowIndex) => (
+						<div key={rowIndex} className="flex justify-center gap-10">
+							{row.map((category) => (
+								<CategoryButton
+									key={category}
+									category={category}
+									isSelected={selectedCategory === category}
+									onClick={() => handleSelectCategory(category)}
+								/>
+							))}
+						</div>
+					))}
 				</div>
 			</div>
 

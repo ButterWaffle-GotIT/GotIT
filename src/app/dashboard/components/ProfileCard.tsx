@@ -3,11 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { UserIcon } from "@/components/icons/ic_user";
 import { EditIcon } from "@/components/icons/ic_edit";
-import {
-	type CategoryType,
-	categoryConfig,
-	categoryLabels,
-} from "@/components/ui/category/config";
+import { CATEGORIES, type CategoryType } from "@/config/categories";
 import { useAuthCore, useUserData } from "@/contexts/auth";
 import CategoryEditModal from "./CategoryEditModal";
 
@@ -24,7 +20,7 @@ const SimpleProfileCard: React.FC = () => {
 		await updateCategory(category);
 	};
 
-	const config = categoryConfig[selectedCategory];
+	const config = CATEGORIES[selectedCategory];
 	const IconComponent = config?.icon;
 
 	return (
@@ -70,7 +66,7 @@ const SimpleProfileCard: React.FC = () => {
 									<IconComponent className="h-4 w-4 text-white" />
 								</div>
 								<span className="text-sm leading-6 font-bold text-white">
-									#{categoryLabels[selectedCategory]}
+									#{config.label}
 								</span>
 							</div>
 						) : (

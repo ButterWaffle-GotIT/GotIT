@@ -7,10 +7,7 @@ import {
 	type QuizQuestion,
 	type QuizResult,
 } from "@/lib/quiz";
-import {
-	categoryLabels,
-	type CategoryType,
-} from "@/components/ui/category/config";
+import { CATEGORIES, type CategoryType } from "@/config/categories";
 import GradientButton from "@/components/ui/buttons/GradientButton";
 
 interface QuizSessionProps {
@@ -74,7 +71,7 @@ export default function QuizSession({
 				<div className="flex items-center justify-between">
 					<div className="flex flex-col gap-1">
 						<h1 className="text-3xl font-bold text-white">
-							{categoryLabels[category]} 퀴즈
+							{CATEGORIES[category].label} 퀴즈
 						</h1>
 						<p className="text-lg text-neutral-300">
 							문제 {currentQuestionIndex + 1} / {questions.length}

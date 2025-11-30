@@ -1,4 +1,4 @@
-import { ScrapCardData } from "@/types/category";
+import { ScrapCardData } from "@/types/scrapCard";
 import { sortByKorean, sortByDateDesc, type SortType } from "@/utils/sorting";
 
 export type { SortType };

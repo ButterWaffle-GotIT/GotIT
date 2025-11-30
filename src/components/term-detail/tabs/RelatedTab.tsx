@@ -9,8 +9,7 @@ import {
 	ScrapIcon,
 	ChevronRightIcon,
 } from "@/components/icons";
-import { categoryConfig } from "@/components/ui/category/config";
-import { getCategoryType } from "@/lib/category";
+import { CATEGORIES, getCategoryType } from "@/config/categories";
 import { useScrapToggle } from "@/hooks/useScrapToggle";
 
 interface RelatedTabProps {
@@ -44,7 +43,7 @@ function RelatedTermCard({ term }: { term: TermIndexItem }) {
 	const { bookmarked, handleToggle } = useScrapToggle(term.id);
 
 	const category = getCategoryType(term.primaryTag);
-	const config = categoryConfig[category];
+	const config = CATEGORIES[category];
 	const CategoryIcon = config.icon;
 
 	const handleBookmark = (e: React.MouseEvent) => {

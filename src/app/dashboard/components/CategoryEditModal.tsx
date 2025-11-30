@@ -3,9 +3,9 @@
 import React, { useState, useEffect } from "react";
 import {
 	type CategoryType,
-	categoryConfig,
-	categoryLabels,
-} from "@/components/ui/category/config";
+	CATEGORIES,
+	CATEGORY_KEYS,
+} from "@/config/categories";
 
 interface CategoryEditModalProps {
 	isOpen: boolean;
@@ -13,19 +13,6 @@ interface CategoryEditModalProps {
 	currentCategory: CategoryType;
 	onSave: (category: CategoryType) => Promise<void>;
 }
-
-const selectableCategories: CategoryType[] = [
-	"all",
-	"frontend",
-	"backend",
-	"uxui",
-	"ai",
-	"cloud",
-	"data",
-	"security",
-	"devops",
-	"business",
-];
 
 export default function CategoryEditModal({
 	isOpen,
@@ -73,8 +60,8 @@ export default function CategoryEditModal({
 				</h2>
 
 				<div className="mb-8 flex flex-wrap justify-center gap-3">
-					{selectableCategories.map((category) => {
-						const config = categoryConfig[category];
+					{CATEGORY_KEYS.map((category) => {
+						const config = CATEGORIES[category];
 						const IconComponent = config.icon;
 						const isSelected = selectedCategory === category;
 
@@ -93,9 +80,7 @@ export default function CategoryEditModal({
 								>
 									<IconComponent className="h-4 w-4 text-white" />
 								</div>
-								<span className="text-sm text-white">
-									{categoryLabels[category]}
-								</span>
+								<span className="text-sm text-white">{config.label}</span>
 							</button>
 						);
 					})}

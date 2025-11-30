@@ -6,8 +6,7 @@ import { useShare } from "@/hooks/useShare";
 import type { TermIndexItem } from "@/lib/terms";
 import { ScrapIcon, ShareIcon, HashtagIcon } from "@/components/icons";
 import { CategoryChip } from "@/components/ui/category/CategoryChip";
-import { getCategoryType } from "@/lib/category";
-import { categorySelectedColors } from "@/components/ui/category/config";
+import { CATEGORIES, getCategoryType } from "@/config/categories";
 
 interface SearchResultCardProps {
 	item: TermIndexItem;
@@ -88,7 +87,7 @@ export default function SearchResultCard({ item }: SearchResultCardProps) {
 					{item.tags?.slice(0, 3).map((tag, index) => {
 						const isFirstTag = index === 0;
 						const bgColor = isFirstTag
-							? categorySelectedColors[category]
+							? CATEGORIES[category].selectedColor
 							: "bg-gray-900";
 						const textColor = isFirstTag ? "text-white" : "text-gray-300";
 

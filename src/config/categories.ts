@@ -134,6 +134,21 @@ export const CATEGORIES: Record<CategoryType, CategoryConfig> = {
  */
 export const CATEGORY_KEYS = Object.keys(CATEGORIES) as CategoryType[];
 
+/**
+ * 카테고리 화면 표시용 2줄 배열
+ */
+export const CATEGORY_ROWS: [CategoryType[], CategoryType[]] = [
+	["all", "frontend", "backend", "uxui", "ai"],
+	["cloud", "data", "security", "devops", "business"],
+];
+
+/**
+ * "all"을 제외한 선택 가능한 카테고리 목록
+ */
+export const SELECTABLE_CATEGORIES = CATEGORY_KEYS.filter(
+	(key) => key !== "all"
+) as Exclude<CategoryType, "all">[];
+
 // ============================================================================
 // 유틸리티 함수들
 // ============================================================================
@@ -148,22 +163,20 @@ export function getCategoryLabel(category: string): string {
 
 /**
  * 한글 라벨 → 영문 카테고리 타입 역매핑
- *
- * primaryTag나 사용자 입력 등 다양한 형태의 한글 라벨을 처리합니다.
  */
 const LABEL_TO_CATEGORY: Record<string, CategoryType> = {
 	전체: "all",
 	프론트엔드: "frontend",
 	백엔드: "backend",
 	"UX/UI": "uxui",
-	"UI/UX": "uxui", // 역순 허용
+	"UI/UX": "uxui",
 	"UX/UI디자인": "uxui",
 	"UI/UX디자인": "uxui",
 	AI: "ai",
 	클라우드: "cloud",
 	데이터: "data",
 	"보안/네트워크": "security",
-	"보안-네트워크": "security", // 하이픈 형태 허용
+	"보안-네트워크": "security",
 	DevOps: "devops",
 	IT비즈니스: "business",
 };
@@ -176,81 +189,3 @@ const LABEL_TO_CATEGORY: Record<string, CategoryType> = {
 export function getCategoryType(label: string): CategoryType {
 	return LABEL_TO_CATEGORY[label] || "all";
 }
-
-// ============================================================================
-// 레거시 호환성을 위한 Export
-// (기존 코드가 동작하도록 유지, 점진적으로 CATEGORIES 사용으로 마이그레이션)
-// ============================================================================
-
-/**
- * @deprecated CATEGORIES를 직접 사용하세요
- */
-export const categoryConfig = Object.fromEntries(
-	CATEGORY_KEYS.map((key) => [
-		key,
-		{
-			icon: CATEGORIES[key].icon,
-			bgColor: CATEGORIES[key].bgColor,
-		},
-	])
-) as Record<CategoryType, { icon: ElementType; bgColor: string }>;
-
-/**
- * @deprecated CATEGORIES를 직접 사용하세요
- */
-export const categoryLabels = Object.fromEntries(
-	CATEGORY_KEYS.map((key) => [key, CATEGORIES[key].label])
-) as Record<CategoryType, string>;
-
-/**
- * @deprecated CATEGORIES를 직접 사용하세요
- */
-export const categoryHoverColors = Object.fromEntries(
-	CATEGORY_KEYS.map((key) => [key, CATEGORIES[key].hoverColor])
-) as Record<CategoryType, string>;
-
-/**
- * @deprecated CATEGORIES를 직접 사용하세요
- */
-export const categorySelectedColors = Object.fromEntries(
-	CATEGORY_KEYS.map((key) => [key, CATEGORIES[key].selectedColor])
-) as Record<CategoryType, string>;
-
-/**
- * @deprecated getCategoryType()과 CATEGORIES에서 icon을 사용하세요
- */
-export const categoryIcons: Record<string, ElementType> = Object.fromEntries(
-	CATEGORY_KEYS.map((key) => [CATEGORIES[key].label, CATEGORIES[key].icon])
-);
-
-/**
- * @deprecated getCategoryLabel()과 CATEGORIES를 사용하세요
- */
-export const categoryColors: Record<string, string> = Object.fromEntries(
-	CATEGORY_KEYS.map((key) => [CATEGORIES[key].label, CATEGORIES[key].bgColor])
-);
-
-/**
- * @deprecated getCategoryLabel()과 CATEGORIES를 사용하세요
- */
-export const categoryHoverStyles: Record<string, string> = Object.fromEntries(
-	CATEGORY_KEYS.map((key) => [
-		CATEGORIES[key].label,
-		CATEGORIES[key].hoverColor + " hover:outline-white-50",
-	])
-);
-
-/**
- * @deprecated getCategoryLabel()과 CATEGORIES를 사용하세요
- */
-export const categoryActiveStyles: Record<string, string> = Object.fromEntries(
-	CATEGORY_KEYS.map((key) => [
-		CATEGORIES[key].label,
-		CATEGORIES[key].selectedColor + " outline-white",
-	])
-);
-
-/**
- * @deprecated 영문 카테고리명을 사용하세요
- */
-export const CATEGORY_LABELS: Record<string, string> = categoryLabels;
