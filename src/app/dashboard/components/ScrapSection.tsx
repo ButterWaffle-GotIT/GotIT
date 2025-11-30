@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useState, useRef, useEffect } from "react";
 import { ScrapIcon } from "@/components/icons/ic_scrap";
 import { SortIcon } from "@/components/icons/ic_sort";
 import { ChevronDownIcon } from "@/components/icons/ic_chevron_down";
@@ -8,12 +9,24 @@ import { categoryIcons, ScrapCardData } from "@/types/category";
 import CategoryTag from "./CategoryTag";
 import ScrapCard from "./ScrapCard";
 
+type SortType = "latest" | "alphabetical";
+
 interface ScrapSectionProps {
 	totalCount: number;
 	selectedCategory: string;
 	onCategorySelect: (category: string) => void;
 	cards: ScrapCardData[];
 	isLoading?: boolean;
+}
+
+function getCharTypeOrder(str: string): number {
+	if (!str) return 4;
+	const char = str.charAt(0);
+
+	if (/[0-9]/.test(char)) return 1;
+	if (/[^0-9a-zA-Z가-힣]/.test(char)) return 2;
+	if (/[가-힣]/.test(char)) return 3;
+	return 4;
 }
 
 export default function ScrapSection({
@@ -24,6 +37,41 @@ export default function ScrapSection({
 	isLoading = false,
 }: ScrapSectionProps) {
 	const categories = Object.keys(categoryIcons);
+	const [sortType, setSortType] = useState<SortType>("latest");
+	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+	const dropdownRef = useRef<HTMLDivElement>(null);
+
+	useEffect(() => {
+		const handleClickOutside = (event: MouseEvent) => {
+			if (
+				dropdownRef.current &&
+				!dropdownRef.current.contains(event.target as Node)
+			) {
+				setIsDropdownOpen(false);
+			}
+		};
+
+		document.addEventListener("mousedown", handleClickOutside);
+		return () => document.removeEventListener("mousedown", handleClickOutside);
+	}, []);
+
+	const sortedCards = [...cards].sort((a, b) => {
+		if (sortType === "latest") {
+			return new Date(b.date).getTime() - new Date(a.date).getTime();
+		} else {
+			const termA = a.term;
+			const termB = b.term;
+
+			const priorityA = getCharTypeOrder(termA);
+			const priorityB = getCharTypeOrder(termB);
+
+			if (priorityA !== priorityB) {
+				return priorityA - priorityB;
+			}
+
+			return termA.localeCompare(termB, "ko", { sensitivity: "base" });
+		}
+	});
 
 	return (
 		<div className="glass flex w-full flex-col gap-8 rounded-3xl bg-white/10 px-9 py-10">
@@ -31,9 +79,10 @@ export default function ScrapSection({
 				<div className="flex items-center gap-[0.69rem]">
 					<div className="flex items-center justify-center rounded-[0.6rem] bg-linear-to-r from-[#6E50C8] to-[#CE5E61] p-[0.58rem]">
 						<ScrapIcon
-							className="h-4 w-4 text-gray-700"
+							className="h-4 w-4 text-white"
 							width={16}
 							height={16}
+							filled={true}
 						/>
 					</div>
 					<div className="flex flex-col">
@@ -44,14 +93,44 @@ export default function ScrapSection({
 					</div>
 				</div>
 
-				<div className="flex items-center gap-1">
-					<SortIcon className="h-4 w-4 text-gray-50" width={16} height={16} />
-					<span className="text-button-small text-gray-50">최신순</span>
-					<ChevronDownIcon
-						className="h-4 w-4 text-gray-50"
-						width={16}
-						height={16}
-					/>
+				<div className="relative" ref={dropdownRef}>
+					<button
+						className="flex items-center gap-1"
+						onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+					>
+						<SortIcon className="h-4 w-4 text-gray-50" width={16} height={16} />
+						<span className="text-button-small text-gray-50">
+							{sortType === "latest" ? "최신순" : "가나다순"}
+						</span>
+						<ChevronDownIcon
+							className="h-4 w-4 text-gray-50"
+							width={16}
+							height={16}
+						/>
+					</button>
+
+					{isDropdownOpen && (
+						<div className="absolute top-full right-0 z-50 mt-2 flex w-30 flex-col overflow-hidden rounded-lg border border-gray-700 bg-gray-900">
+							<button
+								className="text-body4 px-4 py-3 text-left text-gray-50 transition-colors hover:bg-gray-800"
+								onClick={() => {
+									setSortType("latest");
+									setIsDropdownOpen(false);
+								}}
+							>
+								최신순
+							</button>
+							<button
+								className="text-body4 px-4 py-3 text-left text-gray-50 transition-colors hover:bg-gray-800"
+								onClick={() => {
+									setSortType("alphabetical");
+									setIsDropdownOpen(false);
+								}}
+							>
+								가나다순
+							</button>
+						</div>
+					)}
 				</div>
 			</div>
 
@@ -96,7 +175,7 @@ export default function ScrapSection({
 				</div>
 			) : (
 				<div className="grid grid-cols-3 gap-x-4 gap-y-4">
-					{cards.map((card) => (
+					{sortedCards.map((card) => (
 						<ScrapCard key={card.id} card={card} />
 					))}
 				</div>
