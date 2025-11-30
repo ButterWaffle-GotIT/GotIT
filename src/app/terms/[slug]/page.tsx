@@ -8,6 +8,7 @@ import { toggleBookmark, isBookmarked } from "@/lib/bookmarks";
 import { HeroSection, TabSection, Footer } from "@/components/term-detail";
 import { useAuth } from "@/contexts/AuthContext";
 import { useToast } from "@/contexts/ToastContext";
+import { useShare } from "@/hooks/useShare";
 
 export default function TermDetailPage({
 	params,
@@ -17,6 +18,7 @@ export default function TermDetailPage({
 	const router = useRouter();
 	const { user, isScraped, toggleScrap } = useAuth();
 	const { showLoginToast, showToast } = useToast();
+	const { shareCurrentPage } = useShare();
 	const [term, setTerm] = useState<TermDetail | null>(null);
 	const [relatedTerms, setRelatedTerms] = useState<TermIndexItem[]>([]);
 	const [bookmarked, setBookmarked] = useState(false);
@@ -70,15 +72,7 @@ export default function TermDetailPage({
 
 	const handleShare = async () => {
 		if (!term) return;
-		try {
-			await navigator.share({
-				title: term.term.en || term.term.ko,
-				text: term.summary,
-				url: window.location.href,
-			});
-		} catch {
-			await navigator.clipboard.writeText(window.location.href);
-		}
+		await shareCurrentPage(term.term.en || term.term.ko, term.summary);
 	};
 
 	if (loading) {

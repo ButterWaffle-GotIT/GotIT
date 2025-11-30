@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { type CategoryType } from "@/components/ui/category/config";
-import CategoryButton from "@/app/onboarding/components/categoruButton";
+import CategoryButton from "@/app/onboarding/components/CategoryButton";
 import { generateQuizQuestions, type QuizQuestion } from "@/lib/quiz";
 import { ArrowRightIcon } from "@/components/icons/ic_arrow_right";
 import { useToast } from "@/contexts/ToastContext";

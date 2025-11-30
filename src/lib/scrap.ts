@@ -1,6 +1,7 @@
 import type { TermIndexItem } from "@/lib/terms";
 import type { ScrapCardData } from "@/types/category";
 import { getCategoryLabel, getCategoryType } from "@/lib/category";
+import { formatKoreanDate } from "@/utils/date";
 
 /**
  * TermIndexItem을 ScrapCardData로 변환
@@ -16,13 +17,6 @@ export function termToScrapCard(term: TermIndexItem): ScrapCardData {
 		term: term.termEn || term.termKo,
 		tag: term.tags[0] || "",
 		description: term.summary,
-		date: new Date()
-			.toLocaleDateString("ko-KR", {
-				year: "numeric",
-				month: "2-digit",
-				day: "2-digit",
-			})
-			.replace(/\. /g, ".")
-			.replace(/\.$/, ""),
+		date: formatKoreanDate(),
 	};
 }

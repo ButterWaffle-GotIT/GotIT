@@ -3,6 +3,7 @@
 import { SearchIcon } from "@/components/icons/ic_search";
 import { useTypingAnimation } from "@/hooks/useTypingAnimation";
 import { LogoText } from "../icons";
+import { BRAND_GRADIENT } from "@/constants/theme";
 
 interface SearchBarProps {
 	value: string;
@@ -19,8 +20,9 @@ export default function SearchBar({ value, onChange }: SearchBarProps) {
 
 			{/* 검색 입력창 컨테이너 */}
 			<div className="relative h-20 w-full">
-				{/* 1. 아우라 레이어 (opacity 30 + blur + gradient border) */}
-				<div className="absolute top-0 left-0 h-20 w-[864px] rounded-[20px] border border-violet-700 bg-linear-to-r from-violet-700 to-red-400 opacity-30 blur-sm"></div>
+				<div
+					className={`absolute top-0 left-0 h-20 w-[864px] rounded-[20px] border border-violet-700 ${BRAND_GRADIENT.bg} opacity-30 blur-sm`}
+				></div>
 
 				{/* 2. 실제 입력창 (내부) */}
 				<div className="absolute top-[4px] left-[4px] inline-flex w-[856px] items-center justify-between overflow-hidden rounded-[20px] bg-black/70 px-7 py-4 outline outline-1 outline-offset-[-1px] outline-violet-700">

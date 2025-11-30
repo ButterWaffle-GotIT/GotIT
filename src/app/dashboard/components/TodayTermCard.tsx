@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { CalendarIcon } from "@/components/icons/ic_calendar";
 import { ArrowRightIcon } from "@/components/icons/ic_arrow_right";
 import { LightIcon } from "@/components/icons/ic_light";
+import { BRAND_GRADIENT } from "@/constants/theme";
 
 interface TermData {
 	title: string;
@@ -25,7 +26,9 @@ const TodayTermCard: React.FC<{ data: TermData }> = ({ data }) => {
 		<div className="glass fancy-outline inline-flex w-full flex-col items-start justify-start gap-3 rounded-[20px] bg-white/10 px-9 py-10">
 			<div className="inline-flex items-center justify-between self-stretch">
 				<div className="flex items-start justify-start gap-2.5">
-					<div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-violet-700 to-red-400 p-2.5">
+					<div
+						className={`flex items-center justify-center overflow-hidden rounded-lg ${BRAND_GRADIENT.bg} p-2.5`}
+					>
 						<CalendarIcon width={24} height={24} className="text-white" />
 					</div>
 					<div className="inline-flex w-24 flex-col items-start justify-start">
@@ -39,7 +42,7 @@ const TodayTermCard: React.FC<{ data: TermData }> = ({ data }) => {
 				</div>
 
 				<button
-					className="inline-flex items-center justify-center gap-2 overflow-hidden rounded-lg bg-gradient-to-r from-violet-700 to-red-400 py-2 pr-5 pl-6"
+					className={`inline-flex items-center justify-center gap-2 overflow-hidden rounded-lg ${BRAND_GRADIENT.bg} py-2 pr-5 pl-6`}
 					onClick={handleClick}
 				>
 					<div className="justify-center font-['Pretendard'] text-xs leading-5 font-bold text-white">
@@ -61,13 +64,15 @@ const TodayTermCard: React.FC<{ data: TermData }> = ({ data }) => {
 				))}
 			</div>
 
-			<div className="inline-flex h-20 flex-col items-start justify-start gap-1 self-stretch rounded-xl bg-black/60 bg-gradient-to-r from-violet-700 to-red-400 px-5 py-3.5">
-				<div className="justify-center font-['Pretendard'] text-xs leading-4 font-light text-gray-500">
+			<div
+				className={`inline-flex h-20 flex-col items-start justify-start gap-1 self-stretch rounded-xl bg-black/60 ${BRAND_GRADIENT.bg} px-5 py-3.5`}
+			>
+				<div className="justify-center font-['Pretendard'] text-xs leading-4 font-light text-gray-300">
 					쉬운 한줄 정리
 				</div>
 				<div className="inline-flex items-center justify-start gap-3">
 					<LightIcon width={20} height={20} className="text-primary-300" />
-					<div className="justify-center font-['Pretendard'] text-base leading-6 font-normal text-gray-50">
+					<div className="justify-center text-sm leading-5 font-normal text-gray-50">
 						{data.summary}
 					</div>
 				</div>

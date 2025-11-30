@@ -1,7 +1,7 @@
 "use client";
 
 import { type CategoryType } from "@/components/ui/category/config";
-import CategoryButton from "./categoruButton";
+import CategoryButton from "./CategoryButton";
 
 interface CategoryListProps {
 	selectedCategory: CategoryType | null;

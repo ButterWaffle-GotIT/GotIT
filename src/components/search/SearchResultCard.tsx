@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useScrapToggle } from "@/hooks/useScrapToggle";
+import { useShare } from "@/hooks/useShare";
 import type { TermIndexItem } from "@/lib/terms";
 import { ScrapIcon, ShareIcon, HashtagIcon } from "@/components/icons";
 import { CategoryChip } from "@/components/ui/category/CategoryChip";
@@ -15,6 +16,7 @@ interface SearchResultCardProps {
 export default function SearchResultCard({ item }: SearchResultCardProps) {
 	const router = useRouter();
 	const { bookmarked, handleToggle } = useScrapToggle(item.id);
+	const { shareTerm } = useShare();
 	const category = getCategoryType(item.primaryTag);
 
 	const handleBookmark = (e: React.MouseEvent) => {
@@ -24,16 +26,7 @@ export default function SearchResultCard({ item }: SearchResultCardProps) {
 
 	const handleShare = async (e: React.MouseEvent) => {
 		e.stopPropagation();
-		const url = `${window.location.origin}/terms/${item.slug}`;
-		try {
-			await navigator.share({
-				title: item.termEn || item.termKo,
-				text: item.summary,
-				url: url,
-			});
-		} catch {
-			await navigator.clipboard.writeText(url);
-		}
+		await shareTerm(item.termEn || item.termKo, item.summary, item.slug);
 	};
 
 	const handleClick = () => {
