@@ -35,7 +35,7 @@ const tagData: TagData[] = [
 	},
 	{ name: "백엔드", color: "bg-green-600", IconComponent: CategoryBackendIcon },
 	{
-		name: "UX/UI디자인",
+		name: "UX/UI",
 		color: "bg-rose-400",
 		IconComponent: CategoryUiuxIcon,
 	},
