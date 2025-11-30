@@ -38,9 +38,9 @@ export function HeroSection() {
 
 					{/* Main Headline */}
 					<h1 className="max-w-4xl text-[clamp(2.5rem,8vw,6rem)] leading-[0.95] font-light tracking-tight text-white">
-						개발자 말,
+						누구나 쉽게 이해하는
 						<br />
-						<span className="font-medium text-gray-400">이제 알아듣자.</span>
+						<span className="font-medium text-gray-400">IT 용어 사전</span>
 					</h1>
 				</motion.div>
 
@@ -61,10 +61,10 @@ export function HeroSection() {
 					style={{ opacity }}
 					className="mb-12 flex items-end justify-between"
 				>
-					<p className="max-w-xs text-sm leading-relaxed text-gray-500">
-						PM, 디자이너, 마케터, 취준생까지.
+					<p className="max-w-md text-sm leading-relaxed text-gray-500">
+						개발자와의 소통이 어려운 비전공자를 위해,
 						<br />
-						IT 용어의 벽을 허무는 가장 쉬운 방법.
+						실무 용어를 쉬운 예시로 풀이해 드립니다.
 					</p>
 
 					<button

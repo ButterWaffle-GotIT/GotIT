@@ -18,7 +18,7 @@ export function CTASection() {
 						transition={{ duration: 0.6 }}
 						className="text-3xl font-light text-white md:text-5xl"
 					>
-						지금 바로 검색해보세요
+						궁금한 용어를 검색해보세요
 					</motion.h2>
 					<motion.div
 						initial={{ opacity: 0, y: 20 }}

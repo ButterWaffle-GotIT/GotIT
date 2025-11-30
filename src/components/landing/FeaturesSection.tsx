@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 export function FeaturesSection() {
 	const features = [
-		{ num: "01", title: "한 줄 요약", desc: "핵심만 빠르게" },
-		{ num: "02", title: "실제 대화", desc: "현장의 뉘앙스까지" },
-		{ num: "03", title: "연관 용어", desc: "맥락을 이해하며" },
+		{ num: "01", title: "핵심 요약", desc: "복잡한 설명 대신 요점만 간결하게" },
+		{ num: "02", title: "실무 예시", desc: "실제 대화 상황으로 뉘앙스 파악" },
+		{ num: "03", title: "연관 용어", desc: "함께 알아두면 좋은 개념 추천" },
 	];
 
 	const stats = [
