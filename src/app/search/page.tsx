@@ -59,15 +59,15 @@ export default function SearchPage() {
 
 	return (
 		<>
-			<main className="flex w-full justify-center pt-20">
+			<main className="flex w-full flex-col items-center pt-20">
 				<div className="flex w-[1040px] flex-col items-center gap-20 px-20 pt-48 pb-20">
-					{/* A. 검색 및 필터링 섹션 */}
+					{/* 검색 및 필터링 섹션 */}
 					<section className="flex flex-col items-center justify-start gap-10 self-stretch">
 						<SearchBar value={searchTerm} onChange={handleSearchChange} />
 						<TagList selectedTag={selectedTag} onTagSelect={handleTagSelect} />
 					</section>
 
-					{/* B. 검색 결과 섹션 */}
+					{/* 검색 결과 섹션 */}
 					{(debouncedSearchTerm.trim().length >= 2 ||
 						selectedTag !== "전체") && (
 						<SearchResultsSection
@@ -77,12 +77,16 @@ export default function SearchPage() {
 							searchResults={searchResults}
 						/>
 					)}
-
-					{/* C. 추천 용어 섹션 */}
-					{debouncedSearchTerm.trim().length < 2 && selectedTag === "전체" && (
-						<RecommendedTermsSection />
-					)}
 				</div>
+
+				{/* 추천 용어 섹션 */}
+				{debouncedSearchTerm.trim().length < 2 && selectedTag === "전체" && (
+					<div className="flex w-full justify-center pb-40">
+						<div className="w-content px-20">
+							<RecommendedTermsSection />
+						</div>
+					</div>
+				)}
 			</main>
 		</>
 	);

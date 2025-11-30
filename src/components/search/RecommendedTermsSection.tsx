@@ -31,11 +31,11 @@ export default function RecommendedTermsSection() {
 		: recommendedTerms.slice(0, 3);
 
 	return (
-		<section className="flex flex-col items-start justify-start gap-5 self-stretch">
-			<div className="self-stretch font-['Pretendard'] text-sm leading-5 font-semibold text-gray-500">
+		<section className="flex flex-col items-center justify-start gap-5 self-stretch">
+			<div className="self-stretch text-left font-['Pretendard'] text-sm leading-5 font-semibold text-gray-500">
 				추천 용어
 			</div>
-			<div className="inline-flex flex-wrap items-start justify-start gap-6 self-stretch">
+			<div className="inline-flex flex-wrap items-start justify-center gap-6 self-stretch">
 				{displayedRecommendedTerms.map((term, index) => (
 					<RecommendedTermCard
 						key={index}
