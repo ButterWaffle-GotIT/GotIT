@@ -1,0 +1,20 @@
+{
+	"id": 3062,
+	"slug": "public-cloud",
+	"term": { "ko": "퍼블릭 클라우드", "en": "Public Cloud" },
+	"aliases": ["공용 클라우드"],
+	"summary": "Amazon Web Services (AWS), Google Cloud Platform (GCP), Microsoft Azure 등 외부 서비스 제공업체가 소유하고 운영하며, 인터넷을 통해 일반 대중에게 제공되는 클라우드 서비스.",
+	"onelinerForNonTech": "거대 IT 기업들이 소유한 서버 자원을 인터넷을 통해 빌려 쓰는, 누구나 접근 가능한 '공용 인프라 서비스'.",
+	"description": "퍼블릭 클라우드는 가장 일반적인 클라우드 모델로, 서비스의 유연성, 확장성, 비용 효율성이 뛰어나다. 사용자는 하드웨어를 소유할 필요가 없으며, 사용한 만큼만 비용을 지불한다. 하지만 데이터의 물리적 위치나 특정 자원 구성에 대한 제어 권한은 프라이빗 클라우드보다 낮다.",
+	"tags": ["클라우드", "IT비즈니스", "DevOps"],
+	"primaryTag": "클라우드",
+	"relatedIds": [3061, 3063, 3011],
+	"confusableIds": [3061],
+	"useCases": [
+		{ "role": "PM", "text": "글로벌 시장 확장을 위해 퍼블릭 클라우드의 전 세계 리전을 활용해야 합니다." },
+		{ "role": "Dev", "text": "초기 스타트업은 퍼블릭 클라우드를 활용하여 인프라 구축 비용을 최소화하는 것이 좋습니다." }
+	],
+	"keywords": ["public-cloud", "aws", "gcp", "azure", "공용"],
+	"level": "beginner",
+	"updatedAt": "2025-11-30"
+}

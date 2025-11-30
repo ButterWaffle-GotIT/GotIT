@@ -1,0 +1,20 @@
+{
+	"id": 1058,
+	"slug": "design-token",
+	"term": { "ko": "디자인 토큰", "en": "Design Token" },
+	"aliases": ["디자인 변수"],
+	"summary": "디자인 시스템에서 색상 값, 폰트 크기, 여백 등 시각적 속성을 이름으로 정의한 재사용 가능한 변수.",
+	"onelinerForNonTech": "앱의 모든 파란색을 'primary-color'라는 이름으로 정의해 두고, 나중에 파란색을 보라색으로 바꿀 때 'primary-color'만 바꾸면 모든 파란색이 한 번에 바뀌도록 하는 코드 변수.",
+	"description": "디자인 토큰은 디자인 툴과 실제 개발 코드(CSS, Sass, JavaScript 등) 간의 간극을 메워주는 역할을 한다. 디자이너가 토큰을 변경하면, 개발 환경의 코드가 자동으로 업데이트되어 UI의 일관성을 보장하고, 테마 변경(Theming)을 용이하게 한다. 아토믹 디자인 구현에 필수적이다.",
+	"tags": ["UX/UI", "디자인", "프론트엔드"],
+	"primaryTag": "UX/UI",
+	"relatedIds": [1021, 1044, 1055],
+	"confusableIds": [1041],
+	"useCases": [
+		{ "role": "Dev", "text": "모든 스타일 값을 디자인 토큰으로 대체하여, 디자이너가 피그마(Figma)에서 색상을 변경하면 자동으로 반영되도록 했습니다." },
+		{ "role": "Design", "text": "다크 모드 구현을 위해 'background-primary' 토큰의 값을 변경하여 모든 컴포넌트에 일괄 적용했습니다." }
+	],
+	"keywords": ["design-token", "토큰", "디자인시스템", "figma", "css"],
+	"level": "advanced",
+	"updatedAt": "2025-11-30"
+}

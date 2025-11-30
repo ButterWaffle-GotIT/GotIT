@@ -1,0 +1,20 @@
+{
+	"id": 1059,
+	"slug": "suspense",
+	"term": { "ko": "Suspense", "en": "Suspense" },
+	"aliases": ["서스펜스"],
+	"summary": "React 애플리케이션에서 컴포넌트가 비동기 데이터나 코드를 로딩하는 동안, 대체 UI (로딩 스피너 등)를 보여주도록 선언적으로 처리하는 기능.",
+	"onelinerForNonTech": "데이터를 기다리는 동안 앱이 멈추지 않고, '데이터를 가져오는 중'이라는 친절한 안내 화면을 보여주게 만드는 React의 기능.",
+	"description": "Suspense는 데이터 페칭(Data Fetching), 코드 스플리팅(Code Splitting) 등 비동기 로딩 상태를 컴포넌트 트리 상위에서 일괄적으로 처리할 수 있게 해준다. 개발자는 로딩 상태를 컴포넌트 로직 깊은 곳에 구현하는 대신, `<Suspense fallback={...}>` 형태로 선언할 수 있어 코드를 단순화하고 UX를 개선한다. 이는 Concurrent Mode와 함께 React의 새로운 비동기 처리 패러다임을 이룬다.",
+	"tags": ["프론트엔드", "UX/UI", "백엔드"],
+	"primaryTag": "프론트엔드",
+	"relatedIds": [1004, 1022, 1043],
+	"confusableIds": [1043],
+	"useCases": [
+		{ "role": "Dev", "text": "로딩 상태를 컴포넌트별로 관리하는 대신, 최상위 레이어에 Suspense를 적용하여 데이터 로딩 UI를 통합했습니다." },
+		{ "role": "PM", "text": "Suspense 도입 후, 사용자들은 데이터가 느리게 로딩될 때 '앱이 멈췄다'고 느끼지 않고 긍정적인 로딩 경험을 얻고 있습니다." }
+	],
+	"keywords": ["suspense", "서스펜스", "리액트", "비동기", "로딩"],
+	"level": "advanced",
+	"updatedAt": "2025-11-30"
+}

@@ -1,0 +1,20 @@
+{
+	"id": 4084,
+	"slug": "hypothesis-testing",
+	"term": { "ko": "가설 검정", "en": "Hypothesis Testing" },
+	"aliases": ["통계적 검정"],
+	"summary": "모집단에 대한 주장이 통계적으로 의미 있는지 판단하기 위해 데이터를 사용하여 확인하는 통계적 추론 방법.",
+	"onelinerForNonTech": "우리가 '이렇다'고 생각하는 주장이 우연이 아니라 실제로 맞는 주장인지 데이터로 확인하는 과정.",
+	"description": "가설 검정은 귀무가설(Null Hypothesis)과 대립가설(Alternative Hypothesis)을 설정하고, 수집된 데이터를 분석하여 귀무가설을 기각할지 여부를 결정한다. A/B 테스트의 결과 해석, 신약의 효과 검증 등 데이터 기반의 의사 결정 과정에서 핵심적으로 사용된다. 유의 수준(p-value)을 통해 판단 기준을 설정한다.",
+	"tags": ["데이터", "AI", "IT비즈니스"],
+	"primaryTag": "데이터",
+	"relatedIds": [4005, 4053],
+	"confusableIds": [],
+	"useCases": [
+		{ "role": "Marketer", "text": "새로운 광고 배너가 전환율을 높인다는 가설 검정을 p-value 0.05 기준으로 진행했습니다." },
+		{ "role": "PM", "text": "A/B 테스트 결과를 가설 검정해보니, 새로운 디자인이 기존 디자인보다 통계적으로 유의미한 차이를 보이지 않았습니다." }
+	],
+	"keywords": ["hypothesis", "가설", "ab-test", "통계", "p-value"],
+	"level": "advanced",
+	"updatedAt": "2025-11-30"
+}

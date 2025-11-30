@@ -1,0 +1,20 @@
+{
+	"id": 3054,
+	"slug": "idp",
+	"term": { "ko": "IdP", "en": "Identity Provider" },
+	"aliases": ["신원 제공자"],
+	"summary": "사용자의 신원 정보(계정, 비밀번호, 속성 등)를 생성, 관리하고, 이 정보를 기반으로 서비스 제공자(SP)에게 인증 서비스를 제공하는 시스템.",
+	"onelinerForNonTech": "당신이 누구인지를 확인하고, '이 사람이 맞다'는 인증서를 발급하여 다른 서비스(식당, 호텔)에 대신 보증해주는 '중앙 신분 등록 시스템'.",
+	"description": "IdP는 SSO(Single Sign-On) 시스템의 핵심 구성 요소로, Kerberos나 SAML, OAuth와 같은 프로토콜을 사용하여 서비스 제공자에게 인증 Assertion을 보낸다. 사용자는 한 번의 로그인으로 여러 서비스에 접근할 수 있게 되어 편리하며, 중앙 집중식으로 계정을 관리하여 보안성도 높아진다.",
+	"tags": ["보안", "인증", "IT비즈니스"],
+	"primaryTag": "보안/네트워크",
+	"relatedIds": [3041, 3042, 3024],
+	"confusableIds": [3024],
+	"useCases": [
+		{ "role": "Dev", "text": "우리 서비스를 외부 IdP와 SAML로 연동하여 고객사 계정으로 SSO 로그인이 가능하도록 구현해야 합니다." },
+		{ "role": "PM", "text": "회사 정책상 모든 내부 서비스는 중앙 IdP를 통해 인증해야 합니다." }
+	],
+	"keywords": ["idp", "인증", "신원", "sso", "saml"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

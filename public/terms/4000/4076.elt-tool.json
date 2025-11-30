@@ -1,0 +1,20 @@
+{
+	"id": 4076,
+	"slug": "etl-tool",
+	"term": { "ko": "ETL 툴", "en": "ETL Tool" },
+	"aliases": ["ETL 솔루션"],
+	"summary": "다양한 소스에서 데이터를 추출(Extract), 변환(Transform), 적재(Load)하는 과정을 자동화하여 데이터 통합을 지원하는 소프트웨어.",
+	"onelinerForNonTech": "여러 곳에 흩어져 있는 데이터를 자동으로 가져와 깨끗하게 다듬고, 필요한 저장소에 넣어주는 기계.",
+	"description": "ETL 툴은 데이터 파이프라인 구축 시간을 단축하고, 복잡한 데이터 변환 로직을 코딩 없이 GUI 환경에서 설계할 수 있도록 돕는다. 데이터 거버넌스, 품질 검증, 스케줄링 기능을 내장하고 있어, 대규모의 데이터 웨어하우징 프로젝트나 데이터 마이그레이션 작업에 필수적으로 사용된다. Informatica, Pentaho 등이 대표적인 예이다.",
+	"tags": ["데이터", "DevOps", "IT비즈니스"],
+	"primaryTag": "데이터",
+	"relatedIds": [4031, 4033, 4073],
+	"confusableIds": [4032],
+	"useCases": [
+		{ "role": "Dev", "text": "ERP 데이터와 CRM 데이터를 통합하기 위해 ETL 툴을 활용하여 매일 새벽 데이터 배치를 실행해야 합니다." },
+		{ "role": "PM", "text": "ETL 툴을 사용하면 데이터 흐름 관리가 쉬워져 유지 보수 비용을 줄일 수 있을 겁니다." }
+	],
+	"keywords": ["etl-tool", "etl", "파이프라인", "통합", "솔루션"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

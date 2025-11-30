@@ -1,0 +1,20 @@
+{
+	"id": 3047,
+	"slug": "ddos-mitigation",
+	"term": { "ko": "DDoS 완화", "en": "DDoS Mitigation" },
+	"aliases": ["DDoS 방어"],
+	"summary": "분산 서비스 거부 공격(DDoS, 3034.dos.json)으로부터 시스템을 보호하기 위해, 공격 트래픽을 식별하고 필터링하여 정상적인 트래픽만 서비스에 도달하도록 하는 일련의 방어 조치.",
+	"onelinerForNonTech": "식당 문 앞에 몰려든 수백 명의 가짜 손님들을 '자동 감지 시스템'으로 걸러내서, 진짜 손님들만 들여보내는 방어 시스템.",
+	"description": "완화 전략에는 클라우드 기반의 방어 서비스(AWS Shield, Cloudflare), 트래픽 정화(Scrubbing), 속도 제한(Rate Limiting), CDN(4105.cdn.json)을 통한 부하 분산 등이 포함된다. 공격이 발생했을 때 서비스 가용성을 유지하는 것이 핵심 목표이며, 네트워크 계층부터 애플리케이션 계층까지 다계층 방어가 필요하다.",
+	"tags": ["보안/네트워크", "클라우드", "DevOps"],
+	"primaryTag": "보안/네트워크",
+	"relatedIds": [3034, 4105, 3043],
+	"confusableIds": [3034],
+	"useCases": [
+		{ "role": "Dev", "text": "대규모 L7 공격을 방어하기 위해 클라우드 WAF의 DDoS 완화 기능을 활성화하고 규칙을 강화했습니다." },
+		{ "role": "PM", "text": "서비스 인기가 높아지면서 DDoS 완화 비용이 급증하고 있으니, 비용 효율적인 방어 전략을 세워야 합니다." }
+	],
+	"keywords": ["ddos", "완화", "mitigation", "방어", "필터링"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

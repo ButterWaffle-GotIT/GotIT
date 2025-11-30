@@ -1,0 +1,20 @@
+{
+	"id": 3098,
+	"slug": "saas-based-service",
+	"term": { "ko": "SaaS 기반 서비스", "en": "SaaS-based Service" },
+	"aliases": ["SaaS형 도구"],
+	"summary": "클라우드 제공업체가 호스팅하고 관리하는 소프트웨어를 개발 및 운영에 활용하는 서비스 모델.",
+	"onelinerForNonTech": "Jira나 GitHub처럼, 소프트웨어를 직접 설치하거나 관리할 필요 없이 웹 브라우저로 접속해서 바로 쓰는 개발 및 운영 도구.",
+	"description": "DevOps에서 SaaS 기반 도구들은 초기 인프라 구축 및 관리 부담을 줄여 개발 및 운영 팀이 핵심 업무에 집중할 수 있게 한다. CI/CD 툴(Jenkins, GitLab CI 등)이나 모니터링 툴(Datadog, New Relic) 등이 SaaS 형태로 널리 제공되며, DevSecOps를 위한 보안 스캐닝 서비스도 SaaS로 많이 활용된다. 이는 클라우드 종속성을 줄이는 데 도움이 되기도 한다.",
+	"tags": ["DevOps", "IT비즈니스", "클라우드"],
+	"primaryTag": "DevOps",
+	"relatedIds": [3065, 3078, 3092],
+	"confusableIds": [3065],
+	"useCases": [
+		{ "role": "Dev", "text": "CI 파이프라인 관리를 위해 온프레미스 서버 대신 SaaS 기반의 GitLab CI를 도입했습니다." },
+		{ "role": "PM", "text": "SaaS 기반의 모니터링 툴을 사용하여 인프라 관리 리소스를 절감하고 최신 기능을 즉시 적용할 수 있었습니다." }
+	],
+	"keywords": ["saas-based-service", "saas", "클라우드", "도구", "운영"],
+	"level": "beginner",
+	"updatedAt": "2025-11-30"
+}

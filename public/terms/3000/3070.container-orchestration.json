@@ -1,0 +1,20 @@
+{
+	"id": 3070,
+	"slug": "container-orchestration",
+	"term": { "ko": "컨테이너 오케스트레이션", "en": "Container Orchestration" },
+	"aliases": ["컨테이너 관리"],
+	"summary": "다수의 컨테이너를 대규모로 배포, 관리, 확장, 네트워킹 및 로드 밸런싱하는 작업을 자동화하는 기술.",
+	"onelinerForNonTech": "수백 개의 작은 서버들(컨테이너)을 지휘봉을 들고 일사불란하게 움직이도록 통제하고 조정하는 '오케스트라 지휘자' 역할.",
+	"description": "마이크로서비스 환경에서는 수많은 컨테이너를 관리해야 하므로, 이 오케스트레이션 기술이 필수적이다. 쿠버네티스와 Docker Swarm이 대표적인 도구이다. 이는 컨테이너 기반의 클라우드 네이티브 아키텍처를 실현하는 핵심 기반 기술이다.",
+	"tags": ["클라우드", "DevOps", "백엔드"],
+	"primaryTag": "클라우드",
+	"relatedIds": [3001, 3000, 3068],
+	"confusableIds": [3000],
+	"useCases": [
+		{ "role": "Dev", "text": "컨테이너 오케스트레이션을 도입하여 배포 실패 시 자동 롤백 기능을 구현했습니다." },
+		{ "role": "PM", "text": "시스템의 복원력을 높이기 위해 컨테이너 장애 시 자동으로 대체 컨테이너를 생성하도록 설정해야 합니다." }
+	],
+	"keywords": ["orchestration", "오케스트레이션", "k8s", "컨테이너", "쿠버네티스"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

@@ -10,7 +10,7 @@
 	"onelinerForNonTech": "엑셀보다 똑똑한 데이터 질의 언어.",
 	"description": "SQL은 관계형 데이터베이스(RDB)에서 데이터를 정의하고 조작하는 표준 언어입니다. SELECT, INSERT, UPDATE, DELETE 등의 명령으로 데이터를 관리하며, MySQL, PostgreSQL 등에서 사용됩니다.",
 	"tags": ["AI", "데이터베이스", "쿼리"],
-	"primaryTag": "AI",
+	"primaryTag": "데이터",
 	"relatedIds": [],
 	"confusableIds": [],
 	"useCases": [

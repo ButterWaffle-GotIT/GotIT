@@ -1,0 +1,20 @@
+{
+	"id": 3075,
+	"slug": "serverless-platform",
+	"term": { "ko": "서버리스 플랫폼", "en": "Serverless Platform" },
+	"aliases": ["FaaS 플랫폼"],
+	"summary": "서버 관리 부담 없이 코드를 배포하고 실행할 수 있도록 지원하는 클라우드 환경 및 관련 도구 모음.",
+	"onelinerForNonTech": "'서버리스 함수' 외에, API, DB, 스토리지 등 서버리스 환경에서 필요한 모든 도구와 서비스를 통합 제공하는 클라우드 환경.",
+	"description": "서버리스는 FaaS(Function as a Service)로 대표되지만, 데이터베이스(DynamoDB), API 게이트웨이, 스토리지 등 서버리스 함수를 지원하는 다양한 서비스로 구성된 전체 플랫폼을 의미하기도 한다. 사용량에 따라 정확히 과금되며, 개발팀의 운영 부담을 최소화하는 것을 목표로 한다.",
+	"tags": ["클라우드", "백엔드", "DevOps"],
+	"primaryTag": "클라우드",
+	"relatedIds": [3014, 4103, 3074],
+	"confusableIds": [3074],
+	"useCases": [
+		{ "role": "Dev", "text": "서버리스 플랫폼을 활용하여 신규 백엔드 기능을 마이크로서비스 형태로 빠르게 구현했습니다." },
+		{ "role": "PM", "text": "서버리스 플랫폼 도입을 통해 유지보수 인력을 코딩에 집중시키고, 운영 리스크를 클라우드 제공업체에 위임했습니다." }
+	],
+	"keywords": ["serverless-platform", "faas", "서버리스", "lambda", "플랫폼"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

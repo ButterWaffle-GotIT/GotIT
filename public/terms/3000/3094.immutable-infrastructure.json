@@ -1,0 +1,20 @@
+{
+	"id": 3094,
+	"slug": "immutable-infrastructure",
+	"term": { "ko": "불변 인프라", "en": "Immutable Infrastructure" },
+	"aliases": ["변경 불가 인프라"],
+	"summary": "한 번 배포된 서버나 인프라 구성 요소를 절대 수정하지 않고, 변경이 필요할 경우 기존 인스턴스를 파괴하고 새로운 설정이 적용된 인스턴스로 교체하는 인프라 관리 패러다임.",
+	"onelinerForNonTech": "서버에 문제가 생기거나 설정이 바뀌어야 할 때, 고장 난 부품을 수리하는 대신 새 차로 통째로 교체하는 방식.",
+	"description": "DevOps에서 환경 간의 일관성을 극대화하고 형상 불일치 (Configuration Drift)를 방지하는 데 가장 강력한 방법이다. 도커 및 쿠버네티스와 같은 컨테이너 기술의 등장으로 널리 확산되었으며, IaC 도구를 통해 구현된다.",
+	"tags": ["DevOps", "클라우드", "백엔드"],
+	"primaryTag": "DevOps",
+	"relatedIds": [3015, 3000, 3001],
+	"confusableIds": [3085],
+	"useCases": [
+		{ "role": "Dev", "text": "불변 인프라 원칙에 따라, 서버에 긴급 패치를 적용할 때도 새 서버 이미지를 빌드하여 교체 배포합니다." },
+		{ "role": "PM", "text": "개발, 테스트, 운영 환경 간의 설정 차이가 발생하지 않도록 불변 인프라를 전면 도입했습니다." }
+	],
+	"keywords": ["immutable-infrastructure", "불변", "일관성", "컨테이너", "배포"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

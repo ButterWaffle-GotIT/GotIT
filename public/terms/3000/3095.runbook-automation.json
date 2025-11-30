@@ -1,0 +1,20 @@
+{
+	"id": 3095,
+	"slug": "runbook-automation",
+	"term": { "ko": "런북 자동화", "en": "Runbook Automation" },
+	"aliases": ["운영 절차 자동화"],
+	"summary": "시스템 장애 발생 시 사람이 수동으로 수행하던 대응 절차(Runbook)를 코드로 작성하고 자동화하여, 오류 대응 시간을 단축하고 일관성을 확보하는 프로세스.",
+	"onelinerForNonTech": "시스템이 '장애 발생 알람'을 울리면, 사람이 '대응 매뉴얼'을 보고 수동으로 고치던 작업을 컴퓨터가 자동으로 처리하게 하는 것.",
+	"description": "SRE 문화의 핵심 요소로, 반복되는 수동 작업(Toil)을 제거하고 운영 효율성을 높인다. 오류 버짓을 보존하고, 인적 오류(Human Error)를 최소화하는 데 중요한 역할을 한다. 자동화된 런북은 모니터링 툴의 경보에 의해 자동으로 실행되는 경우가 많다.",
+	"tags": ["DevOps", "SRE", "IT비즈니스"],
+	"primaryTag": "DevOps",
+	"relatedIds": [3082, 3089, 3088],
+	"confusableIds": [3082],
+	"useCases": [
+		{ "role": "Dev", "text": "특정 API의 오류율이 높아지면 런북 자동화를 통해 자동으로 이전 버전으로 롤백하도록 설정했습니다." },
+		{ "role": "PM", "text": "런북 자동화 도입 후 운영팀의 Toil 시간이 40% 감소했습니다." }
+	],
+	"keywords": ["runbook-automation", "런북", "자동화", "sre", "장애대응"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

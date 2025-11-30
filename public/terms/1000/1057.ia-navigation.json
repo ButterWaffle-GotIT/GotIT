@@ -1,0 +1,20 @@
+{
+	"id": 1057,
+	"slug": "ia-navigation",
+	"term": { "ko": "IA Navigation", "en": "Information Architecture Navigation" },
+	"aliases": ["정보 구조 내비게이션", "메뉴 구조"],
+	"summary": "사용자가 웹사이트나 앱의 콘텐츠를 쉽게 찾고 이동할 수 있도록, 정보 구조를 기반으로 설계된 메뉴, 링크, 검색 등의 이동 시스템.",
+	"onelinerForNonTech": "건물의 '지도'인 IA를 바탕으로, '어디로 가야 할지'를 알려주는 건물 안의 모든 표지판, 안내판, 엘리베이터 시스템.",
+	"description": "내비게이션은 전역 내비게이션(Global Navigation), 지역 내비게이션(Local Navigation), 상황별 내비게이션 등 다양한 형태로 구성된다. 접근성과 일관성이 매우 중요하며, 잘못된 IA 내비게이션은 사용자의 혼란을 야기하고 목표 달성률을 크게 떨어뜨린다. 브레드크럼은 IA 내비게이션의 한 형태이다.",
+	"tags": ["UX/UI", "IA", "프론트엔드"],
+	"primaryTag": "UX/UI",
+	"relatedIds": [1031, 1029, 1056],
+	"confusableIds": [1029],
+	"useCases": [
+		{ "role": "Design", "text": "IA 내비게이션의 깊이가 너무 깊어 사용자가 길을 잃지 않도록, 메뉴 구조를 2단계로 단순화했습니다." },
+		{ "role": "PM", "text": "검색 기능의 활용도가 낮아, IA 내비게이션을 통해 주요 기능에 대한 직접 접근성을 높였습니다." }
+	],
+	"keywords": ["ia-navigation", "내비게이션", "메뉴", "ia", "정보구조"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

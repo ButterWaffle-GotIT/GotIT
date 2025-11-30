@@ -1,0 +1,20 @@
+{
+	"id": 3048,
+	"slug": "hsts",
+	"term": { "ko": "HSTS", "en": "HTTP Strict Transport Security" },
+	"aliases": ["엄격 전송 보안"],
+	"summary": "웹 서버가 웹 브라우저에게 해당 웹사이트는 항상 HTTPS를 통해서만 접속해야 함을 강제하도록 지시하는 보안 정책.",
+	"onelinerForNonTech": "웹사이트가 브라우저에게 '무슨 일이 있어도 무조건 비밀 통로(HTTPS)만 써야 해!'라고 명령하는 규칙.",
+	"description": "HSTS는 사용자가 실수로 HTTP 링크를 클릭하거나 중간자 공격(Man-in-the-Middle)이 HTTP로 다운그레이드 시도를 할 때, 브라우저가 자동으로 HTTPS로만 연결하도록 강제하여 보안을 강화한다. 세션 하이재킹과 같은 공격 위험을 줄이는 데 효과적이다. 웹사이트의 보안 등급을 높이는 필수적인 HTTP 헤더이다.",
+	"tags": ["보안/네트워크", "프론트엔드", "백엔드"],
+	"primaryTag": "보안/네트워크",
+	"relatedIds": [3035, 3046],
+	"confusableIds": [3035],
+	"useCases": [
+		{ "role": "Dev", "text": "모든 웹사이트 응답 헤더에 HSTS 설정을 추가하여 보안 점수를 높여야 합니다." },
+		{ "role": "PM", "text": "HSTS 정책을 미리 로드하는 'preload list'에 등록하여 사용자 접속의 안전성을 극대화합시다." }
+	],
+	"keywords": ["hsts", "https", "보안", "헤더", "웹보안"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

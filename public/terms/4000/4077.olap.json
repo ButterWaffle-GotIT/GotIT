@@ -1,0 +1,20 @@
+{
+	"id": 4077,
+	"slug": "olap",
+	"term": { "ko": "OLAP", "en": "OLAP" },
+	"aliases": ["온라인 분석 처리"],
+	"summary": "데이터 웨어하우스에 저장된 대용량 데이터를 다차원적으로 분석하여 의사 결정을 지원하는 기술.",
+	"onelinerForNonTech": "데이터를 시간, 지역, 제품 등 여러 기준으로 즉시 분류하고 계산하여 복잡한 질문에 답을 얻는 분석 기법.",
+	"description": "OLAP은 롤업(Roll-up), 드릴다운(Drill-down), 슬라이싱(Slicing), 다이싱(Dicing)과 같은 다차원 분석 작업을 지원하여 사용자가 데이터에 숨겨진 추세와 패턴을 발견할 수 있게 한다. 이는 빠른 트랜잭션 처리에 중점을 둔 OLTP(Online Transactional Processing)와 대조되며, 주로 경영진의 전략적 의사 결정이나 비즈니스 인텔리전스(BI) 시스템에 활용된다.",
+	"tags": ["데이터", "IT비즈니스", "데이터 분석"],
+	"primaryTag": "데이터",
+	"relatedIds": [4039, 4040, 4074],
+	"confusableIds": [4078],
+	"useCases": [
+		{ "role": "PM", "text": "분기별 실적 보고를 위해 OLAP 큐브를 활용하여 매출 데이터를 다각도로 분석해 봅시다." },
+		{ "role": "Marketer", "text": "특정 광고 채널의 성과를 지역별, 제품군별로 드릴다운해서 확인해 보겠습니다." }
+	],
+	"keywords": ["olap", "oltp", "분석", "다차원", "큐브"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

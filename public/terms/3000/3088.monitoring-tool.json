@@ -1,0 +1,20 @@
+{
+	"id": 3088,
+	"slug": "monitoring-tool",
+	"term": { "ko": "모니터링 툴", "en": "Monitoring Tool" },
+	"aliases": ["성능 감시 도구"],
+	"summary": "시스템, 애플리케이션, 네트워크의 성능 지표(CPU 사용률, 메모리, 응답 시간 등)를 주기적으로 측정하고 시각화하며 경보를 발생시키는 도구.",
+	"onelinerForNonTech": "서버의 '건강 상태(CPU, 메모리)'와 '서비스 응답 속도'를 실시간으로 측정하여, 문제가 생기기 전에 경고 알람을 울려주는 시스템.",
+	"description": "모니터링은 시스템이 정상적으로 작동하는지 확인하는 필수 활동이며, 관측 가능성의 기초가 된다. Prometheus, Datadog, Zabbix 등이 널리 사용된다. SRE팀은 모니터링 툴을 사용하여 SLO를 측정하고 장애에 대응한다.",
+	"tags": ["DevOps", "클라우드", "백엔드"],
+	"primaryTag": "DevOps",
+	"relatedIds": [3003, 3082],
+	"confusableIds": [3087],
+	"useCases": [
+		{ "role": "Dev", "text": "CPU 사용률이 80%를 초과했을 때 모니터링 툴이 자동으로 슬랙(Slack)에 알림을 보내도록 설정했습니다." },
+		{ "role": "PM", "text": "주요 서비스의 응답 시간을 모니터링 툴의 대시보드에서 실시간으로 확인하고 있습니다." }
+	],
+	"keywords": ["monitoring-tool", "모니터링", "프로메테우스", "경고", "지표"],
+	"level": "beginner",
+	"updatedAt": "2025-11-30"
+}

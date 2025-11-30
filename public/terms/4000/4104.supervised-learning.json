@@ -1,0 +1,20 @@
+{
+	"id": 4104,
+	"slug": "supervised-learning",
+	"term": { "ko": "지도 학습", "en": "Supervised Learning" },
+	"aliases": ["감독 학습"],
+	"summary": "입력 데이터(Input)와 그에 대응하는 정확한 출력 데이터(Label/Target) 쌍을 사용하여 모델을 훈련시키는 가장 일반적인 머신러닝 방법론.",
+	"onelinerForNonTech": "선생님(레이블)이 '이것은 고양이', '이것은 강아지'라고 정답을 알려주면서, 컴퓨터에게 학습을 시키는 방식.",
+	"description": "지도 학습은 분류(Classification)와 회귀(Regression) 문제에 사용된다. 모델은 입력과 출력 간의 매핑 함수를 학습하며, 레이블된 데이터의 품질이 성능을 결정하는 가장 중요한 요소이다. 비지도 학습과 대조된다.",
+	"tags": ["AI", "데이터", "알고리즘"],
+	"primaryTag": "AI",
+	"relatedIds": [4007, 4103, 4005],
+	"confusableIds": [4103],
+	"useCases": [
+		{ "role": "Data", "text": "지도 학습의 회귀 모델을 사용하여 다음 분기별 매출을 예측했습니다." },
+		{ "role": "PM", "text": "고객 리뷰를 '긍정', '부정', '중립'으로 분류하는 지도 학습 분류 모델을 구축해야 합니다." }
+	],
+	"keywords": ["supervised-learning", "지도학습", "분류", "회귀", "레이블"],
+	"level": "beginner",
+	"updatedAt": "2025-11-30"
+}

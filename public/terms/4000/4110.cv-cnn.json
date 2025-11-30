@@ -1,0 +1,20 @@
+{
+	"id": 4110,
+	"slug": "cv-cnn",
+	"term": { "ko": "CNN", "en": "Convolutional Neural Network" },
+	"aliases": ["합성곱 신경망"],
+	"summary": "합성곱(Convolution) 연산을 사용하여 이미지, 영상 등 시각 데이터의 공간적 계층 구조 특징을 효율적으로 추출하도록 설계된 딥러닝 모델.",
+	"onelinerForNonTech": "사진을 '부분 부분' 쪼개서 보고, 그 부분들의 특징을 조합하여 '이것이 고양이 얼굴이다'라고 판단하게 하는 신경망.",
+	"description": "CNN은 컴퓨터 비전 분야의 혁신을 이끈 핵심 기술이다. 이미지 분류, 객체 인식, 이미지 분할 등 대부분의 CV 작업에 사용된다. 합성곱 계층, 풀링 계층, 완전 연결 계층으로 구성되며, 이미지 데이터를 처리하는 데 있어 RNN보다 훨씬 효율적이다.",
+	"tags": ["AI", "데이터", "알고리즘"],
+	"primaryTag": "AI",
+	"relatedIds": [4008, 4094],
+	"confusableIds": [4109],
+	"useCases": [
+		{ "role": "Dev", "text": "VGG나 ResNet과 같은 CNN 모델을 사용하여 이미지 분류 작업의 정확도를 높였습니다." },
+		{ "role": "PM", "text": "제조 공정에서 불량품을 자동으로 검출하기 위해 CNN 기반의 비전 시스템을 도입했습니다." }
+	],
+	"keywords": ["cnn", "합성곱", "convolution", "컴퓨터비전", "이미지"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

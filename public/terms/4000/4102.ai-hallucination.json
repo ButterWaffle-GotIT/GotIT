@@ -1,0 +1,20 @@
+{
+	"id": 4102,
+	"slug": "ai-hallucination",
+	"term": { "ko": "AI 환각", "en": "AI Hallucination" },
+	"aliases": ["환각 현상", "거짓 정보 생성"],
+	"summary": "LLM과 같은 생성형 AI 모델이 사실과 일치하지 않거나, 입력된 맥락에서 벗어난 그럴듯하지만 잘못된 정보를 자신 있게 생성하는 현상.",
+	"onelinerForNonTech": "AI가 질문에 대해 '자신 있게' 답하지만, 그 답이 완전히 지어낸 거짓말이거나 사실과 다른 내용인 경우.",
+	"description": "AI 환각은 모델이 학습한 데이터의 패턴에만 의존하여 발생하며, LLM의 신뢰성을 저해하는 가장 큰 문제 중 하나이다. 이를 줄이기 위해 RAG 아키텍처를 도입하거나, 모델을 재학습시키고 프롬프트 엔지니어링 기법을 사용하여 외부 사실 정보에 기반하도록 유도한다.",
+	"tags": ["AI", "LLM", "IT비즈니스"],
+	"primaryTag": "AI",
+	"relatedIds": [4010, 4098, 4097],
+	"confusableIds": [4098],
+	"useCases": [
+		{ "role": "Dev", "text": "환각 현상을 줄이기 위해 LLM 응답 후, 반드시 외부 DB에서 사실 여부를 교차 검증하는 로직을 추가했습니다." },
+		{ "role": "PM", "text": "AI 환각 위험 때문에 최종 사용자에게 제공되는 답변에는 항상 출처를 명시해야 합니다." }
+	],
+	"keywords": ["hallucination", "환각", "llm", "신뢰성", "거짓정보"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}

@@ -1,0 +1,20 @@
+{
+	"id": 4095,
+	"slug": "neural-network",
+	"term": { "ko": "신경망", "en": "Neural Network" },
+	"aliases": ["인공 신경망", "ANN"],
+	"summary": "인간 뇌의 뉴런 연결 구조를 모방하여 만든 알고리즘 모델로, 데이터에서 복잡한 패턴을 학습하는 딥러닝의 기본 구조.",
+	"onelinerForNonTech": "뇌세포(뉴런)들이 서로 연결되어 정보를 주고받는 것처럼, 정보를 처리하는 인공적인 회로.",
+	"description": "신경망은 입력층(Input Layer), 은닉층(Hidden Layer), 출력층(Output Layer)으로 구성된다. 각 층은 노드(Node, 뉴런)를 포함하며, 노드 간의 가중치(Weight)를 조정하는 과정을 통해 학습이 이루어진다. 은닉층이 여러 개인 신경망을 '심층 신경망(Deep Neural Network)'이라고 부르며, 이것이 딥러닝의 핵심을 이룬다.",
+	"tags": ["AI", "데이터", "알고리즘"],
+	"primaryTag": "AI",
+	"relatedIds": [4008, 4010],
+	"confusableIds": [4007],
+	"useCases": [
+		{ "role": "Dev", "text": "모델이 과적합되는 것을 막기 위해 신경망의 드롭아웃 레이어를 조정했습니다." },
+		{ "role": "Data", "text": "이 복잡한 분류 문제에는 은닉층을 10개 이상 쌓은 심층 신경망을 적용해야 좋은 결과를 얻을 수 있습니다." }
+	],
+	"keywords": ["neural-network", "신경망", "뉴런", "가중치", "딥러닝"],
+	"level": "beginner",
+	"updatedAt": "2025-11-30"
+}

@@ -1,0 +1,20 @@
+{
+	"id": 3082,
+	"slug": "slo",
+	"term": { "ko": "SLO", "en": "Service Level Objective" },
+	"aliases": ["서비스 수준 목표"],
+	"summary": "서비스 제공자가 고객과 합의한 서비스 수준 지표(SLI)의 목표치.",
+	"onelinerForNonTech": "고객에게 '이 서비스는 99.9% 시간에는 정상적으로 작동할 것'이라고 약속하는 구체적인 목표 수치.",
+	"description": "SLO는 서비스 수준 협약(SLA)에 명시된 서비스 목표를 구체적인 수치로 표현한 것이다. 응답 속도, 가용성, 오류율 등의 SLI (Service Level Indicator)를 측정 기준으로 삼는다. SRE 활동의 핵심 기반이며, 목표를 달성하지 못하면 에러 버짓 (Error Budget)을 소진하게 된다.",
+	"tags": ["DevOps", "IT비즈니스", "SRE"],
+	"primaryTag": "DevOps",
+	"relatedIds": [3009, 3089],
+	"confusableIds": [4023],
+	"useCases": [
+		{ "role": "Dev", "text": "서비스 응답 시간 SLO를 200ms 미만으로 설정하고, 모니터링 시스템에서 지속적으로 추적해야 합니다." },
+		{ "role": "PM", "text": "SLO 달성 여부를 바탕으로 운영팀의 성과를 평가하고, 개선 계획을 수립했습니다." }
+	],
+	"keywords": ["slo", "sli", "sre", "가용성", "목표"],
+	"level": "intermediate",
+	"updatedAt": "2025-11-30"
+}
