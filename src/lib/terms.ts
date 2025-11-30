@@ -15,7 +15,16 @@ export interface TermIndexItem {
 	file: string;
 }
 
-// 대화 상황 타입
+// 역할 타입
+export type Role = "PM" | "Dev" | "Design" | "Marketer" | "Other";
+
+// 사용 사례 타입
+export interface UseCase {
+	role: Role;
+	text: string;
+}
+
+// 대화 상황 타입 (deprecated - useCases로 대체)
 export interface Conversation {
 	role: "pm" | "developer" | "designer";
 	message: string;
@@ -37,11 +46,12 @@ export interface TermDetail {
 	primaryTag: string;
 	relatedIds?: number[];
 	confusableIds?: number[];
-	useCases?: string[];
+	useCases?: UseCase[];
 	conversations?: Conversation[];
 	keywords?: string[];
 	level: "beginner" | "intermediate" | "advanced";
 	updatedAt: string;
+	status?: "draft" | "published";
 }
 
 // 캐시
