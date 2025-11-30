@@ -195,26 +195,3 @@ export async function getRelatedTerms(
 	const index = await getTermsIndex();
 	return index.filter((t) => relatedIds.includes(t.id));
 }
-
-/**
- * 랜덤 용어 N개 가져오기
- */
-export async function getRandomTerms(count: number): Promise<TermIndexItem[]> {
-	const index = await getTermsIndex();
-	const shuffled = [...index].sort(() => Math.random() - 0.5);
-	return shuffled.slice(0, count);
-}
-
-/**
- * 모든 태그 목록 가져오기
- */
-export async function getAllTags(): Promise<string[]> {
-	const index = await getTermsIndex();
-	const tagSet = new Set<string>();
-
-	for (const item of index) {
-		item.tags.forEach((tag) => tagSet.add(tag));
-	}
-
-	return Array.from(tagSet).sort();
-}

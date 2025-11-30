@@ -1,7 +1,6 @@
 export * from "./types";
 export * from "./ic_arrow_left";
 export * from "./ic_arrow_right";
-export * from "./ic_bang";
 export * from "./ic_calendar";
 export * from "./ic_category_ai";
 export * from "./ic_category_all";
@@ -17,7 +16,6 @@ export * from "./ic_chevron_down";
 export * from "./ic_chevron_left";
 export * from "./ic_chevron_right";
 export * from "./ic_chevrons_down";
-export * from "./ic_chevrons_up";
 export * from "./ic_comment";
 export * from "./ic_edit";
 export * from "./ic_fire";
@@ -33,8 +31,6 @@ export * from "./ic_send";
 export * from "./ic_share";
 export * from "./ic_sort";
 export * from "./ic_star";
-export * from "./ic_tag";
-export * from "./ic_time";
 export * from "./ic_user";
 
 export * from "./logo_text";

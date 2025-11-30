@@ -11,5 +11,4 @@ export {
 	categorySelectedColors,
 	getCategoryLabel,
 	getCategoryType,
-	getCategoryIcon,
 } from "@/config/categories";

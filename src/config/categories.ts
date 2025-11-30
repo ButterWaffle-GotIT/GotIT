@@ -177,23 +177,6 @@ export function getCategoryType(label: string): CategoryType {
 	return LABEL_TO_CATEGORY[label] || "all";
 }
 
-/**
- * 카테고리 타입 → 아이콘 컴포넌트
- * @example getCategoryIcon("frontend") // CategoryFrontendIcon
- */
-export function getCategoryIcon(category: CategoryType): ElementType {
-	return CATEGORIES[category].icon;
-}
-
-/**
- * 한글 라벨 → 아이콘 컴포넌트 (기존 코드 호환성)
- * @deprecated getCategoryType()과 getCategoryIcon()을 함께 사용하세요
- */
-export function getCategoryIconByLabel(label: string): ElementType {
-	const category = getCategoryType(label);
-	return CATEGORIES[category].icon;
-}
-
 // ============================================================================
 // 레거시 호환성을 위한 Export
 // (기존 코드가 동작하도록 유지, 점진적으로 CATEGORIES 사용으로 마이그레이션)
@@ -234,7 +217,7 @@ export const categorySelectedColors = Object.fromEntries(
 ) as Record<CategoryType, string>;
 
 /**
- * @deprecated getCategoryIconByLabel()을 사용하세요
+ * @deprecated getCategoryType()과 CATEGORIES에서 icon을 사용하세요
  */
 export const categoryIcons: Record<string, ElementType> = Object.fromEntries(
 	CATEGORY_KEYS.map((key) => [CATEGORIES[key].label, CATEGORIES[key].icon])
