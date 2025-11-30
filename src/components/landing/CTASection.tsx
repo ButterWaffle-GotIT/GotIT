@@ -8,9 +8,9 @@ export function CTASection() {
 	const router = useRouter();
 
 	return (
-		<section className="h-screen flex flex-col justify-between px-12 md:px-24 lg:px-60 py-32 snap-start snap-always">
-			<div className="flex-1 flex items-center">
-				<div className="mx-auto max-w-4xl text-center w-full">
+		<section className="flex h-screen snap-start snap-always flex-col justify-between px-12 py-32 md:px-24 lg:px-60">
+			<div className="flex flex-1 items-center">
+				<div className="mx-auto w-full max-w-4xl text-center">
 					<motion.h2
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ export function CTASection() {
 
 			{/* Footer */}
 			<footer className="border-t border-gray-800 pt-12">
-				<div className="flex items-center justify-between max-w-6xl mx-auto">
+				<div className="mx-auto flex max-w-6xl items-center justify-between">
 					<LogoText width={89} height={30} />
 					<p className="text-xs text-gray-600">© 2025</p>
 				</div>

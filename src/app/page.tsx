@@ -12,7 +12,7 @@ export default function HomePage() {
 	return (
 		<div
 			ref={containerRef}
-			className="fixed inset-0 snap-y snap-mandatory overflow-y-scroll z-0"
+			className="fixed inset-0 z-0 snap-y snap-mandatory overflow-y-scroll"
 		>
 			<HeroSection />
 			<ValuePropSection />

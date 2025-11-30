@@ -23,7 +23,7 @@ export function HeroSection() {
 	const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
 	return (
-		<section className="relative flex h-screen flex-col justify-between pt-0 snap-start snap-always">
+		<section className="relative flex h-screen snap-start snap-always flex-col justify-between pt-0">
 			{/* Main Content */}
 			<div className="flex flex-1 flex-col justify-center px-12 md:px-24 lg:px-60">
 				<motion.div
@@ -56,10 +56,10 @@ export function HeroSection() {
 			</div>
 
 			{/* Bottom Section */}
-			<div className="px-12 md:px-24 lg:px-60 pb-8">
+			<div className="px-12 pb-8 md:px-24 lg:px-60">
 				<motion.div
 					style={{ opacity }}
-					className="flex items-end justify-between mb-12"
+					className="mb-12 flex items-end justify-between"
 				>
 					<p className="max-w-xs text-sm leading-relaxed text-gray-500">
 						PM, 디자이너, 마케터, 취준생까지.
@@ -79,7 +79,7 @@ export function HeroSection() {
 				</motion.div>
 
 				{/* Marquee */}
-				<div className="border-t border-gray-800 pt-6 -mx-12 md:-mx-24 lg:-mx-60 px-12 md:px-24 lg:px-60">
+				<div className="-mx-12 border-t border-gray-800 px-12 pt-6 md:-mx-24 md:px-24 lg:-mx-60 lg:px-60">
 					<MarqueeText />
 				</div>
 			</div>

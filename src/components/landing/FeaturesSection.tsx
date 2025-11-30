@@ -15,8 +15,8 @@ export function FeaturesSection() {
 	];
 
 	return (
-		<section className="h-screen flex flex-col justify-center border-t border-gray-800 px-12 md:px-24 lg:px-60 py-32 snap-start snap-always">
-			<div className="mx-auto max-w-6xl w-full space-y-24">
+		<section className="flex h-screen snap-start snap-always flex-col justify-center border-t border-gray-800 px-12 py-32 md:px-24 lg:px-60">
+			<div className="mx-auto w-full max-w-6xl space-y-24">
 				{/* Features */}
 				<div className="grid gap-px overflow-hidden rounded-2xl bg-gray-800 md:grid-cols-3">
 					{features.map((item, i) => (
