@@ -9,8 +9,8 @@
 	"summary": "원시 데이터를 저장해 분석이나 학습에 활용하는 중앙 저장소입니다.",
 	"onelinerForNonTech": "데이터가 한곳에 모여있는 거대한 원시 저장소.",
 	"description": "데이터 레이크는 다양한 형태의 데이터를 그대로 저장해, 분석과 AI 학습에 유연하게 사용할 수 있는 대규모 저장소입니다.",
-	"tags": ["데이터-AI", "저장소"],
-	"primaryTag": "데이터-AI",
+	"tags": ["AI", "저장소"],
+	"primaryTag": "AI",
 	"relatedIds": [4039],
 	"confusableIds": [],
 	"useCases": [

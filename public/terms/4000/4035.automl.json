@@ -9,8 +9,8 @@
 	"summary": "모델 학습 과정을 자동화하는 기술입니다.",
 	"onelinerForNonTech": "AI가 알아서 모델을 만들어주는 기술.",
 	"description": "AutoML은 모델 선택, 파라미터 조정, 검증을 자동화하여 비전문가도 머신러닝을 쉽게 사용할 수 있게 합니다.",
-	"tags": ["데이터-AI", "ML"],
-	"primaryTag": "데이터-AI",
+	"tags": ["AI", "ML"],
+	"primaryTag": "AI",
 	"relatedIds": [4036],
 	"confusableIds": [],
 	"useCases": [

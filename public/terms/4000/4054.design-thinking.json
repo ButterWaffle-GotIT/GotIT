@@ -9,8 +9,8 @@
 	"summary": "사용자 중심으로 문제를 정의하고 해결책을 탐색하는 창의적 접근법입니다.",
 	"onelinerForNonTech": "사람 중심의 문제 해결 사고법.",
 	"description": "디자인 씽킹은 공감, 정의, 아이디어, 프로토타입, 테스트 단계를 통해 혁신적인 해결책을 도출합니다.",
-	"tags": ["IT비즈니스-기획-프로젝트관리", "기획"],
-	"primaryTag": "IT비즈니스-기획-프로젝트관리",
+	"tags": ["IT비즈니스", "기획"],
+	"primaryTag": "IT비즈니스",
 	"relatedIds": [4054],
 	"confusableIds": [],
 	"useCases": [

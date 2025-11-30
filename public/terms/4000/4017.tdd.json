@@ -9,8 +9,8 @@
 	"summary": "테스트를 먼저 작성하고 이후 코드를 구현하는 개발 방식입니다.",
 	"onelinerForNonTech": "‘테스트 먼저, 개발은 나중’의 철학.",
 	"description": "TDD는 테스트를 기반으로 안정성과 유지보수성을 높이며, 작은 단위의 반복적 개발을 촉진합니다.",
-	"tags": ["개발문화-프로세스", "테스트", "개발방법론"],
-	"primaryTag": "개발문화-프로세스",
+	"tags": ["IT비즈니스", "테스트", "개발방법론"],
+	"primaryTag": "IT비즈니스",
 	"relatedIds": [],
 	"confusableIds": [],
 	"useCases": [
