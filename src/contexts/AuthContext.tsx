@@ -10,6 +10,7 @@ import {
 import {
 	GoogleAuthProvider,
 	signInWithPopup,
+	signInWithEmailAndPassword,
 	signOut,
 	onAuthStateChanged,
 	type User,
@@ -35,6 +36,7 @@ type AuthContextType = {
 	loading: boolean;
 	isNewUser: boolean;
 	loginWithGoogle: () => Promise<boolean>;
+	loginWithDemo: () => Promise<boolean>;
 	logout: () => Promise<void>;
 	completeOnboarding: (category: CategoryType) => Promise<void>;
 	updateCategory: (category: CategoryType) => Promise<void>;
@@ -82,56 +84,88 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 		return () => unsubscribe();
 	}, []);
 
+	// 로그인 후 공통 처리 로직
+	const handleUserAfterLogin = async (
+		user: User,
+		displayName?: string | null,
+		photoURL?: string | null
+	): Promise<boolean> => {
+		const userRef = doc(db, "users", user.uid);
+		const userSnap = await getDoc(userRef);
+		const localBookmarks = getBookmarks();
+
+		if (!userSnap.exists()) {
+			// 신규 사용자: 로컬스토리지 데이터를 포함하여 생성
+			const newUserData: UserData = {
+				email: user.email,
+				displayName: displayName ?? user.displayName,
+				photoURL: photoURL ?? user.photoURL,
+				createdAt: new Date().toISOString(),
+				scrapList: localBookmarks,
+				onboardingCompleted: false,
+				selectedCategory: "all",
+			};
+			await setDoc(userRef, newUserData);
+			setUserData(newUserData);
+			setIsNewUser(true);
+
+			// 마이그레이션 후 로컬스토리지 정리
+			if (localBookmarks.length > 0) {
+				clearBookmarks();
+			}
+
+			return true;
+		} else {
+			// 기존 사용자: 로컬스토리지 데이터와 병합
+			const data = userSnap.data() as UserData;
+
+			if (localBookmarks.length > 0) {
+				const mergedScrapList = [
+					...new Set([...data.scrapList, ...localBookmarks]),
+				];
+				await updateDoc(userRef, { scrapList: mergedScrapList });
+				data.scrapList = mergedScrapList;
+				clearBookmarks();
+			}
+
+			setUserData(data);
+			setIsNewUser(!data.onboardingCompleted);
+			return !data.onboardingCompleted;
+		}
+	};
+
 	const loginWithGoogle = async (): Promise<boolean> => {
 		const provider = new GoogleAuthProvider();
 		try {
 			const result = await signInWithPopup(auth, provider);
-			const userRef = doc(db, "users", result.user.uid);
-			const userSnap = await getDoc(userRef);
-
-			// 로컬스토리지에서 스크랩 데이터 가져오기
-			const localBookmarks = getBookmarks();
-
-			if (!userSnap.exists()) {
-				// 신규 사용자: 로컬스토리지 데이터를 포함하여 생성
-				const newUserData: UserData = {
-					email: result.user.email,
-					displayName: result.user.displayName,
-					photoURL: result.user.photoURL,
-					createdAt: new Date().toISOString(),
-					scrapList: localBookmarks,
-					onboardingCompleted: false,
-					selectedCategory: "all",
-				};
-				await setDoc(userRef, newUserData);
-				setUserData(newUserData);
-				setIsNewUser(true);
-
-				// 마이그레이션 후 로컬스토리지 정리
-				if (localBookmarks.length > 0) {
-					clearBookmarks();
-				}
-
-				return true;
-			} else {
-				const data = userSnap.data() as UserData;
-
-				// 기존 사용자: 로컬스토리지 데이터와 병합
-				if (localBookmarks.length > 0) {
-					const mergedScrapList = [
-						...new Set([...data.scrapList, ...localBookmarks]),
-					];
-					await updateDoc(userRef, { scrapList: mergedScrapList });
-					data.scrapList = mergedScrapList;
-					clearBookmarks();
-				}
-
-				setUserData(data);
-				setIsNewUser(!data.onboardingCompleted);
-				return !data.onboardingCompleted;
-			}
+			return await handleUserAfterLogin(
+				result.user,
+				result.user.displayName,
+				result.user.photoURL
+			);
 		} catch (error) {
 			console.error("Google 로그인 실패:", error);
+			throw error;
+		}
+	};
+
+	const loginWithDemo = async (): Promise<boolean> => {
+		const demoEmail = process.env.NEXT_PUBLIC_DEMO_EMAIL;
+		const demoPassword = process.env.NEXT_PUBLIC_DEMO_PASSWORD;
+
+		if (!demoEmail || !demoPassword) {
+			throw new Error("데모 계정 정보가 설정되지 않았습니다.");
+		}
+
+		try {
+			const result = await signInWithEmailAndPassword(
+				auth,
+				demoEmail,
+				demoPassword
+			);
+			return await handleUserAfterLogin(result.user, "데모 사용자", null);
+		} catch (error) {
+			console.error("데모 계정 로그인 실패:", error);
 			throw error;
 		}
 	};
@@ -219,6 +253,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 				loading,
 				isNewUser,
 				loginWithGoogle,
+				loginWithDemo,
 				logout,
 				completeOnboarding,
 				updateCategory,
