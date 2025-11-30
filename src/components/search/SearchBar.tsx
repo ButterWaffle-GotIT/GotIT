@@ -1,17 +1,21 @@
+"use client";
+
 import { SearchIcon } from "@/components/icons/ic_search";
+import { useTypingAnimation } from "@/hooks/useTypingAnimation";
+import { LogoText } from "../icons";
 
 interface SearchBarProps {
 	value: string;
 	onChange: (value: string) => void;
 }
 
+const searchExamples = ["API", "React", "Docker"];
+
 export default function SearchBar({ value, onChange }: SearchBarProps) {
+	const typingText = useTypingAnimation(searchExamples, 150, 100, 1500);
 	return (
 		<div className="flex w-[864px] flex-col items-center justify-start gap-10">
-			{/* 중앙 로고: got IT */}
-			<h1 className="font-['Dela_Gothic_One'] text-6xl leading-[60px] font-normal text-white">
-				got IT
-			</h1>
+			<LogoText width={223} height={100} />
 
 			{/* 검색 입력창 컨테이너 */}
 			<div className="relative h-20 w-full">
@@ -24,7 +28,7 @@ export default function SearchBar({ value, onChange }: SearchBarProps) {
 						value={value}
 						onChange={(e) => onChange(e.target.value)}
 						className="flex-1 bg-transparent font-['Pretendard'] text-base leading-6 font-normal text-white placeholder-gray-500 outline-none"
-						placeholder="궁금한 IT 용어를 검색해보세요... (예: API, React, Docker)"
+						placeholder={`IT 용어 검색 (2글자 이상) : ${typingText}`}
 					/>
 					{/* 검색 아이콘 */}
 					<div className="relative h-9 w-9 overflow-hidden">
