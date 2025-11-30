@@ -31,18 +31,30 @@ export function useScrapToggle(termId: number) {
 	 */
 	const handleToggle = async () => {
 		if (!user) {
-			const newState = toggleBookmark(termId);
-			setLocalOverride(newState);
-			showLoginToast();
+			try {
+				const newState = toggleBookmark(termId);
+				setLocalOverride(newState);
+				showLoginToast();
+			} catch (error) {
+				console.error("Local bookmark toggle failed:", error);
+				showToast("북마크 처리 중 오류가 발생했습니다");
+			}
 			return;
 		}
 
-		const result = await toggleScrap(termId);
-		if (result.success) {
-			setLocalOverride(result.isScraped);
-			showToast(
-				result.isScraped ? "스크랩되었습니다" : "스크랩이 해제되었습니다"
-			);
+		try {
+			const result = await toggleScrap(termId);
+			if (result.success) {
+				setLocalOverride(result.isScraped);
+				showToast(
+					result.isScraped ? "스크랩되었습니다" : "스크랩이 해제되었습니다"
+				);
+			} else {
+				showToast("스크랩 처리에 실패했습니다");
+			}
+		} catch (error) {
+			console.error("Server scrap toggle failed:", error);
+			showToast("스크랩 처리 중 오류가 발생했습니다");
 		}
 	};
 
