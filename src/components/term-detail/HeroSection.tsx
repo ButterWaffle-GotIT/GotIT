@@ -58,11 +58,7 @@ export function HeroSection({
 
 				{/* Action Buttons */}
 				<div className="flex items-center gap-2">
-					<ScrapButton
-						bookmarked={bookmarked}
-						onClick={onBookmark}
-						size="lg"
-					/>
+					<ScrapButton bookmarked={bookmarked} onClick={onBookmark} size="lg" />
 					<button
 						onClick={onShare}
 						className="bg-white-10 hover:bg-white-20 flex h-9 w-9 items-center justify-center rounded-md transition-colors"

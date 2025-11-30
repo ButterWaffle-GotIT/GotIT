@@ -3,7 +3,11 @@
 import { useRouter } from "next/navigation";
 import { cn } from "@/utils/cn";
 import type { TermIndexItem } from "@/lib/terms";
-import { RelationIcon, HashtagIcon, ChevronRightIcon } from "@/components/icons";
+import {
+	RelationIcon,
+	HashtagIcon,
+	ChevronRightIcon,
+} from "@/components/icons";
 import { getCategoryType } from "@/config/categories";
 import { CategoryChip } from "@/components/ui/category";
 import { ScrapButton } from "@/components/ui/buttons/ScrapButton";
