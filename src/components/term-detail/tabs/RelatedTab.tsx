@@ -1,10 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { cn } from "@/utils/cn";
-import type { TermDetail, TermIndexItem } from "@/lib/terms";
-import { getRelatedTerms } from "@/lib/terms";
+import type { TermIndexItem } from "@/lib/terms";
 import {
 	RelationIcon,
 	HashtagIcon,
@@ -16,11 +14,10 @@ import { getCategoryType } from "@/lib/category";
 import { useScrapToggle } from "@/hooks/useScrapToggle";
 
 interface RelatedTabProps {
-	term: TermDetail;
 	relatedTerms: TermIndexItem[];
 }
 
-export function RelatedTab({ term, relatedTerms }: RelatedTabProps) {
+export function RelatedTab({ relatedTerms }: RelatedTabProps) {
 	return (
 		<article className="flex flex-col gap-5 rounded-xl border border-gray-800 p-7">
 			<div className="flex items-center gap-2">
@@ -36,11 +33,6 @@ export function RelatedTab({ term, relatedTerms }: RelatedTabProps) {
 				</div>
 			) : (
 				<p className="text-body5 text-gray-500">연관 용어가 없습니다.</p>
-			)}
-
-			{/* Confusable Terms */}
-			{term.confusableIds && term.confusableIds.length > 0 && (
-				<ConfusableTerms ids={term.confusableIds} />
 			)}
 		</article>
 	);
@@ -141,37 +133,6 @@ function RelatedTermCard({ term }: { term: TermIndexItem }) {
 
 			{/* Summary */}
 			<p className="text-caption1 line-clamp-3 text-gray-400">{term.summary}</p>
-		</div>
-	);
-}
-
-// Confusable Terms
-function ConfusableTerms({ ids }: { ids: number[] }) {
-	const router = useRouter();
-	const [terms, setTerms] = useState<TermIndexItem[]>([]);
-
-	useEffect(() => {
-		getRelatedTerms(ids).then(setTerms);
-	}, [ids]);
-
-	if (terms.length === 0) return null;
-
-	return (
-		<div className="mt-4 border-t border-gray-800 pt-4">
-			<p className="text-caption1 mb-2 text-gray-500">헷갈리기 쉬운 용어</p>
-			<ul className="flex flex-col gap-2">
-				{terms.map((t) => (
-					<li key={t.id}>
-						<button
-							onClick={() => router.push(`/terms/${t.slug}`)}
-							className="hover:bg-white-5 flex w-full items-center gap-2 rounded-lg p-2 text-left transition-colors"
-						>
-							<span className="text-body5 text-white">{t.termKo}</span>
-							<span className="text-caption1 text-gray-600">vs</span>
-						</button>
-					</li>
-				))}
-			</ul>
 		</div>
 	);
 }
