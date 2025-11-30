@@ -61,6 +61,7 @@ export default function RecommendedTermsSection() {
 							category={term.category}
 							description={term.description}
 							iconColor={term.iconColor}
+							slug={term.slug}
 						/>
 					))
 				)}
