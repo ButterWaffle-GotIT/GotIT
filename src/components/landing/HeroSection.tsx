@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRightIcon } from "@/components/icons";
 import { RotatingWords } from "./RotatingWords";
+import { MarqueeText } from "./MarqueeText";
 
 const words = [
 	"API",
@@ -22,9 +23,9 @@ export function HeroSection() {
 	const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
 	return (
-		<section className="relative flex min-h-screen flex-col justify-between px-6 pt-0 pb-16 md:px-12 lg:px-24">
+		<section className="relative flex h-screen flex-col justify-between pt-0 snap-start snap-always">
 			{/* Main Content */}
-			<div className="flex flex-1 flex-col justify-center">
+			<div className="flex flex-1 flex-col justify-center px-12 md:px-24 lg:px-60">
 				<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
@@ -55,23 +56,33 @@ export function HeroSection() {
 			</div>
 
 			{/* Bottom Section */}
-			<motion.div style={{ opacity }} className="flex items-end justify-between">
-				<p className="max-w-xs text-sm leading-relaxed text-gray-500">
-					PM, 디자이너, 마케터, 취준생까지.
-					<br />
-					IT 용어의 벽을 허무는 가장 쉬운 방법.
-				</p>
-
-				<button
-					onClick={() => router.push("/search")}
-					className="group flex items-center gap-3 text-white transition-colors hover:text-gray-400"
+			<div className="px-12 md:px-24 lg:px-60 pb-8">
+				<motion.div
+					style={{ opacity }}
+					className="flex items-end justify-between mb-12"
 				>
-					<span className="text-sm tracking-wide">시작하기</span>
-					<div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-700 transition-all group-hover:border-gray-500 group-hover:bg-white/5">
-						<ArrowRightIcon size={20} color="currentColor" />
-					</div>
-				</button>
-			</motion.div>
+					<p className="max-w-xs text-sm leading-relaxed text-gray-500">
+						PM, 디자이너, 마케터, 취준생까지.
+						<br />
+						IT 용어의 벽을 허무는 가장 쉬운 방법.
+					</p>
+
+					<button
+						onClick={() => router.push("/search")}
+						className="group flex items-center gap-3 text-white transition-colors hover:text-gray-400"
+					>
+						<span className="text-sm tracking-wide">시작하기</span>
+						<div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-700 transition-all group-hover:border-gray-500 group-hover:bg-white/5">
+							<ArrowRightIcon size={20} color="currentColor" />
+						</div>
+					</button>
+				</motion.div>
+
+				{/* Marquee */}
+				<div className="border-t border-gray-800 pt-6 -mx-12 md:-mx-24 lg:-mx-60 px-12 md:px-24 lg:px-60">
+					<MarqueeText />
+				</div>
+			</div>
 		</section>
 	);
 }

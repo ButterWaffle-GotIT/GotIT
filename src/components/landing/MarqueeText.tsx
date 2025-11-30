@@ -4,11 +4,13 @@ export function MarqueeText() {
 		"Backend",
 		"DevOps",
 		"Cloud",
-		"AI/ML",
+		"AI",
 		"Data",
 		"Security",
 		"UI/UX",
+		"Product",
 		"Mobile",
+		"Business",
 	];
 
 	return (

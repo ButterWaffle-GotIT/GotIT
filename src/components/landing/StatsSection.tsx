@@ -9,7 +9,7 @@ export function StatsSection() {
 	];
 
 	return (
-		<section className="px-6 py-32 md:px-12 lg:px-24">
+		<section className="h-screen flex items-center px-12 md:px-24 lg:px-60 py-32 snap-start snap-always">
 			<div className="mx-auto max-w-6xl">
 				<div className="flex flex-wrap justify-center gap-16 md:gap-24">
 					{stats.map((stat, i) => (
