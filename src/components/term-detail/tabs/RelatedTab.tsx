@@ -9,7 +9,8 @@ import {
 	ScrapIcon,
 	ChevronRightIcon,
 } from "@/components/icons";
-import { CATEGORIES, getCategoryType } from "@/config/categories";
+import { getCategoryType } from "@/config/categories";
+import { CategoryChip } from "@/components/ui/category";
 import { useScrapToggle } from "@/hooks/useScrapToggle";
 
 interface RelatedTabProps {
@@ -43,8 +44,6 @@ function RelatedTermCard({ term }: { term: TermIndexItem }) {
 	const { bookmarked, handleToggle } = useScrapToggle(term.id);
 
 	const category = getCategoryType(term.primaryTag);
-	const config = CATEGORIES[category];
-	const CategoryIcon = config.icon;
 
 	const handleBookmark = (e: React.MouseEvent) => {
 		e.stopPropagation();
@@ -60,15 +59,7 @@ function RelatedTermCard({ term }: { term: TermIndexItem }) {
 			<div className="flex flex-col gap-1.5">
 				<div className="flex items-center justify-between">
 					<div className="flex flex-1 items-center gap-2">
-						{/* Category Icon */}
-						<div
-							className={cn(
-								"flex h-6 w-6 items-center justify-center rounded-full outline-1 outline-white/25",
-								config.bgColor
-							)}
-						>
-							<CategoryIcon size={16} color="white" />
-						</div>
+						<CategoryChip category={category} />
 						{/* Term Name */}
 						<span className="text-subtitle1 text-gray-50">
 							{term.termEn || term.termKo}

@@ -3,7 +3,8 @@
 import { useRouter } from "next/navigation";
 import { ScrapIcon } from "@/components/icons/ic_scrap";
 import { ArrowRightIcon } from "@/components/icons/ic_arrow_right";
-import { CATEGORIES, getCategoryType } from "@/config/categories";
+import { getCategoryType } from "@/config/categories";
+import { CategoryChip } from "@/components/ui/category";
 import type { ScrapCardData } from "@/types/scrapCard";
 
 interface ScrapCardProps {
@@ -13,9 +14,6 @@ interface ScrapCardProps {
 export default function ScrapCard({ card }: ScrapCardProps) {
 	const router = useRouter();
 	const categoryType = getCategoryType(card.category);
-	const config = CATEGORIES[categoryType];
-	const IconComponent = config.icon;
-	const colorClass = config.bgColor;
 
 	const handleClick = () => {
 		if (card.slug) {
@@ -30,18 +28,7 @@ export default function ScrapCard({ card }: ScrapCardProps) {
 		>
 			<div className="flex items-center justify-between">
 				<div className="flex items-center gap-2">
-					<div
-						className={`h-6 w-6 ${colorClass} flex items-center justify-center rounded-full p-1 outline-[0.25px] outline-offset-[-0.25px] outline-white`}
-					>
-						{IconComponent && (
-							<IconComponent
-								className="h-4 w-4 text-white"
-								width={16}
-								height={16}
-							/>
-						)}
-					</div>
-
+					<CategoryChip category={categoryType} />
 					<div className="h-6 w-43">
 						<span className="text-subtitle1 line-clamp-1 text-gray-50">
 							{card.term}
