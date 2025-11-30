@@ -49,9 +49,9 @@ const TodayTermCard: React.FC<{ data?: TermData }> = ({
 				</div>
 
 				<button
-				className="inline-flex items-center justify-center gap-2 overflow-hidden rounded-lg bg-gradient-to-r from-violet-700 to-red-400 py-2 pr-5 pl-6"
-				onClick={handleClick}
-			>
+					className="inline-flex items-center justify-center gap-2 overflow-hidden rounded-lg bg-gradient-to-r from-violet-700 to-red-400 py-2 pr-5 pl-6"
+					onClick={handleClick}
+				>
 					<div className="justify-center font-['Pretendard'] text-xs leading-5 font-bold text-white">
 						자세히 알아보기
 					</div>
