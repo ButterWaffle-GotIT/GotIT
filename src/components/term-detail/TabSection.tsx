@@ -25,9 +25,7 @@ export function TabSection({ term, relatedTerms }: TabSectionProps) {
 			<div className="flex flex-col gap-5">
 				{activeTab === "description" && <DescriptionTab term={term} />}
 				{activeTab === "usecase" && <UseCaseTab term={term} />}
-				{activeTab === "related" && (
-					<RelatedTab relatedTerms={relatedTerms} />
-				)}
+				{activeTab === "related" && <RelatedTab relatedTerms={relatedTerms} />}
 			</div>
 		</section>
 	);
