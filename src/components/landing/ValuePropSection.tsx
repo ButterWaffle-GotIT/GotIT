@@ -37,8 +37,8 @@ export function ValuePropSection() {
 							transition={{ duration: 0.6, delay: 0.2 }}
 							className="text-lg leading-relaxed text-gray-500"
 						>
-							사전적 정의만으로는 이해하기 힘든 실무 용어들. GotIT은 업무 상황에 맞는
-							예시와 함께 용어의 뜻을 명확히 전달합니다.
+							사전적 정의만으로는 이해하기 힘든 실무 용어들. GotIT은 업무 상황에
+							맞는 예시와 함께 용어의 뜻을 명확히 전달합니다.
 						</motion.p>
 					</div>
 				</div>
