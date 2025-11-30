@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * UserDataContext - 사용자 데이터 관리
+ * UserDataContext - 사용자 데이터 상태 관리
  */
 
 import {
@@ -11,24 +11,19 @@ import {
 	useState,
 	type ReactNode,
 } from "react";
-import { doc, setDoc, getDoc, updateDoc } from "firebase/firestore";
-import { db } from "@/utils/firebase";
 import { type CategoryType } from "@/config/categories";
 import { getBookmarks, clearBookmarks } from "@/lib/bookmarks";
+import {
+	fetchUserData,
+	createUserData,
+	mergeScrapList,
+	completeUserOnboarding,
+	updateUserCategory,
+	type UserData,
+} from "@/lib/userService";
 import { useAuthCore } from "./AuthContext";
 
-/**
- * 사용자 데이터 타입
- */
-export interface UserData {
-	email: string | null;
-	displayName: string | null;
-	photoURL: string | null;
-	createdAt: string;
-	scrapList: number[];
-	onboardingCompleted: boolean;
-	selectedCategory: CategoryType;
-}
+export type { UserData };
 
 interface UserDataContextType {
 	userData: UserData | null;
@@ -48,7 +43,6 @@ export function UserDataProvider({ children }: { children: ReactNode }) {
 	const [userDataLoading, setUserDataLoading] = useState(true);
 	const [isNewUser, setIsNewUser] = useState(false);
 
-	// user 변경 시 사용자 데이터 로드
 	useEffect(() => {
 		if (!user) {
 			setUserData(null);
@@ -57,58 +51,37 @@ export function UserDataProvider({ children }: { children: ReactNode }) {
 			return;
 		}
 
-		loadOrCreateUserData();
+		loadUserData();
 	}, [user]);
 
-	/**
-	 * 사용자 데이터 로드 또는 생성
-	 */
-	const loadOrCreateUserData = async () => {
+	const loadUserData = async () => {
 		if (!user) return;
 
 		setUserDataLoading(true);
 
 		try {
-			const userRef = doc(db, "users", user.uid);
-			const userSnap = await getDoc(userRef);
 			const localBookmarks = getBookmarks();
+			let data = await fetchUserData(user.uid);
 
-			if (!userSnap.exists()) {
-				// 신규 사용자: Firestore에 데이터 생성
-				const newUserData: UserData = {
-					email: user.email,
-					displayName: user.displayName,
-					photoURL: user.photoURL,
-					createdAt: new Date().toISOString(),
-					scrapList: localBookmarks,
-					onboardingCompleted: false,
-					selectedCategory: "all",
-				};
-
-				await setDoc(userRef, newUserData);
-				setUserData(newUserData);
+			if (!data) {
+				// 신규 사용자
+				data = await createUserData(user, localBookmarks);
 				setIsNewUser(true);
-
-				// 로컬스토리지 마이그레이션 완료 후 정리
-				if (localBookmarks.length > 0) {
-					clearBookmarks();
-				}
+				if (localBookmarks.length > 0) clearBookmarks();
 			} else {
-				// 기존 사용자: 데이터 로드 및 로컬스토리지 병합
-				const data = userSnap.data() as UserData;
-
+				// 기존 사용자 - 로컬 북마크 병합
 				if (localBookmarks.length > 0) {
-					const mergedScrapList = [
-						...new Set([...data.scrapList, ...localBookmarks]),
-					];
-					await updateDoc(userRef, { scrapList: mergedScrapList });
-					data.scrapList = mergedScrapList;
+					data.scrapList = await mergeScrapList(
+						user.uid,
+						data.scrapList,
+						localBookmarks
+					);
 					clearBookmarks();
 				}
-
-				setUserData(data);
 				setIsNewUser(!data.onboardingCompleted);
 			}
+
+			setUserData(data);
 		} catch (error) {
 			console.error("사용자 데이터 로드 실패:", error);
 			setUserData(null);
@@ -118,25 +91,14 @@ export function UserDataProvider({ children }: { children: ReactNode }) {
 		}
 	};
 
-	/**
-	 * 사용자 데이터 새로고침
-	 */
 	const refreshUserData = async () => {
-		await loadOrCreateUserData();
+		await loadUserData();
 	};
 
-	/**
-	 * 온보딩 완료 처리
-	 */
 	const completeOnboarding = async (category: CategoryType) => {
 		if (!user) return;
 
-		const userRef = doc(db, "users", user.uid);
-		await updateDoc(userRef, {
-			onboardingCompleted: true,
-			selectedCategory: category,
-		});
-
+		await completeUserOnboarding(user.uid, category);
 		setUserData((prev) =>
 			prev
 				? { ...prev, onboardingCompleted: true, selectedCategory: category }
@@ -145,25 +107,15 @@ export function UserDataProvider({ children }: { children: ReactNode }) {
 		setIsNewUser(false);
 	};
 
-	/**
-	 * 카테고리 업데이트
-	 */
 	const updateCategory = async (category: CategoryType) => {
 		if (!user) return;
 
-		const userRef = doc(db, "users", user.uid);
-		await updateDoc(userRef, {
-			selectedCategory: category,
-		});
-
+		await updateUserCategory(user.uid, category);
 		setUserData((prev) =>
 			prev ? { ...prev, selectedCategory: category } : null
 		);
 	};
 
-	/**
-	 * 스크랩 리스트 업데이트 (ScrapContext에서 호출)
-	 */
 	const updateScrapList = (newScrapList: number[]) => {
 		setUserData((prev) => (prev ? { ...prev, scrapList: newScrapList } : null));
 	};
