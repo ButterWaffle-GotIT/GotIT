@@ -43,6 +43,7 @@ export interface RecommendedTerm {
 	category: string;
 	description: string;
 	iconColor: string;
+	slug: string;
 }
 
 /**
@@ -64,6 +65,7 @@ export async function getRecommendedTerms(
 				category: categoryLabels[targetCategory],
 				description: t.summary,
 				iconColor: categoryColors[categoryId],
+				slug: t.slug,
 			}));
 		}
 
@@ -78,6 +80,7 @@ export async function getRecommendedTerms(
 			category: categoryLabels[targetCategory],
 			description: t.summary,
 			iconColor: categoryColors[categoryId],
+			slug: t.slug,
 		}));
 	} catch (error) {
 		console.error("추천 용어 로드 실패:", error);

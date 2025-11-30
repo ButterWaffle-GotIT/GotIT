@@ -1,4 +1,7 @@
+"use client";
+
 import React, { ElementType } from "react";
+import { useRouter } from "next/navigation";
 
 // 1. 카테고리 아이콘 컴포넌트 임포트 (TagList.tsx와 동일한 Named Export 가정)
 import { CategoryAllIcon } from "@/components/icons/ic_category_all";
@@ -17,6 +20,7 @@ interface TermCardProps {
 	category: string;
 	description: string;
 	iconColor: string;
+	slug: string;
 }
 
 // 2. 카테고리 이름과 아이콘 컴포넌트를 매핑
@@ -38,13 +42,22 @@ export default function RecommendedTermCard({
 	category,
 	description,
 	iconColor,
+	slug,
 }: TermCardProps) {
+	const router = useRouter();
 	// 3. 현재 카테고리에 맞는 아이콘 컴포넌트를 찾습니다.
 	const IconComponent = CategoryIconMap[category] || CategoryAllIcon;
 
+	const handleClick = () => {
+		router.push(`/terms/${slug}`);
+	};
+
 	return (
 		// Figma: w-64 p-5 rounded-xl outline outline-[0.25px] outline-offset-[-0.25px] outline-white
-		<div className="flex w-64 cursor-pointer flex-col items-start justify-start gap-2.5 overflow-hidden rounded-xl bg-black/50 p-5 outline outline-[0.25px] outline-white/25 transition-colors hover:bg-black/70">
+		<div
+			onClick={handleClick}
+			className="flex w-64 cursor-pointer flex-col items-start justify-start gap-2.5 overflow-hidden rounded-xl bg-black/50 p-5 outline outline-[0.25px] outline-white/25 transition-colors hover:bg-black/70"
+		>
 			<div className="flex flex-col items-start justify-start gap-2.5 self-stretch">
 				<div className="inline-flex items-center justify-start gap-1 self-stretch">
 					<div className="flex flex-1 items-center justify-start gap-2">
