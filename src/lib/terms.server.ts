@@ -10,7 +10,12 @@ import type { TermIndexItem, TermDetail } from "./terms";
  * 서버에서 용어 인덱스 로드 (파일 시스템)
  */
 export function getTermsIndexServer(): TermIndexItem[] {
-	const filePath = path.join(process.cwd(), "public", "terms", "terms.index.json");
+	const filePath = path.join(
+		process.cwd(),
+		"public",
+		"terms",
+		"terms.index.json"
+	);
 	const fileContent = fs.readFileSync(filePath, "utf-8");
 	return JSON.parse(fileContent);
 }
