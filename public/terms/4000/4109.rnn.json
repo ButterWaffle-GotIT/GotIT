@@ -11,8 +11,14 @@
 	"relatedIds": [4008, 4009, 4109],
 	"confusableIds": [4109],
 	"useCases": [
-		{ "role": "Data", "text": "주식 시장 데이터와 같은 시계열 분석을 위해 RNN 모델을 사용했습니다." },
-		{ "role": "Dev", "text": "LSTM 구조를 활용하여 사용자가 다음에 입력할 단어를 예측하는 기능을 구현했습니다." }
+		{
+			"role": "Data",
+			"text": "주식 시장 데이터와 같은 시계열 분석을 위해 RNN 모델을 사용했습니다."
+		},
+		{
+			"role": "Dev",
+			"text": "LSTM 구조를 활용하여 사용자가 다음에 입력할 단어를 예측하는 기능을 구현했습니다."
+		}
 	],
 	"keywords": ["rnn", "순환신경망", "lstm", "sequence", "nlp"],
 	"level": "intermediate",

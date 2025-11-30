@@ -11,8 +11,14 @@
 	"relatedIds": [3035, 3046],
 	"confusableIds": [3035],
 	"useCases": [
-		{ "role": "Dev", "text": "모든 웹사이트 응답 헤더에 HSTS 설정을 추가하여 보안 점수를 높여야 합니다." },
-		{ "role": "PM", "text": "HSTS 정책을 미리 로드하는 'preload list'에 등록하여 사용자 접속의 안전성을 극대화합시다." }
+		{
+			"role": "Dev",
+			"text": "모든 웹사이트 응답 헤더에 HSTS 설정을 추가하여 보안 점수를 높여야 합니다."
+		},
+		{
+			"role": "PM",
+			"text": "HSTS 정책을 미리 로드하는 'preload list'에 등록하여 사용자 접속의 안전성을 극대화합시다."
+		}
 	],
 	"keywords": ["hsts", "https", "보안", "헤더", "웹보안"],
 	"level": "intermediate",

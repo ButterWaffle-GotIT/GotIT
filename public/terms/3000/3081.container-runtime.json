@@ -11,8 +11,14 @@
 	"relatedIds": [3000, 3001, 3070],
 	"confusableIds": [3000],
 	"useCases": [
-		{ "role": "Dev", "text": "쿠버네티스 클러스터의 안정성을 높이기 위해 컨테이너 런타임을 `docker`에서 `containerd`로 변경했습니다." },
-		{ "role": "PM", "text": "보안 취약점 이슈가 발생하지 않도록 컨테이너 런타임의 버전을 주기적으로 업데이트해야 합니다." }
+		{
+			"role": "Dev",
+			"text": "쿠버네티스 클러스터의 안정성을 높이기 위해 컨테이너 런타임을 `docker`에서 `containerd`로 변경했습니다."
+		},
+		{
+			"role": "PM",
+			"text": "보안 취약점 이슈가 발생하지 않도록 컨테이너 런타임의 버전을 주기적으로 업데이트해야 합니다."
+		}
 	],
 	"keywords": ["runtime", "컨테이너", "런타임", "docker", "k8s"],
 	"level": "advanced",

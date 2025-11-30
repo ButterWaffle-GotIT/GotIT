@@ -11,10 +11,22 @@
 	"relatedIds": [3004, 3087, 3088],
 	"confusableIds": [3087],
 	"useCases": [
-		{ "role": "Dev", "text": "분산 추적 시스템을 통해 사용자 로그인 요청이 데이터베이스에서 3초 동안 지연되는 것을 발견하고 최적화했습니다." },
-		{ "role": "PM", "text": "신규 서비스의 성능 지표를 명확히 측정하기 위해 분산 추적 시스템을 필수적으로 도입했습니다." }
+		{
+			"role": "Dev",
+			"text": "분산 추적 시스템을 통해 사용자 로그인 요청이 데이터베이스에서 3초 동안 지연되는 것을 발견하고 최적화했습니다."
+		},
+		{
+			"role": "PM",
+			"text": "신규 서비스의 성능 지표를 명확히 측정하기 위해 분산 추적 시스템을 필수적으로 도입했습니다."
+		}
 	],
-	"keywords": ["distributed-tracing", "추적", "마이크로서비스", "병목", "observability"],
+	"keywords": [
+		"distributed-tracing",
+		"추적",
+		"마이크로서비스",
+		"병목",
+		"observability"
+	],
 	"level": "advanced",
 	"updatedAt": "2025-11-30"
 }

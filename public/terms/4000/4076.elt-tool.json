@@ -11,8 +11,14 @@
 	"relatedIds": [4031, 4033, 4073],
 	"confusableIds": [4032],
 	"useCases": [
-		{ "role": "Dev", "text": "ERP 데이터와 CRM 데이터를 통합하기 위해 ETL 툴을 활용하여 매일 새벽 데이터 배치를 실행해야 합니다." },
-		{ "role": "PM", "text": "ETL 툴을 사용하면 데이터 흐름 관리가 쉬워져 유지 보수 비용을 줄일 수 있을 겁니다." }
+		{
+			"role": "Dev",
+			"text": "ERP 데이터와 CRM 데이터를 통합하기 위해 ETL 툴을 활용하여 매일 새벽 데이터 배치를 실행해야 합니다."
+		},
+		{
+			"role": "PM",
+			"text": "ETL 툴을 사용하면 데이터 흐름 관리가 쉬워져 유지 보수 비용을 줄일 수 있을 겁니다."
+		}
 	],
 	"keywords": ["etl-tool", "etl", "파이프라인", "통합", "솔루션"],
 	"level": "intermediate",

@@ -11,10 +11,22 @@
 	"relatedIds": [3015, 3049],
 	"confusableIds": [3083],
 	"useCases": [
-		{ "role": "Dev", "text": "Ansible을 사용하여 모든 프로덕션 서버에 공통 보안 설정을 형상 관리 코드로 적용했습니다." },
-		{ "role": "PM", "text": "형상 관리 시스템을 통해 개발 환경과 운영 환경 간의 설정 차이로 인한 버그 발생을 제거했습니다." }
+		{
+			"role": "Dev",
+			"text": "Ansible을 사용하여 모든 프로덕션 서버에 공통 보안 설정을 형상 관리 코드로 적용했습니다."
+		},
+		{
+			"role": "PM",
+			"text": "형상 관리 시스템을 통해 개발 환경과 운영 환경 간의 설정 차이로 인한 버그 발생을 제거했습니다."
+		}
 	],
-	"keywords": ["configuration-management", "형상관리", "ansible", "설정", "일관성"],
+	"keywords": [
+		"configuration-management",
+		"형상관리",
+		"ansible",
+		"설정",
+		"일관성"
+	],
 	"level": "intermediate",
 	"updatedAt": "2025-11-30"
 }

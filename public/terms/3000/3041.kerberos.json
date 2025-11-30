@@ -11,8 +11,14 @@
 	"relatedIds": [3024, 3025],
 	"confusableIds": [3024],
 	"useCases": [
-		{ "role": "Dev", "text": "사내 LDAP 시스템과 연동하여 Kerberos 인증 프로토콜을 구현하여 SSO를 적용했습니다." },
-		{ "role": "PM", "text": "직원들의 계정 관리 복잡도를 낮추기 위해 Kerberos 기반의 중앙 인증 시스템 도입이 시급합니다." }
+		{
+			"role": "Dev",
+			"text": "사내 LDAP 시스템과 연동하여 Kerberos 인증 프로토콜을 구현하여 SSO를 적용했습니다."
+		},
+		{
+			"role": "PM",
+			"text": "직원들의 계정 관리 복잡도를 낮추기 위해 Kerberos 기반의 중앙 인증 시스템 도입이 시급합니다."
+		}
 	],
 	"keywords": ["kerberos", "티켓", "인증", "sso", "프로토콜"],
 	"level": "advanced",

@@ -11,8 +11,14 @@
 	"relatedIds": [4031, 4032, 4073],
 	"confusableIds": [],
 	"useCases": [
-		{ "role": "Dev", "text": "외부 결제 시스템의 환율 데이터를 우리 내부 기준에 맞게 변환하는 로직을 추가해야 합니다." },
-		{ "role": "Data", "text": "분석에 필요한 최종 지표를 얻기 위해 원본 로그 데이터를 복잡하게 변환해야 했습니다." }
+		{
+			"role": "Dev",
+			"text": "외부 결제 시스템의 환율 데이터를 우리 내부 기준에 맞게 변환하는 로직을 추가해야 합니다."
+		},
+		{
+			"role": "Data",
+			"text": "분석에 필요한 최종 지표를 얻기 위해 원본 로그 데이터를 복잡하게 변환해야 했습니다."
+		}
 	],
 	"keywords": ["data-transformation", "변환", "가공", "etl", "elt", "t"],
 	"level": "intermediate",

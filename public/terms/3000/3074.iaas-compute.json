@@ -11,8 +11,14 @@
 	"relatedIds": [3018, 4104, 3069],
 	"confusableIds": [3075],
 	"useCases": [
-		{ "role": "Dev", "text": "새로운 환경에 필요한 컴퓨트 자원을 IaaS Compute 인스턴스 타입으로 프로비저닝했습니다." },
-		{ "role": "PM", "text": "가장 비용 효율적인 IaaS 컴퓨트 인스턴스 모델을 선택하여 서버 운영 예산을 절감해야 합니다." }
+		{
+			"role": "Dev",
+			"text": "새로운 환경에 필요한 컴퓨트 자원을 IaaS Compute 인스턴스 타입으로 프로비저닝했습니다."
+		},
+		{
+			"role": "PM",
+			"text": "가장 비용 효율적인 IaaS 컴퓨트 인스턴스 모델을 선택하여 서버 운영 예산을 절감해야 합니다."
+		}
 	],
 	"keywords": ["iaas-compute", "vm", "ec2", "인스턴스", "컴퓨팅"],
 	"level": "beginner",

@@ -11,8 +11,14 @@
 	"relatedIds": [3002, 3086, 3037],
 	"confusableIds": [4047],
 	"useCases": [
-		{ "role": "Dev", "text": "PR이 머지되기 전에 DevSecOps 파이프라인을 통해 모든 코드의 보안 취약점을 자동으로 스캔해야 합니다." },
-		{ "role": "PM", "text": "DevSecOps 문화 도입으로 보안 팀과 개발 팀 간의 협업이 크게 개선되었습니다." }
+		{
+			"role": "Dev",
+			"text": "PR이 머지되기 전에 DevSecOps 파이프라인을 통해 모든 코드의 보안 취약점을 자동으로 스캔해야 합니다."
+		},
+		{
+			"role": "PM",
+			"text": "DevSecOps 문화 도입으로 보안 팀과 개발 팀 간의 협업이 크게 개선되었습니다."
+		}
 	],
 	"keywords": ["devsecops", "보안", "ci/cd", "shift-left", "취약점"],
 	"level": "beginner",

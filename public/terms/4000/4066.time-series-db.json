@@ -11,8 +11,14 @@
 	"relatedIds": [4000, 4001, 4030],
 	"confusableIds": [4002],
 	"useCases": [
-		{ "role": "Dev", "text": "수백 대 서버의 실시간 로그와 지표는 시계열 DB인 인플럭스DB(InfluxDB)에 저장하는 것이 성능에 유리합니다." },
-		{ "role": "PM", "text": "대시보드에서 1년 전의 IoT 장치 데이터를 빠르게 조회할 수 있도록 TSDB를 도입합시다." }
+		{
+			"role": "Dev",
+			"text": "수백 대 서버의 실시간 로그와 지표는 시계열 DB인 인플럭스DB(InfluxDB)에 저장하는 것이 성능에 유리합니다."
+		},
+		{
+			"role": "PM",
+			"text": "대시보드에서 1년 전의 IoT 장치 데이터를 빠르게 조회할 수 있도록 TSDB를 도입합시다."
+		}
 	],
 	"keywords": ["tsdb", "time-series", "시계열", "iot", "지표", "로그"],
 	"level": "intermediate",

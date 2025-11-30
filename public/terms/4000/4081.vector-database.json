@@ -11,8 +11,14 @@
 	"relatedIds": [4010, 4007],
 	"confusableIds": [4001],
 	"useCases": [
-		{ "role": "Dev", "text": "LLM의 환각 현상을 줄이기 위해 벡터 DB를 사용한 RAG 시스템을 도입합시다." },
-		{ "role": "PM", "text": "고객 질문의 '의도'를 파악해 가장 유사한 문서를 벡터 검색으로 찾아 빠르게 답변할 수 있습니다." }
+		{
+			"role": "Dev",
+			"text": "LLM의 환각 현상을 줄이기 위해 벡터 DB를 사용한 RAG 시스템을 도입합시다."
+		},
+		{
+			"role": "PM",
+			"text": "고객 질문의 '의도'를 파악해 가장 유사한 문서를 벡터 검색으로 찾아 빠르게 답변할 수 있습니다."
+		}
 	],
 	"keywords": ["vector-db", "임베딩", "embedding", "rag", "유사도", "llm"],
 	"level": "advanced",
