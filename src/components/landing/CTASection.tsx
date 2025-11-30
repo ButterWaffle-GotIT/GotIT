@@ -8,7 +8,7 @@ export function CTASection() {
 	const router = useRouter();
 
 	return (
-		<section className="flex h-screen snap-start snap-always flex-col justify-between px-12 py-32 md:px-24 lg:px-60">
+		<section className="flex h-screen snap-start snap-always flex-col justify-between px-12 pt-32 pb-0 md:px-24 lg:px-60">
 			<div className="flex flex-1 items-center">
 				<div className="mx-auto w-full max-w-4xl text-center">
 					<motion.h2
@@ -29,7 +29,7 @@ export function CTASection() {
 					>
 						<button
 							onClick={() => router.push("/search")}
-							className="group inline-flex items-center gap-4 rounded-full border border-gray-700 bg-white/5 px-8 py-4 text-white backdrop-blur-sm transition-all hover:border-white/30 hover:bg-white/10"
+							className="group inline-flex items-center gap-4 rounded-full bg-gradient-to-r from-violet-700 to-red-400 px-8 py-4 text-white transition-all hover:opacity-90"
 						>
 							<SearchIcon size={20} color="currentColor" />
 							<span>용어 검색</span>
@@ -44,10 +44,12 @@ export function CTASection() {
 			</div>
 
 			{/* Footer */}
-			<footer className="border-t border-gray-800 pt-12">
+			<footer className="border-t border-gray-800 py-8">
 				<div className="mx-auto flex max-w-6xl items-center justify-between">
 					<LogoText width={89} height={30} />
-					<p className="text-xs text-gray-600">© 2025</p>
+					<p className="text-xs text-gray-600">
+						© 2025 GotIT. All rights reserved.
+					</p>
 				</div>
 			</footer>
 		</section>
