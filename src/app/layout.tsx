@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
-import Image from "next/image";
 import { FirebaseAnalytics } from "@/components/providers/FirebaseAnalytics";
 import { Providers } from "@/components/providers/Providers";
 import Header from "@/components/layout/Header";
@@ -19,12 +18,9 @@ export default function RootLayout({
 	return (
 		<html lang="ko">
 			<body className="bg-bg relative min-h-screen">
-				<Image
-					src="/images/gradient.webp"
-					alt=""
-					fill
-					className="pointer-events-none fixed z-0 object-cover object-top"
-					priority
+				<div
+					className="pointer-events-none fixed top-0 left-0 z-0 h-screen w-full bg-cover bg-top bg-no-repeat"
+					style={{ backgroundImage: "url('/images/gradient.webp')" }}
 				/>
 
 				<ScrollToTop />
