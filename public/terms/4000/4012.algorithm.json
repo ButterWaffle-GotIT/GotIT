@@ -9,8 +9,8 @@
 	"summary": "문제를 해결하기 위한 절차적 방법이나 규칙의 집합입니다.",
 	"onelinerForNonTech": "문제를 푸는 ‘레시피’.",
 	"description": "알고리즘은 입력을 받아 원하는 출력을 만드는 논리적 절차로, 효율성과 정확성이 중요합니다. 정렬, 탐색, 최적화 등이 대표적입니다.",
-	"tags": ["알고리즘-자료구조", "문제해결", "절차"],
-	"primaryTag": "알고리즘-자료구조",
+	"tags": ["IT비즈니스", "문제해결", "절차"],
+	"primaryTag": "IT비즈니스",
 	"relatedIds": [],
 	"confusableIds": [],
 	"useCases": [

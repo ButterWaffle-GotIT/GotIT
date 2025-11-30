@@ -9,8 +9,8 @@
 	"summary": "인간의 언어를 기계가 이해하고 생성하게 하는 기술입니다.",
 	"onelinerForNonTech": "컴퓨터에게 말을 가르치는 기술.",
 	"description": "자연어 처리는 문장 분석, 감정 분석, 기계 번역, 챗봇 등 다양한 분야에 활용됩니다. Transformer 기반 모델이 주류로 자리잡았습니다.",
-	"tags": ["데이터-AI", "언어", "NLP"],
-	"primaryTag": "데이터-AI",
+	"tags": ["AI", "언어", "NLP"],
+	"primaryTag": "AI",
 	"relatedIds": [],
 	"confusableIds": [],
 	"useCases": [

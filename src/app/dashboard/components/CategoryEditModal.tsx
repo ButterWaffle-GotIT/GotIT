@@ -18,7 +18,7 @@ const selectableCategories: CategoryType[] = [
 	"all",
 	"frontend",
 	"backend",
-	"uiux",
+	"uxui",
 	"ai",
 	"cloud",
 	"data",

@@ -14,7 +14,7 @@ export type CategoryType =
 	| "all"
 	| "frontend"
 	| "backend"
-	| "uiux"
+	| "uxui"
 	| "ai"
 	| "cloud"
 	| "data"
@@ -36,9 +36,9 @@ export const categoryConfig = {
 		icon: CategoryBackendIcon,
 		bgColor: "bg-category-backend",
 	},
-	uiux: {
+	uxui: {
 		icon: CategoryUiuxIcon,
-		bgColor: "bg-category-uiux",
+		bgColor: "bg-category-uxui",
 	},
 	ai: {
 		icon: CategoryAiIcon,
@@ -71,7 +71,7 @@ export const categoryLabels = {
 	all: "전체",
 	frontend: "프론트엔드",
 	backend: "백엔드",
-	uiux: "UI/UX",
+	uxui: "UX/UI",
 	ai: "AI",
 	cloud: "클라우드",
 	data: "데이터",
@@ -85,7 +85,7 @@ export const categoryHoverColors = {
 	all: "hover:bg-[rgba(170,177,188,0.1)]",
 	frontend: "hover:bg-[rgba(38,199,239,0.1)]",
 	backend: "hover:bg-[rgba(18,168,73,0.1)]",
-	uiux: "hover:bg-[rgba(244,94,143,0.1)]",
+	uxui: "hover:bg-[rgba(244,94,143,0.1)]",
 	ai: "hover:bg-[rgba(174,119,250,0.1)]",
 	cloud: "hover:bg-[rgba(55,173,233,0.1)]",
 	data: "hover:bg-[rgba(38,205,174,0.1)]",
@@ -99,7 +99,7 @@ export const categorySelectedColors = {
 	all: "bg-[rgba(170,177,188,0.5)]",
 	frontend: "bg-[rgba(38,199,239,0.5)]",
 	backend: "bg-[rgba(18,168,73,0.5)]",
-	uiux: "bg-[rgba(244,94,143,0.5)]",
+	uxui: "bg-[rgba(244,94,143,0.5)]",
 	ai: "bg-[rgba(174,119,250,0.5)]",
 	cloud: "bg-[rgba(55,173,233,0.5)]",
 	data: "bg-[rgba(38,205,174,0.5)]",

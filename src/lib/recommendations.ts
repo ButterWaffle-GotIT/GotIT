@@ -9,7 +9,7 @@ import { categoryLabels } from "@/components/ui/category/config";
 // 카테고리 ID 매핑
 export const categoryIdMap: Record<Exclude<CategoryType, "all">, number> = {
 	frontend: 1000,
-	uiux: 1000,
+	uxui: 1000,
 	backend: 2000,
 	cloud: 3000,
 	devops: 3000,

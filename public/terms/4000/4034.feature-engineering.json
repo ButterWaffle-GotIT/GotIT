@@ -9,8 +9,8 @@
 	"summary": "머신러닝 모델 성능 향상을 위해 입력 변수를 가공·생성하는 과정입니다.",
 	"onelinerForNonTech": "데이터를 모델이 더 잘 이해하게 만드는 재료 손질 과정.",
 	"description": "피처 엔지니어링은 원시 데이터에서 의미 있는 특징을 추출하거나 변형해 모델의 학습 성능을 높이는 단계입니다.",
-	"tags": ["데이터-AI", "ML"],
-	"primaryTag": "데이터-AI",
+	"tags": ["AI", "ML"],
+	"primaryTag": "AI",
 	"relatedIds": [4037],
 	"confusableIds": [],
 	"useCases": [

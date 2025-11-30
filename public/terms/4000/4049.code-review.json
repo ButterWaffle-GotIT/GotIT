@@ -9,8 +9,8 @@
 	"summary": "개발자가 서로의 코드를 검토하여 품질을 향상시키는 협업 과정입니다.",
 	"onelinerForNonTech": "개발자들이 서로의 코드를 점검하는 절차.",
 	"description": "코드 리뷰는 버그를 조기 발견하고 코드 일관성을 유지해 팀 생산성을 높이는 핵심 협업 과정입니다.",
-	"tags": ["개발문화-프로세스", "협업"],
-	"primaryTag": "개발문화-프로세스",
+	"tags": ["IT비즈니스", "협업"],
+	"primaryTag": "IT비즈니스",
 	"relatedIds": [4047],
 	"confusableIds": [],
 	"useCases": [

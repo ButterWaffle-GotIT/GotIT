@@ -9,8 +9,8 @@
 	"summary": "지속적 통합(Continuous Integration)과 지속적 배포(Continuous Deployment) 프로세스입니다.",
 	"onelinerForNonTech": "코드가 자동으로 테스트되고 배포되게 하는 체계.",
 	"description": "CI/CD는 코드 변경 시 자동으로 테스트와 빌드를 수행해 개발 효율과 안정성을 높입니다.",
-	"tags": ["개발문화-프로세스", "자동화"],
-	"primaryTag": "개발문화-프로세스",
+	"tags": ["IT비즈니스", "자동화"],
+	"primaryTag": "IT비즈니스",
 	"relatedIds": [4047],
 	"confusableIds": [],
 	"useCases": [

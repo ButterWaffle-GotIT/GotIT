@@ -6,8 +6,8 @@
 	"summary": "사용자가 원하는 정보를 쉽게 찾고 이해할 수 있도록 웹사이트나 앱의 콘텐츠를 조직하고 구조화하는 방식.",
 	"onelinerForNonTech": "웹사이트의 '목차'나 '안내 지도'를 만들어서 어디에 뭐가 있는지 쉽게 알 수 있게 하는 작업.",
 	"description": "정보 구조(IA)는 사용자가 콘텐츠를 탐색하고 이해하는 방식을 설계하는 것이다. 콘텐츠를 분류하고(Taxonomy), 레이블을 지정하며(Labeling), 탐색 경로(Navigation)를 설계하는 활동이 포함된다.",
-	"tags": ["UI/UX", "기획"],
-	"primaryTag": "UI/UX",
+	"tags": ["UX/UI", "기획"],
+	"primaryTag": "UX/UI",
 	"relatedIds": [],
 	"confusableIds": [],
 	"useCases": [

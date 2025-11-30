@@ -9,8 +9,8 @@
 	"summary": "조직의 목표(Objectives)와 핵심 결과(Key Results)를 정의하고 관리하는 시스템입니다.",
 	"onelinerForNonTech": "팀이 한 방향으로 달리게 하는 목표 프레임워크.",
 	"description": "OKR은 Google 등에서 널리 사용되며, 투명한 목표 공유와 성과 향상을 유도합니다.",
-	"tags": ["IT비즈니스-기획-프로젝트관리", "지표", "조직관리"],
-	"primaryTag": "IT비즈니스-기획-프로젝트관리",
+	"tags": ["IT비즈니스", "지표", "조직관리"],
+	"primaryTag": "IT비즈니스",
 	"relatedIds": [],
 	"confusableIds": [],
 	"useCases": [

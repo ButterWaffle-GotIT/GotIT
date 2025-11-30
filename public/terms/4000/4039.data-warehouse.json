@@ -9,8 +9,8 @@
 	"summary": "비즈니스 인사이트를 위한 구조화된 데이터 분석 저장소입니다.",
 	"onelinerForNonTech": "기업 데이터 분석을 위한 정제된 창고.",
 	"description": "데이터 웨어하우스는 여러 소스의 데이터를 통합·정제해 분석과 리포팅에 최적화된 구조를 제공합니다.",
-	"tags": ["데이터-AI", "분석"],
-	"primaryTag": "데이터-AI",
+	"tags": ["AI", "분석"],
+	"primaryTag": "AI",
 	"relatedIds": [4038, 4040],
 	"confusableIds": [],
 	"useCases": [

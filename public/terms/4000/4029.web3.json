@@ -9,8 +9,8 @@
 	"summary": "블록체인 기반의 탈중앙화 웹 생태계를 지칭합니다.",
 	"onelinerForNonTech": "데이터를 기업이 아닌 ‘사용자’가 소유하는 새로운 인터넷.",
 	"description": "Web3는 블록체인, 스마트컨트랙트, NFT 등을 기반으로 신뢰와 투명성을 중심으로 한 차세대 웹을 지향합니다.",
-	"tags": ["IT비즈니스-기획-프로젝트관리", "블록체인", "신기술"],
-	"primaryTag": "IT비즈니스-기획-프로젝트관리",
+	"tags": ["IT비즈니스", "블록체인", "신기술"],
+	"primaryTag": "IT비즈니스",
 	"relatedIds": [],
 	"confusableIds": [],
 	"useCases": [

@@ -9,8 +9,8 @@
 	"summary": "함수가 자기 자신을 호출하는 알고리즘 구조입니다.",
 	"onelinerForNonTech": "문제를 자기 자신에게 다시 묻는 반복 구조.",
 	"description": "재귀는 함수가 자기 자신을 반복 호출하며 문제를 단계적으로 해결하는 방식입니다. 트리 탐색이나 분할 정복에서 자주 사용됩니다.",
-	"tags": ["알고리즘-자료구조", "알고리즘"],
-	"primaryTag": "알고리즘-자료구조",
+	"tags": ["IT비즈니스", "알고리즘"],
+	"primaryTag": "IT비즈니스",
 	"relatedIds": [4042],
 	"confusableIds": [],
 	"useCases": [

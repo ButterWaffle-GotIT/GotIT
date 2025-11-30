@@ -9,8 +9,8 @@
 	"summary": "Business Intelligence의 약어로, 데이터를 시각화하여 의사결정을 지원하는 기술입니다.",
 	"onelinerForNonTech": "데이터로 경영 판단을 돕는 시각적 도구.",
 	"description": "BI는 데이터를 시각화하고 대시보드로 제공하여, 경영진이 빠르고 근거 있는 결정을 내리도록 지원합니다.",
-	"tags": ["데이터-AI", "분석"],
-	"primaryTag": "데이터-AI",
+	"tags": ["AI", "분석"],
+	"primaryTag": "AI",
 	"relatedIds": [4039],
 	"confusableIds": [],
 	"useCases": [

@@ -6,8 +6,8 @@
 	"summary": "제품이나 서비스의 초기 단계에서 레이아웃, 정보 구조(IA), 콘텐츠의 우선순위 등을 단순한 선과 상자 형태로 표현한 저수준(Low-fidelity) 시각적 설계도.",
 	"onelinerForNonTech": "제품 개발 전에 만들 기능과 정보의 위치만 종이에 대충 그린 '건물의 뼈대 설계도'.",
 	"description": "시각적인 요소를 배제하고, 화면에 무엇이 들어가고 어디에 배치될지 구조와 흐름에 집중하여 만든다. Low-Fidelit 단계의 산출물로, 디자이너, 기획자, 개발자가 초기 아이디어를 공유하고 기능적 요구사항을 빠르게 검토하는 데 사용된다.",
-	"tags": ["UI/UX디자인"],
-	"primaryTag": "UI/UX디자인",
+	"tags": ["UX/UI"],
+	"primaryTag": "UX/UI",
 	"relatedIds": [1026, 1027],
 	"confusableIds": [1026],
 	"useCases": [

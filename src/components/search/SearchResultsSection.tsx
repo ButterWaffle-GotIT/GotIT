@@ -1,5 +1,10 @@
+"use client";
+
+import { useState } from "react";
 import SearchResultCard from "./SearchResultCard";
 import type { TermIndexItem } from "@/lib/terms";
+import { sortTerms, SortType } from "@/lib/sortTerms";
+import SortDropdown from "@/components/ui/SortDropdown";
 
 interface SearchResultsSectionProps {
 	searchTerm: string;
@@ -14,6 +19,10 @@ export default function SearchResultsSection({
 	isSearching,
 	searchResults,
 }: SearchResultsSectionProps) {
+	const [sortType, setSortType] = useState<SortType>("latest");
+
+	const sortedResults = sortTerms(searchResults, sortType);
+
 	return (
 		<section className="flex flex-col items-start justify-start gap-5 self-stretch">
 			<div className="flex items-center justify-between self-stretch">
@@ -22,18 +31,16 @@ export default function SearchResultsSection({
 						? `검색 결과 : "${searchTerm}"`
 						: `${selectedTag} 카테고리의 모든 용어`}
 				</div>
-				<button className="rounded-lg border border-gray-700 px-3 py-1.5 text-sm text-gray-400 transition-colors hover:border-gray-600 hover:text-gray-300">
-					최신순 ▼
-				</button>
+				<SortDropdown sortType={sortType} onSortChange={setSortType} />
 			</div>
 
 			{isSearching ? (
 				<div className="flex w-full items-center justify-center py-20">
 					<div className="text-gray-500">검색 중...</div>
 				</div>
-			) : searchResults.length > 0 ? (
+			) : sortedResults.length > 0 ? (
 				<div className="grid grid-cols-1 gap-4 self-stretch">
-					{searchResults.map((item) => (
+					{sortedResults.map((item) => (
 						<SearchResultCard key={item.id} item={item} />
 					))}
 				</div>

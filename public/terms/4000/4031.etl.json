@@ -9,8 +9,8 @@
 	"summary": "데이터를 추출(Extract)·변환(Transform)·적재(Load)하는 과정입니다.",
 	"onelinerForNonTech": "여러 데이터들을 한데 모아 정리해주는 자동 정리 시스템.",
 	"description": "ETL은 여러 소스의 데이터를 추출해 변환하고, 데이터베이스나 웨어하우스에 적재하는 과정입니다. 데이터 분석의 출발점으로 쓰입니다.",
-	"tags": ["데이터-AI", "데이터파이프라인"],
-	"primaryTag": "데이터-AI",
+	"tags": ["AI", "데이터파이프라인"],
+	"primaryTag": "AI",
 	"relatedIds": [4032, 4033],
 	"confusableIds": [],
 	"useCases": [
