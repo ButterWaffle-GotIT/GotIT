@@ -56,21 +56,27 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 		const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
 			setUser(currentUser);
 
-			if (currentUser) {
-				const userRef = doc(db, "users", currentUser.uid);
-				const userSnap = await getDoc(userRef);
+			try {
+				if (currentUser) {
+					const userRef = doc(db, "users", currentUser.uid);
+					const userSnap = await getDoc(userRef);
 
-				if (userSnap.exists()) {
-					const data = userSnap.data() as UserData;
-					setUserData(data);
-					setIsNewUser(!data.onboardingCompleted);
+					if (userSnap.exists()) {
+						const data = userSnap.data() as UserData;
+						setUserData(data);
+						setIsNewUser(!data.onboardingCompleted);
+					}
+				} else {
+					setUserData(null);
+					setIsNewUser(false);
 				}
-			} else {
+			} catch (error) {
+				console.error("사용자 데이터 로드 실패:", error);
 				setUserData(null);
 				setIsNewUser(false);
+			} finally {
+				setLoading(false);
 			}
-
-			setLoading(false);
 		});
 
 		return () => unsubscribe();
