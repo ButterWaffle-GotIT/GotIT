@@ -46,7 +46,7 @@ export default function ScrapCard({ card }: ScrapCardProps) {
 					</div>
 				</div>
 
-				<span className="text-caption2 rounded-[6.25rem] bg-gray-900 px-2 py-0.5 text-gray-300">
+				<span className="text-caption2 whitespace-nowrap rounded-[6.25rem] bg-gray-900 px-2 py-0.5 text-gray-300">
 					{card.tag}
 				</span>
 			</div>

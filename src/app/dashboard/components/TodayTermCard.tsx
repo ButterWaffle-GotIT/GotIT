@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { useRouter } from "next/navigation";
 import { CalendarIcon } from "@/components/icons/ic_calendar";
 import { ArrowRightIcon } from "@/components/icons/ic_arrow_right";
 import { LightIcon } from "@/components/icons/ic_light";
@@ -24,14 +25,18 @@ const mockTermData: TermData = {
 const TodayTermCard: React.FC<{ data?: TermData }> = ({
 	data = mockTermData,
 }) => {
+	const router = useRouter();
+
+	const handleClick = () => {
+		router.push("/terms/typescript");
+	};
+
 	return (
 		<div className="glass fancy-outline inline-flex w-full flex-col items-start justify-start gap-3 rounded-[20px] bg-white/10 px-9 py-10">
 			<div className="inline-flex items-center justify-between self-stretch">
 				<div className="flex items-start justify-start gap-2.5">
 					<div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-violet-700 to-red-400 p-2.5">
-						<div className="flex h-6 w-6 items-center justify-center gap-3 overflow-hidden px-1.5 py-[3.33px]">
-							<CalendarIcon className="h-5 w-5 text-white" />
-						</div>
+						<CalendarIcon width={24} height={24} className="text-white" />
 					</div>
 					<div className="inline-flex w-24 flex-col items-start justify-start">
 						<div className="justify-center self-stretch font-['Pretendard'] text-base leading-6 font-normal text-gray-500">
@@ -43,7 +48,10 @@ const TodayTermCard: React.FC<{ data?: TermData }> = ({
 					</div>
 				</div>
 
-				<button className="inline-flex items-center justify-center gap-2 overflow-hidden rounded-lg bg-gradient-to-r from-violet-700 to-red-400 py-2 pr-5 pl-6">
+				<button
+				className="inline-flex items-center justify-center gap-2 overflow-hidden rounded-lg bg-gradient-to-r from-violet-700 to-red-400 py-2 pr-5 pl-6"
+				onClick={handleClick}
+			>
 					<div className="justify-center font-['Pretendard'] text-xs leading-5 font-bold text-white">
 						자세히 알아보기
 					</div>
@@ -68,9 +76,7 @@ const TodayTermCard: React.FC<{ data?: TermData }> = ({
 					쉬운 한줄 정리
 				</div>
 				<div className="inline-flex items-center justify-start gap-3">
-					<div className="relative h-5 w-5 overflow-hidden">
-						<LightIcon className="text-primary-300 absolute top-[1.50px] left-[3px] h-4 w-3.5" />
-					</div>
+					<LightIcon width={20} height={20} className="text-primary-300" />
 					<div className="justify-center font-['Pretendard'] text-base leading-6 font-normal text-gray-50">
 						{data.summary}
 					</div>
