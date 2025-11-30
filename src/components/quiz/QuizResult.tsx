@@ -54,7 +54,7 @@ export default function QuizResult({
 					: "이미 모든 문제가 스크랩되어 있습니다.",
 				"success"
 			);
-		} catch (error) {
+		} catch {
 			showToast("스크랩에 실패했습니다.", "error");
 		}
 	};
@@ -67,7 +67,7 @@ export default function QuizResult({
 				result.totalQuestions
 			);
 			onRetry(newQuestions);
-		} catch (error) {
+		} catch {
 			showToast("퀴즈 생성에 실패했습니다.", "error");
 			setIsRetrying(false);
 		}

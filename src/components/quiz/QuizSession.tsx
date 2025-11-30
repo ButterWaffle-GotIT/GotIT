@@ -2,7 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { calculateQuizResult, type QuizQuestion } from "@/lib/quiz";
+import {
+	calculateQuizResult,
+	type QuizQuestion,
+	type QuizResult,
+} from "@/lib/quiz";
 import {
 	categoryLabels,
 	type CategoryType,
@@ -12,7 +16,7 @@ import GradientButton from "@/components/ui/buttons/GradientButton";
 interface QuizSessionProps {
 	questions: QuizQuestion[];
 	category: CategoryType;
-	onComplete: (result: any) => void;
+	onComplete: (result: QuizResult) => void;
 }
 
 export default function QuizSession({
