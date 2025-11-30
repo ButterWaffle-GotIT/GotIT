@@ -26,7 +26,9 @@ export default function RootLayout({
 				<ScrollToTop />
 				<FirebaseAnalytics />
 				<Providers>
-					<Header showNav={true} />
+					<div className="relative z-50">
+						<Header showNav={true} />
+					</div>
 					<div className="w-content relative z-10 mx-auto">{children}</div>
 				</Providers>
 			</body>
