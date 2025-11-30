@@ -26,7 +26,7 @@ export function TabSection({ term, relatedTerms }: TabSectionProps) {
 				{activeTab === "description" && <DescriptionTab term={term} />}
 				{activeTab === "usecase" && <UseCaseTab term={term} />}
 				{activeTab === "related" && (
-					<RelatedTab term={term} relatedTerms={relatedTerms} />
+					<RelatedTab relatedTerms={relatedTerms} />
 				)}
 			</div>
 		</section>
