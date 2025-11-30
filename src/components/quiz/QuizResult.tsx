@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { useAuthCore, useScrap } from "@/contexts/auth";
 import { useToast } from "@/contexts/ToastContext";
 import {
@@ -11,6 +10,8 @@ import {
 } from "@/lib/quiz";
 import { type CategoryType } from "@/config/categories";
 import GradientButton from "@/components/ui/buttons/GradientButton";
+import { QuizScoreCard } from "./QuizScoreCard";
+import { WrongAnswerCard } from "./WrongAnswerCard";
 
 interface QuizResultProps {
 	result: QuizResultType;
@@ -43,8 +44,7 @@ export default function QuizResult({
 		try {
 			let scrapCount = 0;
 			for (const question of wrongQuestions) {
-				const alreadyScraped = isScraped(question.term.id);
-				if (!alreadyScraped) {
+				if (!isScraped(question.term.id)) {
 					await toggleScrap(question.term.id);
 					scrapCount++;
 				}
@@ -76,41 +76,8 @@ export default function QuizResult({
 
 	return (
 		<div className="flex w-full flex-col items-center gap-8">
-			{/* 점수 카드 */}
-			<div className="glass outline-white-30 flex w-full flex-col gap-6 rounded-3xl bg-white/5 p-10 outline outline-[0.5px]">
-				<div className="flex items-center justify-center">
-					<div className="flex flex-col items-center gap-2">
-						<p className="text-lg text-neutral-400">총점</p>
-						<p className="text-primary-400 text-7xl font-bold">
-							{result.score}
-						</p>
-						<p className="text-2xl text-neutral-300">점</p>
-					</div>
-				</div>
+			<QuizScoreCard result={result} />
 
-				<div className="grid grid-cols-3 gap-4">
-					<div className="flex flex-col items-center gap-2 rounded-2xl bg-white/5 p-6">
-						<p className="text-sm text-neutral-400">전체 문제</p>
-						<p className="text-3xl font-bold text-white">
-							{result.totalQuestions}
-						</p>
-					</div>
-					<div className="flex flex-col items-center gap-2 rounded-2xl bg-green-500/10 p-6">
-						<p className="text-sm text-green-400">정답</p>
-						<p className="text-3xl font-bold text-green-300">
-							{result.correctAnswers}
-						</p>
-					</div>
-					<div className="flex flex-col items-center gap-2 rounded-2xl bg-red-500/10 p-6">
-						<p className="text-sm text-red-400">오답</p>
-						<p className="text-3xl font-bold text-red-300">
-							{result.wrongAnswers}
-						</p>
-					</div>
-				</div>
-			</div>
-
-			{/* 오답 노트 */}
 			{wrongQuestions.length > 0 && (
 				<div className="flex w-full flex-col gap-4">
 					<div className="flex items-center justify-between">
@@ -130,56 +97,18 @@ export default function QuizResult({
 					<div className="flex flex-col gap-3">
 						{wrongQuestions.map((question, idx) => {
 							const originalIdx = result.questions.indexOf(question);
-							const userAnswer = result.userAnswers[originalIdx];
-
 							return (
-								<div
+								<WrongAnswerCard
 									key={idx}
-									className="glass outline-white-30 flex flex-col gap-4 rounded-2xl bg-white/5 p-6 outline outline-[0.5px]"
-								>
-									<div className="flex items-start justify-between">
-										<div className="flex flex-col gap-2">
-											<div className="flex items-center gap-2">
-												<span className="rounded-lg bg-red-500/20 px-2 py-1 text-xs font-bold text-red-300">
-													오답
-												</span>
-												<Link
-													href={`/terms/${question.term.slug}`}
-													className="hover:text-primary-300 text-lg font-bold text-gray-50 transition-colors"
-												>
-													{question.term.termKo}
-												</Link>
-											</div>
-											<p className="text-sm text-neutral-400">
-												{question.questionType === "summary"
-													? question.term.summary
-													: `"${question.term.termKo}"의 설명`}
-											</p>
-										</div>
-									</div>
-
-									<div className="flex flex-col gap-2">
-										<div className="flex items-center gap-2">
-											<span className="text-sm text-neutral-400">내 답변:</span>
-											<span className="text-sm font-semibold text-red-300">
-												{userAnswer || "(미응답)"}
-											</span>
-										</div>
-										<div className="flex items-center gap-2">
-											<span className="text-sm text-neutral-400">정답:</span>
-											<span className="text-sm font-semibold text-green-300">
-												{question.correctAnswer}
-											</span>
-										</div>
-									</div>
-								</div>
+									question={question}
+									userAnswer={result.userAnswers[originalIdx]}
+								/>
 							);
 						})}
 					</div>
 				</div>
 			)}
 
-			{/* 액션 버튼 */}
 			<div className="flex w-full items-center justify-center gap-4">
 				<button
 					onClick={onRestart}
