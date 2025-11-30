@@ -58,6 +58,41 @@ export interface TermDetail {
 let indexCache: TermIndexItem[] | null = null;
 
 /**
+ * 인덱스 데이터 검증 - 중복 ID/slug 체크
+ */
+function validateIndex(index: TermIndexItem[]): void {
+	const seenIds = new Map<number, string>();
+	const seenSlugs = new Map<string, string>();
+
+	for (const item of index) {
+		// ID 중복 체크
+		if (seenIds.has(item.id)) {
+			const existing = seenIds.get(item.id);
+			console.error(`❌ Duplicate ID detected in index: ${item.id}`);
+			console.error(`   First: ${existing}`);
+			console.error(`   Duplicate: ${item.file}`);
+			throw new Error(
+				`Duplicate term ID: ${item.id}. Please fix the term data.`
+			);
+		}
+
+		// Slug 중복 체크
+		if (seenSlugs.has(item.slug)) {
+			const existing = seenSlugs.get(item.slug);
+			console.error(`❌ Duplicate slug detected in index: "${item.slug}"`);
+			console.error(`   First: ${existing}`);
+			console.error(`   Duplicate: ${item.file}`);
+			throw new Error(
+				`Duplicate term slug: "${item.slug}". Please fix the term data.`
+			);
+		}
+
+		seenIds.set(item.id, item.file);
+		seenSlugs.set(item.slug, item.file);
+	}
+}
+
+/**
  * 용어 인덱스 전체 로드 (캐싱됨)
  */
 export async function getTermsIndex(): Promise<TermIndexItem[]> {
@@ -66,8 +101,15 @@ export async function getTermsIndex(): Promise<TermIndexItem[]> {
 	const res = await fetch("/terms/terms.index.json");
 	if (!res.ok) throw new Error("Failed to load terms index");
 
-	indexCache = await res.json();
-	return indexCache!;
+	const data: TermIndexItem[] = await res.json();
+
+	// 개발 환경에서 중복 검증
+	if (process.env.NODE_ENV === "development") {
+		validateIndex(data);
+	}
+
+	indexCache = data;
+	return data;
 }
 
 /**
