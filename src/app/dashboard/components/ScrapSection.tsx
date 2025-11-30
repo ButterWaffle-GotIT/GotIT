@@ -1,14 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { ScrapIcon } from "@/components/icons/ic_scrap";
-import { SortIcon } from "@/components/icons/ic_sort";
-import { ChevronDownIcon } from "@/components/icons/ic_chevron_down";
 import { categoryIcons, ScrapCardData } from "@/types/category";
 import CategoryTag from "./CategoryTag";
 import ScrapCard from "./ScrapCard";
 import { sortCards, SortType } from "../utils/order";
+import SortDropdown from "@/components/ui/SortDropdown";
 
 interface ScrapSectionProps {
 	totalCount: number;
@@ -27,22 +26,6 @@ export default function ScrapSection({
 }: ScrapSectionProps) {
 	const categories = Object.keys(categoryIcons);
 	const [sortType, setSortType] = useState<SortType>("latest");
-	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-	const dropdownRef = useRef<HTMLDivElement>(null);
-
-	useEffect(() => {
-		const handleClickOutside = (event: MouseEvent) => {
-			if (
-				dropdownRef.current &&
-				!dropdownRef.current.contains(event.target as Node)
-			) {
-				setIsDropdownOpen(false);
-			}
-		};
-
-		document.addEventListener("mousedown", handleClickOutside);
-		return () => document.removeEventListener("mousedown", handleClickOutside);
-	}, []);
 
 	const sortedCards = sortCards(cards, sortType);
 
@@ -66,45 +49,7 @@ export default function ScrapSection({
 					</div>
 				</div>
 
-				<div className="relative" ref={dropdownRef}>
-					<button
-						className="flex items-center gap-1"
-						onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-					>
-						<SortIcon className="h-4 w-4 text-gray-50" width={16} height={16} />
-						<span className="text-button-small text-gray-50">
-							{sortType === "latest" ? "최신순" : "가나다순"}
-						</span>
-						<ChevronDownIcon
-							className="h-4 w-4 text-gray-50"
-							width={16}
-							height={16}
-						/>
-					</button>
-
-					{isDropdownOpen && (
-						<div className="absolute top-full right-0 z-50 mt-2 flex w-30 flex-col overflow-hidden rounded-lg border border-gray-700 bg-gray-900">
-							<button
-								className="text-body4 px-4 py-3 text-left text-gray-50 transition-colors hover:bg-gray-800"
-								onClick={() => {
-									setSortType("latest");
-									setIsDropdownOpen(false);
-								}}
-							>
-								최신순
-							</button>
-							<button
-								className="text-body4 px-4 py-3 text-left text-gray-50 transition-colors hover:bg-gray-800"
-								onClick={() => {
-									setSortType("alphabetical");
-									setIsDropdownOpen(false);
-								}}
-							>
-								가나다순
-							</button>
-						</div>
-					)}
-				</div>
+				<SortDropdown sortType={sortType} onSortChange={setSortType} />
 			</div>
 
 			<div className="scrollbar-hide overflow-x-auto">
