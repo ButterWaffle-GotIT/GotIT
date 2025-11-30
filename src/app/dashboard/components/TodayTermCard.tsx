@@ -7,28 +7,18 @@ import { LightIcon } from "@/components/icons/ic_light";
 
 interface TermData {
 	title: string;
+	slug: string;
 	date: string;
 	summary: string;
 	description: string;
 	tags: string[];
 }
 
-const mockTermData: TermData = {
-	title: "TypeScript",
-	date: "2025년 11월 24일",
-	summary: "자바스크립트에 타입을 추가해서 더 안전하게 코드를 작성하는 언어",
-	description:
-		"TypeScript는 JavaScript에 정적 타입을 추가한 프로그래밍 언어입니다. 컴파일 시점에 타입 오류를 발견할 수 있어 더 안전한 코드를 작성할 수 있습니다.",
-	tags: ["프론트엔드", "언어", "타입시스템"],
-};
-
-const TodayTermCard: React.FC<{ data?: TermData }> = ({
-	data = mockTermData,
-}) => {
+const TodayTermCard: React.FC<{ data: TermData }> = ({ data }) => {
 	const router = useRouter();
 
 	const handleClick = () => {
-		router.push("/terms/typescript");
+		router.push(`/terms/${data.slug}`);
 	};
 
 	return (

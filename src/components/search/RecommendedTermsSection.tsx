@@ -1,33 +1,30 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import RecommendedTermCard from "@/components/RecommendedTermCard";
 import { ChevronsDownIcon } from "@/components/icons/ic_chevrons_down";
-
-// Mock Data
-const recommendedTerms = [
-	{
-		term: "React",
-		category: "프론트엔드",
-		description: "사용자 인터페이스를 만들기 위한 JavaScript 라이브러리",
-		iconColor: "bg-cyan-400",
-	},
-	{
-		term: "Next.js",
-		category: "프론트엔드",
-		description: "React 애플리케이션을 위한 강력한 풀스택 프레임워크",
-		iconColor: "bg-cyan-400",
-	},
-	{
-		term: "Docker",
-		category: "DevOps",
-		description: "애플리케이션을 컨테이너화하여 쉽게 배포하는 도구",
-		iconColor: "bg-amber-400",
-	},
-];
+import { useAuth } from "@/contexts/AuthContext";
+import {
+	getRecommendedTerms,
+	type RecommendedTerm,
+} from "@/lib/recommendations";
 
 export default function RecommendedTermsSection() {
+	const { userData } = useAuth();
 	const [showMoreRecommended, setShowMoreRecommended] = useState(false);
+	const [recommendedTerms, setRecommendedTerms] = useState<RecommendedTerm[]>(
+		[]
+	);
+
+	useEffect(() => {
+		const loadTerms = async () => {
+			const category = userData?.selectedCategory || "all";
+			const terms = await getRecommendedTerms(category, 6);
+			setRecommendedTerms(terms);
+		};
+
+		loadTerms();
+	}, [userData?.selectedCategory]);
 
 	const displayedRecommendedTerms = showMoreRecommended
 		? recommendedTerms
