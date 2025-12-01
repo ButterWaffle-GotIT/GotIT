@@ -2,7 +2,7 @@
 
 import { SearchIcon } from "@/components/icons/ic_search";
 import { useTypingAnimation } from "@/hooks/useTypingAnimation";
-import { LogoText } from "../icons";
+import { LogoText } from "@/components/icons/logo_text";
 import { BRAND_GRADIENT } from "@/constants/theme";
 
 interface SearchBarProps {
