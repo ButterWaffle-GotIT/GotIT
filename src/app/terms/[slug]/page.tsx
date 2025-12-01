@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { type TermDetail, getTermBySlug, getRelatedTerms } from "@/lib/terms";
 import type { TermIndexItem } from "@/lib/terms";
 import { toggleBookmark, isBookmarked } from "@/lib/bookmarks";
-import { HeroSection, TabSection, Footer } from "@/components/term-detail";
+import { HeroSection, TabSection, Footer } from "./components";
 import { useAuthCore, useScrap } from "@/contexts/auth";
 import { useToast } from "@/contexts/ToastContext";
 import { useShare } from "@/hooks/useShare";

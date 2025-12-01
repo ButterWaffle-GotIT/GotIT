@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useCallback, useEffect } from "react";
-import TagList from "@/components/TagList";
-import SearchBar from "@/components/search/SearchBar";
-import SearchResultsSection from "@/components/search/SearchResultsSection";
-import RecommendedTermsSection from "@/components/search/RecommendedTermsSection";
+import TagList from "./components/TagList";
+import SearchBar from "./components/SearchBar";
+import SearchResultsSection from "./components/SearchResultsSection";
+import RecommendedTermsSection from "./components/RecommendedTermsSection";
 import { searchTerms, getTermsByTag, type TermIndexItem } from "@/lib/terms";
 import { useDebounce } from "@/hooks/useDebounce";
 

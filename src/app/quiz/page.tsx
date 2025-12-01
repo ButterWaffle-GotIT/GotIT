@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import CategorySelection from "@/components/quiz/CategorySelection";
-import QuizSession from "@/components/quiz/QuizSession";
-import QuizResult from "@/components/quiz/QuizResult";
+import CategorySelection from "./components/CategorySelection";
+import QuizSession from "./components/QuizSession";
+import QuizResult from "./components/QuizResult";
 import type { QuizQuestion, QuizResult as QuizResultType } from "@/lib/quiz";
 import type { CategoryType } from "@/config/categories";
 
