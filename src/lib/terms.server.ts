@@ -46,3 +46,11 @@ export function getTodaysTermServer(): TermIndexItem | null {
 
 	return index[todayIndex];
 }
+
+/**
+ * 서버에서 오늘의 용어 한국어 이름만 가져오기
+ */
+export function getTodaysTermNameServer(): string | null {
+	const term = getTodaysTermServer();
+	return term ? term.termKo : null;
+}

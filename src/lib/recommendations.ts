@@ -88,3 +88,19 @@ export async function getRecommendedTerms(
 		return [];
 	}
 }
+
+/**
+ * 인기 용어 가져오기 (카테고리 기반, 새로고침마다 랜덤)
+ */
+export async function getPopularTerms(
+	category: CategoryType,
+	count: number = 3
+): Promise<string[]> {
+	try {
+		const terms = await getRecommendedTerms(category, count);
+		return terms.map((t) => t.term);
+	} catch (error) {
+		console.error("인기 용어 로드 실패:", error);
+		return [];
+	}
+}
