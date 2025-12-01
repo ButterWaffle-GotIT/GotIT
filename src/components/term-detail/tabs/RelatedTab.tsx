@@ -6,11 +6,11 @@ import type { TermIndexItem } from "@/lib/terms";
 import {
 	RelationIcon,
 	HashtagIcon,
-	ScrapIcon,
 	ChevronRightIcon,
 } from "@/components/icons";
-import { categoryConfig } from "@/components/ui/category/config";
-import { getCategoryType } from "@/lib/category";
+import { getCategoryType } from "@/config/categories";
+import { CategoryChip } from "@/components/ui/category";
+import { ScrapButton } from "@/components/ui/buttons/ScrapButton";
 import { useScrapToggle } from "@/hooks/useScrapToggle";
 
 interface RelatedTabProps {
@@ -44,8 +44,6 @@ function RelatedTermCard({ term }: { term: TermIndexItem }) {
 	const { bookmarked, handleToggle } = useScrapToggle(term.id);
 
 	const category = getCategoryType(term.primaryTag);
-	const config = categoryConfig[category];
-	const CategoryIcon = config.icon;
 
 	const handleBookmark = (e: React.MouseEvent) => {
 		e.stopPropagation();
@@ -61,15 +59,7 @@ function RelatedTermCard({ term }: { term: TermIndexItem }) {
 			<div className="flex flex-col gap-1.5">
 				<div className="flex items-center justify-between">
 					<div className="flex flex-1 items-center gap-2">
-						{/* Category Icon */}
-						<div
-							className={cn(
-								"flex h-6 w-6 items-center justify-center rounded-full outline-1 outline-white/25",
-								config.bgColor
-							)}
-						>
-							<CategoryIcon size={16} color="white" />
-						</div>
+						<CategoryChip category={category} />
 						{/* Term Name */}
 						<span className="text-subtitle1 text-gray-50">
 							{term.termEn || term.termKo}
@@ -78,21 +68,7 @@ function RelatedTermCard({ term }: { term: TermIndexItem }) {
 
 					{/* Action Buttons */}
 					<div className="flex items-center gap-1">
-						<button
-							className={cn(
-								"flex h-6 w-6 items-center justify-center rounded transition-colors",
-								bookmarked
-									? "bg-yellow-500/20"
-									: "bg-white-10 hover:bg-white-20"
-							)}
-							onClick={handleBookmark}
-						>
-							<ScrapIcon
-								size={16}
-								color={bookmarked ? "#FFC107" : "#D4C2F0"}
-								filled={bookmarked}
-							/>
-						</button>
+						<ScrapButton bookmarked={bookmarked} onClick={handleBookmark} />
 						<button className="bg-white-10 flex h-6 w-6 items-center justify-center rounded">
 							<ChevronRightIcon size={16} color="#D4C2F0" />
 						</button>

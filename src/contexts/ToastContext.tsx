@@ -8,6 +8,7 @@ import {
 	type ReactNode,
 } from "react";
 import { useRouter } from "next/navigation";
+import { BRAND_GRADIENT } from "@/constants/theme";
 
 type ToastType = "info" | "success" | "error" | "login";
 
@@ -75,7 +76,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
 								<span className="text-sm text-gray-300">{toast.message}</span>
 								<button
 									onClick={handleLogin}
-									className="rounded-lg bg-linear-to-r from-[#6E50C8] to-[#CE5E61] px-3 py-1 text-sm font-medium text-white transition-opacity hover:opacity-90"
+									className={`rounded-lg ${BRAND_GRADIENT.bg} px-3 py-1 text-sm font-medium text-white transition-opacity hover:opacity-90`}
 								>
 									로그인하기
 								</button>

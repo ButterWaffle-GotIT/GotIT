@@ -1,50 +1,11 @@
 import { cn } from "@/utils/cn";
-import type { TermDetail, UseCase, Role } from "@/lib/terms";
-import { CommentIcon, PmIcon, EditIcon } from "@/components/icons";
+import type { TermDetail, UseCase } from "@/lib/terms";
+import { CommentIcon } from "@/components/icons";
+import { ROLE_CONFIG } from "@/config/roles";
 
 interface UseCaseTabProps {
 	term: TermDetail;
 }
-
-interface RoleConfig {
-	label: string;
-	color: string;
-	bgColor: string;
-	icon: typeof PmIcon;
-}
-
-const roleConfig: Record<Role, RoleConfig> = {
-	PM: {
-		label: "PM",
-		color: "#FACC15",
-		bgColor: "bg-[rgba(234,179,8,0.2)]",
-		icon: PmIcon,
-	},
-	Dev: {
-		label: "Dev",
-		color: "#22D3EE",
-		bgColor: "bg-[rgba(6,182,212,0.2)]",
-		icon: EditIcon,
-	},
-	Design: {
-		label: "Design",
-		color: "#F472B6",
-		bgColor: "bg-[rgba(236,72,153,0.2)]",
-		icon: EditIcon,
-	},
-	Marketer: {
-		label: "Marketer",
-		color: "#A78BFA",
-		bgColor: "bg-[rgba(167,139,250,0.2)]",
-		icon: CommentIcon,
-	},
-	Other: {
-		label: "Other",
-		color: "#9CA3AF",
-		bgColor: "bg-[rgba(156,163,175,0.2)]",
-		icon: CommentIcon,
-	},
-};
 
 export function UseCaseTab({ term }: UseCaseTabProps) {
 	const hasUseCases = term.useCases && term.useCases.length > 0;
@@ -79,7 +40,7 @@ function UseCaseBubble({
 	useCase: UseCase;
 	term: TermDetail;
 }) {
-	const config = roleConfig[useCase.role];
+	const config = ROLE_CONFIG[useCase.role];
 	const RoleIcon = config.icon;
 
 	const highlightTerm = (text: string) => {

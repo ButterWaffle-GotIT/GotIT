@@ -1,11 +1,10 @@
-import { categoryConfig } from "@/components/ui/category/config";
-import { getCategoryType } from "@/lib/category";
+import { CATEGORIES, getCategoryType } from "@/config/categories";
 
 export function getCategoryConfig(tag: string) {
 	const category = getCategoryType(tag);
 	return {
 		category,
-		config: categoryConfig[category],
+		config: CATEGORIES[category],
 	};
 }
 

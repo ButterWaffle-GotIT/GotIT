@@ -3,26 +3,10 @@
  */
 
 import { getTermsIndex, getTermsByTag, type TermIndexItem } from "./terms";
-import {
-	categoryLabels,
-	type CategoryType,
-} from "@/components/ui/category/config";
+import { CATEGORIES, type CategoryType } from "@/config/categories";
 
-export interface QuizQuestion {
-	term: TermIndexItem;
-	correctAnswer: string;
-	choices: string[];
-	questionType: "summary" | "term";
-}
-
-export interface QuizResult {
-	totalQuestions: number;
-	correctAnswers: number;
-	wrongAnswers: number;
-	score: number;
-	questions: QuizQuestion[];
-	userAnswers: (string | null)[];
-}
+export type { QuizQuestion, QuizResult } from "@/types/quiz";
+import type { QuizQuestion, QuizResult } from "@/types/quiz";
 
 /**
  * 배열을 랜덤하게 섞기
@@ -51,7 +35,7 @@ export async function generateQuizQuestions(
 		terms = shuffleArray(allTerms);
 	} else {
 		// CategoryType을 한글 이름으로 변환하여 검색
-		const categoryLabel = categoryLabels[category];
+		const categoryLabel = CATEGORIES[category].label;
 		terms = await getTermsByTag(categoryLabel);
 		terms = shuffleArray(terms);
 	}

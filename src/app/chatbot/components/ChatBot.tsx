@@ -1,66 +1,22 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
-import { getChatResponse } from "@/app/chatbot/utils/actions";
 import { FireIcon, StarIcon, SearchIcon, SendIcon } from "@/components/icons";
+import { useChatBot } from "@/hooks/useChatBot";
 import ChatMessage from "./ChatMessage";
 import UserMessage from "./UserMessage";
 import QuickActionButton from "./QuickActionButton";
 import BotLoading from "./BotLoading";
 
-interface Message {
-	role: "user" | "bot";
-	content: string;
-	recommendations?: string[];
-}
-
 export default function ChatBot() {
-	const [messages, setMessages] = useState<Message[]>([
-		{
-			role: "bot",
-			content: "안녕하세요! 기술 용어에 대해 궁금한 점을 물어보세요.",
-			recommendations: ["REST API란?", "Docker는 뭐야?", "GraphQL 설명해줘"],
-		},
-	]);
-	const [input, setInput] = useState("");
-	const [isLoading, setIsLoading] = useState(false);
-
-	const messagesEndRef = useRef<HTMLDivElement>(null);
-
-	const scrollToBottom = () => {
-		messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-	};
-
-	useEffect(() => {
-		scrollToBottom();
-	}, [messages]);
-
-	const handleSubmit = async (e?: React.FormEvent, customInput?: string) => {
-		e?.preventDefault();
-		const userMessage = customInput || input;
-
-		if (!userMessage.trim() || isLoading) return;
-
-		setMessages((prev) => [...prev, { role: "user", content: userMessage }]);
-		setInput("");
-		setIsLoading(true);
-
-		const result = await getChatResponse(userMessage);
-
-		setMessages((prev) => [
-			...prev,
-			{
-				role: "bot",
-				content: result.answer,
-				recommendations: result.recommendations,
-			},
-		]);
-		setIsLoading(false);
-	};
-
-	const handleRecommendationClick = (question: string) => {
-		handleSubmit(undefined, question);
-	};
+	const {
+		messages,
+		input,
+		isLoading,
+		messagesEndRef,
+		setInput,
+		handleSubmit,
+		handleRecommendationClick,
+	} = useChatBot();
 
 	return (
 		<div className="mx-auto min-h-screen w-full max-w-260 px-4 pt-20">

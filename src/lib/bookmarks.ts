@@ -44,33 +44,8 @@ export function toggleBookmark(id: number): boolean {
 }
 
 /**
- * 북마크 추가
- */
-export function addBookmark(id: number): void {
-	const bookmarks = new Set(getBookmarks());
-	bookmarks.add(id);
-	localStorage.setItem(STORAGE_KEY, JSON.stringify([...bookmarks]));
-}
-
-/**
- * 북마크 제거
- */
-export function removeBookmark(id: number): void {
-	const bookmarks = new Set(getBookmarks());
-	bookmarks.delete(id);
-	localStorage.setItem(STORAGE_KEY, JSON.stringify([...bookmarks]));
-}
-
-/**
  * 모든 북마크 삭제
  */
 export function clearBookmarks(): void {
 	localStorage.removeItem(STORAGE_KEY);
-}
-
-/**
- * 북마크 개수
- */
-export function getBookmarkCount(): number {
-	return getBookmarks().length;
 }

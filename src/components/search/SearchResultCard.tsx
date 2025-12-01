@@ -2,11 +2,12 @@
 
 import { useRouter } from "next/navigation";
 import { useScrapToggle } from "@/hooks/useScrapToggle";
+import { useShare } from "@/hooks/useShare";
 import type { TermIndexItem } from "@/lib/terms";
-import { ScrapIcon, ShareIcon, HashtagIcon } from "@/components/icons";
+import { ShareIcon, HashtagIcon } from "@/components/icons";
 import { CategoryChip } from "@/components/ui/category/CategoryChip";
-import { getCategoryType } from "@/lib/category";
-import { categorySelectedColors } from "@/components/ui/category/config";
+import { ScrapButton } from "@/components/ui/buttons/ScrapButton";
+import { CATEGORIES, getCategoryType } from "@/config/categories";
 
 interface SearchResultCardProps {
 	item: TermIndexItem;
@@ -15,6 +16,7 @@ interface SearchResultCardProps {
 export default function SearchResultCard({ item }: SearchResultCardProps) {
 	const router = useRouter();
 	const { bookmarked, handleToggle } = useScrapToggle(item.id);
+	const { shareTerm } = useShare();
 	const category = getCategoryType(item.primaryTag);
 
 	const handleBookmark = (e: React.MouseEvent) => {
@@ -24,16 +26,7 @@ export default function SearchResultCard({ item }: SearchResultCardProps) {
 
 	const handleShare = async (e: React.MouseEvent) => {
 		e.stopPropagation();
-		const url = `${window.location.origin}/terms/${item.slug}`;
-		try {
-			await navigator.share({
-				title: item.termEn || item.termKo,
-				text: item.summary,
-				url: url,
-			});
-		} catch {
-			await navigator.clipboard.writeText(url);
-		}
+		await shareTerm(item.termEn || item.termKo, item.summary, item.slug);
 	};
 
 	const handleClick = () => {
@@ -55,16 +48,7 @@ export default function SearchResultCard({ item }: SearchResultCardProps) {
 							</h3>
 						</div>
 						<div className="flex items-center gap-1">
-							<button
-								onClick={handleBookmark}
-								className="flex h-6 w-6 items-center justify-center overflow-hidden rounded bg-white/10 transition-colors hover:bg-white/20"
-							>
-								<ScrapIcon
-									size={16}
-									color={bookmarked ? "#FFC107" : "#D4C2F0"}
-									filled={bookmarked}
-								/>
-							</button>
+							<ScrapButton bookmarked={bookmarked} onClick={handleBookmark} />
 							<button
 								onClick={handleShare}
 								className="flex h-6 w-6 items-center justify-center overflow-hidden rounded bg-white/10 transition-colors hover:bg-white/20"
@@ -95,7 +79,7 @@ export default function SearchResultCard({ item }: SearchResultCardProps) {
 					{item.tags?.slice(0, 3).map((tag, index) => {
 						const isFirstTag = index === 0;
 						const bgColor = isFirstTag
-							? categorySelectedColors[category]
+							? CATEGORIES[category].selectedColor
 							: "bg-gray-900";
 						const textColor = isFirstTag ? "text-white" : "text-gray-300";
 

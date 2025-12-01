@@ -1,5 +1,5 @@
 import { cn } from "@/utils/cn";
-import { type CategoryType, categoryConfig } from "./config";
+import { type CategoryType, CATEGORIES } from "@/config/categories";
 
 interface CategorySquareBadgeProps {
 	category: CategoryType;
@@ -10,7 +10,7 @@ export function CategorySquareBadge({
 	category,
 	className,
 }: CategorySquareBadgeProps) {
-	const config = categoryConfig[category];
+	const config = CATEGORIES[category];
 	const Icon = config.icon;
 
 	return (

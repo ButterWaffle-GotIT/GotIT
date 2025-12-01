@@ -35,30 +35,6 @@ export function getTermByIdServer(id: number): TermDetail | null {
 }
 
 /**
- * 서버에서 slug로 용어 상세 정보 가져오기
- */
-export function getTermBySlugServer(slug: string): TermDetail | null {
-	const index = getTermsIndexServer();
-	const item = index.find((t) => t.slug === slug);
-
-	if (!item) return null;
-
-	const filePath = path.join(process.cwd(), "public", item.file);
-	const fileContent = fs.readFileSync(filePath, "utf-8");
-	return JSON.parse(fileContent);
-}
-
-/**
- * 서버에서 카테고리별 용어 목록 가져오기
- */
-export function getTermsByCategoryServer(category: number): TermIndexItem[] {
-	const index = getTermsIndexServer();
-	return index.filter(
-		(t) => Math.floor(t.id / 1000) * 1000 === category || t.id === category
-	);
-}
-
-/**
  * 서버에서 오늘의 용어 가져오기
  */
 export function getTodaysTermServer(): TermIndexItem | null {
@@ -69,12 +45,4 @@ export function getTodaysTermServer(): TermIndexItem | null {
 	const todayIndex = daysSinceEpoch % index.length;
 
 	return index[todayIndex];
-}
-
-/**
- * 서버에서 태그로 용어 목록 필터링
- */
-export function getTermsByTagServer(tag: string): TermIndexItem[] {
-	const index = getTermsIndexServer();
-	return index.filter((t) => t.tags.includes(tag) || t.primaryTag === tag);
 }

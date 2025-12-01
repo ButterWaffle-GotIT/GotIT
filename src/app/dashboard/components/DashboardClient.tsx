@@ -4,10 +4,10 @@ import React, { useState, useEffect, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import ProfileCard from "@/app/dashboard/components/ProfileCard";
 import ScrapSection from "@/app/dashboard/components/ScrapSection";
-import { useAuth } from "@/contexts/AuthContext";
+import { useAuthCore, useUserData } from "@/contexts/auth";
 import { getRelatedTerms } from "@/lib/terms";
 import { termToScrapCard } from "@/lib/scrap";
-import { type ScrapCardData } from "@/types/category";
+import { type ScrapCardData } from "@/types/scrapCard";
 
 interface DashboardClientProps {
 	todayTermCard: ReactNode;
@@ -17,16 +17,19 @@ export default function DashboardClient({
 	todayTermCard,
 }: DashboardClientProps) {
 	const router = useRouter();
-	const { user, userData, loading } = useAuth();
+	const { user, loading: authLoading } = useAuthCore();
+	const { userData, userDataLoading } = useUserData();
 	const [selectedCategory, setSelectedCategory] = useState("전체");
 	const [scrapCards, setScrapCards] = useState<ScrapCardData[]>([]);
-	const [isLoading, setIsLoading] = useState(true);
+	const [scrapLoading, setScrapLoading] = useState(true);
+
+	const loading = authLoading || userDataLoading;
 
 	useEffect(() => {
 		async function loadScrapTerms() {
 			if (!userData || userData.scrapList.length === 0) {
 				setScrapCards([]);
-				setIsLoading(false);
+				setScrapLoading(false);
 				return;
 			}
 
@@ -38,7 +41,7 @@ export default function DashboardClient({
 				console.error("스크랩 목록 로드 실패:", error);
 				setScrapCards([]);
 			} finally {
-				setIsLoading(false);
+				setScrapLoading(false);
 			}
 		}
 
@@ -82,7 +85,7 @@ export default function DashboardClient({
 					selectedCategory={selectedCategory}
 					onCategorySelect={setSelectedCategory}
 					cards={filteredCards}
-					isLoading={isLoading}
+					isLoading={scrapLoading}
 				/>
 			</div>
 		</div>

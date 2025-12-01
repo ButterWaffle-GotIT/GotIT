@@ -4,14 +4,14 @@ import { useState, useEffect } from "react";
 import RecommendedTermCard from "@/components/RecommendedTermCard";
 import RecommendedTermCardSkeleton from "@/components/RecommendedTermCardSkeleton";
 import { ChevronsDownIcon } from "@/components/icons/ic_chevrons_down";
-import { useAuth } from "@/contexts/AuthContext";
+import { useUserData } from "@/contexts/auth";
 import {
 	getRecommendedTerms,
 	type RecommendedTerm,
 } from "@/lib/recommendations";
 
 export default function RecommendedTermsSection() {
-	const { userData } = useAuth();
+	const { userData } = useUserData();
 	const [showMoreRecommended, setShowMoreRecommended] = useState(false);
 	const [recommendedTerms, setRecommendedTerms] = useState<RecommendedTerm[]>(
 		[]

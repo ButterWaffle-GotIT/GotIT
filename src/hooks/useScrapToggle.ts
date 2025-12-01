@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAuth } from "@/contexts/AuthContext";
+import { useAuthCore, useScrap } from "@/contexts/auth";
 import { useToast } from "@/contexts/ToastContext";
 import { isBookmarked, toggleBookmark } from "@/lib/bookmarks";
 
@@ -7,7 +7,8 @@ import { isBookmarked, toggleBookmark } from "@/lib/bookmarks";
  * 스크랩 토글 기능을 제공하는 커스텀 훅
  */
 export function useScrapToggle(termId: number) {
-	const { user, isScraped, toggleScrap } = useAuth();
+	const { user } = useAuthCore();
+	const { isScraped, toggleScrap } = useScrap();
 	const { showLoginToast, showToast } = useToast();
 
 	// 서버/로컬 북마크 상태

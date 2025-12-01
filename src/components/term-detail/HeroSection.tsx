@@ -4,11 +4,11 @@ import { cn } from "@/utils/cn";
 import type { TermDetail } from "@/lib/terms";
 import {
 	ChevronLeftIcon,
-	ScrapIcon,
 	ShareIcon,
 	LightIcon,
 	HashtagIcon,
 } from "@/components/icons";
+import { ScrapButton } from "@/components/ui/buttons/ScrapButton";
 import { getCategoryConfig } from "./types";
 
 interface HeroSectionProps {
@@ -58,20 +58,7 @@ export function HeroSection({
 
 				{/* Action Buttons */}
 				<div className="flex items-center gap-2">
-					<button
-						onClick={onBookmark}
-						className={cn(
-							"flex h-9 w-9 items-center justify-center rounded-md transition-colors",
-							bookmarked ? "bg-yellow-500/20" : "bg-white-10 hover:bg-white-20"
-						)}
-						aria-label="스크랩"
-					>
-						<ScrapIcon
-							size={24}
-							color={bookmarked ? "#FFC107" : "#D4C2F0"}
-							filled={bookmarked}
-						/>
-					</button>
+					<ScrapButton bookmarked={bookmarked} onClick={onBookmark} size="lg" />
 					<button
 						onClick={onShare}
 						className="bg-white-10 hover:bg-white-20 flex h-9 w-9 items-center justify-center rounded-md transition-colors"

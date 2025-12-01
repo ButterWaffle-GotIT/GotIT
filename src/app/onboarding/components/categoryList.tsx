@@ -1,20 +1,17 @@
 "use client";
 
-import { type CategoryType } from "@/components/ui/category/config";
-import CategoryButton from "./categoruButton";
+import { type CategoryType } from "@/config/categories";
+import CategoryButton from "./CategoryButton";
 
 interface CategoryListProps {
 	selectedCategory: CategoryType | null;
 	onSelectCategory: (category: CategoryType) => void;
 }
 
-const row1Categories: CategoryType[] = ["frontend", "backend", "uxui", "ai"];
-const row2Categories: CategoryType[] = [
-	"cloud",
-	"data",
-	"security",
-	"devops",
-	"business",
+// 온보딩용 2줄 배열 (all 제외)
+const ONBOARDING_ROWS: [CategoryType[], CategoryType[]] = [
+	["frontend", "backend", "uxui", "ai"],
+	["cloud", "data", "security", "devops", "business"],
 ];
 
 export default function CategoryList({
@@ -24,7 +21,7 @@ export default function CategoryList({
 	return (
 		<div className="w-content flex flex-col gap-10">
 			<div className="flex justify-center gap-10">
-				{row1Categories.map((category) => (
+				{ONBOARDING_ROWS[0].map((category) => (
 					<CategoryButton
 						key={category}
 						category={category}
@@ -35,7 +32,7 @@ export default function CategoryList({
 			</div>
 
 			<div className="flex justify-between">
-				{row2Categories.map((category) => (
+				{ONBOARDING_ROWS[1].map((category) => (
 					<CategoryButton
 						key={category}
 						category={category}

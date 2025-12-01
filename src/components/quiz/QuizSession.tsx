@@ -1,17 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
-import {
-	calculateQuizResult,
-	type QuizQuestion,
-	type QuizResult,
-} from "@/lib/quiz";
-import {
-	categoryLabels,
-	type CategoryType,
-} from "@/components/ui/category/config";
+import { type QuizQuestion, type QuizResult } from "@/lib/quiz";
+import { CATEGORIES, type CategoryType } from "@/config/categories";
 import GradientButton from "@/components/ui/buttons/GradientButton";
+import { useQuizState } from "@/hooks/useQuizState";
 
 interface QuizSessionProps {
 	questions: QuizQuestion[];
@@ -24,48 +17,18 @@ export default function QuizSession({
 	category,
 	onComplete,
 }: QuizSessionProps) {
-	const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-	const [userAnswers, setUserAnswers] = useState<(string | null)[]>(
-		new Array(questions.length).fill(null)
-	);
-	const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-
-	const currentQuestion = questions[currentQuestionIndex];
-	const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
-
-	const handleAnswerSelect = (answer: string) => {
-		setSelectedAnswer(answer);
-	};
-
-	const handleNext = () => {
-		// 현재 답변 저장
-		const newAnswers = [...userAnswers];
-		newAnswers[currentQuestionIndex] = selectedAnswer;
-		setUserAnswers(newAnswers);
-
-		if (currentQuestionIndex < questions.length - 1) {
-			// 다음 문제로
-			setCurrentQuestionIndex(currentQuestionIndex + 1);
-			setSelectedAnswer(newAnswers[currentQuestionIndex + 1]);
-		} else {
-			// 퀴즈 완료
-			const result = calculateQuizResult(questions, newAnswers);
-			onComplete(result);
-		}
-	};
-
-	const handlePrevious = () => {
-		if (currentQuestionIndex > 0) {
-			// 현재 답변 저장
-			const newAnswers = [...userAnswers];
-			newAnswers[currentQuestionIndex] = selectedAnswer;
-			setUserAnswers(newAnswers);
-
-			// 이전 문제로
-			setCurrentQuestionIndex(currentQuestionIndex - 1);
-			setSelectedAnswer(newAnswers[currentQuestionIndex - 1]);
-		}
-	};
+	const {
+		currentQuestionIndex,
+		currentQuestion,
+		selectedAnswer,
+		progress,
+		answeredCount,
+		isLastQuestion,
+		isFirstQuestion,
+		selectAnswer,
+		goNext,
+		goPrevious,
+	} = useQuizState({ questions, onComplete });
 
 	return (
 		<div className="flex w-full flex-col items-center gap-8">
@@ -74,7 +37,7 @@ export default function QuizSession({
 				<div className="flex items-center justify-between">
 					<div className="flex flex-col gap-1">
 						<h1 className="text-3xl font-bold text-white">
-							{categoryLabels[category]} 퀴즈
+							{CATEGORIES[category].label} 퀴즈
 						</h1>
 						<p className="text-lg text-neutral-300">
 							문제 {currentQuestionIndex + 1} / {questions.length}
@@ -83,8 +46,7 @@ export default function QuizSession({
 					<div className="text-right">
 						<p className="text-sm text-neutral-400">답변한 문제</p>
 						<p className="text-primary-400 text-2xl font-bold">
-							{userAnswers.filter((a) => a !== null).length} /{" "}
-							{questions.length}
+							{answeredCount} / {questions.length}
 						</p>
 					</div>
 				</div>
@@ -146,7 +108,7 @@ export default function QuizSession({
 						return (
 							<button
 								key={index}
-								onClick={() => handleAnswerSelect(choice)}
+								onClick={() => selectAnswer(choice)}
 								className={`glass flex items-start gap-4 rounded-2xl p-5 text-left outline outline-[0.5px] transition-all ${
 									isSelected
 										? "bg-primary-500/30 outline-primary-400 scale-[1.02]"
@@ -177,9 +139,9 @@ export default function QuizSession({
 
 			{/* 네비게이션 버튼 */}
 			<div className="flex w-full items-center justify-between">
-				{currentQuestionIndex > 0 ? (
+				{!isFirstQuestion ? (
 					<button
-						onClick={handlePrevious}
+						onClick={goPrevious}
 						className="px-6 py-3 font-semibold text-neutral-400 transition-all hover:text-white"
 					>
 						← 이전 문제
@@ -189,13 +151,11 @@ export default function QuizSession({
 				)}
 
 				<GradientButton
-					onClick={handleNext}
+					onClick={goNext}
 					disabled={selectedAnswer === null}
 					rounded="full"
 				>
-					{currentQuestionIndex === questions.length - 1
-						? "결과 보기"
-						: "다음 문제 →"}
+					{isLastQuestion ? "결과 보기" : "다음 문제 →"}
 				</GradientButton>
 			</div>
 		</div>

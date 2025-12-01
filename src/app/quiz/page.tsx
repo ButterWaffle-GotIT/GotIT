@@ -5,7 +5,7 @@ import CategorySelection from "@/components/quiz/CategorySelection";
 import QuizSession from "@/components/quiz/QuizSession";
 import QuizResult from "@/components/quiz/QuizResult";
 import type { QuizQuestion, QuizResult as QuizResultType } from "@/lib/quiz";
-import type { CategoryType } from "@/components/ui/category/config";
+import type { CategoryType } from "@/config/categories";
 
 type QuizStage = "category" | "quiz" | "result";
 

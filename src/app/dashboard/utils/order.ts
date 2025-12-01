@@ -1,36 +1,18 @@
-import { ScrapCardData } from "@/types/category";
+import { ScrapCardData } from "@/types/scrapCard";
+import { sortByKorean, sortByDateDesc, type SortType } from "@/utils/sorting";
 
-export type SortType = "latest" | "alphabetical";
+export type { SortType };
 
-function getCharTypeOrder(str: string): number {
-	if (!str) return 4;
-	const char = str.charAt(0);
-
-	if (/[0-9]/.test(char)) return 1;
-	if (/[^0-9a-zA-Z가-힣]/.test(char)) return 2;
-	if (/[가-힣]/.test(char)) return 3;
-	return 4;
-}
-
+/**
+ * 스크랩 카드 정렬
+ */
 export function sortCards(
 	cards: ScrapCardData[],
 	sortType: SortType
 ): ScrapCardData[] {
-	return [...cards].sort((a, b) => {
-		if (sortType === "latest") {
-			return new Date(b.date).getTime() - new Date(a.date).getTime();
-		} else {
-			const termA = a.term;
-			const termB = b.term;
+	if (sortType === "latest") {
+		return sortByDateDesc(cards, (card) => card.date);
+	}
 
-			const priorityA = getCharTypeOrder(termA);
-			const priorityB = getCharTypeOrder(termB);
-
-			if (priorityA !== priorityB) {
-				return priorityA - priorityB;
-			}
-
-			return termA.localeCompare(termB, "ko", { sensitivity: "base" });
-		}
-	});
+	return sortByKorean(cards, (card) => card.term);
 }

@@ -1,5 +1,5 @@
 import { cn } from "@/utils/cn";
-import { type CategoryType, categoryConfig } from "./config";
+import { type CategoryType, CATEGORIES } from "@/config/categories";
 
 interface CategoryChipProps {
 	category: CategoryType;
@@ -12,7 +12,7 @@ export function CategoryChip({
 	disabled = false,
 	className,
 }: CategoryChipProps) {
-	const config = categoryConfig[category];
+	const config = CATEGORIES[category];
 	const Icon = config.icon;
 
 	return (
