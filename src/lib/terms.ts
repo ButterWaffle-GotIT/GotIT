@@ -151,5 +151,8 @@ export async function getRelatedTerms(
 	relatedIds: number[]
 ): Promise<TermIndexItem[]> {
 	const index = await getTermsIndex();
-	return index.filter((t) => relatedIds.includes(t.id));
+	const indexMap = new Map(index.map((t) => [t.id, t]));
+	return relatedIds
+		.map((id) => indexMap.get(id))
+		.filter(Boolean) as TermIndexItem[];
 }
