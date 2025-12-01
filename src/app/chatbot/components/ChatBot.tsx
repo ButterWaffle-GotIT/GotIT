@@ -16,6 +16,8 @@ export default function ChatBot() {
 		setInput,
 		handleSubmit,
 		handleRecommendationClick,
+		handlePopularTerms,
+		handleTodaysTerm,
 	} = useChatBot();
 
 	return (
@@ -53,19 +55,14 @@ export default function ChatBot() {
 								<FireIcon width={14} height={14} className="text-[#FB923C]" />
 							}
 							label="인기 용어"
-							onClick={() =>
-								handleSubmit(
-									undefined,
-									"React, Next.js, Docker 이 세 가지 용어를 각각 설명해줘."
-								)
-							}
+							onClick={handlePopularTerms}
 						/>
 						<QuickActionButton
 							icon={
 								<StarIcon width={14} height={14} className="text-[#FACC15]" />
 							}
 							label="오늘의 용어"
-							onClick={() => handleSubmit(undefined, "TypeScript")}
+							onClick={handleTodaysTerm}
 						/>
 						<QuickActionButton
 							icon={

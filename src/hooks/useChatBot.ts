@@ -2,6 +2,11 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import { getChatResponse } from "@/app/chatbot/utils/actions";
+import {
+	getPopularTermsQuery,
+	getTodaysTermQuery,
+} from "@/app/chatbot/utils/quick-actions";
+import { useUserData } from "@/contexts/auth";
 
 interface Message {
 	role: "user" | "bot";
@@ -17,6 +22,8 @@ interface UseChatBotReturn {
 	setInput: (value: string) => void;
 	handleSubmit: (e?: React.FormEvent, customInput?: string) => Promise<void>;
 	handleRecommendationClick: (question: string) => void;
+	handlePopularTerms: () => Promise<void>;
+	handleTodaysTerm: () => Promise<void>;
 }
 
 const INITIAL_MESSAGE: Message = {
@@ -26,6 +33,7 @@ const INITIAL_MESSAGE: Message = {
 };
 
 export function useChatBot(): UseChatBotReturn {
+	const { userData } = useUserData();
 	const [messages, setMessages] = useState<Message[]>([INITIAL_MESSAGE]);
 	const [input, setInput] = useState("");
 	const [isLoading, setIsLoading] = useState(false);
@@ -68,6 +76,17 @@ export function useChatBot(): UseChatBotReturn {
 		[handleSubmit]
 	);
 
+	const handlePopularTerms = useCallback(async () => {
+		const category = userData?.selectedCategory || "all";
+		const query = await getPopularTermsQuery(category);
+		await handleSubmit(undefined, query);
+	}, [userData, handleSubmit]);
+
+	const handleTodaysTerm = useCallback(async () => {
+		const query = await getTodaysTermQuery();
+		await handleSubmit(undefined, query);
+	}, [handleSubmit]);
+
 	return {
 		messages,
 		input,
@@ -76,5 +95,7 @@ export function useChatBot(): UseChatBotReturn {
 		setInput,
 		handleSubmit,
 		handleRecommendationClick,
+		handlePopularTerms,
+		handleTodaysTerm,
 	};
 }
