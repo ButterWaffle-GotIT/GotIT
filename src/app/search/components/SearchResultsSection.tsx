@@ -4,7 +4,7 @@ import { useState } from "react";
 import SearchResultCard from "./SearchResultCard";
 import type { TermIndexItem } from "@/lib/terms";
 import { sortTerms, SortType } from "@/lib/sortTerms";
-import SortDropdown from "@/components/ui/SortDropdown";
+import SortDropdown from "@/components/ui/dropdowns/SortDropdown";
 
 interface SearchResultsSectionProps {
 	searchTerm: string;

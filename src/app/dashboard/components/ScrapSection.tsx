@@ -8,7 +8,7 @@ import type { ScrapCardData } from "@/types/scrapCard";
 import CategoryTag from "./CategoryTag";
 import ScrapCard from "./ScrapCard";
 import { sortCards, SortType } from "../utils/order";
-import SortDropdown from "@/components/ui/SortDropdown";
+import SortDropdown from "@/components/ui/dropdowns/SortDropdown";
 import { BRAND_GRADIENT } from "@/constants/theme";
 
 interface ScrapSectionProps {
