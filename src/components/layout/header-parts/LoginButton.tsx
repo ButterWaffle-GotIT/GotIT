@@ -1,4 +1,4 @@
-import { GlassButton } from "@/components/ui/GlassButton";
+import { GlassButton } from "@/components/ui/buttons/GlassButton";
 
 interface LoginButtonProps {
 	onClick: () => void;

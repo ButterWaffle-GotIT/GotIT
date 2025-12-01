@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { UserIcon } from "@/components/icons";
-import { GlassButton } from "@/components/ui/GlassButton";
+import { GlassButton } from "@/components/ui/buttons/GlassButton";
 import { useDropdown } from "@/hooks/useDropdown";
 
 interface ProfileDropdownProps {
