@@ -1,5 +1,5 @@
 /**
- * 북마크(스크랩) 관리 헬퍼 (추후 서버 연동 고려)
+ * 북마크(스크랩) 관리 헬퍼
  */
 
 const STORAGE_KEY = "gotit:bookmarks:v1";
@@ -27,7 +27,6 @@ export function isBookmarked(id: number): boolean {
 
 /**
  * 북마크 토글 (추가/제거)
- * @returns 토글 후 북마크 상태 (true: 추가됨, false: 제거됨)
  */
 export function toggleBookmark(id: number): boolean {
 	const bookmarks = new Set(getBookmarks());
