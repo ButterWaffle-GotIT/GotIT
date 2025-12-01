@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
-import { GoogleLoginButtonIcon } from "@/components/buttons/GoogleLoginButtonIcon";
+import { GoogleLoginButtonIcon } from "./GoogleLoginButtonIcon";
 import { useAuthCore, useUserData } from "@/contexts/auth";
 
 export default function LoginBody() {

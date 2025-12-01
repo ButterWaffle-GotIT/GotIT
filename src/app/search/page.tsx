@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback, useEffect } from "react";
-import TagList from "@/components/TagList";
+import TagList from "./components/TagList";
 import SearchBar from "./components/SearchBar";
 import SearchResultsSection from "./components/SearchResultsSection";
 import RecommendedTermsSection from "./components/RecommendedTermsSection";

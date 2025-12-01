@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import OnboardingHeader from "./components/onboardingHeader";
+import OnboardingHeader from "./components/OnboardingHeader";
 import { ArrowRightIcon } from "@/components/icons/ic_arrow_right";
-import CategoryList from "./components/categoryList";
+import CategoryList from "./components/CategoryList";
 import { type CategoryType } from "@/config/categories";
 import { useAuthCore, useUserData } from "@/contexts/auth";
 

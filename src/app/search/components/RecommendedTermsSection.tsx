@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import RecommendedTermCard from "@/components/RecommendedTermCard";
-import RecommendedTermCardSkeleton from "@/components/RecommendedTermCardSkeleton";
+import RecommendedTermCard from "./RecommendedTermCard";
+import RecommendedTermCardSkeleton from "./RecommendedTermCardSkeleton";
 import { ChevronsDownIcon } from "@/components/icons/ic_chevrons_down";
 import { useUserData } from "@/contexts/auth";
 import {
