@@ -11,7 +11,7 @@ import {
 } from "@/lib/recommendations";
 
 export default function RecommendedTermsSection() {
-	const { userData } = useAuth();
+	const { userData, loading } = useAuth();
 	const [showMoreRecommended, setShowMoreRecommended] = useState(false);
 	const [recommendedTerms, setRecommendedTerms] = useState<RecommendedTerm[]>(
 		[]
@@ -20,20 +20,19 @@ export default function RecommendedTermsSection() {
 
 	useEffect(() => {
 		const loadTerms = async () => {
-			// userData가 로드되지 않았으면 로딩 상태 유지
-			if (!userData) {
+			if (loading) {
 				return;
 			}
 
 			setIsLoading(true);
-			const category = userData.selectedCategory || "all";
+			const category = userData?.selectedCategory || "all";
 			const terms = await getRecommendedTerms(category, 6);
 			setRecommendedTerms(terms);
 			setIsLoading(false);
 		};
 
 		loadTerms();
-	}, [userData]);
+	}, [userData, loading]);
 
 	const displayedRecommendedTerms = showMoreRecommended
 		? recommendedTerms
