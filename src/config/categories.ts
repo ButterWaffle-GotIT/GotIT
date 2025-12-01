@@ -1,11 +1,5 @@
 /**
  * 카테고리 설정
- *
- * 모든 카테고리 관련 설정(아이콘, 색상, 라벨 등)을 한 곳에서 관리합니다.
- * 이 파일은 다음 파일들의 중복을 제거하기 위해 만들어졌습니다:
- * - src/components/ui/category/config.ts
- * - src/lib/category.ts
- * - src/types/category.ts
  */
 
 import { ElementType } from "react";
@@ -39,23 +33,13 @@ export type CategoryType =
  * 카테고리별 세부 설정
  */
 interface CategoryConfig {
-	/** 한글 라벨 */
 	label: string;
-	/** 아이콘 컴포넌트 */
 	icon: ElementType;
-	/** Tailwind 배경 색상 클래스 */
 	bgColor: string;
-	/** Tailwind 호버 색상 클래스 (투명도 10%) */
 	hoverColor: string;
-	/** Tailwind 선택 색상 클래스 (투명도 50%) */
 	selectedColor: string;
 }
 
-/**
- * 통합 카테고리 설정
- *
- * 모든 카테고리의 아이콘, 색상, 라벨을 한 곳에서 관리합니다.
- */
 export const CATEGORIES: Record<CategoryType, CategoryConfig> = {
 	all: {
 		label: "전체",
@@ -129,33 +113,19 @@ export const CATEGORIES: Record<CategoryType, CategoryConfig> = {
 	},
 } as const;
 
-/**
- * 영문 카테고리 타입 목록
- */
 export const CATEGORY_KEYS = Object.keys(CATEGORIES) as CategoryType[];
 
-/**
- * 카테고리 화면 표시용 2줄 배열
- */
 export const CATEGORY_ROWS: [CategoryType[], CategoryType[]] = [
 	["all", "frontend", "backend", "uxui", "ai"],
 	["cloud", "data", "security", "devops", "business"],
 ];
 
-/**
- * "all"을 제외한 선택 가능한 카테고리 목록
- */
 export const SELECTABLE_CATEGORIES = CATEGORY_KEYS.filter(
 	(key) => key !== "all"
 ) as Exclude<CategoryType, "all">[];
 
-// ============================================================================
-// 유틸리티 함수들
-// ============================================================================
-
 /**
  * 영문 카테고리 타입 → 한글 라벨 매핑
- * @example getCategoryLabel("frontend") // "프론트엔드"
  */
 export function getCategoryLabel(category: string): string {
 	return CATEGORIES[category as CategoryType]?.label || category;
@@ -183,8 +153,6 @@ const LABEL_TO_CATEGORY: Record<string, CategoryType> = {
 
 /**
  * 한글 라벨 → 영문 카테고리 타입 변환
- * @example getCategoryType("프론트엔드") // "frontend"
- * @example getCategoryType("존재하지않는값") // "all" (기본값)
  */
 export function getCategoryType(label: string): CategoryType {
 	return LABEL_TO_CATEGORY[label] || "all";
