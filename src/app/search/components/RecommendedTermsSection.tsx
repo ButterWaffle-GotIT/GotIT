@@ -20,13 +20,9 @@ export default function RecommendedTermsSection() {
 
 	useEffect(() => {
 		const loadTerms = async () => {
-			// userData가 로드되지 않았으면 로딩 상태 유지
-			if (!userData) {
-				return;
-			}
-
 			setIsLoading(true);
-			const category = userData.selectedCategory || "all";
+
+			const category = userData?.selectedCategory || "all";
 			const terms = await getRecommendedTerms(category, 6);
 			setRecommendedTerms(terms);
 			setIsLoading(false);
