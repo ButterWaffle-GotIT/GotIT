@@ -16,6 +16,7 @@ interface ScrapContextType {
 	toggleScrap: (
 		termId: number
 	) => Promise<{ success: boolean; isScraped: boolean }>;
+	addMultipleToScrap: (termIds: number[]) => Promise<number>;
 }
 
 const ScrapContext = createContext<ScrapContextType | null>(null);
@@ -78,11 +79,44 @@ export function ScrapProvider({ children }: { children: ReactNode }) {
 		}
 	};
 
+	/**
+	 * 여러 항목을 한 번에 스크랩에 추가
+	 */
+	const addMultipleToScrap = async (termIds: number[]): Promise<number> => {
+		if (!user || !userData) {
+			return 0;
+		}
+
+		// 이미 스크랩된 항목 제외
+		const newTermIds = termIds.filter((id) => !userData.scrapList.includes(id));
+
+		if (newTermIds.length === 0) {
+			return 0;
+		}
+
+		const newScrapList = [...userData.scrapList, ...newTermIds];
+
+		try {
+			const userRef = doc(db, "users", user.uid);
+			await updateDoc(userRef, {
+				scrapList: newScrapList,
+			});
+
+			updateScrapList(newScrapList);
+
+			return newTermIds.length;
+		} catch (error) {
+			console.error("다중 스크랩 추가 실패:", error);
+			throw error;
+		}
+	};
+
 	return (
 		<ScrapContext.Provider
 			value={{
 				isScraped,
 				toggleScrap,
+				addMultipleToScrap,
 			}}
 		>
 			{children}

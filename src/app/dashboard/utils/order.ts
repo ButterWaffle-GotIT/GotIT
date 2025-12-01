@@ -1,5 +1,5 @@
 import { ScrapCardData } from "@/types/scrapCard";
-import { sortByKorean, sortByDateDesc, type SortType } from "@/utils/sorting";
+import { sortByKorean, type SortType } from "@/utils/sorting";
 
 export type { SortType };
 
@@ -11,7 +11,7 @@ export function sortCards(
 	sortType: SortType
 ): ScrapCardData[] {
 	if (sortType === "latest") {
-		return sortByDateDesc(cards, (card) => card.date);
+		return [...cards].reverse();
 	}
 
 	return sortByKorean(cards, (card) => card.term);

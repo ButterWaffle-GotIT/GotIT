@@ -27,7 +27,7 @@ export default function QuizResult({
 	onRetry,
 }: QuizResultProps) {
 	const { user } = useAuthCore();
-	const { toggleScrap, isScraped } = useScrap();
+	const { addMultipleToScrap } = useScrap();
 	const { showToast } = useToast();
 	const [isRetrying, setIsRetrying] = useState(false);
 
@@ -42,13 +42,8 @@ export default function QuizResult({
 		}
 
 		try {
-			let scrapCount = 0;
-			for (const question of wrongQuestions) {
-				if (!isScraped(question.term.id)) {
-					await toggleScrap(question.term.id);
-					scrapCount++;
-				}
-			}
+			const termIds = wrongQuestions.map((q) => q.term.id);
+			const scrapCount = await addMultipleToScrap(termIds);
 			showToast(
 				scrapCount > 0
 					? `틀린 문제 ${scrapCount}개를 스크랩했습니다!`
