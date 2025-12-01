@@ -27,5 +27,5 @@ export async function getTodaysTermQuery(): Promise<string> {
 	if (!todayTerm) {
 		return "TypeScript";
 	}
-	return todayTerm.termKo;
+	return todayTerm.termEn || todayTerm.termKo;
 }
