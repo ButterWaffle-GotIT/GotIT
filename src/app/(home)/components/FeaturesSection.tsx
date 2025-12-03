@@ -10,7 +10,7 @@ export function FeaturesSection() {
 	];
 
 	const stats = [
-		{ value: "220+", label: "용어" },
+		{ value: "340+", label: "용어" },
 		{ value: "9", label: "카테고리" },
 	];
 
