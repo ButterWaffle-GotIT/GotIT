@@ -31,12 +31,12 @@ export function HeroSection() {
 				>
 					{/* Overline */}
 					<p className="mb-6 text-sm tracking-[0.2em] text-gray-500 uppercase">
-						IT Dictionary for Everyone
+						ALL-IN-ONE IT Dictionary for Everyone
 					</p>
 
 					{/* Main Headline */}
 					<h1 className="max-w-4xl text-[clamp(2rem,6vw,5rem)] leading-[0.95] font-light tracking-tight text-white">
-						누구나 쉽게 이해하는
+						누구나 쉽게 찾고 이해하는
 						<br />
 						<span className="font-medium text-gray-400">IT 용어 사전</span>
 					</h1>
